@@ -5,17 +5,23 @@ import time
 results = []
 
 def scan_ip_port(ip, port):
+    
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.settimeout(0.5)
             start_time = time.time()
             result = s.connect_ex((ip, port))
             end_time = time.time()
+            
             if result == 0:
+                
                 elapsed_time = (end_time - start_time) * 1000
                 results.append((ip, port, elapsed_time))
-            else:
-                print(f"IP: {ip} Port: {port} is not responding or closed.")
+                print(f"    {len(results)} ok ip")
+            
+                
+                
+                
     except Exception as e:
         print(f"Error scanning {ip}:{port} - {e}")
 
@@ -63,7 +69,7 @@ def main():
     sorted_results = sorted(results, key=lambda x: x[2])
 
     for result in sorted_results[:10]:
-        print(f"IP: {result[0]}, Port: {result[1]}, Ping: {result[2]:.2f} ms")
+        print(f"IP: {result[0]}:{result[1]}, Ping: {result[2]:.2f} ms")
 
     
     if sorted_results:
