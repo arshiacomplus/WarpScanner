@@ -44,7 +44,7 @@ def main():
     
     ip_range2 = create_ip_range(start_ip[1], end_ip[1])
 
-    ip_range3 = create_ip_range(start_ip[1], end_ip[1])
+    ip_range3 = create_ip_range(start_ip[2], end_ip[2])
     
     with ThreadPoolExecutor(max_workers=100) as executor:
         for ip in ip_range:
