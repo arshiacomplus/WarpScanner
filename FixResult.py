@@ -36,13 +36,20 @@ def create_ip_range(start_ip, end_ip):
     return ip_range
 
 def main():
-    start_ip = "188.114.96.1"
-    end_ip = "188.114.98.224"
-    ports = [1074, 894]
-    ip_range = create_ip_range(start_ip, end_ip)
-
-    with ThreadPoolExecutor(max_workers=200) as executor:
+    start_ip = ["188.114.96.0", "162.159.192.0"]
+    end_ip = ["188.114.98.224", "162.159.195.224"]
+    ports = [1074]
+    
+    ip_range = create_ip_range(start_ip[0], end_ip[0])
+    
+    ip_range2 = create_ip_range(start_ip[1], end_ip[1])
+    
+    with ThreadPoolExecutor(max_workers=100) as executor:
         for ip in ip_range:
+            for port in ports:
+                executor.submit(scan_ip_port, ip, port)
+    with ThreadPoolExecutor(max_workers=100) as executor:
+        for ip in ip_range2:
             for port in ports:
                 executor.submit(scan_ip_port, ip, port)
 
