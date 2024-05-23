@@ -4,8 +4,9 @@
 curl -fsSL -o FixResult.py https://raw.githubusercontent.com/arshiacomplus/Test/main/FixResult.py
 
 command -v python3 &>/dev/null || {
-    echo "Python 3 نصب نیست. در حال نصب..."
+    echo "wait for install python3...."
 
+    pkg update && pkg upgrade
     pkg install python-pip 
     pkg install git python
 }
