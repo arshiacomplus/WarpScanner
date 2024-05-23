@@ -57,7 +57,7 @@ def main():
     with ThreadPoolExecutor(max_workers=100) as executor:
         for ip in ip_range3:
             for port in ports:
-                executor.submit(scan_ip_port
+                executor.submit(scan_ip_port)
     executor.shutdown(wait=True)
 
     sorted_results = sorted(results, key=lambda x: x[2])
