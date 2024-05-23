@@ -36,8 +36,8 @@ def create_ip_range(start_ip, end_ip):
     return ip_range
 
 def main():
-    start_ip = "188.114.90.1"
-    end_ip = "188.114.98.200"
+    start_ip = "188.114.96.1"
+    end_ip = "188.114.98.224"
     ports = [1074, 894]
     ip_range = create_ip_range(start_ip, end_ip)
 
