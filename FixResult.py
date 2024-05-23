@@ -7,7 +7,7 @@ results = []
 def scan_ip_port(ip, port):
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.settimeout(1)
+            s.settimeout(0.5)
             start_time = time.time()
             result = s.connect_ex((ip, port))
             end_time = time.time()
@@ -36,13 +36,15 @@ def create_ip_range(start_ip, end_ip):
     return ip_range
 
 def main():
-    start_ip = ["188.114.96.0", "162.159.192.0"]
-    end_ip = ["188.114.98.224", "162.159.195.224"]
+    start_ip = ["188.114.96.0", "162.159.192.0","162.159.195.0"]
+    end_ip = ["188.114.98.224", "162.159.193.224","162.159.195.224"]
     ports = [1074]
     
     ip_range = create_ip_range(start_ip[0], end_ip[0])
     
     ip_range2 = create_ip_range(start_ip[1], end_ip[1])
+
+    ip_range3 = create_ip_range(start_ip[1], end_ip[1])
     
     with ThreadPoolExecutor(max_workers=100) as executor:
         for ip in ip_range:
@@ -52,7 +54,10 @@ def main():
         for ip in ip_range2:
             for port in ports:
                 executor.submit(scan_ip_port, ip, port)
-
+    with ThreadPoolExecutor(max_workers=100) as executor:
+        for ip in ip_range3:
+            for port in ports:
+                executor.submit(scan_ip_port
     executor.shutdown(wait=True)
 
     sorted_results = sorted(results, key=lambda x: x[2])
