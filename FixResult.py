@@ -63,7 +63,9 @@ def main():
     
     if sorted_results:
         best_result = sorted_results[0]
-        print(f"nBest ping: IP: {best_result[0]}, Port: {best_result[1]}, Ping: {best_result[2]:.2f} ms")
+        print(f"""
+        nBest ping: IP:  {best_result[0]}:{best_result[1]}
+        Ping: {best_result[2]:.2f} ms""")
 
 if __name__ == "__main__":
     main()
