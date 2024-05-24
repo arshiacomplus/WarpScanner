@@ -14,13 +14,11 @@ def scan_ip_port(ip, port):
             end_time = time.time()
             
             if result == 0:
-                
                 elapsed_time = (end_time - start_time) * 1000
                 results.append((ip, port, elapsed_time))
-                print(f"    {len(results)} ok ip")
+            else:
+                print(f"IP: {ip} Port: {port} is not responding or closed.")
             
-                
-                
                 
     except Exception as e:
         print(f"Error scanning {ip}:{port} - {e}")
