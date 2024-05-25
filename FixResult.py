@@ -1,4 +1,11 @@
 import requests
+try:
+    import requests
+except ImportError:
+    print("Requests module not installed. Installing now...")
+    os.system('pip install requests')
+    import requests
+
 import re
 import os
 import socket
