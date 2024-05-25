@@ -1,4 +1,4 @@
-
+import os
 try:
     import requests
 except ImportError:
@@ -7,7 +7,7 @@ except ImportError:
     import requests
 
 import re
-import os
+
 import socket
 from concurrent.futures import ThreadPoolExecutor
 import time
