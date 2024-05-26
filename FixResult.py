@@ -120,12 +120,23 @@ def main():
         Ping: {best_result[2]:.2f} ms""")
 
 def main2():
+    
     print('\033[94m')
-    print('''
-            please wait (scaning ip)      ...........
-            
-            ''')
+    if what !="3":
+        print('''
+                please wait (scaning ip)      ...........
+                
+                ''')
     def free_cloudflare_account():
+        if what !='3':
+            try:
+                    b = best_result[0]
+            except Exception:
+                print("\033[91m")
+                print('Try again and choose wire guard without ip')
+                print('\033[0m')
+                exit()
+       
         def free_cloudflare_account2():
             response2 = requests.get("https://api.zeroteam.top/warp?format=sing-box")
             output2 = response2.text
@@ -152,6 +163,32 @@ def main2():
                 reserved2 = reserved2.replace('[', '').replace(']', '')
             print('\033[0m')
             os.system('clear')
+            
+            temp_ip=''
+            temp_port=''
+            temp_c=0
+            if what =='3':
+                best_result=[]
+                enter_ip=input('Enter ip with port(defulte =Enter( N )) : ')
+                if enter_ip=='N' or  enter_ip=='n':
+                    best_result=["162.159.195.166" , 908]
+                else:
+                    while enter_ip[temp_c] !=':':
+                            temp_ip=temp_ip+enter_ip[temp_c]
+                            temp_c=temp_c+1
+                            
+                        
+                    set_enter_ip=enter_ip.index(":")
+                    temp_port=enter_ip[set_enter_ip+1: ]
+                    
+
+                    
+                    
+                    #temp_port=temp_port+enter_ip[i]
+                    best_result=[temp_ip, int(temp_port)]
+                        
+            
+            
             print(f'''
 {{
         "route": {{                                                         "geoip": {{
@@ -266,11 +303,12 @@ def main2():
             reserved = reserved_search.group(0).replace('"reserved":', '').replace('"', '') if reserved_search else None
             free_cloudflare_account2()
         except Exception:
-        	check_ip()
+            check_ip()
         
 
-
-
+    
+    if what=="3":
+        free_cloudflare_account()
     start_ip = ["188.114.96.0", "162.159.192.0","162.159.195.0"]
     end_ip = ["188.114.98.224", "162.159.193.224","162.159.195.224"]
     ports = [1074 , 894, 908]
@@ -311,14 +349,18 @@ if __name__ == "__main__":
     os.system('clear')
     what=input("""scan ip (enter 1)
 wireguard config(enter 2)
+wireguard config without ip scanning(enter 3)
 
 >:""")
-    while what!='1' and what !='2':
-    	what=input("""scan ip (enter 1)
+    while what!='1' and what !='2' and what !='3':
+        what=input("""scan ip (enter 1)
 wireguard config(enter 2)
+wireguard config without ip scanning[beta](enter 3)
 
 >:""")
     if what =='1':
         main()
     elif what=='2':
+        main2()
+    elif what=="3":
         main2()
