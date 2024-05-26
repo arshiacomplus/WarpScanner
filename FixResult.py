@@ -12,7 +12,22 @@ from concurrent.futures import ThreadPoolExecutor
 import time
 
 results = []
-
+def check_ip():
+    
+    response = requests.get('http://ip-api.com/json/')
+    if response.status_code == 200:
+        ip_info = response.json()
+        country = ip_info.get('countryCode')
+        if country != 'IR':
+            print('Discconect your VPN and try again .')
+            exit()
+        else:
+           exit()
+           print('Try again')
+    print('Something has happend Try again')
+    exit()
+           
+    
 def scan_ip_port(ip, port):
     
     try:
@@ -232,24 +247,26 @@ def main2():
             please wait (make wireguard)      ...........
             
             ''')
-       
-        response = requests.get("https://api.zeroteam.top/warp?format=sing-box")
-        output = response.text
+        try:
+            response = requests.get("https://api.zeroteam.top/warp?format=sing-box")
+            output = response.text
 
        
-        public_key_pattern = r'"2606:4700:[0-9a-f:]+/128"'
-        private_key_pattern = r'"private_key":"[0-9a-zA-Z/+]+="'
-        reserved_pattern = r'"reserved":[[0-9]+(,[0-9]+){2}]'
+            public_key_pattern = r'"2606:4700:[0-9a-f:]+/128"'
+            private_key_pattern = r'"private_key":"[0-9a-zA-Z/+]+="'
+            reserved_pattern = r'"reserved":[[0-9]+(,[0-9]+){2}]'
 
-        public_key_search = re.search(public_key_pattern, output)
-        private_key_search = re.search(private_key_pattern, output)
-        reserved_search = re.search(reserved_pattern, output)
+            public_key_search = re.search(public_key_pattern, output)
+            private_key_search = re.search(private_key_pattern, output)
+            reserved_search = re.search(reserved_pattern, output)
 
       
-        public_key = public_key_search.group(0).replace('"', '') if public_key_search else None
-        private_key = private_key_search.group(0).split(':')[1].replace('"', '') if private_key_search else None
-        reserved = reserved_search.group(0).replace('"reserved":', '').replace('"', '') if reserved_search else None
-        free_cloudflare_account2()
+            public_key = public_key_search.group(0).replace('"', '') if public_key_search else None
+            private_key = private_key_search.group(0).split(':')[1].replace('"', '') if private_key_search else None
+            reserved = reserved_search.group(0).replace('"reserved":', '').replace('"', '') if reserved_search else None
+            free_cloudflare_account2()
+        except Exception:
+        	check_ip()
         
 
 
