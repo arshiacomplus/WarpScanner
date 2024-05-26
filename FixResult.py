@@ -188,7 +188,7 @@ def main2():
                     best_result=[temp_ip, int(temp_port)]
                         
             
-            
+            os.system('clear')
             print(f'''
 {{
         "route": {{                                                         "geoip": {{
