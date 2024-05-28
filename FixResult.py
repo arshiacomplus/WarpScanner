@@ -4,8 +4,14 @@ try:
 except ImportError:
 	print("Requests module not installed. Installing now...")
 	os.system('pip install requests')
+try:
 	import requests
-
+except ModuleNotFoundError:
+	os.system('wget https://github.com/psf/requests/releases/download/v2.32.2/requests-2.32.2.tar.gz')
+	os.system('tar -xzvf requests-2.32.2.tar.gz')
+	os.system('cd requests-2.32.2')
+	os.system('python setup.py install')
+	import request 
 import re
 import socket
 from concurrent.futures import ThreadPoolExecutor
