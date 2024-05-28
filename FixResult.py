@@ -11,7 +11,7 @@ except ModuleNotFoundError:
 	os.system('tar -xzvf requests-2.32.2.tar.gz')
 	os.system('cd requests-2.32.2')
 	os.system('python setup.py install')
-	import request 
+	import requests
 import re
 import socket
 from concurrent.futures import ThreadPoolExecutor
