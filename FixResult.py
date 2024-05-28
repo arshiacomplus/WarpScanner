@@ -436,7 +436,7 @@ def main2():
 		best_result = sorted_results[0]
 		print(f"""
 		Best ping: IP:  {best_result[0]}:{best_result[1]}
-		Ping: {best_result[2]:.2f} mbs""")
+		Ping: {best_result[2]:.2f} mb""")
 	free_cloudflare_account()
 
 if __name__ == "__main__":
@@ -449,7 +449,7 @@ wireguard config without ip scanning(enter 3)
 	while what!='1' and what !='2' and what !='3':
 		what=input("""scan ip (enter 1)
 wireguard config(enter 2)
-wireguard config without ip scanning[beta](enter 3)
+wireguard config without ip scanning(enter 3)
 
 >:""")
 	if what =='1':
