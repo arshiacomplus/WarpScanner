@@ -666,15 +666,17 @@ if __name__ == "__main__":
  scan ip (enter 1)
  wireguard config(enter 2)
  wireguard config without ip scanning(enter 3)
- wireguard with a sub link[BETA](enter 4):
+ wireguard with a sub link[BETA](enter 4)
+ Exit(enter 0)
 
 >:""")
-	while what!='1' and what !='2' and what !='3' and what!='4':
+	while what!='1' and what !='2' and what !='3' and what!='4' and what !='5':
 		what=input("""
  scan ip (enter 1)
  wireguard config(enter 2)
  wireguard config without ip scanning(enter 3)
- wireguard with a sub link[BETA](enter 4):
+ wireguard with a sub link[BETA](enter 4)
+ Exit(enter 0)
 
 >:""")
 	if what =='1':
@@ -696,3 +698,5 @@ if __name__ == "__main__":
 
 		for i in range(how_many):
 			main3()
+	elif what=='5':
+		exit()
