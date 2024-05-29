@@ -436,7 +436,7 @@ def main2():
 		best_result = sorted_results[0]
 		print(f"""
 		Best ping: IP:  {best_result[0]}:{best_result[1]}
-		Ping: {best_result[2]:.2f} mb""")
+		Ping: {best_result[2]:.2f} ms""")
 	free_cloudflare_account()
 
 if __name__ == "__main__":
