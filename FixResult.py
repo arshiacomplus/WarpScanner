@@ -670,7 +670,7 @@ if __name__ == "__main__":
  Exit(enter 0)
 
 >:""")
-	while what!='1' and what !='2' and what !='3' and what!='4' and what !='5':
+	while what!='0' and what !='1' and what !='2' and what !='3' and what!='4' and what !='5':
 		what=input("""
  scan ip (enter 1)
  wireguard config(enter 2)
@@ -698,5 +698,5 @@ if __name__ == "__main__":
 
 		for i in range(how_many):
 			main3()
-	elif what=='5':
+	elif what=='0':
 		exit()
