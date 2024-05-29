@@ -687,7 +687,7 @@ if __name__ == "__main__":
 		true=True
 		while true==True:
 			try:
-				how_many=int(input('How many configs do you need(two or above two  ) : '))
+				how_many=int(input('How many configs do you need(2 or above 2  ) : '))
 				true=False
 			except ValueError:
 
