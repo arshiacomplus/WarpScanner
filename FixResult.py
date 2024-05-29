@@ -504,6 +504,14 @@ def main3():
 				Best ping: IP:  {best_result[0]}:{best_result[1]}
 				Ping: {best_result[2]:.2f} ms""")
 			print("please wait make wireguard. ")
+			try:
+				b = best_result[0]
+			except Exception:
+				os.system('clear')
+				print("\033[91m")
+				print('Try again and choose wire guard without ip')
+				print('\033[0m')
+				exit()
 
 			global wire_config_temp
 			global wire_c
