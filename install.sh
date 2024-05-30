@@ -7,7 +7,7 @@ command -v python &>/dev/null || {
     echo "wait for install python...."
 
     
-    pkg install python-pip 
+    pkg install python
     pkg install git python
 }
 # اجرای فایل پایتون
