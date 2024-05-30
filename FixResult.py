@@ -25,33 +25,7 @@ send_msg_wait=0
 results = []
 best_result=[]
 #this function didn't use
-def free_cloudflare_account2():
-            response2 = requests.get("https://api.zeroteam.top/warp?format=sing-box")
-            output2 = response2.text
 
-   
-            public_key_pattern2 = r'"2606:4700:[0-9a-f:]+/128"'
-            private_key_pattern2 = r'"private_key":"[0-9a-zA-Z/+]+="'
-            reserved_pattern2 = r'"reserved":[[0-9]+(,[0-9]+){2}]'
-
-            public_key_search2 = re.search(public_key_pattern2, output2)
-            private_key_search2 = re.search(private_key_pattern2, output2)
-            reserved_search2 = re.search(reserved_pattern2, output2)
-
-            public_key2 = public_key_search2.group(0) if public_key_search2 else None
-            private_key2 = private_key_search2.group(0).split(':')[1] if private_key_search2 else None
-            reserved2 = reserved_search2.group(0).split(':')[1] if reserved_search2 else None
-
-
-            if public_key2:
-                public_key2 = public_key2.replace('"', '')
-            if private_key2:
-                private_key2 = private_key2.replace('"', '')
-            if reserved2:
-                reserved2 = reserved2.replace('[', '').replace(']', '')
-            all_key=[public_key2 , private_key2 , reserved2]
-            return all_key
-            
 def free_cloudflare_account():
         response = requests.get("https://api.zeroteam.top/warp?format=sing-box")
         output = response.text
@@ -202,7 +176,7 @@ def main2():
         private_key=all_key[1]
         reserved=all_key[2]
         
-        all_key2=free_cloudflare_account2()
+        all_key2=free_cloudflare_account()
         public_key2=all_key2[0]
         private_key2=all_key2[1]
         reserved2=all_key2[2]
@@ -299,7 +273,7 @@ def main2():
                 "server": "{best_result[0]}",
                 "server_port": {best_result[1]},
                 "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-                "reserved": [{reserved2}],
+                "reserved": {reserved2},
                 "mtu": 1280,
                 "fake_packets": "5-10"
                 }},
@@ -354,7 +328,7 @@ def main3():
     private_key=all_key[1]
     reserved=all_key[2]
     
-    all_key2=free_cloudflare_account2()
+    all_key2=free_cloudflare_account()
     public_key2=all_key2[0]
     private_key2=all_key2[1]
     reserved2=all_key2[2]
@@ -395,7 +369,7 @@ def main3():
     ],
     "private_key": "{private_key2}",
     "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-    "reserved": [{reserved2}],
+    "reserved": {reserved2},
 
     "mtu": 1120
 
@@ -435,7 +409,7 @@ def main3():
     ],
     "private_key": "{private_key2}",
     "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-    "reserved": [{reserved2}],
+    "reserved": {reserved2},
 
     "mtu": 1120
 
