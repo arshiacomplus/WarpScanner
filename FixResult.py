@@ -81,7 +81,7 @@ def scan_ip_port(ip, port):
     
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.settimeout(0.5)
+            s.settimeout(1)
             start_time = time.time()
             result = s.connect_ex((ip, port))
             end_time = time.time()
@@ -130,15 +130,15 @@ def main():
 
     ip_range3 = create_ip_range(start_ip[2], end_ip[2])
     
-    with ThreadPoolExecutor(max_workers=100) as executor:
+    with ThreadPoolExecutor(max_workers=200) as executor:
         for ip in ip_range:
             for port in ports:
                 executor.submit(scan_ip_port, ip, port)
-    with ThreadPoolExecutor(max_workers=100) as executor:
+    with ThreadPoolExecutor(max_workers=200) as executor:
         for ip in ip_range2:
             for port in ports:
                 executor.submit(scan_ip_port, ip, port)
-    with ThreadPoolExecutor(max_workers=100) as executor:
+    with ThreadPoolExecutor(max_workers=200) as executor:
         for ip in ip_range3:
             for port in ports:
                 executor.submit(scan_ip_port, ip, port)
