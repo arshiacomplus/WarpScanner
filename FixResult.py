@@ -1,5 +1,4 @@
 
-
 import os
 try:
     import requests
@@ -158,14 +157,8 @@ def main():
         print(f"""
         Best ping: IP:  {best_result[0]}:{best_result[1]}
         Ping: {best_result[2]:.2f} ms""")
-    if len(best_result)==0:
-        print()
-        os.system('clear')
-        print("\033[91m")				
-        print('Try again and choose wire guard without ip')
-        print('\033[0m')
-        exit()
     return best_result
+        
 
 def main2():
     global best_result
@@ -305,8 +298,13 @@ def main2():
     if what=="3":
         main2_1()
 
-
-    best_result=main()
+    try:
+    	best_result=main()
+    except Exception:
+    	print("\033[91m")
+    	print('Try again and choose wire guard without ip')
+    	print('\033[0m')
+    	exit()
     print(f"please wait make wireguard. ")
     
     main2_1()
@@ -319,10 +317,13 @@ def main3():
     global wire_p
     if wire_p==0:
 
-        best_result=main()
-    print('\033[91m')
-    print(f"please wait make wireguard : {wire_c}. ")
-
+         try:
+         	best_result=main()
+         except Exception:
+         	print("\033[91m")
+         	print('Try again and choose wire guard without ip')
+         	print('\033[0m')
+         	exit()
     all_key=free_cloudflare_account()
     public_key=all_key[0]
     private_key=all_key[1]
@@ -369,7 +370,7 @@ def main3():
     ],
     "private_key": "{private_key2}",
     "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-    "reserved": {reserved2},
+    "reserved": [{reserved2}],
 
     "mtu": 1120
 
@@ -409,7 +410,7 @@ def main3():
     ],
     "private_key": "{private_key2}",
     "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-    "reserved": {reserved2},
+    "reserved": [{reserved2}],
 
     "mtu": 1120
 
