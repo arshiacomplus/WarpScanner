@@ -370,7 +370,7 @@ def main3():
     ],
     "private_key": "{private_key2}",
     "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-    "reserved": [{reserved2}],
+    "reserved": {reserved2},
 
     "mtu": 1120
 
@@ -410,7 +410,7 @@ def main3():
     ],
     "private_key": "{private_key2}",
     "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-    "reserved": [{reserved2}],
+    "reserved": {reserved2},
 
     "mtu": 1120
 
