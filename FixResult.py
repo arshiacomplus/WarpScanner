@@ -294,7 +294,7 @@ def main2():
                 
 
     
-    print('\033[94m')
+    print('\033[91m')
     if what=="3":
         main2_1()
 
@@ -324,6 +324,7 @@ def main3():
          	print('Try again and choose wire guard without ip')
          	print('\033[0m')
          	exit()
+    print(f"please wait make wireguard : {wire_c}. ")
     all_key=free_cloudflare_account()
     public_key=all_key[0]
     private_key=all_key[1]
