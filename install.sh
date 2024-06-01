@@ -6,7 +6,7 @@ curl -fsSL -o FixResult.py https://raw.githubusercontent.com/arshiacomplus/Test/
 command -v python &>/dev/null || {
     echo "wait for install python...."
 
-    
+    pkg update
     pkg install python-pip
     pkg install git python
     pkg install wget
