@@ -9,6 +9,7 @@ command -v python &>/dev/null || {
     
     pkg install python-pip
     pkg install git python
+    pkg install wget
 }
 # اجرای فایل پایتون
 python FixResult.py
