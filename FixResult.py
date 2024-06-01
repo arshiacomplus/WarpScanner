@@ -10,7 +10,14 @@ try:
 except ModuleNotFoundError:
     os.system('wget https://github.com/psf/requests/releases/download/v2.32.2/requests-2.32.2.tar.gz')
     os.system('tar -xzvf requests-2.32.2.tar.gz')
-    os.system('cd requests-2.32.2')
+    os.chdir('requests-2.32.2')
+    os.system('python setup.py install')
+try:
+    import requests
+except ModuleNotFoundError:
+    os.system('curl -L -o requests-2.32.2.tar.gz https://github.com/psf/requests/releases/download/v2.32.2/requests-2.32.2.tar.gz')
+    os.system('tar -xzvf requests-2.32.2.tar.gz')
+    os.chdir('requests-2.32.2')
     os.system('python setup.py install')
     import requests
 import re
