@@ -1,4 +1,5 @@
 
+import urllib.parse
 import os
 try:
     import requests
@@ -24,13 +25,46 @@ import re
 import socket
 from concurrent.futures import ThreadPoolExecutor
 import time
+try:
+	import rich
+except Exception:
+	os.system('pip install rich')
+try:
+	import rich
+except Exception:
+	os.systen('wget https://github.com/Textualize/rich/archive/refs/tags/v13.7.1.tar.gz -O rich-v13.7.1.tar.gz')
+	os.systen('tar -zxvf rich-v13.7.1.tar.gz')
+	os.system('cd rich-13.7.1')
+	os.system('python setup.py install')
+	
+from rich.console import Console
+from rich.prompt import Prompt
+from rich import print as rprint
+from rich.table import Table
+
+console = Console()
 wire_config_temp=''
 wire_c=1
 wire_p=0
 send_msg_wait=0
 results = []
 best_result=[]
-#this function didn't use
+
+def urlencode(string):
+    
+    if string is None:
+        return None
+    return urllib.parse.quote(string, safe='a-zA-Z0-9.~_-')
+
+def fetch_config_from_api(api_url):
+    response = requests.get(api_url)
+    data = response.json()
+    return {
+        'PrivateKey': data.get('private_key'),
+        'PublicKey': data.get('peer_public_key'),
+        'Reserved': ','.join([str(x) for x in data.get('reserved', [])]) if data.get('reserved') else None
+    }
+
 
 def free_cloudflare_account():
         response = requests.get("https://api.zeroteam.top/warp?format=sing-box")
@@ -53,21 +87,19 @@ def free_cloudflare_account():
         all_key=[public_key , private_key , reserved]
         return all_key
 def upload_to_bashupload(config_data):
-     
+    try:
         files = {'file': ('output.json', config_data)}
-
-    
         response = requests.post('https://bashupload.com/', files=files)
 
         if response.ok:
-            
             download_link = response.text.strip()
-            #[58:len(download_link)-27]
-            
             download_link_with_query = download_link[59:len(download_link)-27] + "?download=1"
-            print('your link : ', download_link_with_query)
+            console.print(f'[green]Your link: {download_link_with_query}[/green]')
         else:
-            print("Something happend with create the link")
+            console.print("[red]Something happened with creating the link[/red]", style="bold red")
+    except Exception as e:
+        console.print(f"[red]An error occurred: {e}[/red]", style="bold red")
+  
 def check_ip():
     
     response = requests.get('http://ip-api.com/json/')
@@ -83,9 +115,8 @@ def check_ip():
     exit()
            
     
-def scan_ip_port(ip, port):
-   
-    
+def scan_ip_port(ip, port, results):
+    global best_result
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.settimeout(1)
@@ -96,15 +127,10 @@ def scan_ip_port(ip, port):
             if result == 0:
                 elapsed_time = (end_time - start_time) * 1000
                 results.append((ip, port, elapsed_time))
-           
             else:
-                    print(f"IP: {ip} Port: {port} is not responding or closed.")
-   
-                    
-            
-                
+                console.print(f"IP: {ip} Port: {port} is not responding or closed.", style="red")
     except Exception as e:
-        print(f"Error scanning {ip}:{port} - {e}")
+        console.print(f"Error scanning {ip}:{port} - {e}", style="red")
 
 def create_ip_range(start_ip, end_ip):
     start = list(map(int, start_ip.split('.')))
@@ -115,55 +141,48 @@ def create_ip_range(start_ip, end_ip):
     while temp != end:
         ip_range.append('.'.join(map(str, temp)))
         temp[3] += 1
-        for i2 in (3, 2, 1):
-            if temp[i2] == 256:
-                temp[i2] = 0
-                temp[i2-1] += 1
+        for i in (3, 2, 1):
+            if temp[i] == 256:
+                temp[i] = 0
+                temp[i-1] += 1
     ip_range.append(end_ip)
     return ip_range
 
 def main():
-    print('\033[94m')
-    os.system("clear")
-    print("""please wait (scaning ip)      ...........
-""")
-    start_ip = ["188.114.96.0", "162.159.192.0","162.159.195.0"]
-    end_ip = ["188.114.98.224", "162.159.193.224","162.159.195.224"]
-    ports = [1074 , 894, 908 , 878]
-    
-    ip_range = create_ip_range(start_ip[0], end_ip[0])
-    
-    ip_range2 = create_ip_range(start_ip[1], end_ip[1])
+    console.clear()
+    console.print("please wait scanning ip ...", style="blue")
 
-    ip_range3 = create_ip_range(start_ip[2], end_ip[2])
-    
-    with ThreadPoolExecutor(max_workers=200) as executor:
-        for ip in ip_range:
-            for port in ports:
-                executor.submit(scan_ip_port, ip, port)
-    with ThreadPoolExecutor(max_workers=200) as executor:
-        for ip in ip_range2:
-            for port in ports:
-                executor.submit(scan_ip_port, ip, port)
-    with ThreadPoolExecutor(max_workers=200) as executor:
-        for ip in ip_range3:
-            for port in ports:
-                executor.submit(scan_ip_port, ip, port)
-    executor.shutdown(wait=True)
+    start_ips = ["188.114.96.0", "162.159.192.0", "162.159.195.0"]
+    end_ips = ["188.114.98.224", "162.159.193.224", "162.159.195.224"]
+    ports = [1074, 894, 908, 878]
+    results = []
+
+    for start_ip, end_ip in zip(start_ips, end_ips):
+        ip_range = create_ip_range(start_ip, end_ip)
+        with ThreadPoolExecutor(max_workers=200) as executor:
+            for ip in ip_range:
+                for port in ports:
+                    executor.submit(scan_ip_port, ip, port, results)
 
     sorted_results = sorted(results, key=lambda x: x[2])
     
-    os.system('clear')
-    for result in sorted_results[:10]:
-        print(f"IP: {result[0]}:{result[1]}, Ping: {result[2]:.2f} ms")
+    console.clear()
+    table = Table(show_header=True, header_style="bold blue")
+    table.add_column("IP", style="dim", width=20)
+    table.add_column("Port", justify="right")
+    table.add_column("Ping (ms)", justify="right")
 
-    
+    for result in sorted_results[:10]:
+        table.add_row(result[0], str(result[1]), f"{result[2]:.2f}")
+
+    console.print(table)
+
     if sorted_results:
         best_result = sorted_results[0]
-        print("\033[91m")
-        print(f"""
-        Best ping: IP:  {best_result[0]}:{best_result[1]}
-        Ping: {best_result[2]:.2f} ms""")
+        console.print(f"The best  IP: {best_result[0]}:{best_result[1]} , ping: {best_result[2]:.2f} ms", style="green")
+    else:
+        console.print("Nothing was found", style="red")
+
     return best_result
         
 
@@ -440,29 +459,66 @@ def main3():
             
     wire_c=wire_c+1
     wire_p=1
+def generate_wireguard_url(config, endpoint):
     
+    required_keys = ['PrivateKey', 'PublicKey']
+    if not all(key in config and config[key] is not None for key in required_keys):
+        print("Incomplete configuration. Missing one of the required keys or value is None.")
+        return None
+
+    
+    wireguard_url = (
+        f"wireguard://{urlencode(config['PrivateKey'])}@{endpoint}"
+        f"?publickey={urlencode(config['PublicKey'])}"
+    )
+    
+    
+    if config.get('Reserved'):
+        wireguard_url += f"&reserved={urlencode(config['Reserved'])}"
+    
+    wireguard_url += "#Tel= @arshiacomplus wire"
+
+    return wireguard_url
+def start_menu():
+    options = {
+        "1": "scan ip",
+        "2": "wireguard config",
+        "3": "wireguard config without ip scanning",
+        "4": "wireguard with a sub link[BETA]",
+        "5": "wireguard for v2ray and mahsaNG",
+        "0": "Exit"
+    }
+
+    rprint("[bold red]by Telegram= @arshiacomplus[/bold red]")
+    for key, value in options.items():
+        rprint(f" [bold yellow]{key}[/bold yellow]: {value}")
+    what = Prompt.ask("Choose an option", choices=list(options.keys()), default="0")
+    return what
+def get_number_of_configs():
+    while True:
+        try:
+            how_many = int(Prompt.ask('How many configs do you need (2 or above)'))
+            if how_many >= 2:
+                break
+        except ValueError:
+            console.print("[bold red]Please enter a valid number![/bold red]", style="red")
+    return how_many
+def gojo_goodbye_animation():
+    frames  = [
+        "\n\033[94m(＾-＾)ノ\033[0m",  # آبی
+        "\n\033[93m(＾-＾)ノ~~~\033[0m",  # زرد
+        "\n\033[92m(＾-＾)ノ~~~~~~\033[0m" , # سبزl
+    ]
+    
+    for frame in frames:
+      #  os.system('cls' if os.name == 'nt' else 'clear')
+        print(frame)
+        time.sleep(1) 
 if __name__ == "__main__":
     os.system('clear')
-    print("\033[91m")
-    print("by Telegram= @arshiacomplus")
-    print("\033[0m")
-    what=input("""
- scan ip (enter 1)
- wireguard config(enter 2)
- wireguard config without ip scanning(enter 3)
- wireguard with a sub link[BETA](enter 4)
- Exit(enter 0)
+    
+    what=start_menu()
 
->:""")
-    while what!='0' and what !='1' and what !='2' and what !='3' and what!='4':
-        what=input("""
- scan ip (enter 1)
- wireguard config(enter 2)
- wireguard config without ip scanning(enter 3)
- wireguard with a sub link[BETA](enter 4)
- Exit(enter 0)
-
->:""")
     if what =='1':
         main()
     elif what=='2':
@@ -473,7 +529,7 @@ if __name__ == "__main__":
         true=True
         while true==True:
             try:
-                how_many=int(input('How many configs do you need(2 or above 2  ) : '))
+                how_many=get_number_of_configs()
                 true=False
             except ValueError:
 
@@ -482,5 +538,34 @@ if __name__ == "__main__":
 
         for i in range(how_many):
             main3()
+    elif what =='5':
+    	api_url = 'https://api.zeroteam.top/warp?format=sing-box'
+    	endpoint_ip_best_result=main()
+    	endpoint_ip = str(endpoint_ip_best_result[0])+":"+str(endpoint_ip_best_result[1])
+    	rprint("n[bold green]Please wait, generating WireGuard URL...[/bold green]")
+    	try:
+    		config = fetch_config_from_api(api_url)
+    	except Exception as E:
+    		print(' Try again Error =', E)
+    	wireguard_url = generate_wireguard_url(config, endpoint_ip)
+    	if wireguard_url:
+    		os.system('clear')
+    		print(f"""
+
+
+{wireguard_url}
+
+
+
+
+""")
+    	else:
+    		print("Failed to generate WireGuard URL.")
     elif what=='0':
+        gojo_goodbye_animation()
+        time.sleep(1)
+        console.print("""
+[bold magenta]Exiting... Goodbye![/bold magenta]""")
+        
+        
         exit()
