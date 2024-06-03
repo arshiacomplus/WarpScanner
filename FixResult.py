@@ -32,8 +32,8 @@ except Exception:
 try:
 	import rich
 except Exception:
-	os.systen('wget https://github.com/Textualize/rich/archive/refs/tags/v13.7.1.tar.gz -O rich-v13.7.1.tar.gz')
-	os.systen('tar -zxvf rich-v13.7.1.tar.gz')
+	os.system('wget https://github.com/Textualize/rich/archive/refs/tags/v13.7.1.tar.gz -O rich-v13.7.1.tar.gz')
+	os.system('tar -zxvf rich-v13.7.1.tar.gz')
 	os.system('cd rich-13.7.1')
 	os.system('python setup.py install')
 	
