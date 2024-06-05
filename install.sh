@@ -1,6 +1,6 @@
 #!/bin/bash
 
-termux-setup-storage
+termux-setup-storage -y
 
 update_packages() {
     echo "Updating packages..."
