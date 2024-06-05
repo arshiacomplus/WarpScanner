@@ -1,6 +1,6 @@
 #!/bin/bash
 
-termux-setup-storage -y
+
 
 
 install_python() {
