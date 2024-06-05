@@ -2,13 +2,10 @@
 
 termux-setup-storage -y
 
-update_packages() {
-    echo "Updating packages..."
-    pkg update -y || { echo "Failed to update packages. Exiting."; exit 1; }
-}
 
 install_python() {
     echo "Installing Python..."
+    pkg update -y || { echo "Failed to update packages. Exiting."; exit 1; }
     pkg install python -y || { echo "Failed to install Python. Exiting."; exit 1; }
     pkg install python-pip -y || { echo "Failed to install Python. Exiting."; exit 1; }
 }
@@ -29,7 +26,7 @@ install_curl() {
     pkg install curl || { echo "Failed to install curl. Exiting."; exit 1; }
 }
 
-update_packages
+
 
 if ! command -v python || ! command -v pip; then
     install_python
