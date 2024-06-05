@@ -1,23 +1,34 @@
 #!/bin/bash
 
-curl -fsSL -o FixResult.py https://raw.githubusercontent.com/arshiacomplus/Test/main/FixResult.py
-
-command -v python &>/dev/null || {
-    echo "wait for install python...."
-
+install_python() {
+    echo "Installing Python..."
     pkg update
     pkg install python-pip
     pkg install git python
 }
 
-command -v wget &>/dev/null || {
-    echo "wget is not installed. Installing..."
+install_wget() {
+    echo "Installing wget..."
     pkg install wget -y
 }
-command -v curl &>/dev/null || {
-    echo "curl is not installed. Installing..."
+
+install_curl() {
+    echo "Installing curl..."
     pkg install curl -y
 }
 
+if ! command -v python &>/dev/null; then
+    install_python
+fi
+
+if ! command -v wget &>/dev/null; then
+    install_wget
+fi
+
+if ! command -v curl &>/dev/null; then
+    install_curl
+fi
+
+curl -fsSL -o FixResult.py https://raw.githubusercontent.com/arshiacomplus/Test/main/FixResult.py
 
 python FixResult.py
