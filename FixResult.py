@@ -549,15 +549,7 @@ if __name__ == "__main__":
     elif what=="3":
         main2()
     elif what=='4':
-        true=True
-        while true==True:
-            try:
-                how_many=get_number_of_configs()
-                true=False
-            except ValueError:
-
-                true=True
-    
+        how_many=get_number_of_configs()
 
         for i in range(how_many):
             main3()
