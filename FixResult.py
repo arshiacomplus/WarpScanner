@@ -115,7 +115,24 @@ def check_ip():
     exit()
            
     
-def scan_ip_port(ip, port, results):
+
+def create_ip_range(start_ip, end_ip):
+    start = list(map(int, start_ip.split('.')))
+    end = list(map(int, end_ip.split('.')))
+    temp = start[:]
+    ip_range = []
+
+    while temp != end:
+        ip_range.append('.'.join(map(str, temp)))
+        temp[3] += 1
+        for i2 in (3, 2, 1):
+            if temp[i2] == 256:
+                temp[i2] = 0
+                temp[i2-1] += 1
+    ip_range.append(end_ip)
+    return ip_range
+    
+def scan_ip_port(ip, port, results, packet_loss):
     global best_result
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -127,59 +144,65 @@ def scan_ip_port(ip, port, results):
             if result == 0:
                 elapsed_time = (end_time - start_time) * 1000
                 results.append((ip, port, elapsed_time))
+                
+                if elapsed_time > 1000: 
+                    packet_loss[ip] = packet_loss.get(ip, 0) + 1
             else:
                 console.print(f"IP: {ip} Port: {port} is not responding or closed.", style="red")
+                packet_loss[ip] = packet_loss.get(ip, 0) + 1
     except Exception as e:
         console.print(f"Error scanning {ip}:{port} - {e}", style="red")
-
-def create_ip_range(start_ip, end_ip):
-    start = list(map(int, start_ip.split('.')))
-    end = list(map(int, end_ip.split('.')))
-    temp = start[:]
-    ip_range = []
-
-    while temp != end:
-        ip_range.append('.'.join(map(str, temp)))
-        temp[3] += 1
-        for i in (3, 2, 1):
-            if temp[i] == 256:
-                temp[i] = 0
-                temp[i-1] += 1
-    ip_range.append(end_ip)
-    return ip_range
+        packet_loss[ip] = packet_loss.get(ip, 0) + 1
 
 def main():
     console.clear()
-    console.print("please wait scanning ip ...", style="blue")
+    console.print("Please wait, scanning IP ...", style="blue")
 
     start_ips = ["188.114.96.0", "162.159.192.0", "162.159.195.0"]
-    end_ips = ["188.114.98.224", "162.159.193.224", "162.159.195.224"]
+    end_ips = ["188.114.99.224", "162.159.193.224", "162.159.195.224"]
     ports = [1074, 894, 908, 878]
     results = []
+    packet_loss = {}
 
     for start_ip, end_ip in zip(start_ips, end_ips):
         ip_range = create_ip_range(start_ip, end_ip)
-        with ThreadPoolExecutor(max_workers=200) as executor:
+        with ThreadPoolExecutor(max_workers=250) as executor:
             for ip in ip_range:
                 for port in ports:
-                    executor.submit(scan_ip_port, ip, port, results)
+                    executor.submit(scan_ip_port, ip, port, results, packet_loss)
 
-    sorted_results = sorted(results, key=lambda x: x[2])
     
+    for ip in packet_loss:
+        packet_loss[ip] = (packet_loss[ip] / len(ports)) * 100
+
+    extended_results = []
+    for result in results:
+    	ip, port, ping = result
+    	loss_rate = packet_loss.get(ip, 0)
+    	combined_score = ping + (loss_rate * 10)
+    	extended_results.append((ip, port, ping, loss_rate, combined_score))
+    	
+    sorted_results = sorted(extended_results, key=lambda x: x[4])
+
+
+
     console.clear()
     table = Table(show_header=True, header_style="bold blue")
-    table.add_column("IP", style="dim", width=20)
+    table.add_column("IP", style="dim", width=15)
     table.add_column("Port", justify="right")
     table.add_column("Ping (ms)", justify="right")
+    table.add_column("Packet Loss (%)", justify="right")
+    table.add_column("Score", justify="right")
 
-    for result in sorted_results[:10]:
-        table.add_row(result[0], str(result[1]), f"{result[2]:.2f}")
+    for ip, port, ping, loss_rate, combined_score in sorted_results[:10]:
+        table.add_row(ip, str(port), f"{ping:.2f}", f"{loss_rate:.2f}%", f"{combined_score:.2f}")
 
     console.print(table)
 
-    if sorted_results:
-        best_result = sorted_results[0]
-        console.print(f"The best  IP: {best_result[0]}:{best_result[1]} , ping: {best_result[2]:.2f} ms", style="green")
+    best_result = sorted_results[0] if sorted_results else None
+    if best_result:
+        ip, port, ping, loss_rate, combined_score = best_result
+        console.print(f"The best IP: {ip}:{port} , ping: {ping:.2f} ms, packet loss: {loss_rate:.2f}%, score: {combined_score:.2f}", style="green")
     else:
         console.print("Nothing was found", style="red")
 
@@ -542,7 +565,7 @@ if __name__ == "__main__":
     	api_url = 'https://api.zeroteam.top/warp?format=sing-box'
     	endpoint_ip_best_result=main()
     	endpoint_ip = str(endpoint_ip_best_result[0])+":"+str(endpoint_ip_best_result[1])
-    	rprint("n[bold green]Please wait, generating WireGuard URL...[/bold green]")
+    	rprint("[bold green]Please wait, generating WireGuard URL...[/bold green]")
     	try:
     		config = fetch_config_from_api(api_url)
     	except Exception as E:
