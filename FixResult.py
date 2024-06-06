@@ -222,9 +222,11 @@ def main():
         best_result[1]=878
     else:
         console.print("Nothing was found", style="red")
-    if do_you_save=='y':
-    	with open('result.txt' , "w") as f:
-    		f.write(save_result)
+    if what == '1':
+        if do_you_save=='y':
+    	    with open('result.txt' , "w") as f:
+    		    f.write(save_result)
+    	    print('saved in result.txt! ')
 
     return best_result
 
