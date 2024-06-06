@@ -131,7 +131,7 @@ def create_ip_range(start_ip, end_ip):
                 temp[i2-1] += 1
     ip_range.append(end_ip)
     return ip_range
-    
+
 def scan_ip_port(ip, port, results, packet_loss):
     global best_result
     try:
@@ -171,20 +171,27 @@ def main():
                 for port in ports:
                     executor.submit(scan_ip_port, ip, port, results, packet_loss)
 
-    
     for ip in packet_loss:
         packet_loss[ip] = (packet_loss[ip] / len(ports)) * 100
 
     extended_results = []
     for result in results:
-    	ip, port, ping = result
-    	loss_rate = packet_loss.get(ip, 0)
-    	combined_score = ping + (loss_rate * 10)
-    	extended_results.append((ip, port, ping, loss_rate, combined_score))
-    	
+        ip, port, ping = result
+        loss_rate = packet_loss.get(ip, 0)
+        combined_score = ping + (loss_rate * 10)
+        extended_results.append((ip, port, ping, loss_rate, combined_score))
+    
+    # Add IPs with high packet loss but no successful connections
+    for ip in packet_loss:
+        if ip not in [res[0] for res in extended_results]:
+            loss_rate = packet_loss[ip]
+            extended_results.append((ip, None, None, loss_rate, loss_rate * 10))
+
     sorted_results = sorted(extended_results, key=lambda x: x[4])
 
-
+    # Ensure to print at least a few IPs
+    while len(sorted_results) < 10:
+        sorted_results.append(("No IP", None, None, 100, 1000))
 
     console.clear()
     table = Table(show_header=True, header_style="bold blue")
@@ -195,19 +202,25 @@ def main():
     table.add_column("Score", justify="right")
 
     for ip, port, ping, loss_rate, combined_score in sorted_results[:10]:
-        table.add_row(ip, str(port), f"{ping:.2f}", f"{loss_rate:.2f}%", f"{combined_score:.2f}")
+        table.add_row(ip, str(port) if port else "878", f"{ping:.2f}" if ping else "None", f"{loss_rate:.2f}%", f"{combined_score:.2f}")
 
     console.print(table)
 
     best_result = sorted_results[0] if sorted_results else None
-    if best_result:
+    if best_result and best_result[0] != "No IP":
         ip, port, ping, loss_rate, combined_score = best_result
-        console.print(f"The best IP: {ip}:{port} , ping: {ping:.2f} ms, packet loss: {loss_rate:.2f}%, score: {combined_score:.2f}", style="green")
+        try:
+        	console.print(f"The best IP: {ip}:{port if port else 'N/A'} , ping: {ping:.2f} ms, packet loss: {loss_rate:.2f}%, score: {combined_score:.2f}", style="green")
+        except TypeError:
+        	console.print(f"The best IP: {ip}:{port if port else '878'} , ping: None, packet loss: {loss_rate:.2f}%, score: {combined_score:.2f}", style="green")
+        best_result=2*[1]
+        best_result[0]=f"{ip}"
+        best_result[1]=878
     else:
         console.print("Nothing was found", style="red")
 
     return best_result
-        
+
 
 def main2():
     global best_result
@@ -549,7 +562,15 @@ if __name__ == "__main__":
     elif what=="3":
         main2()
     elif what=='4':
-        how_many=get_number_of_configs()
+        true=True
+        while true==True:
+            try:
+                how_many=get_number_of_configs()
+                true=False
+            except ValueError:
+
+                true=True
+    
 
         for i in range(how_many):
             main3()
@@ -562,6 +583,7 @@ if __name__ == "__main__":
     		config = fetch_config_from_api(api_url)
     	except Exception as E:
     		print(' Try again Error =', E)
+		exit()
     	wireguard_url = generate_wireguard_url(config, endpoint_ip)
     	if wireguard_url:
     		os.system('clear')
