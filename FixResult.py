@@ -166,7 +166,7 @@ def main():
 
     for start_ip, end_ip in zip(start_ips, end_ips):
         ip_range = create_ip_range(start_ip, end_ip)
-        with ThreadPoolExecutor(max_workers=400) as executor:
+        with ThreadPoolExecutor(max_workers=500) as executor:
             for ip in ip_range:
                 for port in ports:
                     executor.submit(scan_ip_port, ip, port, results, packet_loss)
