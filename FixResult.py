@@ -48,6 +48,7 @@ wire_c=1
 wire_p=0
 send_msg_wait=0
 results = []
+save_result=''
 best_result=[]
 
 def urlencode(string):
@@ -134,6 +135,7 @@ def create_ip_range(start_ip, end_ip):
 
 def scan_ip_port(ip, port, results, packet_loss):
     global best_result
+    global save_result
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.settimeout(5)
@@ -144,6 +146,7 @@ def scan_ip_port(ip, port, results, packet_loss):
             if result == 0:
                 elapsed_time = (end_time - start_time) * 1000
                 results.append((ip, port, elapsed_time))
+                save_result+=(str(ip)+':'+str(port)+'\n')
                 
                 if elapsed_time > 1000: 
                     packet_loss[ip] = packet_loss.get(ip, 0) + 1
@@ -155,6 +158,7 @@ def scan_ip_port(ip, port, results, packet_loss):
         packet_loss[ip] = packet_loss.get(ip, 0) + 1
 
 def main():
+    
     console.clear()
     console.print("Please wait, scanning IP ...", style="blue")
 
@@ -218,6 +222,9 @@ def main():
         best_result[1]=878
     else:
         console.print("Nothing was found", style="red")
+    if do_you_save=='y':
+    	with open('result.txt' , "w") as f:
+    		f.write(save_result)
 
     return best_result
 
@@ -226,12 +233,19 @@ def main2():
     global best_result
     def main2_1():
         global best_result
-        all_key=free_cloudflare_account()
+        try:
+            all_key=free_cloudflare_account()
+        except Exception as E:
+        	print(' Try again Error =', E)
+        	exit()
         public_key=all_key[0]
         private_key=all_key[1]
         reserved=all_key[2]
-        
-        all_key2=free_cloudflare_account()
+        try:
+            all_key2=free_cloudflare_account()
+        except Exception as E:
+        	print(' Try again Error =', E)
+        	exit()
         public_key2=all_key2[0]
         private_key2=all_key2[1]
         reserved2=all_key2[2]
@@ -387,12 +401,19 @@ def main3():
          	print('\033[0m')
          	exit()
     print(f"please wait make wireguard : {wire_c}. ")
-    all_key=free_cloudflare_account()
+    try:
+        all_key=free_cloudflare_account()
+    except Exception as E:
+    		print(' Try again Error =', E)
+    		exit()
     public_key=all_key[0]
     private_key=all_key[1]
     reserved=all_key[2]
-    
-    all_key2=free_cloudflare_account()
+    try:
+        all_key2=free_cloudflare_account()
+    except Exception as E:
+    		print(' Try again Error =', E)
+    		exit()
     public_key2=all_key2[0]
     private_key2=all_key2[1]
     reserved2=all_key2[2]
@@ -549,28 +570,27 @@ def gojo_goodbye_animation():
     for frame in frames:
       #  os.system('cls' if os.name == 'nt' else 'clear')
         print(frame)
-        time.sleep(1) 
+        time.sleep(1)
 if __name__ == "__main__":
     os.system('clear')
     
     what=start_menu()
 
     if what =='1':
+        
+        do_you_save=input('\nDo you want to save in a result txt? (y/n)')
+        while do_you_save!= 'y' and do_you_save!= 'n':
+        	console.print("[bold red]Please enter (y/n)![/bold red]", style="red")
+        	
+        	do_you_save=input('\nDo you want to save in a result txt? (y/n)')
+        	
         main()
     elif what=='2':
         main2()
     elif what=="3":
         main2()
     elif what=='4':
-        true=True
-        while true==True:
-            try:
-                how_many=get_number_of_configs()
-                true=False
-            except ValueError:
-
-                true=True
-    
+        how_many=get_number_of_configs()  
 
         for i in range(how_many):
             main3()
