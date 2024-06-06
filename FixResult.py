@@ -48,7 +48,7 @@ wire_c=1
 wire_p=0
 send_msg_wait=0
 results = []
-save_result=''
+save_result=[]
 best_result=[]
 
 def urlencode(string):
@@ -146,7 +146,10 @@ def scan_ip_port(ip, port, results, packet_loss):
             if result == 0:
                 elapsed_time = (end_time - start_time) * 1000
                 results.append((ip, port, elapsed_time))
-                save_result+=(str(ip)+':'+str(port)+'\n')
+                try:
+                	save_result.index(str(ip)+',')
+                except Exception:
+                    save_result.append(str(ip)+',')
                 
                 if elapsed_time > 1000: 
                     packet_loss[ip] = packet_loss.get(ip, 0) + 1
@@ -225,7 +228,8 @@ def main():
     if what == '1':
         if do_you_save=='y':
     	    with open('result.txt' , "w") as f:
-    		    f.write(save_result)
+    	         for j in save_result:
+    	         	f.write(j)
     	    print('saved in result.txt! ')
 
     return best_result
