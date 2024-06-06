@@ -583,7 +583,7 @@ if __name__ == "__main__":
     		config = fetch_config_from_api(api_url)
     	except Exception as E:
     		print(' Try again Error =', E)
-		exit()
+    		exit()
     	wireguard_url = generate_wireguard_url(config, endpoint_ip)
     	if wireguard_url:
     		os.system('clear')
