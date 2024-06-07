@@ -29,14 +29,6 @@ try:
 	import rich
 except Exception:
 	os.system('pip install rich')
-try:
-	import rich
-except Exception:
-	os.system('wget https://github.com/Textualize/rich/archive/refs/tags/v13.7.1.tar.gz -O rich-v13.7.1.tar.gz')
-	os.system('tar -zxvf rich-v13.7.1.tar.gz')
-	os.system('cd rich-13.7.1')
-	os.system('python setup.py install')
-	
 from rich.console import Console
 from rich.prompt import Prompt
 from rich import print as rprint
