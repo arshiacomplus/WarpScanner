@@ -12,18 +12,18 @@ install_python() {
 
 install_git() {
     echo "Installing Git..."
-    pkg install git || { echo "Failed to install Git. Exiting."; exit 1; }
+    pkg install git -y || { echo "Failed to install Git. Exiting."; exit 1; }
     pkg install python git -y || { echo "Failed to install Git Python. Exiting."; exit 1; }
 }
 
 install_wget() {
     echo "Installing wget..."
-    pkg install wget || { echo "Failed to install wget. Exiting."; exit 1; }
+    pkg install wget -y || { echo "Failed to install wget. Exiting."; exit 1; }
 }
 
 install_curl() {
     echo "Installing curl..."
-    pkg install curl || { echo "Failed to install curl. Exiting."; exit 1; }
+    pkg install curl -y || { echo "Failed to install curl. Exiting."; exit 1; }
 }
 
 
