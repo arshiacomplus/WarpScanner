@@ -577,11 +577,11 @@ if __name__ == "__main__":
 
     if what =='1':
         
-        do_you_save=input('\nDo you want to save in a result txt? (y/n)')
+        do_you_save=input('\nDo you want to save in a result txt? (y/n) : ')
         while do_you_save!= 'y' and do_you_save!= 'n':
         	console.print("[bold red]Please enter (y/n)![/bold red]", style="red")
         	
-        	do_you_save=input('\nDo you want to save in a result txt? (y/n)')
+        	do_you_save=input('\nDo you want to save in a result txt? (y/n) : ')
         	
         main()
     elif what=='2':
