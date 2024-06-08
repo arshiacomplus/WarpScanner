@@ -33,6 +33,14 @@ from rich.console import Console
 from rich.prompt import Prompt
 from rich import print as rprint
 from rich.table import Table
+try:
+	import retrying
+except Exception:
+	os.system('pip install retrying')
+	import retrying
+
+from retrying import retry
+from requests.exceptions import ConnectionError
 
 console = Console()
 wire_config_temp=''
@@ -60,25 +68,33 @@ def fetch_config_from_api(api_url):
 
 
 def free_cloudflare_account():
-        response = requests.get("https://api.zeroteam.top/warp?format=sing-box")
-        output = response.text
+    @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
+    def get_data():
+       response = requests.get("https://api.zeroteam.top/warp?format=sing-box", timeout=30)
+       return response.text
+    try:
+        	
+        	output = get_data()
+        
+    except ConnectionError:
+        	console.print("[bold red]Failed to connect to API after 3 attempts.[/bold red]")
 
        
-        public_key_pattern = r'"2606:4700:[0-9a-f:]+/128"'
-        private_key_pattern = r'"private_key":"[0-9a-zA-Z/+]+="'
-        reserved_pattern = r'"reserved":[[0-9]+(,[0-9]+){2}]'
+    public_key_pattern = r'"2606:4700:[0-9a-f:]+/128"'
+    private_key_pattern = r'"private_key":"[0-9a-zA-Z/+]+="'
+    reserved_pattern = r'"reserved":[[0-9]+(,[0-9]+){2}]'
 
-        public_key_search = re.search(public_key_pattern, output)
-        private_key_search = re.search(private_key_pattern, output)
-        reserved_search = re.search(reserved_pattern, output)
+    public_key_search = re.search(public_key_pattern, output)
+    private_key_search = re.search(private_key_pattern, output)
+    reserved_search = re.search(reserved_pattern, output)
 
       
-        public_key = public_key_search.group(0).replace('"', '') if public_key_search else None
-        private_key = private_key_search.group(0).split(':')[1].replace('"', '') if private_key_search else None
-        reserved = reserved_search.group(0).replace('"reserved":', '').replace('"', '') if reserved_search else None
+    public_key = public_key_search.group(0).replace('"', '') if public_key_search else None
+    private_key = private_key_search.group(0).split(':')[1].replace('"', '') if private_key_search else None
+    reserved = reserved_search.group(0).replace('"reserved":', '').replace('"', '') if reserved_search else None
 
-        all_key=[public_key , private_key , reserved]
-        return all_key
+    all_key=[public_key , private_key , reserved]
+    return all_key
 def upload_to_bashupload(config_data):
     try:
         files = {'file': ('output.json', config_data)}
