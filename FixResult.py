@@ -138,11 +138,11 @@ def scan_ip_port(ip, port, results, packet_loss):
             if result == 0:
                 elapsed_time = (end_time - start_time) * 1000
                 results.append((ip, port, elapsed_time))
-                if do_you_save =='y':
-                    try:
-                	    save_result.index(str(ip)+',')
-                    except Exception:
+                try:
+                    save_result.index(str(ip)+',')
+                except Exception:
                         save_result.append(str(ip)+',')
+
                 
                 if elapsed_time > 1000: 
                     packet_loss[ip] = packet_loss.get(ip, 0) + 1
