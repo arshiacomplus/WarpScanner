@@ -28,6 +28,7 @@ import time
 try:
 	import rich
 except Exception:
+	print("Rich module not installed. Installing now...")
 	os.system('pip install rich')
 from rich.console import Console
 from rich.prompt import Prompt
@@ -36,9 +37,15 @@ from rich.table import Table
 try:
 	import retrying
 except Exception:
+	print("retrying module not installed. Installing now...")
 	os.system('pip install retrying')
+try:
 	import retrying
-
+except Exception:
+	os.system("wget https://github.com/rholder/retrying/archive/refs/tags/v1.3.3.tar.gz")
+	os.system("tar -zxvf v1.3.3.tar.gz")
+	os.chdir("retrying-1.3.3")
+	os.system("python setup.py install")
 from retrying import retry
 from requests.exceptions import ConnectionError
 
