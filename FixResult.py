@@ -220,6 +220,7 @@ def main_v6():
             return ip, open_ports, ping_time
         return ip, [], float('inf')
 
+    console = Console()
     ports_to_check = [1074]
     best_ping = float("inf")
     best_ip = ""
@@ -229,7 +230,7 @@ def main_v6():
     table.add_column("Open Ports", justify="center", style="magenta")
     table.add_column("Ping Time (ms)", justify="center", style="green")
 
-    with ThreadPoolExecutor(max_workers=1000) as executor:
+    with ThreadPoolExecutor(max_workers=10) as executor:
         futures = [executor.submit(scan_ip, generate_ipv6(), ports_to_check) for _ in range(100)]
         for future in as_completed(futures):
             ip, open_ports, ping_time = future.result()
@@ -242,14 +243,14 @@ def main_v6():
                 table.add_row(ip, "No open ports found", "-")
 
     console.print(table)
-    #port_random=ports_to_check[random.randint(0,1)]
-    port_random=ports_to_check[0]
+    port_random = ports_to_check[random.randint(0, len(ports_to_check) - 1)]
     if best_ip:
         console.print(f"\n[bold green]Best IP : [{best_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
-    best_ip_mix=[1]*2
-    best_ip_mix[0]="["+best_ip+"]"
-    best_ip_mix[1]=port_random
+    best_ip_mix = [1] * 2
+    best_ip_mix[0] = "[" + best_ip + "]"
+    best_ip_mix[1] = port_random
     return best_ip_mix
+
 def main():
     if what!='2' and what!='3' and what!='4':
         which_v=input('\nChoose an ip version [ipv4 == 1 , ipv6 == 2] : ')
