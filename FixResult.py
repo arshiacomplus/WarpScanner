@@ -242,7 +242,8 @@ def main_v6():
                 table.add_row(ip, "No open ports found", "-")
 
     console.print(table)
-    port_random=ports_to_check[random.randint(0,1)]
+    #port_random=ports_to_check[random.randint(0,1)]
+    port_random=ports_to_check[0]
     if best_ip:
         console.print(f"\n[bold green]Best IP : [{best_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
     best_ip_mix=[1]*2
