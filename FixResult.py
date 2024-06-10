@@ -182,7 +182,7 @@ def main_v6():
     def generate_ipv6():
         return f"2606:4700:d{random.randint(0, 1)}::{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}"
 
-    def is_port_open(ip, port, retries=3, timeout=2):
+    def is_port_open(ip, port, retries=3, timeout=5):
         for _ in range(retries):
             try:
                 sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
@@ -221,7 +221,7 @@ def main_v6():
         return ip, [], float('inf')
 
     console = Console()
-    ports_to_check = [1074]
+    ports_to_check = [1074 , 864]
     best_ping = float("inf")
     best_ip = ""
 
@@ -230,7 +230,7 @@ def main_v6():
     table.add_column("Open Ports", justify="center", style="magenta")
     table.add_column("Ping Time (ms)", justify="center", style="green")
 
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=1000) as executor:
         futures = [executor.submit(scan_ip, generate_ipv6(), ports_to_check) for _ in range(100)]
         for future in as_completed(futures):
             ip, open_ports, ping_time = future.result()
