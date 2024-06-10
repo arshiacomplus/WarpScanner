@@ -23,31 +23,34 @@ except ModuleNotFoundError:
     import requests
 import re
 import socket
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 try:
-	import rich
+    import rich
 except Exception:
-	print("Rich module not installed. Installing now...")
-	os.system('pip install rich')
+    print("Rich module not installed. Installing now...")
+    os.system('pip install rich')
 from rich.console import Console
 from rich.prompt import Prompt
 from rich import print as rprint
 from rich.table import Table
 try:
-	import retrying
+    import retrying
 except Exception:
-	print("retrying module not installed. Installing now...")
-	os.system('pip install retrying')
+    print("retrying module not installed. Installing now...")
+    os.system('pip install retrying')
 try:
-	import retrying
+    import retrying
 except Exception:
-	os.system("wget https://github.com/rholder/retrying/archive/refs/tags/v1.3.3.tar.gz")
-	os.system("tar -zxvf v1.3.3.tar.gz")
-	os.chdir("retrying-1.3.3")
-	os.system("python setup.py install")
+    os.system("wget https://github.com/rholder/retrying/archive/refs/tags/v1.3.3.tar.gz")
+    os.system("tar -zxvf v1.3.3.tar.gz")
+    os.chdir("retrying-1.3.3")
+    os.system("python setup.py install")
 from retrying import retry
 from requests.exceptions import ConnectionError
+
+import random
+import subprocess
 
 console = Console()
 wire_config_temp=''
@@ -80,11 +83,11 @@ def free_cloudflare_account():
        response = requests.get("https://api.zeroteam.top/warp?format=sing-box", timeout=30)
        return response.text
     try:
-        	
-        	output = get_data()
+            
+            output = get_data()
         
     except ConnectionError:
-        	console.print("[bold red]Failed to connect to API after 3 attempts.[/bold red]")
+            console.print("[bold red]Failed to connect to API after 3 attempts.[/bold red]")
 
        
     public_key_pattern = r'"2606:4700:[0-9a-f:]+/128"'
@@ -175,9 +178,90 @@ def scan_ip_port(ip, port, results, packet_loss):
     except Exception as e:
         console.print(f"Error scanning {ip}:{port} - {e}", style="red")
         packet_loss[ip] = packet_loss.get(ip, 0) + 1
+def main_v6():
+    def generate_ipv6():
+        return f"2606:4700:d{random.randint(0, 1)}::{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}"
 
+    def is_port_open(ip, port, retries=3, timeout=2):
+        for _ in range(retries):
+            try:
+                sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
+                sock.settimeout(timeout)
+                result = sock.connect_ex((ip, port))
+                sock.close()
+                if result == 0:
+                    return True
+            except Exception as e:
+                console.print(f"[red]Error connecting to {ip} on port {port}: {e}[/red]")
+        return False
+
+    def check_ports(ip, ports):
+        open_ports = []
+        for port in ports:
+            if is_port_open(ip, port):
+                open_ports.append(port)
+        return open_ports
+
+    def ping_ip(ip):
+        try:
+            output = subprocess.check_output(["ping6", "-c", "4", ip], text=True)
+            for line in output.splitlines():
+                if "min/avg/max" in line:
+                    parts = line.split()
+                    avg_ping_time = parts[3].split('/')[1]
+                    return float(avg_ping_time)
+        except subprocess.CalledProcessError:
+            return float('inf')
+
+    def scan_ip(ip, ports_to_check):
+        open_ports = check_ports(ip, ports_to_check)
+        if open_ports:
+            ping_time = ping_ip(ip)
+            return ip, open_ports, ping_time
+        return ip, [], float('inf')
+
+    ports_to_check = [1074]
+    best_ping = float("inf")
+    best_ip = ""
+
+    table = Table(title="IP Scan Results")
+    table.add_column("IP Address", justify="center", style="cyan", no_wrap=True)
+    table.add_column("Open Ports", justify="center", style="magenta")
+    table.add_column("Ping Time (ms)", justify="center", style="green")
+
+    with ThreadPoolExecutor(max_workers=1000) as executor:
+        futures = [executor.submit(scan_ip, generate_ipv6(), ports_to_check) for _ in range(100)]
+        for future in as_completed(futures):
+            ip, open_ports, ping_time = future.result()
+            if open_ports:
+                table.add_row(ip, str(open_ports), f"{ping_time:.2f}")
+                if ping_time < best_ping:
+                    best_ping = ping_time
+                    best_ip = ip
+            else:
+                table.add_row(ip, "No open ports found", "-")
+
+    console.print(table)
+    port_random=ports_to_check[random.randint(0,1)]
+    if best_ip:
+        console.print(f"\n[bold green]Best IP : [{best_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
+    best_ip_mix=[1]*2
+    best_ip_mix[0]="["+best_ip+"]"
+    best_ip_mix[1]=port_random
+    return best_ip_mix
 def main():
-    
+    if what!='2' and what!='3' and what!='4':
+        which_v=input('\nChoose an ip version [ipv4 == 1 , ipv6 == 2] : ')
+        while which_v!= '1' and which_v!= '2':
+            console.print("[bold red]Please enter (1/2)![/bold red]", style="red")
+            
+            which_v=input('\nChoose an ip version [ipv4 == 1 , ipv6 == 2] : ')
+        if which_v=="2":
+            console.clear()
+            console.print('[bold red]scaning ipv6 ..........[/bold red]')
+            best_result=main_v6()
+            return best_result
+
     console.clear()
     console.print("Please wait, scanning IP ...", style="blue")
 
@@ -204,7 +288,7 @@ def main():
         combined_score = ping + (loss_rate * 10)
         extended_results.append((ip, port, ping, loss_rate, combined_score))
     
-    # Add IPs with high packet loss but no successful connections
+  
     for ip in packet_loss:
         if ip not in [res[0] for res in extended_results]:
             loss_rate = packet_loss[ip]
@@ -212,12 +296,12 @@ def main():
 
     sorted_results = sorted(extended_results, key=lambda x: x[4])
 
-    # Ensure to print at least a few IPs
+   
     while len(sorted_results) < 10:
         sorted_results.append(("No IP", None, None, 100, 1000))
 
     console.clear()
-    table = Table(show_header=True, header_style="bold blue")
+    table = Table(show_header=True,title="IP Scan Results", header_style="bold blue")
     table.add_column("IP", style="dim", width=15)
     table.add_column("Port", justify="right")
     table.add_column("Ping (ms)", justify="right")
@@ -233,9 +317,9 @@ def main():
     if best_result and best_result[0] != "No IP":
         ip, port, ping, loss_rate, combined_score = best_result
         try:
-        	console.print(f"The best IP: {ip}:{port if port else 'N/A'} , ping: {ping:.2f} ms, packet loss: {loss_rate:.2f}%, score: {combined_score:.2f}", style="green")
+            console.print(f"The best IP: {ip}:{port if port else 'N/A'} , ping: {ping:.2f} ms, packet loss: {loss_rate:.2f}%, score: {combined_score:.2f}", style="green")
         except TypeError:
-        	console.print(f"The best IP: {ip}:{port if port else '878'} , ping: None, packet loss: {loss_rate:.2f}%, score: {combined_score:.2f}", style="green")
+            console.print(f"The best IP: {ip}:{port if port else '878'} , ping: None, packet loss: {loss_rate:.2f}%, score: {combined_score:.2f}", style="green")
         best_result=2*[1]
         best_result[0]=f"{ip}"
         best_result[1]=878
@@ -243,10 +327,10 @@ def main():
         console.print("Nothing was found", style="red")
     if what == '1':
         if do_you_save=='y':
-    	    with open('result.txt' , "w") as f:
-    	         for j in save_result:
-    	         	f.write(j)
-    	    print('saved in result.txt! ')
+            with open('result.txt' , "w") as f:
+                 for j in save_result:
+                     f.write(j)
+            print('saved in result.txt! ')
 
     return best_result
 
@@ -258,16 +342,16 @@ def main2():
         try:
             all_key=free_cloudflare_account()
         except Exception as E:
-        	print(' Try again Error =', E)
-        	exit()
+            print(' Try again Error =', E)
+            exit()
         public_key=all_key[0]
         private_key=all_key[1]
         reserved=all_key[2]
         try:
             all_key2=free_cloudflare_account()
         except Exception as E:
-        	print(' Try again Error =', E)
-        	exit()
+            print(' Try again Error =', E)
+            exit()
         public_key2=all_key2[0]
         private_key2=all_key2[1]
         reserved2=all_key2[2]
@@ -396,14 +480,8 @@ def main2():
     if what=="3":
         main2_1()
 
-    try:
-    	best_result=main()
-    except Exception:
-    	print("\033[91m")
-    	print('Try again and choose wire guard without ip')
-    	print('\033[0m')
-    	exit()
-    print(f"please wait make wireguard. ")
+
+    best_result=main()
     
     main2_1()
 
@@ -416,26 +494,26 @@ def main3():
     if wire_p==0:
 
          try:
-         	best_result=main()
+             best_result=main()
          except Exception:
-         	print("\033[91m")
-         	print('Try again and choose wire guard without ip')
-         	print('\033[0m')
-         	exit()
+             print("\033[91m")
+             print('Try again and choose wire guard without ip')
+             print('\033[0m')
+             exit()
     print(f"please wait make wireguard : {wire_c}. ")
     try:
         all_key=free_cloudflare_account()
     except Exception as E:
-    		print(' Try again Error =', E)
-    		exit()
+            print(' Try again Error =', E)
+            exit()
     public_key=all_key[0]
     private_key=all_key[1]
     reserved=all_key[2]
     try:
         all_key2=free_cloudflare_account()
     except Exception as E:
-    		print(' Try again Error =', E)
-    		exit()
+            print(' Try again Error =', E)
+            exit()
     public_key2=all_key2[0]
     private_key2=all_key2[1]
     reserved2=all_key2[2]
@@ -598,14 +676,16 @@ if __name__ == "__main__":
     
     what=start_menu()
 
+
     if what =='1':
         
-        do_you_save=input('\nDo you want to save in a result txt? (y/n) : ')
-        while do_you_save!= 'y' and do_you_save!= 'n':
-        	console.print("[bold red]Please enter (y/n)![/bold red]", style="red")
-        	
-        	do_you_save=input('\nDo you want to save in a result txt? (y/n) : ')
-        	
+       # do_you_save=input('\nDo you want to save in a result txt? (y/n) : ')
+       # while do_you_save!= 'y' and do_you_save!= 'n':
+         #   console.print("[bold red]Please enter (y/n)![/bold red]", style="red")
+            
+           # do_you_save=input('\nDo you want to save in a result txt? (y/n) : ')
+        do_you_save='n'
+            
         main()
     elif what=='2':
         main2()
@@ -617,19 +697,19 @@ if __name__ == "__main__":
         for i in range(how_many):
             main3()
     elif what =='5':
-    	api_url = 'https://api.zeroteam.top/warp?format=sing-box'
-    	endpoint_ip_best_result=main()
-    	endpoint_ip = str(endpoint_ip_best_result[0])+":"+str(endpoint_ip_best_result[1])
-    	rprint("[bold green]Please wait, generating WireGuard URL...[/bold green]")
-    	try:
-    		config = fetch_config_from_api(api_url)
-    	except Exception as E:
-    		print(' Try again Error =', E)
-    		exit()
-    	wireguard_url = generate_wireguard_url(config, endpoint_ip)
-    	if wireguard_url:
-    		os.system('clear')
-    		print(f"""
+        api_url = 'https://api.zeroteam.top/warp?format=sing-box'
+        endpoint_ip_best_result=main()
+        endpoint_ip = str(endpoint_ip_best_result[0])+":"+str(endpoint_ip_best_result[1])
+        rprint("[bold green]Please wait, generating WireGuard URL...[/bold green]")
+        try:
+            config = fetch_config_from_api(api_url)
+        except Exception as E:
+            print(' Try again Error =', E)
+            exit()
+        wireguard_url = generate_wireguard_url(config, endpoint_ip)
+        if wireguard_url:
+            os.system('clear')
+            print(f"""
 
 
 {wireguard_url}
@@ -638,8 +718,8 @@ if __name__ == "__main__":
 
 
 """)
-    	else:
-    		print("Failed to generate WireGuard URL.")
+        else:
+            print("Failed to generate WireGuard URL.")
     elif what=='0':
         gojo_goodbye_animation()
         time.sleep(1)
