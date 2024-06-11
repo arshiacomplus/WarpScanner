@@ -61,6 +61,8 @@ results = []
 save_result=[]
 best_result=[]
 
+
+    
 def urlencode(string):
     
     if string is None:
@@ -119,19 +121,7 @@ def upload_to_bashupload(config_data):
     except Exception as e:
         console.print(f"[red]An error occurred: {e}[/red]", style="bold red")
   
-def check_ip():
-    
-    response = requests.get('http://ip-api.com/json/')
-    if response.status_code == 200:
-        ip_info = response.json()
-        country = ip_info.get('countryCode')
-        if country != 'IR':
-            print('Discconect your VPN and try again .')
-            exit()
-        else:
-            exit()
-    print('Something has happend Try again')
-    exit()
+
            
     
 
@@ -182,17 +172,20 @@ def main_v6():
     def generate_ipv6():
         return f"2606:4700:d{random.randint(0, 1)}::{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}"
 
-    def is_port_open(ip, port, retries=3, timeout=5):
+    def is_port_open(ip, port, retries=5, timeout=5, delay=1):
         for _ in range(retries):
             try:
-                sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
+                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 sock.settimeout(timeout)
                 result = sock.connect_ex((ip, port))
                 sock.close()
                 if result == 0:
                     return True
             except Exception as e:
-                console.print(f"[red]Error connecting to {ip} on port {port}: {e}[/red]")
+               print(f"Error connecting to {ip} on port {port}: {e}")
+            finally:
+                sock.close()
+            time.sleep(delay)
         return False
 
     def check_ports(ip, ports):
@@ -224,7 +217,8 @@ def main_v6():
     ports_to_check = [1074 , 864]
     best_ping = float("inf")
     best_ip = ""
-
+    random_ip=""
+    
     table = Table(title="IP Scan Results")
     table.add_column("IP Address", justify="center", style="cyan", no_wrap=True)
     table.add_column("Open Ports", justify="center", style="magenta")
@@ -241,11 +235,14 @@ def main_v6():
                     best_ip = ip
             else:
                 table.add_row(ip, "No open ports found", "-")
+                random_ip=ip
 
     console.print(table)
     port_random = ports_to_check[random.randint(0, len(ports_to_check) - 1)]
     if best_ip:
         console.print(f"\n[bold green]Best IP : [{best_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
+    else:
+    	console.print(f"\n[bold green]Best IP : [{random_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
     best_ip_mix = [1] * 2
     best_ip_mix[0] = "[" + best_ip + "]"
     best_ip_mix[1] = port_random
