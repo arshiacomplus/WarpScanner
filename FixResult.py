@@ -175,7 +175,7 @@ def main_v6():
     def is_port_open(ip, port, retries=5, timeout=5, delay=1):
         for _ in range(retries):
             try:
-                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
                 sock.settimeout(timeout)
                 result = sock.connect_ex((ip, port))
                 sock.close()
