@@ -241,12 +241,16 @@ def main_v6():
     port_random = ports_to_check[random.randint(0, len(ports_to_check) - 1)]
     if best_ip:
         console.print(f"\n[bold green]Best IP : [{best_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
+        best_ip_mix = [1] * 2
+        best_ip_mix[0] = "[" + best_ip + "]"
+        best_ip_mix[1] = port_random
+        return best_ip_mix
     else:
     	console.print(f"\n[bold green]Best IP : [{random_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
-    best_ip_mix = [1] * 2
-    best_ip_mix[0] = "[" + best_ip + "]"
-    best_ip_mix[1] = port_random
-    return best_ip_mix
+    	best_ip_mix = [1] * 2
+    	best_ip_mix[0] = "[" + random_ip + "]"
+    	best_ip_mix[1] = port_random
+    	return best_ip_mix
 
 def main():
     if what!='2' and what!='3' and what!='4':
