@@ -144,30 +144,46 @@ def create_ip_range(start_ip, end_ip):
 def scan_ip_port(ip, port, results, packet_loss):
     global best_result
     global save_result
+
+    start_time = time.time() 
     try:
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.settimeout(5)
-            start_time = time.time()
-            result = s.connect_ex((ip, port))
-            end_time = time.time()
+      
+        ping_command = ["ping", "-c", "1", "-w", "5", ip]
 
-            if result == 0:
-                elapsed_time = (end_time - start_time) * 1000
-                results.append((ip, port, elapsed_time))
-                try:
-                    save_result.index(str(ip)+',')
-                except Exception:
-                        save_result.append(str(ip)+',')
+        
+        process = subprocess.Popen(ping_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-                
-                if elapsed_time > 1000: 
-                    packet_loss[ip] = packet_loss.get(ip, 0) + 1
-            else:
-                console.print(f"IP: {ip} Port: {port} is not responding or closed.", style="red")
-                packet_loss[ip] = packet_loss.get(ip, 0) + 1
+     
+        while process.poll() is None:
+            if time.time() - start_time > 5:
+                process.terminate()  
+                break
+            time.sleep(0.1)  
+        output, error = process.communicate()
+
+        if process.returncode == 0:
+            
+            ping_time = int(output.decode().split('time=')[1].split(' ')[0])
+            results.append((ip, port, ping_time))
+
+            try:
+                save_result.index(str(ip)+',')
+            except Exception:
+                save_result.append(str(ip)+',')
+        else:
+          
+            console.print(f"IP: {ip} Port: {port} is not responding or closed.", style="red")
+            packet_loss[ip] = packet_loss.get(ip, 0) + 1
+
+    
+        if error:
+            console.print(f"Error pinging {ip}:{port} - {error.decode()}", style="red")
+            packet_loss[ip] = packet_loss.get(ip, 0) + 1
+
     except Exception as e:
         console.print(f"Error scanning {ip}:{port} - {e}", style="red")
         packet_loss[ip] = packet_loss.get(ip, 0) + 1
+        
 def main_v6():
     def generate_ipv6():
         return f"2606:4700:d{random.randint(0, 1)}::{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}"
@@ -276,7 +292,7 @@ def main():
 
     for start_ip, end_ip in zip(start_ips, end_ips):
         ip_range = create_ip_range(start_ip, end_ip)
-        with ThreadPoolExecutor(max_workers=500) as executor:
+        with ThreadPoolExecutor(max_workers=1500) as executor:
             for ip in ip_range:
                 for port in ports:
                     executor.submit(scan_ip_port, ip, port, results, packet_loss)
