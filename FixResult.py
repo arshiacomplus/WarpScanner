@@ -167,9 +167,9 @@ def scan_ip_port(ip, port, results, packet_loss):
             results.append((ip, port, ping_time))
 
             try:
-                save_result.index(str(ip)+',')
+                save_result.index(str(ip)+'\n')
             except Exception:
-                save_result.append(str(ip)+',')
+                save_result.append(str(ip)+'\n')
         else:
           
             console.print(f"IP: {ip} Port: {port} is not responding or closed.", style="red")
@@ -346,10 +346,20 @@ def main():
         console.print("Nothing was found", style="red")
     if what == '1':
         if do_you_save=='y':
-            with open('result.txt' , "w") as f:
-                 for j in save_result:
-                     f.write(j)
-            print('saved in result.txt! ')
+            if which =="1":
+                 with open('/storage/emulated/0/result.csv' , "w") as f:
+                      for j in save_result:
+                          if j != "\n":
+                              f.write(j)
+                          else:
+                          	f.write(",")
+            else:
+                 with open('/storage/emulated/0/result.csv' , "w") as f:
+                      for j in save_result:
+                          f.write(j)
+                       
+            print(' saved in /storage/emulated/0/result.csv !')
+            
 
     return best_result
 
@@ -698,12 +708,19 @@ if __name__ == "__main__":
 
     if what =='1':
         
-       # do_you_save=input('\nDo you want to save in a result txt? (y/n) : ')
-       # while do_you_save!= 'y' and do_you_save!= 'n':
-         #   console.print("[bold red]Please enter (y/n)![/bold red]", style="red")
+        do_you_save=input('\nDo you want to save in a result csv? (y/n) : ')
+        while do_you_save!= 'y' and do_you_save!= 'n':
+            console.print("[bold red]Please enter (y/n)![/bold red]", style="red")
             
-           # do_you_save=input('\nDo you want to save in a result txt? (y/n) : ')
-        do_you_save='n'
+            do_you_save=input('\nDo you want to save in a result csv? (y/n) : ')
+        which = 'n'
+        if do_you_save=='y':
+        	os.system('termux-setup-storage')
+        	which = input('\nDo you want for bpb panel(with comma) or vahid panel(with enter) in a result csv? (with comma = 1/ with enter = 2) : ')
+        	while which != '1' and which != '2':
+        		console.print("[bold red]Please enter (1/2)![/bold red]", style="red")
+        		which = input('\nDo you want for bpb panel(with comma) or vahid panel(with enter) in a result csv? (1/2) : ')
+       
             
         main()
     elif what=='2':
