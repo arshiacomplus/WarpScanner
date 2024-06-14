@@ -167,9 +167,10 @@ def scan_ip_port(ip, port, results, packet_loss):
             results.append((ip, port, ping_time))
 
             try:
-                save_result.index(str(ip)+'\n')
+                save_result.index(str(ip))
             except Exception:
-                save_result.append(str(ip)+'\n')
+                save_result.append("\n")
+                save_result.append(str(ip))
         else:
           
             console.print(f"IP: {ip} Port: {port} is not responding or closed.", style="red")
@@ -348,11 +349,12 @@ def main():
         if do_you_save=='y':
             if which =="1":
                  with open('/storage/emulated/0/result.csv' , "w") as f:
-                      for j in save_result:
+                      for j in save_result[1:]:
                           if j != "\n":
                               f.write(j)
                           else:
-                          	f.write(",")
+                         # 	if j != save_result[len(save_result)-1]:
+                          	    f.write(",")
             else:
                  with open('/storage/emulated/0/result.csv' , "w") as f:
                       for j in save_result:
