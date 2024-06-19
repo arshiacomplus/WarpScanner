@@ -392,7 +392,7 @@ def main2():
         temp_c=0
         if what =='3':
             print("\033[0m")
-            enter_ip=input('Enter ip with port(defulte =Enter( N )) : ')
+            enter_ip=input('Enter ip with port(Default =Enter( N )) : ')
             if enter_ip=='N' or  enter_ip=='n':
                 best_result=["162.159.195.166" , 908]
             else:
