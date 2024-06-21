@@ -345,6 +345,7 @@ def main():
         best_result[1]=878
     else:
         console.print("Nothing was found", style="red")
+    t=False
     if what == '1':
         if do_you_save=='y':
             if which =="1":
@@ -352,9 +353,13 @@ def main():
                       for j in save_result[1:]:
                           if j != "\n":
                               f.write(j)
+                              t=False
                           else:
                          # 	if j != save_result[len(save_result)-1]:
-                          	    f.write(",")
+                          	    if t==False:
+                          	    	 f.write(",")
+                          	    t=True
+                          	   
             else:
                  with open('/storage/emulated/0/result.csv' , "w") as f:
                       for j in save_result:
