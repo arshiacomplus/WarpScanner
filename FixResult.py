@@ -163,7 +163,7 @@ def scan_ip_port(ip, port, results, packet_loss):
 
         if process.returncode == 0:
             
-            ping_time = int(output.decode().split('time=')[1].split(' ')[0])
+            ping_time = float(output.decode().split('time=')[1].split(' ')[0])
             results.append((ip, port, ping_time))
 
             try:
