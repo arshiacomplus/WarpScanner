@@ -148,7 +148,7 @@ def scan_ip_port(ip, port, results, packet_loss):
     start_time = time.time() 
     try:
       
-        ping_command = ["ping", "-c", "1", "-w", "5", ip]
+        ping_command = ["ping", "-c", "1", "-w", "5", "-p", str(port), ip]
 
         
         process = subprocess.Popen(ping_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
