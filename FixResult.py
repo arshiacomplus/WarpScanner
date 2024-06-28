@@ -1,5 +1,5 @@
-
 import urllib.parse
+from urllib.parse import quote
 import os
 try:
     import requests
@@ -75,8 +75,10 @@ def fetch_config_from_api(api_url):
     return {
         'PrivateKey': data.get('private_key'),
         'PublicKey': data.get('peer_public_key'),
-        'Reserved': ','.join([str(x) for x in data.get('reserved', [])]) if data.get('reserved') else None
-    }
+        'Reserved': ','.join([str(x) for x in data.get('reserved', [])]) if data.get('reserved') else None,
+        
+        'Address' : data.get('local_address')
+}
 
 
 def free_cloudflare_account():
@@ -654,15 +656,20 @@ def main3():
     wire_p=1
 def generate_wireguard_url(config, endpoint):
     
-    required_keys = ['PrivateKey', 'PublicKey']
+    
+    required_keys = ['PrivateKey', 'PublicKey' ,'Address' ]
     if not all(key in config and config[key] is not None for key in required_keys):
         print("Incomplete configuration. Missing one of the required keys or value is None.")
         return None
 
+    encoded_addresses = [quote(address1) for address1 in (config['Address'])]
+    
+    address= ','.join(encoded_addresses)
     
     wireguard_url = (
         f"wireguard://{urlencode(config['PrivateKey'])}@{endpoint}"
-        f"?172.16.0.2%2F32%2C2606%3A4700%3A110%3A8bff%3Ab313%3A8f9b%3A83ba%3A9e20%2F128&publickey={urlencode(config['PublicKey'])}"
+        f"?={address}&"
+        f"publickey={urlencode(config['PublicKey'])}"
     )
     
     
