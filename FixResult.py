@@ -662,7 +662,7 @@ def generate_wireguard_url(config, endpoint):
     
     wireguard_url = (
         f"wireguard://{urlencode(config['PrivateKey'])}@{endpoint}"
-        f"?publickey={urlencode(config['PublicKey'])}"
+        f"?172.16.0.2%2F32%2C2606%3A4700%3A110%3A8bff%3Ab313%3A8f9b%3A83ba%3A9e20%2F128&publickey={urlencode(config['PublicKey'])}"
     )
     
     
