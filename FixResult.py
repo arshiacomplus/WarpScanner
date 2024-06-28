@@ -690,8 +690,8 @@ def start_menu():
 def get_number_of_configs():
     while True:
         try:
-            how_many = int(Prompt.ask('How many configs do you need (2 or above)'))
-            if how_many >= 2:
+            how_many = int(Prompt.ask('How many configs do you need (2 to 15): '))
+            if how_many >= 2 and how_many <= 15:
                 break
         except ValueError:
             console.print("[bold red]Please enter a valid number![/bold red]", style="red")
