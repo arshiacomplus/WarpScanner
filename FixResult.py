@@ -7,6 +7,7 @@ try:
     import requests
 except ImportError:
     print("Requests module not installed. Installing now...")
+    os.system('pip install six')
     os.system('pip install requests')
 try:
     import requests
