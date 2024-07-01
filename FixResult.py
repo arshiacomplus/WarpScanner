@@ -1,3 +1,5 @@
+
+import urllib.request
 import urllib.parse
 from urllib.parse import quote
 import os
@@ -51,7 +53,10 @@ from requests.exceptions import ConnectionError
 
 import random
 import subprocess
-
+try:
+    import json
+except Exception:
+    os.system('pip install json')
 console = Console()
 wire_config_temp=''
 wire_c=1
@@ -70,28 +75,38 @@ def urlencode(string):
     return urllib.parse.quote(string, safe='a-zA-Z0-9.~_-')
 
 def fetch_config_from_api(api_url):
-    response = requests.get(api_url)
-    data = response.json()
+    @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
+    def file_o():
+    	    try:
+    	    	response = urllib.request.urlopen("https://api.zeroteam.top/warp?format=sing-box", timeout=30).read().decode('utf-8')
+    	    	return response
+    	    except Exception:
+    	    	response = requests.get("https://api.zeroteam.top/warp?format=sing-box", timeout=30)
+    	    	return response.text
+    	    
+    response = file_o()
+    data = json.loads(response)
     return {
         'PrivateKey': data.get('private_key'),
         'PublicKey': data.get('peer_public_key'),
         'Reserved': ','.join([str(x) for x in data.get('reserved', [])]) if data.get('reserved') else None,
-        
-        'Address' : data.get('local_address')
-}
+        'Address': data.get('local_address')
+    }
 
 
 def free_cloudflare_account():
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
-    def get_data():
-       response = requests.get("https://api.zeroteam.top/warp?format=sing-box", timeout=30)
-       return response.text
+    def file_o():
+    	    try:
+    	    	response = urllib.request.urlopen("https://api.zeroteam.top/warp?format=sing-box", timeout=30).read().decode('utf-8')
+    	    	return response
+    	    except Exception:
+    	    	response = requests.get("https://api.zeroteam.top/warp?format=sing-box", timeout=30)
+    	    	return response.text
     try:
-            
-            output = get_data()
-        
+            output = file_o()
     except ConnectionError:
-            console.print("[bold red]Failed to connect to API after 3 attempts.[/bold red]")
+            console.print("[bold red]Failed to connect to API after 6 attempts.[/bold red]")
 
        
     public_key_pattern = r'"2606:4700:[0-9a-f:]+/128"'
@@ -110,9 +125,14 @@ def free_cloudflare_account():
     all_key=[public_key , private_key , reserved]
     return all_key
 def upload_to_bashupload(config_data):
+    @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
+    def file_o():
+    	files = {'file': ('output.json', config_data)}
+    	response = requests.post('https://bashupload.com/', files=files, timeout=30)
+    	return response
     try:
-        files = {'file': ('output.json', config_data)}
-        response = requests.post('https://bashupload.com/', files=files)
+        
+        response = file_o()
 
         if response.ok:
             download_link = response.text.strip()
@@ -122,9 +142,10 @@ def upload_to_bashupload(config_data):
             console.print("[red]Something happened with creating the link[/red]", style="bold red")
     except Exception as e:
         console.print(f"[red]An error occurred: {e}[/red]", style="bold red")
+        
   
 
-           
+ 
     
 
 def create_ip_range(start_ip, end_ip):
@@ -382,17 +403,13 @@ def main2():
         except Exception as E:
             print(' Try again Error =', E)
             exit()
-        public_key=all_key[0]
-        private_key=all_key[1]
-        reserved=all_key[2]
+
         try:
             all_key2=free_cloudflare_account()
         except Exception as E:
             print(' Try again Error =', E)
             exit()
-        public_key2=all_key2[0]
-        private_key2=all_key2[1]
-        reserved2=all_key2[2]
+
         
         temp_ip=''
         temp_port=''
@@ -417,8 +434,230 @@ def main2():
                     #temp_port=temp_port+enter_ip[i]
                 best_result=[temp_ip, int(temp_port)]
 
+        Wow=''
+        if what=='7':
+        	 print("\033[0m")
+        	 os.system('clear')
+        	 
+        	 Wow=f'''{{
+  "dns": {{
+    "hosts": {{
+      "geosite:category-ads-all": "127.0.0.1",
+      "geosite:category-ads-ir": "127.0.0.1"'''
+        	 if polrn_block=='Y' or polrn_block=='y': Wow+=''',
+      "geosite:category-porn": "127.0.0.1"'''
         
-        print('\033[0m')
+        	 Wow+=f'''
+    }},
+    "servers": [
+      "https://94.140.14.14/dns-query",
+      {{
+        "address": "8.8.8.8",
+        "domains": [
+          "geosite:category-ir",
+          "domain:.ir"
+        ],
+        "expectIPs": [
+          "geoip:ir"
+        ],
+        "port": 53
+      }}
+    ],
+    "tag": "dns"
+  }},
+  "inbounds": [
+    {{
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {{
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      }},
+      "sniffing": {{
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "enabled": true
+      }},
+      "tag": "socks-in"
+    }},
+    {{
+      "port": 10809,
+      "protocol": "http",
+      "settings": {{
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      }},
+      "sniffing": {{
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "enabled": true
+      }},
+      "tag": "http-in"
+    }},
+    {{
+      "listen": "127.0.0.1",
+      "port": 10853,
+      "protocol": "dokodemo-door",
+      "settings": {{
+        "address": "1.1.1.1",
+        "network": "tcp,udp",
+        "port": 53
+      }},
+      "tag": "dns-in"
+    }}
+  ],
+  "log": {{
+    "loglevel": "warning"
+  }},
+  "outbounds": [
+    {{
+      "protocol": "wireguard",
+      "settings": {{
+        "address": [
+          "172.16.0.2/32",
+          "{all_key[0]}"
+        ],
+        "mtu": 1280,
+        "peers": [
+          {{
+            "endpoint": "{best_result[0]}:{best_result[1]}",
+            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+          }}
+        ],
+        "reserved": {all_key[2]},
+        "secretKey": "{all_key[1]}"
+      }},
+      "streamSettings": {{
+        "network": "tcp",
+        "security": "",
+        "sockopt": {{
+          "dialerProxy": "warp-ir"
+        }}
+      }},
+      "tag": "warp-out"
+    }},
+    {{
+      "protocol": "wireguard",
+      "settings": {{
+        "address": [
+          "172.16.0.2/32",
+          "{all_key2[0]}"
+        ],
+        "mtu": 1280,
+        "peers": [
+          {{
+            "endpoint": "{best_result[0]}:{best_result[1]}",
+            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+          }}
+        ],
+        "reserved": {all_key2[2]},
+        "secretKey": "{all_key2[1]}"
+      }},
+      "tag": "warp"
+    }},
+    {{
+      "protocol": "dns",
+      "tag": "dns-out"
+    }},
+    {{
+      "protocol": "freedom",
+      "settings": {{}},
+      "tag": "direct"
+    }},
+    {{
+      "protocol": "blackhole",
+      "settings": {{
+        "response": {{
+          "type": "http"
+        }}
+      }},
+      "tag": "block"
+    }}
+  ],
+  "policy": {{
+    "levels": {{
+      "8": {{
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }}
+    }},
+    "system": {{
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }}
+  }},
+  "remarks": "Tel = arshiacomplus - WoW",
+  "routing": {{
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {{
+        "inboundTag": [
+          "dns-in"
+        ],
+        "outboundTag": "dns-out",
+        "type": "field"
+      }},
+      {{
+        "ip": [
+          "8.8.8.8"
+        ],
+        "outboundTag": "direct",
+        "port": "53",
+        "type": "field"
+      }},
+      {{
+        "domain": [
+          "geosite:category-ir",
+          "domain:.ir"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      }},
+      {{
+        "ip": [
+          "geoip:ir",
+          "geoip:private"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      }},
+      {{
+        "domain": [
+          "geosite:category-ads-all",
+          "geosite:category-ads-ir"'''
+        	 if polrn_block=='Y' or polrn_block=='y':
+        	 	Wow+=''',
+          "geosite:category-porn"'''
+        	 Wow+='''
+        ],
+        "outboundTag": "block",
+        "type": "field"
+      },
+      {
+        "network": "tcp,udp",
+        "outboundTag": "warp-out",
+        "type": "field"
+      },
+      {
+        "network": "tcp,udp",
+        "outboundTag": "warp",
+        "type": "field"
+      }
+    ]
+  },
+  "stats": {}
+}'''
+        	 print(Wow), exit()
+        
+        	 
         os.system('clear')
         print(f'''
 {{
@@ -464,13 +703,13 @@ def main2():
                 "tag": "IP->Iran, Telegram: @arshiacomplus",
                 "local_address": [
                         "172.16.0.2/32",
-                        "{public_key}"
+                        "{all_key[0]}"
                 ],
-                "private_key": "{private_key}",
+                "private_key": "{all_key[1]}",
                 "server": "{best_result[0]}",
                 "server_port": {best_result[1]},
                 "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-                "reserved": {reserved},
+                "reserved": {all_key[2]},
                 "mtu": 1280,
                 "fake_packets": "5-10"
                 }},
@@ -480,13 +719,13 @@ def main2():
                 "detour": "IP->Iran, Telegram: @arshiacomplus",
                 "local_address": [
                         "172.16.0.2/32",
-                        "{public_key2}"
+                        "{all_key2[0]}"
                 ],
-                "private_key": "{private_key2}",
+                "private_key": "{all_key2[1]}",
                 "server": "{best_result[0]}",
                 "server_port": {best_result[1]},
                 "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-                "reserved": {reserved2},
+                "reserved": {all_key2[2]},
                 "mtu": 1280,
                 "fake_packets": "5-10"
                 }},
@@ -514,10 +753,11 @@ def main2():
                 
 
     
-    print('\033[91m')
+    
     if what=="3":
         main2_1()
-
+    
+    
 
     best_result=main()
     
@@ -539,28 +779,26 @@ def main3():
              print('\033[0m')
              exit()
     print(f"please wait make wireguard : {wire_c}. ")
-    try:
-        all_key=free_cloudflare_account()
-    except Exception as E:
-            print(' Try again Error =', E)
-            exit()
-    public_key=all_key[0]
-    private_key=all_key[1]
-    reserved=all_key[2]
+    
     try:
         all_key2=free_cloudflare_account()
     except Exception as E:
             print(' Try again Error =', E)
             exit()
-    public_key2=all_key2[0]
-    private_key2=all_key2[1]
-    reserved2=all_key2[2]
+    #
     print('\033[0m')
 
     os.system('clear')
 
-    if wire_p!=1:				
-        wire_config_or = f'''
+    
+    try:
+        all_key=free_cloudflare_account()
+    except Exception as E:
+            print(' Try again Error =', E)
+            exit()
+            
+    if wire_p !=1:
+    	wire_config_or = f'''
 
     {{
     "type": "wireguard",
@@ -570,11 +808,11 @@ def main3():
 
     "local_address": [
         "172.16.0.2/32",
-        "{public_key}"
+        "{all_key[0]}"
     ],
-    "private_key": "{private_key}",
+    "private_key": "{all_key[1]}",
     "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-    "reserved": {reserved},
+    "reserved": {all_key[2]},
 
     "mtu": 1280,
     "fake_packets": "5-10"
@@ -588,11 +826,11 @@ def main3():
     
     "local_address": [
         "172.16.0.2/32",
-        "{public_key2}"
+        "{all_key2[0]}"
     ],
-    "private_key": "{private_key2}",
+    "private_key": "{all_key2[1]}",
     "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-    "reserved": {reserved2},
+    "reserved": {all_key2[2]},
 
     "mtu": 1120
 
@@ -610,11 +848,11 @@ def main3():
 
     "local_address": [
         "172.16.0.2/32",
-        "{public_key}"
+        "{all_key[0]}"
     ],
-    "private_key": "{private_key}",
+    "private_key": "{all_key[1]}",
     "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-    "reserved": {reserved},
+    "reserved": {all_key[2]},
 
     "mtu": 1280,
     "fake_packets": "5-10"
@@ -628,11 +866,11 @@ def main3():
     
     "local_address": [
         "172.16.0.2/32",
-        "{public_key2}"
+        "{all_key2[0]}"
     ],
-    "private_key": "{private_key2}",
+    "private_key": "{all_key2[1]}",
     "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-    "reserved": {reserved2},
+    "reserved": {all_key2[2]},
 
     "mtu": 1120
 
@@ -684,8 +922,12 @@ def start_menu():
         "1": "scan ip",
         "2": "wireguard config",
         "3": "wireguard config without ip scanning",
-        "4": "wireguard with a sub link[BETA]",
+        "4": "wireguard with a sub link",
         "5": "wireguard for v2ray and mahsaNG",
+        "6": "wireguard for v2ray and mahsaNG without ip scanning",
+        "7": "WoW for v2ray or mahsaNG",
+        "8": "Coming , soon ....",
+        "9": "Add/Delete shortcut",
         "0": "Exit"
     }
 
@@ -697,7 +939,7 @@ def start_menu():
 def get_number_of_configs():
     while True:
         try:
-            how_many = int(Prompt.ask('How many configs do you need (2 to 15): '))
+            how_many = int(Prompt.ask('\nHow many configs do you need (2 to 15): '))
             if how_many >= 2 and how_many <= 15:
                 break
         except ValueError:
@@ -737,19 +979,50 @@ if __name__ == "__main__":
        
             
         main()
-    elif what=='2':
-        main2()
-    elif what=="3":
+    elif what=='2' or what=="3" or what =='7':
+        
+        if what == '7':
+        	polrn_block= input ('\nDo you want to block p@rn sites? ')
+        	while polrn_block !='Y' and polrn_block !='y' and polrn_block !='N' and polrn_block !='n' :
+        		console.print("\n[bold red]Please enter Y or N![/bold red]", style="red")
+        		
+        		polrn_block= input ('Do you want to block p@rn sites? ')
+        	
+        	
         main2()
     elif what=='4':
         how_many=get_number_of_configs()  
 
         for i in range(how_many):
             main3()
-    elif what =='5':
+    elif what =='5' or what=='6':
         api_url = 'https://api.zeroteam.top/warp?format=sing-box'
-        endpoint_ip_best_result=main()
-        endpoint_ip = str(endpoint_ip_best_result[0])+":"+str(endpoint_ip_best_result[1])
+        if what=='5':
+        	endpoint_ip_best_result=main()
+        	endpoint_ip = str(endpoint_ip_best_result[0])+":"+str(endpoint_ip_best_result[1])
+        else:
+            endpoint_ip=input('\nEnter ip with port(Default =Enter( N )) : ')
+            if endpoint_ip=='N' or  endpoint_ip=='n':
+                endpoint_ip="162.159.195.166:878"
+            else:
+                temp_ip2=''
+                temp_port2=''
+                temp_c2=0
+                while endpoint_ip[temp_c2] !=':':
+                        temp_ip2=temp_ip2+endpoint_ip[temp_c2]
+                        temp_c2=temp_c2+1
+                            
+                        
+                set_enter_ip2=endpoint_ip.index(":")
+                temp_port2=endpoint_ip[set_enter_ip2+1: ]
+                    
+
+                    
+                    
+                    #temp_port=temp_port+enter_ip[i]
+                endpoint_ip=[temp_ip2, int(temp_port2)]
+                
+                
         rprint("[bold green]Please wait, generating WireGuard URL...[/bold green]")
         try:
             config = fetch_config_from_api(api_url)
@@ -770,6 +1043,43 @@ if __name__ == "__main__":
 """)
         else:
             print("Failed to generate WireGuard URL.")
+    
+    elif what == '9':
+
+    	if os.path.exists('/data/data/com.termux/files/usr/etc/bash.bashrc.bak'):
+    		Delete=input('Do you want to Delete short cut?(Y/N) : ')
+    		while Delete =='N' and Delete =='n' and Delete=='Y' and Delete =='y':
+    			console.print("[bold red]Please enter Y or N![/bold red]", style="red")
+    			Delete=input('\nDo you want to Delete short cut?(Y/N) : ')
+    		if Delete=='Y' or Delete =='y':
+    			os.system('rm /data/data/com.termux/files/usr/etc/bash.bashrc')
+    			os.rename('/data/data/com.termux/files/usr/etc/bash.bashrc.bak', '/data/data/com.termux/files/usr/etc/bash.bashrc')
+    			console.print("[bold red]Shortcut Deleted,  successful[/bold red]", style="red")
+    
+    
+    		exit()
+    	while True:
+    		name = input("\nEnter a shortcut name : ")
+    		if not name.isdigit():
+    			break
+    			
+    		
+    		else:
+    			console.print("\n[bold red]Please enter a name![/bold red]", style="red")
+    			
+    	with open('/data/data/com.termux/files/usr/etc/bash.bashrc', 'r') as f2:
+    		txt= f2.read()
+    		with open('/data/data/com.termux/files/usr/etc/bash.bashrc.bak', 'w') as f:
+    			f.write(txt)
+    	text=f'''
+{name}() {{
+bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/Test/main/install.sh)
+}}\n'''
+    	with open('/data/data/com.termux/files/usr/etc/bash.bashrc', 'r+') as f:
+    	   	content = f.read()
+    	   	f.seek(0, 0)
+    	   	f.write(text.rstrip('\r\n') + '\n' + content)
+    	rprint(f"\n[bold green]Please Restart your  termux and Enter {name} to run script[/bold green]")
     elif what=='0':
         gojo_goodbye_animation()
         time.sleep(1)
