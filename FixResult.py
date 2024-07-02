@@ -507,8 +507,75 @@ def main2():
   ],
   "log": {{
     "loglevel": "warning"
-  }},
-
+  }},'''
+        	 if isIran=='1' :Wow+=f'''
+    "outbounds": [
+    {{
+      "protocol": "wireguard",
+      "settings": {{
+        "address": [
+          "172.16.0.2/32",
+          "{all_key[0]}"
+        ],
+        "mtu": 1280,
+        "peers": [
+          {{
+            "endpoint": "{best_result[0]}:{best_result[1]}",
+            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+          }}
+        ],
+        "reserved": {all_key[2]},
+        "secretKey": "{all_key[1]}"
+      }},
+      "streamSettings": {{
+        "network": "tcp",
+        "security": "",
+        "sockopt": {{
+          "dialerProxy": "warp-ir"
+        }}
+      }},
+      "tag": "warp-out"
+    }},
+    {{
+      "protocol": "wireguard",
+      "settings": {{
+        "address": [
+          "172.16.0.2/32",
+          "{all_key2[0]}"
+        ],
+        "mtu": 1280,
+        "peers": [
+          {{
+            "endpoint": "{best_result[0]}:{best_result[1]}",
+            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+          }}
+        ],
+        "reserved": {all_key2[2]},
+        "secretKey": "{all_key2[1]}"
+      }},
+      "tag": "warp"
+    }},
+    {{
+      "protocol": "dns",
+      "tag": "dns-out"
+    }},
+    {{
+      "protocol": "freedom",
+      "settings": {{}},
+      "tag": "direct"
+    }},
+    {{
+      "protocol": "blackhole",
+      "settings": {{
+        "response": {{
+          "type": "http"
+        }}
+      }},
+      "tag": "block"
+    }}
+  ],
+'''
+        	 if isIran == '2' : Wow+=f'''
   "outbounds": [
     {{
       "protocol": "wireguard",
@@ -573,7 +640,8 @@ def main2():
       }},
       "tag": "block"
     }}
-  ],
+  ],'''
+        	 Wow+=f'''
   "policy": {{
     "levels": {{
       "8": {{
@@ -982,6 +1050,10 @@ if __name__ == "__main__":
         		console.print("\n[bold red]Please enter Y or N![/bold red]", style="red")
         		
         		polrn_block= input ('Do you want to block p@rn sites? ')
+        	isIran =input ('\nIp Iran[faster speed]( == 1) , Ip Germany [slower speed](== 2) :')
+        	while isIran !='1' and isIran !='2' :
+        		console.print("\n[bold red]Please enter 1 or 2![/bold red]", style="red")
+        		isIran =input ('\nIp Iran[faster speed]( == 1) , Ip Germany [slower speed](== 2) :')
         	
         	
         main2()
