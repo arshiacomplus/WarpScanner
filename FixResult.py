@@ -1,4 +1,3 @@
-
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -7,7 +6,6 @@ try:
     import requests
 except ImportError:
     print("Requests module not installed. Installing now...")
-    os.system('pip install six')
     os.system('pip install requests')
 try:
     import requests
@@ -54,10 +52,8 @@ from requests.exceptions import ConnectionError
 
 import random
 import subprocess
-try:
-    import json
-except Exception:
-    os.system('pip install json')
+import json
+
 console = Console()
 wire_config_temp=''
 wire_c=1
@@ -457,15 +453,11 @@ def main2():
         "domains": [
           "geosite:category-ir",
           "domain:.ir"
+        ],                                                              "expectIPs": [                                                    "geoip:ir"
         ],
-        "expectIPs": [
-          "geoip:ir"
-        ],
-        "port": 53
-      }}
+        "port": 53                                                    }}
     ],
-    "tag": "dns"
-  }},
+    "tag": "dns"                                                  }},
   "inbounds": [
     {{
       "port": 10808,
@@ -516,6 +508,7 @@ def main2():
   "log": {{
     "loglevel": "warning"
   }},
+
   "outbounds": [
     {{
       "protocol": "wireguard",
@@ -560,7 +553,7 @@ def main2():
         "reserved": {all_key2[2]},
         "secretKey": "{all_key2[1]}"
       }},
-      "tag": "warp"
+      "tag": "warp-ir"
     }},
     {{
       "protocol": "dns",
@@ -655,7 +648,8 @@ def main2():
     ]
   },
   "stats": {}
-}'''
+}
+'''
         	 print(Wow), exit()
         
         	 
@@ -927,7 +921,7 @@ def start_menu():
         "5": "wireguard for v2ray and mahsaNG",
         "6": "wireguard for v2ray and mahsaNG without ip scanning",
         "7": "WoW for v2ray or mahsaNG",
-        "8": "Coming , soon ....",
+        "8": "Coning soon......",
         "9": "Add/Delete shortcut",
         "0": "Exit"
     }
@@ -1080,7 +1074,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/Test/main/inst
     	   	content = f.read()
     	   	f.seek(0, 0)
     	   	f.write(text.rstrip('\r\n') + '\n' + content)
-    	rprint(f"\n[bold green]Please Restart your  termux and Enter {name} to run script[/bold green]")
+    	rprint(f"\n[bold green]Please Restart your  termux and Enter [bold red]{name}[/bold red] to run script[/bold green]")
     elif what=='0':
         gojo_goodbye_animation()
         time.sleep(1)
