@@ -44,11 +44,11 @@ if ! command -v curl; then
     install_curl
 fi
 
-if [ -f FixResult.py ]; then
-    rm FixResult.py
-    echo "Updating FixResult.py..."
+if [ -f WarpScanner.py ]; then
+    rm WarpScanner.py
+    echo "Updating WarpScanner.py..."
 fi
 
-curl -fsSL -o FixResult.py https://raw.githubusercontent.com/arshiacomplus/Test/main/FixResult.py || { echo "Failed to download FixResult.py. Exiting."; exit 1; }
+curl -fsSL -o WarpScanner.py https://raw.githubusercontent.com/arshiacomplus/Test/main/WarpScanner.py || { echo "Failed to download WarpScanner.py. Exiting."; exit 1; }
 
-python FixResult.py
+python WarpScanner.py
