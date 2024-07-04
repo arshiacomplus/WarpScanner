@@ -62,6 +62,8 @@ send_msg_wait=0
 results = []
 save_result=[]
 best_result=[]
+WoW_v2=''
+isIran=''
 
 
     
@@ -125,7 +127,10 @@ def upload_to_bashupload(config_data):
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
     	files = {'file': ('output.json', config_data)}
-    	response = requests.post('https://bashupload.com/', files=files, timeout=30)
+    	try:
+    		response = requests.post('https://bashupload.com/', files=files, timeout=30)
+    	except Exception:
+    		response = requests.post('https://bashupload.com/', files=files, timeout=50)
     	return response
     try:
         
@@ -390,21 +395,437 @@ def main():
 
 def main2():
     global best_result
-    #main2_2():
-    	
+    
+    
+    def main2_2():
+    	global WoW_v2
+    	try:
+    	   all_key=free_cloudflare_account()
+    	except Exception as E:
+            print(' Try again Error =', E)
+            exit()
+
+    	try:
+            	all_key2=free_cloudflare_account()
+    	except Exception as E:
+            	print(' Try again Error =', E)
+            	exit()
+    	os.system('clear')
+    	print(f'Make Wireguard ')    	
+    	WoW_v2+=f'''
+    {{
+        "remarks": "Tel= arshiacomplus - WoW",
+        "log": {{
+            "loglevel": "warning"
+        }},
+        "dns": {{
+            "hosts": {{
+                "geosite:category-ads-all": "127.0.0.1",
+                "geosite:category-ads-ir": "127.0.0.1",
+                "geosite:category-porn": "127.0.0.1"
+            }},
+            "servers": [
+                "https://94.140.14.14/dns-query",
+                {{
+                    "address": "8.8.8.8",
+                    "domains": [
+                        "geosite:category-ir",
+                        "domain:.ir"
+                    ],
+                    "expectIPs": [
+                        "geoip:ir"
+                    ],
+                    "port": 53
+                }}
+            ],
+            "tag": "dns"
+        }},
+        "inbounds": [
+            {{
+                "port": 10808,
+                "protocol": "socks",
+                "settings": {{
+                    "auth": "noauth",
+                    "udp": true,
+                    "userLevel": 8
+                }},
+                "sniffing": {{
+                    "destOverride": [
+                        "http",
+                        "tls"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                }},
+                "tag": "socks-in"
+            }},
+            {{
+                "port": 10809,
+                "protocol": "http",
+                "settings": {{
+                    "auth": "noauth",
+                    "udp": true,
+                    "userLevel": 8
+                }},
+                "sniffing": {{
+                    "destOverride": [
+                        "http",
+                        "tls"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                }},
+                "tag": "http-in"
+            }},
+            {{
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {{
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                }},
+                "tag": "dns-in"
+            }}
+        ],
+        "outbounds": [
+            {{
+                "protocol": "wireguard",
+                "settings": {{
+                    "address": [
+                        "172.16.0.2/32",
+                        "{all_key[0]}"
+                    ],
+                    "mtu": 1280,
+                    "peers": [
+                        {{
+                            "endpoint": "{best_result[0]}:{best_result[1]}",
+                            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+                        }}
+                    ],
+                    "reserved": {all_key[2]},
+                    "secretKey": "{all_key[1]}",
+                    "keepAlive": 10
+                }},
+                "streamSettings": {{
+                    "sockopt": {{
+                        "dialerProxy": "warp-ir"
+                    }}
+                }},
+                "tag": "warp-out"
+            }},
+            {{
+                "protocol": "wireguard",
+                "settings": {{
+                    "address": [
+                        "172.16.0.2/32",
+                        "{all_key2[0]}"
+                    ],
+                    "mtu": 1280,
+                    "peers": [
+                        {{
+                            "endpoint": "162.159.192.115:864",
+                            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+                        }}
+                    ],
+                    "reserved": {all_key2[2]},
+                    "secretKey": "{all_key2[1]}",
+                    "keepAlive": 10
+                }},
+                "tag": "warp-ir"
+            }},
+            {{
+                "protocol": "dns",
+                "tag": "dns-out"
+            }},
+            {{
+                "protocol": "freedom",
+                "settings": {{}},
+                "tag": "direct"
+            }},
+            {{
+                "protocol": "blackhole",
+                "settings": {{
+                    "response": {{
+                        "type": "http"
+                    }}
+                }},
+                "tag": "block"
+            }}
+        ],
+        "policy": {{
+            "levels": {{
+                "8": {{
+                    "connIdle": 300,
+                    "downlinkOnly": 1,
+                    "handshake": 4,
+                    "uplinkOnly": 1
+                }}
+            }},
+            "system": {{
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }}
+        }},
+        "routing": {{
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {{
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                }},
+                {{
+                    "ip": [
+                        "8.8.8.8"
+                    ],
+                    "outboundTag": "direct",
+                    "port": "53",
+                    "type": "field"
+                }},
+                {{
+                    "domain": [
+                        "geosite:category-ir",
+                        "domain:.ir"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                }},
+                {{
+                    "ip": [
+                        "geoip:ir",
+                        "geoip:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                }},
+                {{
+                    "domain": [
+                        "geosite:category-ads-all",
+                        "geosite:category-ads-ir",
+                        "geosite:category-porn"
+                    ],
+                    "outboundTag": "block",
+                    "type": "field"
+                }},
+                {{
+                    "outboundTag": "warp-out",
+                    "type": "field",
+                    "network": "tcp,udp"
+                }}
+            ]
+        }},
+        "stats": {{}}
+    }},
+    {{
+        "remarks": "Tel= arshiacomplus - Warp",
+        "log": {{
+            "loglevel": "warning"
+        }},
+        "dns": {{
+            "hosts": {{
+                "geosite:category-ads-all": "127.0.0.1",
+                "geosite:category-ads-ir": "127.0.0.1",
+                "geosite:category-porn": "127.0.0.1"
+            }},
+            "servers": [
+                "https://94.140.14.14/dns-query",
+                {{
+                    "address": "8.8.8.8",
+                    "domains": [
+                        "geosite:category-ir",
+                        "domain:.ir"
+                    ],
+                    "expectIPs": [
+                        "geoip:ir"
+                    ],
+                    "port": 53
+                }}
+            ],
+            "tag": "dns"
+        }},
+        "inbounds": [
+            {{
+                "port": 10808,
+                "protocol": "socks",
+                "settings": {{
+                    "auth": "noauth",
+                    "udp": true,
+                    "userLevel": 8
+                }},
+                "sniffing": {{
+                    "destOverride": [
+                        "http",
+                        "tls"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                }},
+                "tag": "socks-in"
+            }},
+            {{
+                "port": 10809,
+                "protocol": "http",
+                "settings": {{
+                    "auth": "noauth",
+                    "udp": true,
+                    "userLevel": 8
+                }},
+                "sniffing": {{
+                    "destOverride": [
+                        "http",
+                        "tls"
+                    ],
+                    "enabled": true,
+                    "routeOnly": true
+                }},
+                "tag": "http-in"
+            }},
+            {{
+                "listen": "127.0.0.1",
+                "port": 10853,
+                "protocol": "dokodemo-door",
+                "settings": {{
+                    "address": "1.1.1.1",
+                    "network": "tcp,udp",
+                    "port": 53
+                }},
+                "tag": "dns-in"
+            }}
+        ],
+        "outbounds": [
+            {{
+                "protocol": "wireguard",
+                "settings": {{
+                    "address": [
+                        "172.16.0.2/32",
+                        "{all_key[0]}"
+                    ],
+                    "mtu": 1280,
+                    "peers": [
+                        {{
+                            "endpoint": "{best_result[0]}:{best_result[1]}",
+                            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+                        }}
+                    ],
+                    "reserved": {all_key[2]},
+                    "secretKey": "{all_key[1]}",
+                    "keepAlive": 10
+                }},
+                "tag": "warp"
+            }},
+            {{
+                "protocol": "dns",
+                "tag": "dns-out"
+            }},
+            {{
+                "protocol": "freedom",
+                "settings": {{}},
+                "tag": "direct"
+            }},
+            {{
+                "protocol": "blackhole",
+                "settings": {{
+                    "response": {{
+                        "type": "http"
+                    }}
+                }},
+                "tag": "block"
+            }}
+        ],
+        "policy": {{
+            "levels": {{
+                "8": {{
+                    "connIdle": 300,
+                    "downlinkOnly": 1,
+                    "handshake": 4,
+                    "uplinkOnly": 1
+                }}
+            }},
+            "system": {{
+                "statsOutboundUplink": true,
+                "statsOutboundDownlink": true
+            }}
+        }},
+        "routing": {{
+            "domainStrategy": "IPIfNonMatch",
+            "rules": [
+                {{
+                    "inboundTag": [
+                        "dns-in"
+                    ],
+                    "outboundTag": "dns-out",
+                    "type": "field"
+                }},
+                {{
+                    "ip": [
+                        "8.8.8.8"
+                    ],
+                    "outboundTag": "direct",
+                    "port": "53",
+                    "type": "field"
+                }},
+                {{
+                    "domain": [
+                        "geosite:category-ir",
+                        "domain:.ir"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                }},
+                {{
+                    "ip": [
+                        "geoip:ir",
+                        "geoip:private"
+                    ],
+                    "outboundTag": "direct",
+                    "type": "field"
+                }},
+                {{
+                    "domain": [
+                        "geosite:category-ads-all",
+                        "geosite:category-ads-ir",
+                        "geosite:category-porn"
+                    ],
+                    "outboundTag": "block",
+                    "type": "field"
+                }},
+                {{
+                    "outboundTag": "warp",
+                    "type": "field",
+                    "network": "tcp,udp"
+                }}
+            ]
+        }},
+        "stats": {{}}
+    }}'''
+    	if n % 2==0:
+    		WoW_v2+=','
     def main2_1():
         global best_result
+        
+        print()
         try:
             all_key=free_cloudflare_account()
         except Exception as E:
             print(' Try again Error =', E)
             exit()
-        if isIran=='2' :
-            try:
-            	all_key2=free_cloudflare_account()
-            except Exception as E:
-            	print(' Try again Error =', E)
-            	exit()
+        if what == '7':
+            if isIran=='2' :
+            	try:
+            		all_key2=free_cloudflare_account()
+            	except Exception as E:
+            		print(' Try again Error =', E)
+            		exit()
+        else:
+            	try:
+            		all_key2=free_cloudflare_account()
+            	except Exception as E:
+            		print(' Try again Error =', E)
+            		exit()
 
         
         temp_ip=''
@@ -830,9 +1251,7 @@ def main2():
 
         	 print(Wow), exit()
         
-        	 
-        os.system('clear')
-        print(f'''
+        else: os.system('clear'),print(f'''
 {{
         "route": {{                                                         "geoip": {{
                 "path": "geo-assets\\\\sagernet-sing-geoip-geoip.db"
@@ -929,10 +1348,23 @@ def main2():
     
     if what=="3":
         main2_1()
-    
+        exit()
     
 
+
     best_result=main()
+    
+    if what=='8':
+    	
+    	rprint("[bold green]Please wait, generating WireGuard URL...[/bold green]")
+    	for n in range(how_many):
+    		main2_2()
+    	os.system('clear')
+    	
+    	upload_to_bashupload(f'''[
+{WoW_v2}
+]''')
+    	exit()
     
     main2_1()
 
@@ -958,7 +1390,7 @@ def main3():
     except Exception as E:
             print(' Try again Error =', E)
             exit()
-    #
+    
     print('\033[0m')
 
     os.system('clear')
@@ -1099,7 +1531,7 @@ def start_menu():
         "5": "wireguard for v2ray and mahsaNG",
         "6": "wireguard for v2ray and mahsaNG without ip scanning",
         "7": "WoW for v2ray or mahsaNG",
-        "8": "Coning soon......",
+        "8": "WoW for v2ray or mahsaNG in sub link",
         "9": "Add/Delete shortcut",
         "0": "Exit"
     }
@@ -1220,6 +1652,12 @@ if __name__ == "__main__":
 """)
         else:
             print("Failed to generate WireGuard URL.")
+    elif what == '8':
+    	how_many=get_number_of_configs()
+    	
+
+    	
+    	main2()
     
     elif what == '9':
 
