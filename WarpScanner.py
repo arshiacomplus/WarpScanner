@@ -78,7 +78,7 @@ def info():
     console.print(table)
     
     print('\nEnter a Number\n')
-    options2={"1" : "open Telegram Channel", "2" : "open github " , "0" : "Exit"}
+    options2={"1" : "open Telegram Channel", "2" : "open github ", "0":"Exit"}
     for key, value in options2.items():
     	rprint(f" [bold yellow]{key}[/bold yellow]: {value}")
     whats2 = Prompt.ask("Choose an option", choices=list(options2.keys()), default="1")
@@ -1776,7 +1776,7 @@ MTU = 1280
 PublicKey = {all_key[3]}
 AllowedIPs = 0.0.0.0/0, ::/0
 Endpoint = {endpoint_ip}''')
-        print(f'\n{name_conf} saved in {path}')
+        rprint(f'\n[bold green]{name_conf} saved in {path}.conf[/bold green]')
     
     elif what == '00':
     	info()
