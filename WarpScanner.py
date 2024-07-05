@@ -78,7 +78,7 @@ def info():
     console.print(table)
     
     print('\nEnter a Number\n')
-    options2={"1" : "open Telegram Channel", "2" : "open github "}
+    options2={"1" : "open Telegram Channel", "2" : "open github " , "0" : "Exit"}
     for key, value in options2.items():
     	rprint(f" [bold yellow]{key}[/bold yellow]: {value}")
     whats2 = Prompt.ask("Choose an option", choices=list(options2.keys()), default="1")
