@@ -54,6 +54,7 @@ import random
 import subprocess
 import json
 
+
 console = Console()
 wire_config_temp=''
 wire_c=1
@@ -64,16 +65,59 @@ save_result=[]
 best_result=[]
 WoW_v2=''
 isIran=''
-
-
+which_api=''
+def info():
+    console.clear()
     
+    table = Table(show_header=True,title="IP Scan Results", header_style="bold blue")
+    table.add_column("Creator", width=15)
+    
+    table.add_column("contact", justify="right")
+    table.add_row("arshiacomplus","1 - Telegram")
+    table.add_row("arshiacomplus","2 - github")
+    console.print(table)
+    
+    print('\nEnter a Number\n')
+    options2={"1" : "open Telegram Channel", "2" : "open github "}
+    for key, value in options2.items():
+    	rprint(f" [bold yellow]{key}[/bold yellow]: {value}")
+    whats2 = Prompt.ask("Choose an option", choices=list(options2.keys()), default="1")
+    
+    if whats2=='0':
+    	os.system('python WarpScanner.py')
+    elif whats2=='1':
+    	os.system("termux-open-url 'https://t.me/arshia_mod_fun'")
+    elif whats2=='2'   :
+    	os.system("termux-open-url 'https://github.com/arshiacomplus/Test/tree/main'")
+    	
+def input_p(pt ,options):
+    os.system('clear')
+    options.update({"0" : "Exit"})
+    print(pt)
+    for key, value in options.items():
+    	rprint(f" [bold yellow]{key}[/bold yellow]: {value}")
+    whats = Prompt.ask("Choose an option", choices=list(options.keys()), default="1")
+    if whats=='0':
+    	os.system('python WarpScanner.py')
+    return whats
 def urlencode(string):
     
     if string is None:
         return None
     return urllib.parse.quote(string, safe='a-zA-Z0-9.~_-')
 
-def fetch_config_from_api(api_url):
+def fetch_config_from_api():
+    global which_api
+    if which_api =='':
+    	which_api=input_p('Which Api ?\n ',{"1" : "Api 1", "2" : "Api 2"})
+    if which_api =='2':
+    	all_key=free_cloudflare_account2()
+    	return {
+        'PrivateKey': all_key[1],
+        'PublicKey': all_key[3],
+        'Reserved': all_key[2],
+        'Address': all_key[0]
+    }
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
     	    try:
@@ -91,9 +135,32 @@ def fetch_config_from_api(api_url):
         'Reserved': ','.join([str(x) for x in data.get('reserved', [])]) if data.get('reserved') else None,
         'Address': data.get('local_address')
     }
-
+    
+def free_cloudflare_account2():
+    
+    @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
+    def file_o():
+    	    try:
+    	    	response = urllib.request.urlopen("https://fscarmen.cloudflare.now.cc/wg", timeout=30).read().decode('utf-8')
+    	    	return response
+    	    except Exception:
+    	    	response = requests.get("https://fscarmen.cloudflare.now.cc/wg", timeout=30)
+    	    	return response.text
+    	    
+    response = file_o()
+    PublicKey=response[response.index(':')+2:response.index('\n')]
+    PrivateKey=response[response.index('\n')+13:]
+    reserved=[222,6,184]
+    return ["2606:4700:110:8d48:52cb:c565:3a80:c416/128" , PrivateKey , reserved, PublicKey]
 
 def free_cloudflare_account():
+    global which_api
+    if which_api=='':
+    	which_api=input_p('Which Api ?\n ',{"1" : "Api 1", "2" : "Api 2"})
+    if which_api =='2':
+    	all_key=free_cloudflare_account2()
+    	return all_key
+    	
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
     	    try:
@@ -108,20 +175,20 @@ def free_cloudflare_account():
             console.print("[bold red]Failed to connect to API after 6 attempts.[/bold red]")
 
        
-    public_key_pattern = r'"2606:4700:[0-9a-f:]+/128"'
+    Address_pattern = r'"2606:4700:[0-9a-f:]+/128"'
     private_key_pattern = r'"private_key":"[0-9a-zA-Z/+]+="'
     reserved_pattern = r'"reserved":[[0-9]+(,[0-9]+){2}]'
 
-    public_key_search = re.search(public_key_pattern, output)
+    Address_search = re.search(Address_pattern, output)
     private_key_search = re.search(private_key_pattern, output)
     reserved_search = re.search(reserved_pattern, output)
 
       
-    public_key = public_key_search.group(0).replace('"', '') if public_key_search else None
+    Address_key = Address_search.group(0).replace('"', '') if Address_search else None
     private_key = private_key_search.group(0).split(':')[1].replace('"', '') if private_key_search else None
     reserved = reserved_search.group(0).replace('"reserved":', '').replace('"', '') if reserved_search else None
 
-    all_key=[public_key , private_key , reserved]
+    all_key=[Address_key , private_key , reserved, "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="]
     return all_key
 def upload_to_bashupload(config_data):
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
@@ -144,12 +211,9 @@ def upload_to_bashupload(config_data):
             console.print("[red]Something happened with creating the link[/red]", style="bold red")
     except Exception as e:
         console.print(f"[red]An error occurred: {e}[/red]", style="bold red")
-        
-  
 
- 
+
     
-
 def create_ip_range(start_ip, end_ip):
     start = list(map(int, start_ip.split('.')))
     end = list(map(int, end_ip.split('.')))
@@ -293,11 +357,8 @@ def main_v6():
 
 def main():
     if what!='2' and what!='3' and what!='4':
-        which_v=input('\nChoose an ip version [ipv4 == 1 , ipv6 == 2] : ')
-        while which_v!= '1' and which_v!= '2':
-            console.print("[bold red]Please enter (1/2)![/bold red]", style="red")
-            
-            which_v=input('\nChoose an ip version [ipv4 == 1 , ipv6 == 2] : ')
+        which_v=input_p('Choose an ip version\n ', {"1": 'ipv4' ,
+         "2": 'ipv6'})
         if which_v=="2":
             console.clear()
             console.print('[bold red]scaning ipv6 ..........[/bold red]')
@@ -501,7 +562,7 @@ def main2():
                     "peers": [
                         {{
                             "endpoint": "{best_result[0]}:{best_result[1]}",
-                            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+                            "publicKey": "{all_key[3]}"
                         }}
                     ],
                     "reserved": {all_key[2]},
@@ -526,7 +587,7 @@ def main2():
                     "peers": [
                         {{
                             "endpoint": "162.159.192.115:864",
-                            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+                            "publicKey": "{all_key2[3]}"
                         }}
                     ],
                     "reserved": {all_key2[2]},
@@ -708,7 +769,7 @@ def main2():
                     "peers": [
                         {{
                             "endpoint": "{best_result[0]}:{best_result[1]}",
-                            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+                            "publicKey": "{all_key[3]}"
                         }}
                     ],
                     "reserved": {all_key[2]},
@@ -945,7 +1006,7 @@ def main2():
         "peers": [
           {{
             "endpoint": "{best_result[0]}:{best_result[1]}",
-            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+            "publicKey": "{all_key[3]}"
           }}
         ],
         "reserved": {all_key[2]},
@@ -1119,7 +1180,7 @@ def main2():
         "peers": [
           {{
             "endpoint": "{best_result[0]}:{best_result[1]}",
-            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+            "publicKey": "{all_key[3]}"
           }}
         ],
         "reserved": {all_key[2]},
@@ -1145,7 +1206,7 @@ def main2():
         "peers": [
           {{
             "endpoint": "{best_result[0]}:{best_result[1]}",
-            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+            "publicKey": "{all_key[3]}"
           }}
         ],
         "reserved": {all_key2[2]},
@@ -1300,7 +1361,7 @@ def main2():
                 "private_key": "{all_key[1]}",
                 "server": "{best_result[0]}",
                 "server_port": {best_result[1]},
-                "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+                "peer_public_key": "{all_key[3]}",
                 "reserved": {all_key[2]},
                 "mtu": 1280,
                 "fake_packets": "5-10"
@@ -1316,7 +1377,7 @@ def main2():
                 "private_key": "{all_key2[1]}",
                 "server": "{best_result[0]}",
                 "server_port": {best_result[1]},
-                "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+                "peer_public_key": "{all_key[3]}",
                 "reserved": {all_key2[2]},
                 "mtu": 1280,
                 "fake_packets": "5-10"
@@ -1416,7 +1477,7 @@ def main3():
         "{all_key[0]}"
     ],
     "private_key": "{all_key[1]}",
-    "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+    "peer_public_key": "{all_key[3]}",
     "reserved": {all_key[2]},
 
     "mtu": 1280,
@@ -1434,7 +1495,7 @@ def main3():
         "{all_key2[0]}"
     ],
     "private_key": "{all_key2[1]}",
-    "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+    "peer_public_key": "{all_key2[3]}",
     "reserved": {all_key2[2]},
 
     "mtu": 1120
@@ -1456,7 +1517,7 @@ def main3():
         "{all_key[0]}"
     ],
     "private_key": "{all_key[1]}",
-    "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+    "peer_public_key": "{all_key[3]}",
     "reserved": {all_key[2]},
 
     "mtu": 1280,
@@ -1474,7 +1535,7 @@ def main3():
         "{all_key2[0]}"
     ],
     "private_key": "{all_key2[1]}",
-    "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+    "peer_public_key": "{all_key2[3]}",
     "reserved": {all_key2[2]},
 
     "mtu": 1120
@@ -1533,6 +1594,8 @@ def start_menu():
         "7": "WoW for v2ray or mahsaNG",
         "8": "WoW for v2ray or mahsaNG in sub link",
         "9": "Add/Delete shortcut",
+        "10":"get wireguard.conf",
+        "00" : "info",
         "0": "Exit"
     }
 
@@ -1569,33 +1632,21 @@ if __name__ == "__main__":
 
     if what =='1':
         
-        do_you_save=input('\nDo you want to save in a result csv? (y/n) : ')
-        while do_you_save!= 'y' and do_you_save!= 'n':
-            console.print("[bold red]Please enter (y/n)![/bold red]", style="red")
-            
-            do_you_save=input('\nDo you want to save in a result csv? (y/n) : ')
+        do_you_save=input_p('Do you want to save in a result csv\n', {"1" : 'Yes' , "2" : "No"})
         which = 'n'
-        if do_you_save=='y':
+        if do_you_save=='1':
         	os.system('termux-setup-storage')
-        	which = input('\nDo you want for bpb panel(with comma) or vahid panel(with enter) in a result csv? (with comma = 1/ with enter = 2) : ')
-        	while which != '1' and which != '2':
-        		console.print("[bold red]Please enter (1/2)![/bold red]", style="red")
-        		which = input('\nDo you want for bpb panel(with comma) or vahid panel(with enter) in a result csv? (1/2) : ')
+        	which = input_p('Do you want for bpb panel(with comma) or vahid panel(with enter) in a result csv\n ', {'1' : 'bpb panel(with comma)',
+        	 '2' : 'vahid panel(with enter)'})
        
             
         main()
     elif what=='2' or what=="3" or what =='7':
         
         if what == '7':
-        	polrn_block= input ('\nDo you want to block p@rn sites? ')
-        	while polrn_block !='Y' and polrn_block !='y' and polrn_block !='N' and polrn_block !='n' :
-        		console.print("\n[bold red]Please enter Y or N![/bold red]", style="red")
-        		
-        		polrn_block= input ('Do you want to block p@rn sites? ')
-        	isIran =input ('\nIp Iran[faster speed]( == 1) , Ip Germany [slower speed](== 2) :')
-        	while isIran !='1' and isIran !='2' :
-        		console.print("\n[bold red]Please enter 1 or 2![/bold red]", style="red")
-        		isIran =input ('\nIp Iran[faster speed]( == 1) , Ip Germany [slower speed](== 2) :')
+        	polrn_block= input_p('Do you want to block p@rn sites\n' , {"1": "Yes", "2": "No"})
+        	
+        	isIran =input_p('Iran or Germany\n' , {"1" : "Ip Iran[faster speed]", "2" : "Germany[slower speed]"})
         	
         	
         main2()
@@ -1604,13 +1655,15 @@ if __name__ == "__main__":
 
         for i in range(how_many):
             main3()
-    elif what =='5' or what=='6':
+    elif what =='5' or what =='6':
+        
+        	
         api_url = 'https://api.zeroteam.top/warp?format=sing-box'
         if what=='5':
         	endpoint_ip_best_result=main()
         	endpoint_ip = str(endpoint_ip_best_result[0])+":"+str(endpoint_ip_best_result[1])
         else:
-            endpoint_ip=input('\nEnter ip with port(Default =Enter( N )) : ')
+            endpoint_ip=input('Enter ip with port :')
             if endpoint_ip=='N' or  endpoint_ip=='n':
                 endpoint_ip="162.159.195.166:878"
             else:
@@ -1634,7 +1687,7 @@ if __name__ == "__main__":
                 
         rprint("[bold green]Please wait, generating WireGuard URL...[/bold green]")
         try:
-            config = fetch_config_from_api(api_url)
+            config = fetch_config_from_api()
         except Exception as E:
             print(' Try again Error =', E)
             exit()
@@ -1662,11 +1715,9 @@ if __name__ == "__main__":
     elif what == '9':
 
     	if os.path.exists('/data/data/com.termux/files/usr/etc/bash.bashrc.bak'):
-    		Delete=input('Do you want to Delete short cut?(Y/N) : ')
-    		while Delete =='N' and Delete =='n' and Delete=='Y' and Delete =='y':
-    			console.print("[bold red]Please enter Y or N![/bold red]", style="red")
-    			Delete=input('\nDo you want to Delete short cut?(Y/N) : ')
-    		if Delete=='Y' or Delete =='y':
+    		
+    		Delete=input_p('Do you want to Delete short cut',{"1" : "Yes", "2" : "No"})
+    		if Delete=='1':
     			os.system('rm /data/data/com.termux/files/usr/etc/bash.bashrc')
     			os.rename('/data/data/com.termux/files/usr/etc/bash.bashrc.bak', '/data/data/com.termux/files/usr/etc/bash.bashrc')
     			console.print("[bold red]Shortcut Deleted,  successful[/bold red]", style="red")
@@ -1695,6 +1746,41 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/Test/main/inst
     	   	f.seek(0, 0)
     	   	f.write(text.rstrip('\r\n') + '\n' + content)
     	rprint(f"\n[bold green]Please Restart your  termux and Enter [bold red]{name}[/bold red] to run script[/bold green]")
+
+    elif what =='10':
+        endpoint_ip_best_result=main()
+        endpoint_ip = str(endpoint_ip_best_result[0])+":"+str(endpoint_ip_best_result[1])
+        try:
+            all_key=free_cloudflare_account()
+        except Exception as E:
+            print(' Try again Error =', E)
+            exit()
+        name_conf=input('\nEnter a name: (defult [Enter]) : ')
+        
+        os.system('termux-setup-storage')
+        
+        	
+        
+        if name_conf=='' :
+        	
+        	name_conf='ACPwire.conf'
+        path = '/storage/emulated/0/'+name_conf
+        with open(path, 'w') as f:
+        	f.write(f'''[Interface]
+PrivateKey = {all_key[1]}
+Address = 172.16.0.2/32, {all_key[0]}
+DNS = 1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001
+MTU = 1280
+
+[Peer]
+PublicKey = {all_key[3]}
+AllowedIPs = 0.0.0.0/0, ::/0
+Endpoint = {endpoint_ip}''')
+        print(f'\n{name_conf} saved in {path}')
+    
+    elif what == '00':
+    	info()
+    	
     elif what=='0':
         gojo_goodbye_animation()
         time.sleep(1)
