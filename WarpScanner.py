@@ -1663,7 +1663,7 @@ if __name__ == "__main__":
         	endpoint_ip_best_result=main()
         	endpoint_ip = str(endpoint_ip_best_result[0])+":"+str(endpoint_ip_best_result[1])
         else:
-            endpoint_ip=input('Enter ip with port :')
+            endpoint_ip=input('Enter ip with port (defualt = n):')
             if endpoint_ip=='N' or  endpoint_ip=='n':
                 endpoint_ip="162.159.195.166:878"
             else:
