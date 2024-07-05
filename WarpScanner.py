@@ -65,7 +65,6 @@ save_result=[]
 best_result=[]
 WoW_v2=''
 isIran=''
-which_api=''
 def info():
     console.clear()
     
@@ -107,17 +106,7 @@ def urlencode(string):
     return urllib.parse.quote(string, safe='a-zA-Z0-9.~_-')
 
 def fetch_config_from_api():
-    global which_api
-    if which_api =='':
-    	which_api=input_p('Which Api ?\n ',{"1" : "Api 1", "2" : "Api 2"})
-    if which_api =='2':
-    	all_key=free_cloudflare_account2()
-    	return {
-        'PrivateKey': all_key[1],
-        'PublicKey': all_key[3],
-        'Reserved': all_key[2],
-        'Address': all_key[0]
-    }
+
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
     	    try:
@@ -154,12 +143,7 @@ def free_cloudflare_account2():
     return ["2606:4700:110:8d48:52cb:c565:3a80:c416/128" , PrivateKey , reserved, PublicKey]
 
 def free_cloudflare_account():
-    global which_api
-    if which_api=='':
-    	which_api=input_p('Which Api ?\n ',{"1" : "Api 1", "2" : "Api 2"})
-    if which_api =='2':
-    	all_key=free_cloudflare_account2()
-    	return all_key
+
     	
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
@@ -1570,7 +1554,7 @@ def generate_wireguard_url(config, endpoint):
     
     address= ','.join(encoded_addresses)
     
-    wireguard_url = (
+    wireguard_urll = (
         f"wireguard://{urlencode(config['PrivateKey'])}@{endpoint}"
         f"?address={address}&"
         f"publickey={urlencode(config['PublicKey'])}"
@@ -1578,11 +1562,11 @@ def generate_wireguard_url(config, endpoint):
     
     
     if config.get('Reserved'):
-        wireguard_url += f"&reserved={urlencode(config['Reserved'])}"
+        wireguard_urll += f"&reserved={urlencode(config['Reserved'])}"
     
-    wireguard_url += "#Tel= @arshiacomplus wire"
+    wireguard_urll += "#Tel= @arshiacomplus wire"
 
-    return wireguard_url
+    return wireguard_urll
 def start_menu():
     options = {
         "1": "scan ip",
