@@ -217,7 +217,7 @@ def create_ip_range(start_ip, end_ip):
     return ip_range
 def scan_ip_port(ip, port, results, packet_loss):
     global best_result
-    global save_result
+    
    
     start_time = time.time() 
     try:
@@ -246,13 +246,7 @@ def scan_ip_port(ip, port, results, packet_loss):
            
             console.print(f"IP: {ip} Port: {port} is not responding or closed.", style="red")
             packet_loss[ip] = packet_loss.get(ip, 0) + 100
-        packet_loss[ip]=packet_loss.get(ip, 0)
-        if packet_loss.get(ip, 0)==0:
-            try:
-                save_result.index(str(ip))
-            except Exception:
-                save_result.append("\n")
-                save_result.append(str(ip))
+
         	
 
     except Exception as E:
@@ -345,6 +339,7 @@ def main_v6():
     	return best_ip_mix
 
 def main():
+    global save_result
     global max_workers_number
 
     if what!='2' and what!='3' and what!='4':
@@ -384,6 +379,12 @@ def main():
     for result in results:
         ip, port, ping = result
         loss_rate = packet_loss.get(ip, 0)
+        if loss_rate == 0.00 and ping > 250.00:
+            try:
+                save_result.index(str(ip))
+            except Exception:
+                save_result.append("\n")
+                save_result.append(str(ip))
         combined_score = ping + (loss_rate * 10)
         extended_results.append((ip, port, ping, loss_rate, combined_score))
     
@@ -391,6 +392,7 @@ def main():
     for ip in packet_loss:
         if ip not in [res[0] for res in extended_results]:
             loss_rate = packet_loss[ip]
+            
             extended_results.append((ip, None, None, loss_rate, loss_rate * 10))
 
     sorted_results = sorted(extended_results, key=lambda x: x[4])
