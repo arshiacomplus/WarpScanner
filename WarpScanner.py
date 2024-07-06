@@ -53,6 +53,7 @@ from requests.exceptions import ConnectionError
 import random
 import subprocess
 import json
+import sys
 
 
 console = Console()
@@ -85,7 +86,7 @@ def info():
     whats2 = Prompt.ask("Choose an option", choices=list(options2.keys()), default="1")
     
     if whats2=='0':
-    	exit(),os.system('python WarpScanner.py')
+    	os.execv(sys.executable, ['python'] + sys.argv)
     elif whats2=='1':
     	os.system("termux-open-url 'https://t.me/arshia_mod_fun'")
     elif whats2=='2'   :
@@ -99,7 +100,7 @@ def input_p(pt ,options):
     	rprint(f" [bold yellow]{key}[/bold yellow]: {value}")
     whats = Prompt.ask("Choose an option", choices=list(options.keys()), default="1")
     if whats=='0':
-    	os.system('python WarpScanner.py')
+    	os.execv(sys.executable, ['python'] + sys.argv)
     return whats
 def urlencode(string):
     
