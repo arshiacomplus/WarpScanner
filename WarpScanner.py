@@ -65,6 +65,8 @@ save_result=[]
 best_result=[]
 WoW_v2=''
 isIran=''
+max_workers_number=0
+
 def info():
     console.clear()
     
@@ -83,7 +85,7 @@ def info():
     whats2 = Prompt.ask("Choose an option", choices=list(options2.keys()), default="1")
     
     if whats2=='0':
-    	os.system('python WarpScanner.py')
+    	exit(),os.system('python WarpScanner.py')
     elif whats2=='1':
     	os.system("termux-open-url 'https://t.me/arshia_mod_fun'")
     elif whats2=='2'   :
@@ -213,11 +215,10 @@ def create_ip_range(start_ip, end_ip):
                 temp[i2-1] += 1
     ip_range.append(end_ip)
     return ip_range
-
 def scan_ip_port(ip, port, results, packet_loss):
     global best_result
     global save_result
-
+   
     start_time = time.time() 
     try:
       
@@ -239,22 +240,26 @@ def scan_ip_port(ip, port, results, packet_loss):
             ping_time = float(output.decode().split('time=')[1].split(' ')[0])
             results.append((ip, port, ping_time))
 
+
+            
+        else:
+           
+            console.print(f"IP: {ip} Port: {port} is not responding or closed.", style="red")
+            packet_loss[ip] = packet_loss.get(ip, 0) + 100
+        packet_loss[ip]=packet_loss.get(ip, 0)
+        if packet_loss.get(ip, 0)==0:
             try:
                 save_result.index(str(ip))
             except Exception:
                 save_result.append("\n")
                 save_result.append(str(ip))
-        else:
-          
-            console.print(f"IP: {ip} Port: {port} is not responding or closed.", style="red")
-            packet_loss[ip] = packet_loss.get(ip, 0) + 1
+        	
 
-
-
-    except Exception as e:
-        console.print(f"Error scanning {ip}:{port} - {e}", style="red")
-        packet_loss[ip] = packet_loss.get(ip, 0) + 1
+    except Exception as E:
+        console.print(f"Error - {E}", style="red")
         
+        
+
 def main_v6():
     def generate_ipv6():
         return f"2606:4700:d{random.randint(0, 1)}::{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}"
@@ -340,6 +345,8 @@ def main_v6():
     	return best_ip_mix
 
 def main():
+    global max_workers_number
+
     if what!='2' and what!='3' and what!='4':
         which_v=input_p('Choose an ip version\n ', {"1": 'ipv4' ,
          "2": 'ipv6'})
@@ -348,7 +355,10 @@ def main():
             console.print('[bold red]scaning ipv6 ..........[/bold red]')
             best_result=main_v6()
             return best_result
-
+    Cpu_speed=input_p('scan power', {"1" : "Faster" , "2" : "Slower"})
+    if Cpu_speed == "1": max_workers_number=1000
+    elif Cpu_speed == "2": max_workers_number=500
+    
     console.clear()
     console.print("Please wait, scanning IP ...", style="blue")
 
@@ -360,13 +370,15 @@ def main():
 
     for start_ip, end_ip in zip(start_ips, end_ips):
         ip_range = create_ip_range(start_ip, end_ip)
-        with ThreadPoolExecutor(max_workers=1000) as executor:
+        with ThreadPoolExecutor(max_workers=max_workers_number) as executor:
             for ip in ip_range:
                 for port in ports:
                     executor.submit(scan_ip_port, ip, port, results, packet_loss)
 
     for ip in packet_loss:
         packet_loss[ip] = (packet_loss[ip] / len(ports)) * 100
+        
+        
 
     extended_results = []
     for result in results:
@@ -414,7 +426,7 @@ def main():
         console.print("Nothing was found", style="red")
     t=False
     if what == '1':
-        if do_you_save=='y':
+        if do_you_save=='1':
             if which =="1":
                  with open('/storage/emulated/0/result.csv' , "w") as f:
                       for j in save_result[1:]:
@@ -466,8 +478,11 @@ def main2():
         "dns": {{
             "hosts": {{
                 "geosite:category-ads-all": "127.0.0.1",
-                "geosite:category-ads-ir": "127.0.0.1",
-                "geosite:category-porn": "127.0.0.1"
+                "geosite:category-ads-ir": "127.0.0.1"'''
+    	if polrn_block=='1' :WoW_v2+=f''',
+                "geosite:category-porn": "127.0.0.1"'''
+                
+    	WoW_v2+=f'''
             }},
             "servers": [
                 "https://94.140.14.14/dns-query",
@@ -650,8 +665,10 @@ def main2():
                 {{
                     "domain": [
                         "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
+                        "geosite:category-ads-ir"'''
+    	if polrn_block=='1' :WoW_v2+=f''',
+                        "geosite:category-porn"'''
+    	WoW_v2+=f'''
                     ],
                     "outboundTag": "block",
                     "type": "field"
@@ -673,8 +690,11 @@ def main2():
         "dns": {{
             "hosts": {{
                 "geosite:category-ads-all": "127.0.0.1",
-                "geosite:category-ads-ir": "127.0.0.1",
-                "geosite:category-porn": "127.0.0.1"
+                "geosite:category-ads-ir": "127.0.0.1"'''
+    	if polrn_block=='1' :WoW_v2+=f''',
+                "geosite:category-porn": "127.0.0.1"'''
+                
+    	WoW_v2+=f'''
             }},
             "servers": [
                 "https://94.140.14.14/dns-query",
@@ -832,8 +852,10 @@ def main2():
                 {{
                     "domain": [
                         "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
+                        "geosite:category-ads-ir"'''
+    	if polrn_block=='1' :WoW_v2+=f''',
+                        "geosite:category-porn"'''
+    	WoW_v2+=f'''
                     ],
                     "outboundTag": "block",
                     "type": "field"
@@ -847,8 +869,9 @@ def main2():
         }},
         "stats": {{}}
     }}'''
-    	if n % 2==0:
+    	if n !=how_many-1:
     		WoW_v2+=','
+    		return 
     def main2_1():
         global best_result
         
@@ -906,7 +929,7 @@ def main2():
     "hosts": {{
       "geosite:category-ads-all": "127.0.0.1",
       "geosite:category-ads-ir": "127.0.0.1"'''
-        	 if polrn_block=='Y' or polrn_block=='y': Wow+=''',
+        	 if polrn_block=='1' : Wow+=''',
       "geosite:category-porn": "127.0.0.1"'''
         
         	
@@ -1072,7 +1095,7 @@ def main2():
           "geosite:category-ads-ir"'''
         	 
         	 if isIran=='1':
-        	 	if polrn_block=='Y' or polrn_block=='y':Wow+=''',
+        	 	if polrn_block=='1':Wow+=''',
           "geosite:category-porn"'''
         	 	Wow+='''
         ],
@@ -1272,7 +1295,7 @@ def main2():
           "geosite:category-ads-ir"'''
         	 
         	 if isIran == '2' :
-        	 	if polrn_block=='Y' or polrn_block=='y':Wow+=''',
+        	 	if polrn_block=='1' :Wow+=''',
           "geosite:category-porn"'''
         	 	Wow+='''
         ],
@@ -1406,10 +1429,12 @@ def main2():
     		main2_2()
     	os.system('clear')
     	
+    	#upload_to_bashupload
     	upload_to_bashupload(f'''[
 {WoW_v2}
 ]''')
     	exit()
+    	
     
     main2_1()
 
@@ -1626,8 +1651,9 @@ if __name__ == "__main__":
             
         main()
     elif what=='2' or what=="3" or what =='7':
-        
+    
         if what == '7':
+        	
         	polrn_block= input_p('Do you want to block p@rn sites\n' , {"1": "Yes", "2": "No"})
         	
         	isIran =input_p('Iran or Germany\n' , {"1" : "Ip Iran[faster speed]", "2" : "Germany[slower speed]"})
@@ -1691,7 +1717,7 @@ if __name__ == "__main__":
             print("Failed to generate WireGuard URL.")
     elif what == '8':
     	how_many=get_number_of_configs()
-    	
+    	polrn_block= input_p('Do you want to block p@rn sites\n' , {"1": "Yes", "2": "No"})
 
     	
     	main2()
