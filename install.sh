@@ -46,12 +46,14 @@ fi
 
 if [ -f WarpScanner.py ]; then
     first_line=$(head -n 1 WarpScanner.py)
-    if [ "$first_line" != "V=1" ]; then
+    if [ \"$first_line\" != \"V=1\" ]; then
         rm WarpScanner.py
-        echo "Updating WarpScanner.py..."
+        echo \"Updating WarpScanner.py...\"
+    else
+        exit 0
     fi
 fi
 
-curl -fsSL -o WarpScanner.py https://raw.githubusercontent.com/arshiacomplus/Test/main/WarpScanner.py || { echo "Failed to download WarpScanner.py. Exiting."; exit 1; }
+curl -fsSL -o WarpScanner.py https://raw.githubusercontent.com/arshiacomplus/Test/main/WarpScanner.py || { echo \"Failed to download WarpScanner.py. Exiting.\"; exit 1; }
 
 python WarpScanner.py
