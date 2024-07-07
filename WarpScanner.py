@@ -1,4 +1,4 @@
-V=3
+V=5
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -254,12 +254,9 @@ def scan_ip_port(ip, port, results, packet_loss):
     except Exception as E:
         console.print(f"Error - {E}", style="red")
         
-        
 def main_v6():
     def generate_ipv6():
         return f"2606:4700:d{random.randint(0, 1)}::{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}"
-
-
 
     def ping_ip(ip, port):
         try:
@@ -273,32 +270,36 @@ def main_v6():
             return float('inf')
 
     def scan_ip(ip, ports_to_check):
-       
+        results = []
         for n in ports_to_check:
-        	ping_time = ping_ip(ip, n)
-        	return ip , ping_time
-       
+            ping_time = ping_ip(ip, n)
+            results.append((ip, ping_time))
+        return results
 
     console = Console()
     ports_to_check = [1074 , 864]
     best_ping = float("inf")
     best_ip = ""
     random_ip=""
-    
+
     table = Table(title="IP Scan Results")
     table.add_column("IP Address", justify="center", style="cyan", no_wrap=True)
-    
     table.add_column("Ping Time (ms)", justify="center", style="green")
 
+    results = []
     with ThreadPoolExecutor(max_workers=1000) as executor:
         futures = [executor.submit(scan_ip, generate_ipv6(), ports_to_check) for _ in range(100)]
         for future in as_completed(futures):
-            ip,ping_time = future.result()
-            table.add_row(ip,  f"{ping_time:.2f}")
-            if ping_time < best_ping:
-                    best_ping = ping_time
-                    best_ip = ip
+            results.extend(future.result())
 
+    # Sort the results based on ping time
+    results.sort(key=lambda x: x[1])
+
+    for ip, ping_time in results:
+        table.add_row(ip,  f"{ping_time:.2f}")
+        if ping_time < best_ping:
+            best_ping = ping_time
+            best_ip = ip
 
     console.print(table)
     port_random = ports_to_check[random.randint(0, len(ports_to_check) - 1)]
@@ -309,11 +310,11 @@ def main_v6():
         best_ip_mix[1] = port_random
         return best_ip_mix
     else:
-     console.print(f"\n[bold green]Best IP : [{random_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
-     best_ip_mix = [1] * 2
-     best_ip_mix[0] = "[" + random_ip + "]"
-     best_ip_mix[1] = port_random
-     return best_ip_mix
+        console.print(f"\n[bold green]Best IP : [{random_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
+        best_ip_mix = [1] * 2
+        best_ip_mix[0] = "[" + random_ip + "]"
+        best_ip_mix[1] = port_random
+        return best_ip_mix
 
 def main():
     global save_result
