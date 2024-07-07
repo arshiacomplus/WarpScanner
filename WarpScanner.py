@@ -1,4 +1,4 @@
-V=1.1
+V=2
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
