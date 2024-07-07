@@ -1,4 +1,4 @@
-V=1.0
+V=1.1
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -260,6 +260,7 @@ def main_v6():
     Cpu_speedv6=input_p('scan power', {"1" : "Faster" , "2" : "Slower"})
     if Cpu_speedv6 == "1": max_workers_numberv6=1000
     elif Cpu_speedv6 == "2": max_workers_numberv6=500
+    console.print('[bold red]scaning ipv6 ..........[/bold red]')
         
     def generate_ipv6():
         return f"2606:4700:d{random.randint(0, 1)}::{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}"
@@ -353,7 +354,7 @@ def main():
          "2": 'ipv6'})
         if which_v=="2":
             console.clear()
-            console.print('[bold red]scaning ipv6 ..........[/bold red]')
+            
             best_result=main_v6()
             return best_result
     Cpu_speed=input_p('scan power', {"1" : "Faster" , "2" : "Slower"})
