@@ -50,6 +50,7 @@ if [ -f WarpScanner.py ]; then
         rm WarpScanner.py
         echo \"Updating WarpScanner.py...\"
     else
+        python WarpScanner.py
         exit 0
     fi
 fi
