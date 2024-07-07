@@ -71,7 +71,7 @@ max_workers_number=0
 def info():
     console.clear()
     
-    table = Table(show_header=True,title="IP Scan Results", header_style="bold blue")
+    table = Table(show_header=True,title="Info", header_style="bold blue")
     table.add_column("Creator", width=15)
     
     table.add_column("contact", justify="right")
