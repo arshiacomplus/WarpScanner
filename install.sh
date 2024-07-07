@@ -46,7 +46,7 @@ fi
 
 if [ -f WarpScanner.py ]; then
     first_line=$(head -n 1 WarpScanner.py)
-    if [ \"$first_line\" != \"V=1.0\" ]; then
+    if [ \"$first_line\" != \"V=1.1\" ]; then
         rm WarpScanner.py
         echo \"Updating WarpScanner.py...\"
     else
