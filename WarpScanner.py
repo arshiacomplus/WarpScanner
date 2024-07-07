@@ -320,7 +320,7 @@ def main():
     global save_result
     global max_workers_number
 
-    if what!='2' and what!='3' and what!='4':
+    if what!='0':
         which_v=input_p('Choose an ip version\n ', {"1": 'ipv4' ,
          "2": 'ipv6'})
         if which_v=="2":
