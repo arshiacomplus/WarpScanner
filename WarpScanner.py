@@ -1,4 +1,4 @@
-V=1
+V=1.0
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -257,6 +257,10 @@ def scan_ip_port(ip, port, results, packet_loss):
         
 
 def main_v6():
+    Cpu_speedv6=input_p('scan power', {"1" : "Faster" , "2" : "Slower"})
+    if Cpu_speedv6 == "1": max_workers_numberv6=1000
+    elif Cpu_speedv6 == "2": max_workers_numberv6=500
+        
     def generate_ipv6():
         return f"2606:4700:d{random.randint(0, 1)}::{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}"
 
@@ -312,7 +316,7 @@ def main_v6():
     table.add_column("Open Ports", justify="center", style="magenta")
     table.add_column("Ping Time (ms)", justify="center", style="green")
 
-    with ThreadPoolExecutor(max_workers=1000) as executor:
+    with ThreadPoolExecutor(max_workers=max_workers_numberv6) as executor:
         futures = [executor.submit(scan_ip, generate_ipv6(), ports_to_check) for _ in range(100)]
         for future in as_completed(futures):
             ip, open_ports, ping_time = future.result()
