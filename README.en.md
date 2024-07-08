@@ -19,7 +19,7 @@ language : 🇮🇷[Persian](README.md)| 🇹🇷[Turkish](README.tr.md)| 🇬�
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
 ```POV-Ray SDL
-bash <(curl -fsSL https://raw.githubusercontent.com/darknessm427/WarpScanner/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/install.sh)
 ```
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
@@ -28,7 +28,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/darknessm427/WarpScanner/mai
 
 ## 1. IP scanner is IPv4, IPv6
 
-##### ▫️قابلیت ذخیره شدن  آیپی ها ورژن چهار در storage/emulated/0/ و فایلی به اسم result.csv
+##### ▫️ The ability to save version four IPs in storage/emulated/0/ and a file called result.csv
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
@@ -84,9 +84,9 @@ If you press n, it will select the IP that I have already set
 
 ## 7. To get config, warp on warp for v2ray and MahsaNG, you can use option 7 (help was taken from the bpb panel....)
 
-You will be asked if the P,W, (Panda Kung Fu Kar) sites will be blocked or not<br><br/>
+You will be asked whether P,W, (Panda Kung Fu Kar) sites will be blocked or not<br><br/>
 
-## 8. You can subwarp that warp for v2ray or MahsaNg
+## 8. You can sub warp that warp for v2ray or MahsaNg
 
 <br><br/>
 
