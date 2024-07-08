@@ -1,4 +1,4 @@
-V=7
+V=8
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -93,6 +93,22 @@ def info():
     elif whats2=='2'   :
     	os.system("termux-open-url 'https://github.com/arshiacomplus/Test/tree/main'")
     	
+def check_ipv6():
+    
+    try:
+    	ipv6 = requests.get('http://v6.ipv6-test.com/api/myip.php')
+    	if ipv6.status_code == 200:
+    		ipv6 ="[green]Available[/green]"
+    except Exception:
+    	ipv6 = "Unavailable"
+    try:
+    	ipv4 = requests.get('http://v4.ipv6-test.com/api/myip.php')
+    	if ipv4.status_code == 200:
+    		ipv4= "[green]Available[/green]"
+    except Exception:
+    	ipv4 = "Unavailable"
+    return  [ipv4,ipv6]
+
 def input_p(pt ,options):
     os.system('clear')
     options.update({"0" : "Exit"})
@@ -1573,6 +1589,9 @@ def generate_wireguard_url(config, endpoint):
 
     return wireguard_urll
 def start_menu():
+    check_ipv=check_ipv6()
+    rprint(f'ipv4 : [bold red]{check_ipv[0]}[/bold red]\nipv6 : [bold red]{check_ipv[1]}[/bold red]\n')
+    
     options = {
         "1": "scan ip",
         "2": "wireguard config",
