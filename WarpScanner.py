@@ -1,4 +1,4 @@
-V=8
+V=9
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -453,7 +453,7 @@ def main2():
     def main2_2():
     	global WoW_v2
     	try:
-    	   all_key=free_cloudflare_account()
+    	   all_key3=free_cloudflare_account()
     	except Exception as E:
             print(' Try again Error =', E)
             exit()
@@ -551,17 +551,17 @@ def main2():
                 "settings": {{
                     "address": [
                         "172.16.0.2/32",
-                        "{all_key[0]}"
+                        "{all_key3[0]}"
                     ],
                     "mtu": 1280,
                     "peers": [
                         {{
                             "endpoint": "{best_result[0]}:{best_result[1]}",
-                            "publicKey": "{all_key[3]}"
+                            "publicKey": "{all_key3[3]}"
                         }}
                     ],
-                    "reserved": {all_key[2]},
-                    "secretKey": "{all_key[1]}",
+                    "reserved": {all_key3[2]},
+                    "secretKey": "{all_key3[1]}",
                     "keepAlive": 10
                 }},
                 "streamSettings": {{
@@ -763,17 +763,17 @@ def main2():
                 "settings": {{
                     "address": [
                         "172.16.0.2/32",
-                        "{all_key[0]}"
+                        "{all_key3[0]}"
                     ],
                     "mtu": 1280,
                     "peers": [
                         {{
                             "endpoint": "{best_result[0]}:{best_result[1]}",
-                            "publicKey": "{all_key[3]}"
+                            "publicKey": "{all_key3[3]}"
                         }}
                     ],
-                    "reserved": {all_key[2]},
-                    "secretKey": "{all_key[1]}",
+                    "reserved": {all_key3[2]},
+                    "secretKey": "{all_key3[1]}",
                     "keepAlive": 10
                 }},
                 "tag": "warp"
@@ -839,8 +839,7 @@ def main2():
                 }},
                 {{
                     "ip": [
-                        "geoip:ir",
-                        "geoip:private"
+                        "geoip:ir"
                     ],
                     "outboundTag": "direct",
                     "type": "field"
