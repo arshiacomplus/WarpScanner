@@ -1,6 +1,6 @@
-## 扭曲扫描仪
+## Warp Scanner
 
-语言 : 🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md)| 🇬🇧[英语](README.en.md) | 🇨🇳[中国人](README.zh-CN.md)
+语言 : 🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -19,7 +19,7 @@
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
 ```POV-Ray SDL
-bash <(curl -fsSL https://raw.githubusercontent.com/darknessm427/WarpScanner/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/install.sh)
 ```
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
@@ -38,7 +38,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/darknessm427/WarpScanner/mai
 
 ##### 注意：您可以为 Vahid 面板（带 in​​ter）和 bpb 面板（带逗号）创建一个干净的 IP。
 
-##### 保存到结果文件中
+##### 保存在结果文件中
 
 ##### 然后你输入数字一（IP版本四）
 
