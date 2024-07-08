@@ -45,7 +45,7 @@ if ! command -v curl; then
 fi
 if [ -f WarpScanner.py ]; then
     first_line=$(head -n 1 WarpScanner.py)
-    if [ "$first_line" != "import urllib.request" ]; then
+    if [ "$first_line" == "import urllib.request" ]; then
         rm WarpScanner.py
         echo "Updating WarpScanner.py..."
         curl -fsSL -o WarpScanner.py https://raw.githubusercontent.com/arshiacomplus/Test/main/WarpScanner.py || { echo \"Failed to download WarpScanner.py. Exiting.\"; exit 1; }
