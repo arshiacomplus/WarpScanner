@@ -21,7 +21,7 @@ language : 🇮🇷[Persian](README.md) | 🇹🇷[Turkish](README.tr.md) | 🇬
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
 ```POV-Ray SDL
-bash <(curl -fsSL https://raw.githubusercontent.com/darknessm427/WarpScanner/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/install.sh)
 ```
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
