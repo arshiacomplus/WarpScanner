@@ -62,7 +62,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 5. 获取 Wireguard 配置以在 v2ray 和 MahsaNG 中使用
 
-> 这是给那些收到错误请求的人的👈👈<https://t.me/arshia_mod_fun/298>
+> 这是给那些收到错误请求的人的👈👈[HTTPS://他.么/AR是A\_摸到\_妇女/298](https://t.me/arshia_mod_fun/298)
 
 输入选项 1，然后输入选项 2 
  您可以获得 Shish 的 IP 版本，该版本也适用于 Mahsa Anji 和 Vettori 的选项 5 Wireguard 配置。
@@ -94,7 +94,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 为其命名并关闭 Thermox 窗口并打开一个新窗口。
 
- نوع استفاده :
+使用类型：
 
 -   输入您为运行脚本指定的名称
 -   要删除它，请再次按相同的数字，然后按 Y
@@ -103,13 +103,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 10.打开此配置文件选项`.conf`Wireguard 专为 Windscribe 和 Wireguard 打造
 
-## 捐
+## 给
 
 <b>交易：</b><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
 
-## 支持
+## 保护
 
-<p><b>If you like my project, you can support my project by giving stars, following and introducing it to your friends</b></p>
+<p><b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b></p>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
