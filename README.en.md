@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### و بعد باید به ترموکس دسترسی حافظه بدید که ازتون خواسته میشه
+##### And then you have to give the memory access to Termox that you are asked
 
 ##### and then
 
@@ -106,6 +106,10 @@ Type of Use :
 ## Donate
 
 <b>Trx:</b><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
+
+## support
+
+<p><b>If you like my project, you can support my project by giving stars, following and introducing it to your friends</b></p>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
