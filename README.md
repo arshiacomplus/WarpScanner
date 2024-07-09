@@ -8,7 +8,7 @@ language : 🇮🇷[Persian](README.md) | 🇹🇷[Turkish](README.tr.md) | 🇬
 </p> 
 
 <p align="center">   
-   <img  width="70%" src="https://github.com/darknessm427/WarpScanner/blob/main/Arshia.jpg" />
+   <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
 >ترماکس رو از گوگل پلی دانلود نکنید▫️ترماکس رو از گوگل پلی دانلود نکنید
