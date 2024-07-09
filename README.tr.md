@@ -7,7 +7,7 @@ dil : 🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[�
 </p> 
 
 <p align="center">   
-   <img  width="70%" src="https://github.com/darknessm427/WarpScanner/blob/main/Arshia.jpg" />
+   <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
 > Thermox'u Google Play'den indirin Thermox'u Google Play'den indirmeyin
@@ -86,7 +86,7 @@ N tuşuna basarsanız önceden ayarladığım IP seçilecektir
 
 P,W, (Panda Kung Fu Kar) sitelerinin engellenip engellenmeyeceği size sorulacaktır.<br><br/>
 
-## 8. Bu warp'ı v2ray veya MahsaNg için alt çözgü yapabilirsiniz
+## 8. Bu çözgüyü v2ray veya MahsaNg için alt çözgü yapabilirsiniz.
 
 <br><br/>
 
