@@ -103,7 +103,7 @@ Kullanım Şekli :
 
 ## 10. Bu yapılandırma dosyası seçeneğini aç`.conf`Wireguard Windscribe ve Wireguard için tasarlandı
 
-## vermek
+## bağış yapmak
 
 <b>TRX:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
 
