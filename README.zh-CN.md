@@ -103,7 +103,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 10.打开此配置文件选项`.conf`Wireguard 专为 Windscribe 和 Wireguard 打造
 
-## 给
+## 捐
 
 <b>交易：</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
 
