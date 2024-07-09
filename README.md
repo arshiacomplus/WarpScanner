@@ -96,7 +96,7 @@ https://t.me/arshia_mod_fun/298
 ## 10. بازدن این گزینه فایل کانفیگ `.conf` وایرگارد  ساخته میشود برای ویندسکرایب و وایرگارد 
 
 
-## اهدا
+## اهدا کردن
 
 <b>Trx:</b><br>
 <a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
