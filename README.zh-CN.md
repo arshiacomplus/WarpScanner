@@ -1,4 +1,4 @@
-## Warp Scanner
+## 扭曲扫描仪
 
 语言 : 🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)
 
@@ -38,7 +38,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 注意：您可以为 Vahid 面板（带 in​​ter）和 bpb 面板（带逗号）创建一个干净的 IP。
 
-##### 保存在结果文件中
+##### 保存到结果文件中
 
 ##### 然后你输入数字一（IP版本四）
 
