@@ -96,14 +96,14 @@ https://t.me/arshia_mod_fun/298
 ## 10. بازدن این گزینه فایل کانفیگ `.conf` وایرگارد  ساخته میشود برای ویندسکرایب و وایرگارد 
 
 
-## Donate
+## اهدا
 
 <b>Trx:</b>
 <a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
 
-## support 
+## حمایت 
 
-<p><b>If you like my project, you can support my project by giving stars, following and introducing it to your friends</b></p>
+<p><b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b></p>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
