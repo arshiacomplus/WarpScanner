@@ -64,8 +64,8 @@ If you get a timeout error, try a few more times<br><br/>
 
 > This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
 
-By entering option 1 and after that 2 
- You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mahsa Anji and Vettori.
+ با وارد کردن گزینه ۱ و بعد از اون ۲ 
+ میتونید آیپی ورژن شیش دریافت کنید که برای گزینه ۵ کانفیگ وایرگارد برای مهسا انجی و و ویتوری هم پیاده سازی شده 
 
 After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
 
@@ -90,7 +90,7 @@ You will be asked whether P,W, (Panda Kung Fu Kar) sites will be blocked or not<
 
 <br><br/>
 
-## 9. You can make a short cut
+## 9. میتونید یه شورت کات درست کنید
 
 Give it a name and close the Thermox window and open a new one.
 
@@ -103,13 +103,13 @@ Type of Use :
 
 ## 10. Open this config file option`.conf`Wireguard is made for Windscribe and Wireguard
 
-## Donate
+## give
 
 <b>Trx:</b><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
 
-## support
+## Protection
 
-<p><b>If you like my project, you can support my project by giving stars, following and introducing it to your friends</b></p>
+<p><b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b></p>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
