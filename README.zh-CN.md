@@ -7,7 +7,7 @@
 </p> 
 
 <p align="center">   
-   <img  width="70%" src="https://github.com/darknessm427/WarpScanner/blob/main/Arshia.jpg" />
+   <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
 > 从 Google Play 下载 Thermox 不要从 Google Play 下载 Thermox
@@ -38,7 +38,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 注意：您可以为 Vahid 面板（带 in​​ter）和 bpb 面板（带逗号）创建一个干净的 IP。
 
-##### 保存到结果文件中
+##### 保存在结果文件中
 
 ##### 然后你输入数字一（IP版本四）
 
