@@ -38,7 +38,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 注意：您可以为 Vahid 面板（带 in​​ter）和 bpb 面板（带逗号）创建一个干净的 IP。
 
-##### 保存在结果文件中
+##### 保存到结果文件中
 
 ##### 然后你输入数字一（IP版本四）
 
@@ -52,7 +52,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 （这是针对那些收到错误 best_result 的人[0]吃） 
  这种情况，可以先用其他扫描仪扫描IP 
- 选择第三个选项后，会要求你输入IP和端口，或者如果你输入N，它将选择我已经输入的IP。
+ 选择第三个选项后，会要求你输入IP和端口，或者如果你输入N，它会选择我已经输入的IP。
 
 <br><br/>
 
@@ -84,7 +84,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 7. 要获取配置，对 v2ray 和 MahsaNG 进行扭曲，您可以使用选项 7（帮助来自 bpb 面板......）
 
-系统会询问您 P,W, (Panda Kung Fu Kar) 网站是否会被屏蔽<br><br/>
+系统会询问您 P、W（熊猫功夫卡）网站是否会被屏蔽<br><br/>
 
 ## 8. 您可以对 v2ray 或 MahsaNg 的扭曲进行子扭曲
 
@@ -105,11 +105,11 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 给
 
-<b>交易：</b><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
+<b>交易：</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
 
-## 保护
+## 支持项目
 
-<p><b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b></p>
+<b>如果您喜欢我的项目，您可以通过给星星、关注并介绍给您的朋友来支持我的项目</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
