@@ -1,6 +1,6 @@
 ## Çözgü Tarayıcı
 
-dil : 🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[İngilizce](README.en.md)| 🇨🇳[Çince](README.zh-CN.md)
+dil : 🇮🇷[Persian](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[İngilizce](README.en.md)| 🇨🇳[Çince](README.zh-CN.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -86,7 +86,7 @@ N tuşuna basarsanız önceden ayarladığım IP seçilecektir
 
 P,W, (Panda Kung Fu Kar) sitelerinin engellenip engellenmeyeceği size sorulacaktır.<br><br/>
 
-## 8. Bu çözgüyü v2ray veya MahsaNg için alt çözgü yapabilirsiniz.
+## 8. Bu çözgüyü v2ray veya MahsaNg için alt çözgü yapabilirsiniz
 
 <br><br/>
 
@@ -102,6 +102,10 @@ Kullanım Şekli :
 <br><br/>
 
 ## 10. Bu yapılandırma dosyası seçeneğini aç`.conf`Wireguard Windscribe ve Wireguard için tasarlandı
+
+## Bağış yapmak
+
+<b>TRX:</b><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
