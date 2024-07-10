@@ -68,6 +68,7 @@ if [ -f WarpScanner.py ]; then
     fi
 fi
 
-#curl -fsSL -o WarpScanner.py https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/WarpScanner.py || { echo \"Failed to download WarpScanner.py. Exiting.\"; exit 1; }
-
+echo "install WarpScanner.py"
+curl -fsSL -o WarpScanner.py https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/WarpScanner.py || { echo \"Failed to download WarpScanner.py. Exiting.\"; exit 1; }
+python WarpScanner.py
 
