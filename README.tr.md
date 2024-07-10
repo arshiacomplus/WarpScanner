@@ -82,11 +82,11 @@ N tuşuna basarsanız önceden ayarladığım IP seçilecektir
 > ipv4:bağlantı noktası
 > giriş yaptın<br><br/>
 
-## 7.  برای دریافت کانفیگ ، وارپ آن وارپ برای v2ray و MahsaNG میتونید از گزینه ۷ استفاده کنید (از پنل bpb کمک گرفته شده ....)
+## 7. V2ray ve MahsaNG için yapılandırma, warp on warp almak için 7. seçeneği kullanabilirsiniz (yardım bpb panelinden alınmıştır....)
 
 P,W, (Panda Kung Fu Kar) sitelerinin engellenip engellenmeyeceği size sorulacaktır.<br><br/>
 
-## 8. Bu warp'ı v2ray veya MahsaNg için alt çözgü yapabilirsiniz
+## 8. میتونید ساب وارپ آن وارپ برای v2ray یا MahsaNg بگیرید
 
 <br><br/>
 
