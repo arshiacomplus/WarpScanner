@@ -1,4 +1,4 @@
-V=9
+V=10
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -1747,7 +1747,7 @@ if __name__ == "__main__":
     			f.write(txt)
     	text=f'''
 {name}() {{
-bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/Test/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/install.sh)
 }}\n'''
     	with open('/data/data/com.termux/files/usr/etc/bash.bashrc', 'r+') as f:
     	   	content = f.read()
