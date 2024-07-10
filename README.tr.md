@@ -70,7 +70,7 @@ Seçenek 1'i ve ardından 2'yi girerek
 Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye aktardıktan sonra, bir hatayla karşılaşmamak için bunu yapın.
 
 -   1\. Kalem düğmesi
--   2\. Braketi IP'nin yanına koymak[ipvsh]
+-   2\. Braketi IP'nin yanına koymak[ipv6]
 -   3\. Depolama<br><br/>
 
 ## 6. Vettori ve Mehsa Anji için kablosuz koruma yapılandırmasını almak ve... IP taraması olmadan
