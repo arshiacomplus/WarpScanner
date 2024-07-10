@@ -10,7 +10,7 @@ language : 🇮🇷[Persian](README.md)| 🇹🇷[Turkish](README.tr.md)| 🇬�
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
-> Download Thermox from Google Play Do not download Thermox from Google Play
+> ترماکس رو از گوگل پلی دانلود نکنید▫️ترماکس رو از گوگل پلی دانلود نکنید
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
@@ -42,7 +42,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Then you enter the number one (IP version four)
 
- <br><br/>
+<br><br/>
 
 ## 2. Get Wireguard config
 
@@ -58,8 +58,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ### 4. To receive wireguard configuration in a sub link with the desired number, enter option 4. Try to use even numbers for the configuration number.
 
- اگه به ارور تایم اوت خوردید چند بار دیگه تست کنید
-<br><br/>
+If you get a timeout error, try a few more times<br><br/>
 
 ## 5. To get Wireguard config for use in v2ray and MahsaNG
 
