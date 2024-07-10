@@ -46,8 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 2. Get Wireguard config
 
-▫️اگه توی گرفتن کانفیگ وایرگارد به ارور تایم اوت خوردید چند بار دیگه تست کنید 
-<br><br/>
+▫️ If you get a timeout error while getting the wireguard configuration, test a few more times<br><br/>
 
 ## 3. Get Wireguard configuration without needing to scan IP
 
@@ -85,9 +84,9 @@ If you press n, it will select the IP that I have already set
 
 ## 7. To get config, warp on warp for v2ray and MahsaNG, you can use option 7 (help was taken from the bpb panel....)
 
-You will be asked if the P,W, (Panda Kung Fu Kar) sites will be blocked or not<br><br/>
+You will be asked whether P,W, (Panda Kung Fu Kar) sites will be blocked or not<br><br/>
 
-## 8. You can subwarp that warp for v2ray or MahsaNg
+## 8. You can sub warp that warp for v2ray or MahsaNg
 
 <br><br/>
 
