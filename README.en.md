@@ -24,7 +24,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
-> [!WARNING]Since it tries to install Python in the first step, it might need a VPN!
+> [!WARNING]
+> از اونجا که در اولین مرحله سعی می‌کنه پایتون رو نصب کنه شاید به وی پی ان نیاز داشته باشه !
 
 ## 1. IP scanner is IPv4, IPv6
 
@@ -62,10 +63,11 @@ If you get a timeout error, try a few more times<br><br/>
 
 ## 5. To get Wireguard config for use in v2ray and MahsaNG
 
-> This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
+> اینم برای اونای که ارور requests می‌گیرند 👈👈
+> <https://t.me/arshia_mod_fun/298>
 
-By entering option 1 and after that 2 
- You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mahsa Anji and Vettori.
+ با وارد کردن گزینه ۱ و بعد از اون ۲ 
+ میتونید آیپی ورژن شیش دریافت کنید که برای گزینه ۵ کانفیگ وایرگارد برای مهسا انجی و و ویتوری هم پیاده سازی شده 
 
 After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
 
@@ -84,9 +86,9 @@ If you press n, it will select the IP that I have already set
 
 ## 7. To get config, warp on warp for v2ray and MahsaNG, you can use option 7 (help was taken from the bpb panel....)
 
-You will be asked whether P,W, (Panda Kung Fu Kar) sites will be blocked or not<br><br/>
+You will be asked if the P,W, (Panda Kung Fu Kar) sites will be blocked or not<br><br/>
 
-## 8. You can sub warp that warp for v2ray or MahsaNg
+## 8. You can subwarp that warp for v2ray or MahsaNg
 
 <br><br/>
 
