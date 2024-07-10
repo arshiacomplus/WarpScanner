@@ -42,7 +42,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Then you enter the number one (IP version four)
 
-<br><br/>
+ <br><br/>
 
 ## 2. Get Wireguard config
 
@@ -58,7 +58,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ### 4. To receive wireguard configuration in a sub link with the desired number, enter option 4. Try to use even numbers for the configuration number.
 
-If you get a timeout error, try a few more times<br><br/>
+ اگه به ارور تایم اوت خوردید چند بار دیگه تست کنید
+<br><br/>
 
 ## 5. To get Wireguard config for use in v2ray and MahsaNG
 
