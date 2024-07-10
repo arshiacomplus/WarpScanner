@@ -373,7 +373,7 @@ def main():
     for result in results:
         ip, port, ping = result
         loss_rate = packet_loss.get(ip, 0)
-        if loss_rate == 0.00 and ping > 250.00:
+        if loss_rate == 0.00 and ping < 250.00:
             try:
                 save_result.index(str(ip))
             except Exception:
