@@ -1,4 +1,4 @@
-V=10
+V=11
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -1771,7 +1771,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
         
         if name_conf=='' :
         	
-        	name_conf='ACPwire.conf'
+        	name_conf='acpwire.conf'
         path = '/storage/emulated/0/'+name_conf
         with open(path, 'w') as f:
         	f.write(f'''[Interface]
