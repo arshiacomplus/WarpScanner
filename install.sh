@@ -62,6 +62,7 @@ if [ -f WarpScanner.py ]; then
         curl -fsSL -o WarpScanner.py https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/WarpScanner.py || { echo \"Failed to download WarpScanner.py. Exiting.\"; exit 1; }
         
         python WarpScanner.py
+        exit 0
     else
         python WarpScanner.py
         exit 0
