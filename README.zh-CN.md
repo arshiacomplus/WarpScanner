@@ -62,12 +62,12 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 5. 获取 Wireguard 配置以在 v2ray 和 MahsaNG 中使用
 
-> 这是给那些收到错误请求的人的👈👈[HTTPS://他.么/AR是A\_摸到\_妇女/298](https://t.me/arshia_mod_fun/298)
+> 这是给那些收到错误请求的人的👈👈<https://t.me/arshia_mod_fun/298>
 
 输入选项 1，然后输入选项 2 
  您可以获得 Shish 的 IP 版本，该版本也适用于 Mehsa Anji 和 Vettori 的选项 5 Wireguard 配置。
 
- بعد کپی کردن کانفیگ وایر گارد با   آیپی ورژن شیش و بعد  وارد کردن داخل کلاینت،  این کار رو انجام بدید که به باگ نخورید
+使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免遇到错误。
 
 -   1\. 铅笔按钮
 -   2\. 将支架放在 IP 旁边[ipvsh]
@@ -94,7 +94,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 为其命名并关闭 Thermox 窗口并打开一个新窗口。
 
-使用类型：
+ نوع استفاده :
 
 -   输入您为运行脚本指定的名称
 -   要删除它，请再次按相同的数字，然后按 Y
