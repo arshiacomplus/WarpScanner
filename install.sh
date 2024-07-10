@@ -49,6 +49,8 @@ if [ -f WarpScanner.py ]; then
         rm WarpScanner.py
         echo "Updating WarpScanner.py..."
         curl -fsSL -o WarpScanner.py https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/WarpScanner.py || { echo \"Failed to download WarpScanner.py. Exiting.\"; exit 1; }
+        python WarpScanner.py
+        exit 0
     fi
 
 fi
@@ -63,6 +65,6 @@ if [ -f WarpScanner.py ]; then
     fi
 fi
 
-curl -fsSL -o WarpScanner.py https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/WarpScanner.py || { echo \"Failed to download WarpScanner.py. Exiting.\"; exit 1; }
+#curl -fsSL -o WarpScanner.py https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/WarpScanner.py || { echo \"Failed to download WarpScanner.py. Exiting.\"; exit 1; }
 
 python WarpScanner.py
