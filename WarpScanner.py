@@ -1,4 +1,4 @@
-V=12
+V=13
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -1690,7 +1690,7 @@ if __name__ == "__main__":
                     
                     
                     #temp_port=temp_port+enter_ip[i]
-                endpoint_ip=[temp_ip2, int(temp_port2)]
+                endpoint_ip=str(temp_ip2 +":" +str(temp_port2))
                 
                 
         rprint("[bold green]Please wait, generating WireGuard URL...[/bold green]")
