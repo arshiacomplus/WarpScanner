@@ -55,8 +55,10 @@ import random
 import subprocess
 import json
 import sys
-
-from icmplib import ping as pinging
+try:
+    from icmplib import ping as pinging
+except Exception:
+    os.system('pip install icmplib')
 
 
 console = Console()
