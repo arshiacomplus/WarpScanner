@@ -1,4 +1,4 @@
-V=13
+V=14
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -56,13 +56,15 @@ import subprocess
 import json
 import sys
 
+from icmplib import ping as pinging
+
 
 console = Console()
 wire_config_temp=''
 wire_c=1
 wire_p=0
 send_msg_wait=0
-results = []
+results=[]
 save_result=[]
 best_result=[]
 WoW_v2=''
@@ -233,42 +235,22 @@ def create_ip_range(start_ip, end_ip):
                 temp[i2-1] += 1
     ip_range.append(end_ip)
     return ip_range
-def scan_ip_port(ip, port, results, packet_loss):
-    global best_result
+def scan_ip_port(ip, port,results):
     
-   
-    start_time = time.time() 
-    try:
-      
-        ping_command = ["ping", "-c", "1", "-w", "5", "-p", str(port), ip]
-
-        
-        process = subprocess.Popen(ping_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
-     
-        while process.poll() is None:
-            if time.time() - start_time > 5:
-                process.terminate()  
-                break
-            time.sleep(0.1)  
-        output, error = process.communicate()
-       
-        if process.returncode == 0:
+    
+    icmp=pinging(ip, count=4, interval=1, timeout=5,privileged=False)
+    
+    
+    
+    
+    
+    results.append((ip, port, float(icmp.avg_rtt), icmp.packet_loss, icmp.jitter))
+    
+    
+    
+    
             
-            ping_time = float(output.decode().split('time=')[1].split(' ')[0])
-            results.append((ip, port, ping_time))
-
-
             
-        else:
-           
-            console.print(f"IP: {ip} Port: {port} is not responding or closed.", style="red")
-            packet_loss[ip] = packet_loss.get(ip, 0) + 100
-
-        	
-
-    except Exception as E:
-        console.print(f"Error - {E}", style="red")
         
 def main_v6():
     def generate_ipv6():
@@ -286,11 +268,11 @@ def main_v6():
             return float('inf')
 
     def scan_ip(ip, ports_to_check):
-        results = []
+        resultss = []
         for n in ports_to_check:
             ping_time = ping_ip(ip, n)
-            results.append((ip, ping_time))
-        return results
+            resultss.append((ip, ping_time))
+        return resultss
 
     console = Console()
     ports_to_check = [1074 , 864]
@@ -302,16 +284,16 @@ def main_v6():
     table.add_column("IP Address", justify="center", style="cyan", no_wrap=True)
     table.add_column("Ping Time (ms)", justify="center", style="green")
 
-    results = []
+    resultss = []
     with ThreadPoolExecutor(max_workers=1000) as executor:
         futures = [executor.submit(scan_ip, generate_ipv6(), ports_to_check) for _ in range(100)]
         for future in as_completed(futures):
-            results.extend(future.result())
+            resultss.extend(future.result())
 
     # Sort the results based on ping time
-    results.sort(key=lambda x: x[1])
+    resultss.sort(key=lambda x: x[1])
 
-    for ip, ping_time in results:
+    for ip, ping_time in resultss:
         table.add_row(ip,  f"{ping_time:.2f}")
         if ping_time < best_ping:
             best_ping = ping_time
@@ -333,8 +315,11 @@ def main_v6():
         return best_ip_mix
 
 def main():
-    global save_result
+    
     global max_workers_number
+    results=[]
+   
+    
 
     if what!='0':
         which_v=input_p('Choose an ip version\n ', {"1": 'ipv4' ,
@@ -354,46 +339,49 @@ def main():
     start_ips = ["188.114.96.0", "162.159.192.0", "162.159.195.0"]
     end_ips = ["188.114.99.224", "162.159.193.224", "162.159.195.224"]
     ports = [1074, 894, 908, 878]
-    results = []
-    packet_loss = {}
+   
 
     for start_ip, end_ip in zip(start_ips, end_ips):
         ip_range = create_ip_range(start_ip, end_ip)
-        with ThreadPoolExecutor(max_workers=max_workers_number) as executor:
-            for ip in ip_range:
-                for port in ports:
-                    executor.submit(scan_ip_port, ip, port, results, packet_loss)
+        executor=ThreadPoolExecutor(max_workers=max_workers_number)
+        try :
+                for ip in ip_range:
+                	randport=ports[random.randint(0,3)]
+                	executor.submit(scan_ip_port, ip, randport,results)
+                
+                	
+                
+        except Exception as E:
+        	print("Error :","E")
+        finally:
+        	executor.shutdown(wait=True)
 
-    for ip in packet_loss:
-        packet_loss[ip] = (packet_loss[ip] / len(ports)) * 100
-        
-        
-
+    
     extended_results = []
+    
     for result in results:
-        ip, port, ping = result
-        loss_rate = packet_loss.get(ip, 0)
-        if loss_rate == 0.00 and ping < 250.00:
+        ip, port, ping ,loss_rate,jitter= result
+        
+        if loss_rate == 0.0 and ping !=0.0 and  ping < 250:
             try:
                 save_result.index(str(ip))
             except Exception:
                 save_result.append("\n")
                 save_result.append(str(ip))
-        combined_score = ping + (loss_rate * 10)
-        extended_results.append((ip, port, ping, loss_rate, combined_score))
+        if ping ==0.0:
+        	ping=1000
+        if float(jitter)==0.0:
+        	jitter=1000
+        if loss_rate ==1.0 :
+        	loss_rate=1000
+        	
+        combined_score = ping + loss_rate + jitter
+        extended_results.append((ip, port, ping, loss_rate,jitter, combined_score))
+       
+
+    sorted_results = sorted(extended_results, key=lambda x: x[5])
     
-  
-    for ip in packet_loss:
-        if ip not in [res[0] for res in extended_results]:
-            loss_rate = packet_loss[ip]
-            
-            extended_results.append((ip, None, None, loss_rate, loss_rate * 10))
-
-    sorted_results = sorted(extended_results, key=lambda x: x[4])
-
-   
-    while len(sorted_results) < 10:
-        sorted_results.append(("No IP", None, None, 100, 1000))
+    
 
     console.clear()
     table = Table(show_header=True,title="IP Scan Results", header_style="bold blue")
@@ -401,20 +389,21 @@ def main():
     table.add_column("Port", justify="right")
     table.add_column("Ping (ms)", justify="right")
     table.add_column("Packet Loss (%)", justify="right")
+    table.add_column("Jitter (ms)", justify="right")
     table.add_column("Score", justify="right")
 
-    for ip, port, ping, loss_rate, combined_score in sorted_results[:10]:
-        table.add_row(ip, str(port) if port else "878", f"{ping:.2f}" if ping else "None", f"{loss_rate:.2f}%", f"{combined_score:.2f}")
+    for ip, port, ping, loss_rate,jitter, combined_score in sorted_results[:10]:
+        table.add_row(ip, str(port) if port else "878", f"{ping:.2f}" if ping else "None", f"{loss_rate:.2f}%",f"{jitter}", f"{combined_score:.2f}")
 
     console.print(table)
 
     best_result = sorted_results[0] if sorted_results else None
     if best_result and best_result[0] != "No IP":
-        ip, port, ping, loss_rate, combined_score = best_result
+        ip, port, ping, loss_rate,jitter, combined_score = best_result
         try:
-            console.print(f"The best IP: {ip}:{port if port else 'N/A'} , ping: {ping:.2f} ms, packet loss: {loss_rate:.2f}%, score: {combined_score:.2f}", style="green")
+            console.print(f"The best IP: {ip}:{port if port else 'N/A'} , ping: {ping:.2f} ms, packet loss: {loss_rate:.2f}%, {jitter:.2f} ms ,score: {combined_score:.2f}", style="green")
         except TypeError:
-            console.print(f"The best IP: {ip}:{port if port else '878'} , ping: None, packet loss: {loss_rate:.2f}%, score: {combined_score:.2f}", style="green")
+            console.print(f"The best IP: {ip}:{port if port else '878'} , ping: None, packet loss: {loss_rate:.2f}% ,{jitter:.2f} ms ,  score: {combined_score:.2f}", style="green")
         best_result=2*[1]
         best_result[0]=f"{ip}"
         best_result[1]=878
