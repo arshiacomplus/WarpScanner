@@ -1,4 +1,4 @@
-V=14
+V=15
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -377,7 +377,7 @@ def main():
         if loss_rate ==1.0 :
         	loss_rate=1000
         	
-        combined_score = ping + loss_rate + jitter
+        combined_score = 0.5 * ping + 0.3 * loss_rate + 0.2 * jitter
         extended_results.append((ip, port, ping, loss_rate,jitter, combined_score))
        
 
