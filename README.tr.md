@@ -24,16 +24,15 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
-> [!UYARI]
-> از اونجا که در اولین مرحله سعی می‌کنه پایتون رو نصب کنه شاید به وی پی ان نیاز داشته باشه !
+> [!UYARI]İlk adımda Python'u kurmaya çalıştığı için bir VPN'e ihtiyacı olabilir!
 
 ## 1. IP tarayıcı IPv4, IPv6'dır
 
 ##### ▫️ Dördüncü sürüm IP'leri depolama/emülasyon/0/ dizinine ve result.csv adlı bir dosyaya kaydetme yeteneği
 
-##### Bu nedenle şunu belirtmek gerekir ki, bir rakamını girerek ardından y ve belki tekrar y
+##### Bu nedenle, bir sayısını girerek, ardından y ve belki tekrar y olduğunu belirtmek gerekir.
 
-##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekiyor.
+##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekir.
 
 ##### ve daha sonra
 
@@ -68,13 +67,13 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 Seçenek 1'i ve ardından 2'yi girerek 
  Mahsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
 
-Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye aktardıktan sonra, bir hatayla karşılaşmamak için bunu yapın.
+Wire Guard konfigürasyonunu Shish'in IP versiyonu ile kopyalayıp client'a aktardıktan sonra hata almamak için bunu yapın.
 
 -   1\. Kalem düğmesi
 -   2\. Braketi IP'nin yanına koymak[ipvsh]
 -   3\. Depolama<br><br/>
 
-## 6. Vettori ve Mehsa Anji için kablosuz koruma yapılandırmasını almak ve... IP taraması olmadan
+## 6. Vettori ve Mehsa Anji için Wireguard yapılandırmasını almak için ve... IP taraması olmadan
 
 N tuşuna basarsanız daha önce koyduğum ipi seçecektir
  aksi takdirde 
@@ -87,7 +86,7 @@ N tuşuna basarsanız daha önce koyduğum ipi seçecektir
 
 Po sitelerinin (Kung Fu Panda) engellenip engellenmeyeceği size sorulacaktır.<br><br/>
 
-## 8. Bu warp'ı v2ray veya MahsaNg için alt çözgü yapabilirsiniz
+## 8. Bu çözgüyü v2ray veya MahsaNg için alt çözgü yapabilirsiniz.
 
 <br><br/>
 
