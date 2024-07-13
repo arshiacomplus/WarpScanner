@@ -1,4 +1,4 @@
-V=15
+V=16
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -378,6 +378,7 @@ def main():
         	loss_rate=1000
         	
         combined_score = 0.5 * ping + 0.3 * loss_rate + 0.2 * jitter
+
         extended_results.append((ip, port, ping, loss_rate,jitter, combined_score))
        
 
@@ -408,7 +409,7 @@ def main():
             console.print(f"The best IP: {ip}:{port if port else '878'} , ping: None, packet loss: {loss_rate:.2f}% ,{jitter:.2f} ms ,  score: {combined_score:.2f}", style="green")
         best_result=2*[1]
         best_result[0]=f"{ip}"
-        best_result[1]=878
+        best_result[1]=port
     else:
         console.print("Nothing was found", style="red")
     t=False
