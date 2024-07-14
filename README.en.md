@@ -70,7 +70,7 @@ By entering option 1 and after that 2
 After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
 
 -   1\. Pencil button
--   2\. Putting the bracket next to the IP[ipvsh]
+-   2\. Putting the bracket next to the IP[ipv6]
 -   3\. Storage<br><br/>
 
 ## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
