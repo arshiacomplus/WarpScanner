@@ -1,4 +1,4 @@
-V=16
+V=17
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -255,54 +255,87 @@ def scan_ip_port(ip, port,results):
             
         
 def main_v6():
+    resultss=[]
+    save_best=[]
     def generate_ipv6():
         return f"2606:4700:d{random.randint(0, 1)}::{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}"
 
-    def ping_ip(ip, port):
-        try:
-            output = subprocess.check_output(["ping6", "-c", "4", "-p", str(port), ip], text=True)
-            for line in output.splitlines():
-                if "min/avg/max" in line:
-                    parts = line.split()
-                    avg_ping_time = parts[3].split('/')[1]
-                    return float(avg_ping_time)
-        except subprocess.CalledProcessError:
-            return float('inf')
-
-    def scan_ip(ip, ports_to_check):
-        resultss = []
-        for n in ports_to_check:
-            ping_time = ping_ip(ip, n)
-            resultss.append((ip, ping_time))
-        return resultss
+    def ping_ip(ip, port, resultss, save_best):
+        icmp=pinging(ip, count=4, interval=1, timeout=5,privileged=False)
+        ping_ms=float(icmp.avg_rtt)
+        jitter_ms=float(icmp.jitter)
+        loss_rate_per=icmp.packet_loss
+        if ping_ms == 0.0:
+        	ping_ms=1000
+        
+        if jitter_ms ==0.0:
+        	jitter_ms=1000
+        
+        if loss_rate_per ==1.0 :
+        	loss_rate_per=1000
+        if do_you_save=='1':
+        	if ping_ms<300 and loss_rate_per==0.0:
+        		if which =='2':
+        			save_best.append('['+ip+']'+'\n')
+        		else:
+        			save_best.append('['+ip+']'+',')
+        	
+        	
+        	
+        loss_rate_per=loss_rate_per*100
+        combined_score = 0.5 * ping_ms + 0.3 * loss_rate_per + 0.2 * jitter_ms
+        resultss.append((ip, port, ping_ms, loss_rate_per, jitter_ms,combined_score ))
+        
+            
 
     console = Console()
     ports_to_check = [1074 , 864]
-    best_ping = float("inf")
-    best_ip = ""
-    random_ip=""
 
-    table = Table(title="IP Scan Results")
-    table.add_column("IP Address", justify="center", style="cyan", no_wrap=True)
-    table.add_column("Ping Time (ms)", justify="center", style="green")
+    random_ip=generate_ipv6()
+    best_ping=1000
+    best_ip=""
 
+
+
+
+    table = Table(show_header=True,title="IP Scan Results", header_style="bold blue")
+    table.add_column("IP", style="dim", width=15)
+    table.add_column("Port", justify="right")
+    table.add_column("Ping (ms)", justify="right")
+    table.add_column("Packet Loss (%)", justify="right")
+    table.add_column("Jitter (ms)", justify="right")
+    table.add_column("Score", justify="right")
+    
+    
     resultss = []
-    with ThreadPoolExecutor(max_workers=1000) as executor:
-        futures = [executor.submit(scan_ip, generate_ipv6(), ports_to_check) for _ in range(100)]
-        for future in as_completed(futures):
-            resultss.extend(future.result())
+    executor= ThreadPoolExecutor(max_workers=1000)
+    try:
+        for _ in range(101):
+        	executor.submit(ping_ip, generate_ipv6(), ports_to_check[random.randint(0,1)],resultss, save_best)
+    except Exception as E:
+        	rprint('[bold red]An Error: [/bold red]', E)
+    finally:
+        	executor.shutdown(wait=True)
+        	
 
     # Sort the results based on ping time
-    resultss.sort(key=lambda x: x[1])
+    sorted_results=sorted(resultss, key=lambda x: x[5])
+    
 
-    for ip, ping_time in resultss:
-        table.add_row(ip,  f"{ping_time:.2f}")
-        if ping_time < best_ping:
-            best_ping = ping_time
+    for ip, port,ping,loss_rate,jitter, combined_score  in sorted_results:
+        
+        table.add_row(ip, str(port) if port else "878", f"{ping:.2f}" if ping else "None", f"{loss_rate:.2f}%",f"{jitter}", f"{combined_score:.2f}")
+        if ping < best_ping:
+            best_ping = ping
             best_ip = ip
 
     console.print(table)
     port_random = ports_to_check[random.randint(0, len(ports_to_check) - 1)]
+    if do_you_save=='1':
+    	with open('/storage/emulated/0/result.csv' , "w") as f:
+    		for j in save_best:
+    			f.write(j)
+    	print(' saved in /storage/emulated/0/result.csv !')
     if best_ip:
         console.print(f"\n[bold green]Best IP : [{best_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
         best_ip_mix = [1] * 2
@@ -315,6 +348,8 @@ def main_v6():
         best_ip_mix[0] = "[" + random_ip + "]"
         best_ip_mix[1] = port_random
         return best_ip_mix
+
+    	
 
 def main():
     
@@ -376,6 +411,8 @@ def main():
         	jitter=1000
         if loss_rate ==1.0 :
         	loss_rate=1000
+        	
+        loss_rate=loss_rate*100
         	
         combined_score = 0.5 * ping + 0.3 * loss_rate + 0.2 * jitter
 
