@@ -1,6 +1,6 @@
 ## 扭曲扫描仪
 
-语言 : 🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)
+语言 : 🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md) | 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -62,8 +62,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 5. 获取用于 v2ray 和 MahsaNG 的 Wireguard 配置
 
-> اینم برای اونای که ارور requests می‌گیرند 👈👈
-> [HTTPS://他.么/AR是A\_摸到\_妇女/298](https://t.me/arshia_mod_fun/298)
+> 这是给那些收到错误请求的人的👈👈[HTTPS://他.么/AR是A\_摸到\_妇女/298](https://t.me/arshia_mod_fun/298)
 
 输入选项 1，然后输入选项 2 
  您可以获得 Shish 的 IP 版本，该版本也适用于 Mahsa Anji 和 Vettori 的选项 5 Wireguard 配置。
@@ -98,7 +97,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 使用类型：
 
 -   输入您为运行脚本指定的名称
--   要删除它，请再次按相同的数字，然后按 Y
+-   برای پاک کردنش دوباره همون عدد رو میزنید و Y
 
 <br><br/>
 
