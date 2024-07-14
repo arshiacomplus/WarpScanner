@@ -56,7 +56,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <br><br/>
 
-### 4. To receive wireguard configuration in a sub link with the desired number, enter option 4. Try to use even numbers for the configuration number.
+### 4. برای دریافت کانفیگ وایرگارد در یک لینک ساب با تعداد دلخواه گزینه 4 را وارد کنید سعی کنید از اعداد زوج برای تعداد کانفیگ استفاده کنید
 
 If you get a timeout error, try a few more times<br><br/>
 
@@ -70,7 +70,7 @@ By entering option 1 and after that 2
 After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
 
 -   1\. Pencil button
--   2\. Putting the bracket next to the IP[ipv6]
+-   2\. Putting the bracket next to the IP[ipvsh]
 -   3\. Storage<br><br/>
 
 ## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
@@ -105,7 +105,8 @@ Type of Use :
 
 ## donate
 
-<b>Trx:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
+<b>Trx:</b><br>
+<a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
 
 ## Support the project
 
