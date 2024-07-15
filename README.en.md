@@ -64,8 +64,8 @@ If you get a timeout error, try a few more times<br><br/>
 
 > This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
 
-By entering option 1 and after that 2 
- You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
+ با وارد کردن گزینه ۱ و بعد از اون ۲ 
+ میتونید آیپی ورژن شیش دریافت کنید که برای گزینه ۵ کانفیگ وایرگارد برای مهسا انجی و و ویتوری هم پیاده سازی شده 
 
 After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
 
@@ -96,7 +96,7 @@ Give it a name and close the Thermox window and open a new one.
 
 Type of Use :
 
--   Enter the name you gave to run the script
+-   نامی که دادید رو وارد کنید تا اسکریپت اجرا شود
 -   To delete it, press the same number again and press Y
 
 <br><br/>
