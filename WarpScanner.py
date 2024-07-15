@@ -1,4 +1,4 @@
-V=18
+V=19
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -72,6 +72,7 @@ best_result=[]
 WoW_v2=''
 isIran=''
 max_workers_number=0
+do_you_save='2'
 
 def info():
     console.clear()
@@ -255,7 +256,7 @@ def scan_ip_port(ip, port,results):
             
         
 def main_v6():
-    global do_you_save
+    
     resultss=[]
     save_best=[]
     def generate_ipv6():
@@ -357,7 +358,7 @@ def main_v6():
 def main():
     
     global max_workers_number
-    global do_you_save
+     
     results=[]
    
     
@@ -367,7 +368,7 @@ def main():
          "2": 'ipv6'})
         if which_v=="2":
             console.clear()
-            do_you_save='2'
+            
             best_result=main_v6()
             return best_result
     Cpu_speed=input_p('scan power', {"1" : "Faster" , "2" : "Slower"})
@@ -1666,6 +1667,7 @@ def gojo_goodbye_animation():
         time.sleep(1)
 if __name__ == "__main__":
     os.system('clear')
+    
     
     what=start_menu()
 
