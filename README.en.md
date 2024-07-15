@@ -36,7 +36,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### and then
 
-##### Note: You can create a clean IP for Vahid panel (with inter) and bpb panel (with comma).
+##### نکته : میتونید  آیپی تمیز برای پنل وحید(با اینتر ) و پنل bpb(با کاما )
 
 ##### Save in the result file
 
@@ -56,7 +56,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <br><br/>
 
-### 4. برای دریافت کانفیگ وایرگارد در یک لینک ساب با تعداد دلخواه گزینه 4 را وارد کنید سعی کنید از اعداد زوج برای تعداد کانفیگ استفاده کنید
+### 4. To receive wireguard configuration in a sub link with the desired number, enter option 4. Try to use even numbers for the configuration number.
 
 If you get a timeout error, try a few more times<br><br/>
 
@@ -65,7 +65,7 @@ If you get a timeout error, try a few more times<br><br/>
 > This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
 
 By entering option 1 and after that 2 
- You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mahsa Anji and Vettori.
+ You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
 
 After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
 
@@ -84,7 +84,7 @@ If you press n, it will select the ip that I put before
 
 ## 7. To get config, warp on warp for v2ray and MahsaNG, you can use option 7 (help was taken from the bpb panel....)
 
-You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br/>
+You will be asked if Po sites (Kung Fu Panda) will be blocked or not<br><br/>
 
 ## 8. You can sub warp that warp for v2ray or MahsaNg
 
@@ -105,8 +105,7 @@ Type of Use :
 
 ## donate
 
-<b>Trx:</b><br>
-<a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
+<b>Trx:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
 
 ## Support the project
 
