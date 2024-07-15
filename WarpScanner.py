@@ -1,4 +1,4 @@
-V=17
+V=18
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -255,12 +255,14 @@ def scan_ip_port(ip, port,results):
             
         
 def main_v6():
+    global do_you_save
     resultss=[]
     save_best=[]
     def generate_ipv6():
         return f"2606:4700:d{random.randint(0, 1)}::{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}"
 
     def ping_ip(ip, port, resultss, save_best):
+        global do_you_save
         icmp=pinging(ip, count=4, interval=1, timeout=5,privileged=False)
         ping_ms=float(icmp.avg_rtt)
         jitter_ms=float(icmp.jitter)
@@ -336,24 +338,26 @@ def main_v6():
     		for j in save_best:
     			f.write(j)
     	print(' saved in /storage/emulated/0/result.csv !')
+    best_ip_mix = [1] * 2
     if best_ip:
         console.print(f"\n[bold green]Best IP : [{best_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
-        best_ip_mix = [1] * 2
+        
         best_ip_mix[0] = "[" + best_ip + "]"
         best_ip_mix[1] = port_random
-        return best_ip_mix
+        
     else:
         console.print(f"\n[bold green]Best IP : [{random_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
-        best_ip_mix = [1] * 2
+        
         best_ip_mix[0] = "[" + random_ip + "]"
         best_ip_mix[1] = port_random
-        return best_ip_mix
+    return best_ip_mix
 
     	
 
 def main():
     
     global max_workers_number
+    global do_you_save
     results=[]
    
     
@@ -363,7 +367,7 @@ def main():
          "2": 'ipv6'})
         if which_v=="2":
             console.clear()
-            
+            do_you_save='2'
             best_result=main_v6()
             return best_result
     Cpu_speed=input_p('scan power', {"1" : "Faster" , "2" : "Slower"})
