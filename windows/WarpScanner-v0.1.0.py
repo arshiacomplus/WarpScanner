@@ -1302,8 +1302,8 @@ def mainactivity():
                 os.chmod("D:/nika.png" , 0o4444)
 
         background_image =ImageTk.PhotoImage(Image.open(r"D:/nika.png"))
-        # background_label = tk.Label(rootmainactivity, image=background_image)
-        # background_label.place(relwidth=1, relheight=1)
+        background_label = tk.Label(rootmainactivity, image=background_image)
+        background_label.place(relwidth=1, relheight=1)
     else:
         try:
             with open("D:/mahsa.png", "r") as img_f:
@@ -1315,8 +1315,8 @@ def mainactivity():
                 ctypes.windll.kernel32.SetFileAttributesW("D:/mahsa.png" , 0x02)
                 os.chmod("D:/mahsa.png" , 0o4444)
         background_image =ImageTk.PhotoImage(Image.open(r"D:/mahsa.png"))
-        # background_label = tk.Label(rootmainactivity, image=background_image)
-        # background_label.place(relwidth=2, relheight=2)
+        background_label = tk.Label(rootmainactivity, image=background_image)
+        background_label.place(relwidth=2, relheight=2)
     
     try:
             with open("D:/profile.png", "r") as img_f:
