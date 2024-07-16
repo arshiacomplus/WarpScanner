@@ -65,7 +65,7 @@ If you get a timeout error, try a few more times<br><br/>
 > This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
 
 By entering option 1 and after that 2 
- You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
+ You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mahsa Anji and Vettori.
 
 After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
 
@@ -73,9 +73,9 @@ After copying the Wire Guard configuration with the IP version of Shish and then
 -   2\. Putting the bracket next to the IP[ipvsh]
 -   3\. Storage<br><br/>
 
-## 6. برای دریافت کانفیگ وایرگارد برای ویتوری و مهسا انجی و ...  بدون اسکن آیپی
+## 6. To get wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
-If you press n, it will select the ip that I put before
+If you press n, it will select the IP that I have already set
  otherwise 
  IP with port example:
 
@@ -84,9 +84,9 @@ If you press n, it will select the ip that I put before
 
 ## 7. To get config, warp on warp for v2ray and MahsaNG, you can use option 7 (help was taken from the bpb panel....)
 
-You will be asked if Po sites (Kung Fu Panda) will be blocked or not<br><br/>
+You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br/>
 
-## 8. You can sub warp that warp for v2ray or MahsaNg
+## 8. You can subwarp that warp for v2ray or MahsaNg
 
 <br><br/>
 
@@ -109,7 +109,7 @@ Type of Use :
 
 ## Support the project
 
-<b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b>
+<b>If you like my project, you can support my project by giving stars, following and introducing it to your friends</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
