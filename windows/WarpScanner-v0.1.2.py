@@ -132,7 +132,7 @@ def Check_for_update():
 
     print(output)
 
-    if output=="""v0.1.1
+    if output=="""v0.1.2
 """:
         return [False, output]
     else:
@@ -1658,7 +1658,7 @@ def mainactivity():
     exit_button = ttk.Button(menu_frame, text="Exit", command=rootmainactivity.quit)
     exit_button.pack(pady=10)
 
-    label_arshia= ttk.Label(menu_frame, text="Created by arshiacomplus \n                   v0.1.1", foreground="white", background="gray")
+    label_arshia= ttk.Label(menu_frame, text="Created by arshiacomplus \n                   v0.1.2", foreground="white", background="gray")
     label_arshia.pack(pady=10)
 
 
