@@ -46,7 +46,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 2. Wireguard yapılandırmasını edinin
 
-▫️ Wireguard yapılandırmasını alırken zaman aşımı hatası alırsanız birkaç kez daha test edin<br><br/>
+▫️اگه توی گرفتن کانفیگ وایرگارد به ارور تایم اوت خوردید چند بار دیگه تست کنید 
+<br><br/>
 
 ## 3. IP taramasına gerek kalmadan Wireguard yapılandırmasını edinin
 
@@ -58,7 +59,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ### 4. İstenilen numaraya sahip bir alt bağlantıda tel koruma konfigürasyonunu almak için 4. seçeneği girin. Konfigürasyon numarası için çift sayıları kullanmayı deneyin.
 
-Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
+ اگه به ارور تایم اوت خوردید چند بار دیگه تست کنید
+<br><br/>
 
 ## 5. V2ray ve MahsaNG'de kullanılmak üzere Wireguard yapılandırmasını edinmek için
 
