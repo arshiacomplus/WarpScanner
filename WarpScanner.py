@@ -1,4 +1,4 @@
-V=19
+V=20
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -301,13 +301,13 @@ def main_v6():
 
 
 
-    table = Table(show_header=True,title="IP Scan Results", header_style="bold blue")
-    table.add_column("IP", style="dim", width=15)
-    table.add_column("Port", justify="right")
-    table.add_column("Ping (ms)", justify="right")
-    table.add_column("Packet Loss (%)", justify="right")
-    table.add_column("Jitter (ms)", justify="right")
-    table.add_column("Score", justify="right")
+    table = Table(show_header=True, title="IP Scan Results", header_style="bold blue")
+    table.add_column("IP", style="dim", no_wrap=False,width=15)  # Set no_wrap to False to allow text wrapping
+    table.add_column("Port", justify="right", no_wrap=False)
+    table.add_column("Ping (ms)", justify="right", no_wrap=False)
+    table.add_column("Packet Loss (%)", justify="right", no_wrap=False)
+    table.add_column("Jitter (ms)", justify="right", no_wrap=False)
+    table.add_column("Score", justify="right", no_wrap=False)
     
     
     resultss = []
@@ -343,13 +343,22 @@ def main_v6():
     if best_ip:
         console.print(f"\n[bold green]Best IP : [{best_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
         
-        best_ip_mix[0] = "[" + best_ip + "]"
+        if what !='2' and what!='3'and what != '4':
+        
+            best_ip_mix[0] = "[" + best_ip + "]"
+        else:
+        	best_ip_mix[0] =  best_ip 
         best_ip_mix[1] = port_random
         
     else:
         console.print(f"\n[bold green]Best IP : [{random_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
+        if what !='2' and what!='3'and what != '4':
         
-        best_ip_mix[0] = "[" + random_ip + "]"
+            best_ip_mix[0] = "[" + random_ip + "]"
+        else:
+        	best_ip_mix[0] =  random_ip 
+        	     
+        
         best_ip_mix[1] = port_random
     return best_ip_mix
 
