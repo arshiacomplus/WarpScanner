@@ -46,8 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 2.获取Wireguard配置
 
-▫️اگه توی گرفتن کانفیگ وایرگارد به ارور تایم اوت خوردید چند بار دیگه تست کنید 
-<br><br/>
+▫️如果在获取wireguard配置时遇到超时错误，请多测试几次<br><br/>
 
 ## 3.无需扫描IP即可获取Wireguard配置
 
@@ -61,7 +60,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 如果出现超时错误，请多尝试几次<br><br/>
 
-## 5. برای دریافت کانفیگ Wireguard  برای استفاده در v2ray و MahsaNG
+## 5. 获取 Wireguard 配置以在 v2ray 和 MahsaNG 中使用
 
 > 这是给那些收到错误请求的人的👈👈[HTTPS://他.么/AR是A\_摸到\_妇女/298](https://t.me/arshia_mod_fun/298)
 
@@ -97,7 +96,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 使用类型：
 
--   نامی که دادید رو وارد کنید تا اسکریپت اجرا شود
+-   输入您为运行脚本指定的名称
 -   要删除它，请再次按相同的数字，然后按 Y
 
 <br><br/>
