@@ -73,7 +73,7 @@ After copying the Wire Guard configuration with the IP version of Shish and then
 -   2\. Putting the bracket next to the IP[ipvsh]
 -   3\. Storage<br><br/>
 
-## 6. برای دریافت کانفیگ وایرگارد برای ویتوری و مهسا انجی و ...  بدون اسکن آیپی
+## 6. To get wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
 If you press n, it will select the IP that I have already set
  otherwise 
@@ -97,7 +97,7 @@ Give it a name and close the Thermox window and open a new one.
 Type of Use :
 
 -   Enter the name you gave to run the script
--   To delete it, press the same number again and press Y
+-   برای پاک کردنش دوباره همون عدد رو میزنید و Y
 
 <br><br/>
 
