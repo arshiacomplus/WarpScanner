@@ -38,7 +38,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Note: You can create a clean IP for Vahid panel (with inter) and bpb panel (with comma).
 
-##### Save in the result file
+##### در فایل ریزالت سیو کنید
 
 ##### Then you enter the number one (IP version four)
 
@@ -46,7 +46,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 2. Get Wireguard config
 
-▫️ If you get a timeout error while getting the wireguard configuration, test a few more times<br><br/>
+▫️اگه توی گرفتن کانفیگ وایرگارد به ارور تایم اوت خوردید چند بار دیگه تست کنید 
+<br><br/>
 
 ## 3. Get Wireguard configuration without needing to scan IP
 
