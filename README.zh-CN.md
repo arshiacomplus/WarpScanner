@@ -10,7 +10,7 @@
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
-> ترماکس رو از گوگل پلی دانلود نکنید▫️ترماکس رو از گوگل پلی دانلود نکنید
+> 从 Google Play 下载 Thermox 不要从 Google Play 下载 Thermox
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
@@ -52,7 +52,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 （这是针对那些收到错误 best_result 的人[0]吃） 
  这种情况，可以先用其他扫描仪扫描IP 
- 选择第三个选项后，会要求你输入IP和端口，或者如果你输入N，它将选择我已经输入的IP。
+ 选择第三个选项后，会要求你输入IP和端口，或者如果你输入N，它会选择我已经输入的IP。
 
 <br><br/>
 
@@ -67,7 +67,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 输入选项 1，然后输入选项 2 
  您可以获得 Shish 的 IP 版本，该版本也适用于 Mehsa Anji 和 Vettori 的选项 5 Wireguard 配置。
 
-使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免遇到错误。
+使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免出现错误。
 
 -   1\. 铅笔按钮
 -   2\. 将支架放在 IP 旁边[ipvsh]
@@ -75,7 +75,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 6. 获取 Vettori 和 Mehsa Anji 的 Wireguard 配置以及...无需 IP 扫描
 
-如果你按n，它会选择我已经设置的IP
+如果你按n，它会选择我之前输入的ip
  否则 
  IP 与端口示例：
 
@@ -105,8 +105,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 捐
 
-<b>交易：</b><br>
-<a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
+<b>交易：</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
 
 ## 支持项目
 
