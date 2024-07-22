@@ -62,8 +62,7 @@ If you get a timeout error, try a few more times<br><br/>
 
 ## 5. To get Wireguard config for use in v2ray and MahsaNG
 
-> اینم برای اونای که ارور requests می‌گیرند 👈👈
-> <https://t.me/arshia_mod_fun/298>
+> This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
 
 By entering option 1 and after that 2 
  You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
@@ -83,7 +82,7 @@ If you press n, it will select the IP that I have already set
 > ipv4:port
 > you enter<br><br/>
 
-## 7. To get config, warp on warp for v2ray and MahsaNG, you can use option 7 (help was taken from the bpb panel....)
+## 7.  برای دریافت کانفیگ ، وارپ آن وارپ برای v2ray و MahsaNG میتونید از گزینه ۷ استفاده کنید (از پنل bpb کمک گرفته شده ....)
 
 You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br/>
 
@@ -95,7 +94,7 @@ You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br
 
 Give it a name and close the Thermox window and open a new one.
 
- نوع استفاده :
+Type of Use :
 
 -   Enter the name you gave to run the script
 -   To delete it, press the same number again and press Y
