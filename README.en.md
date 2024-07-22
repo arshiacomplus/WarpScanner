@@ -82,7 +82,7 @@ If you press n, it will select the IP that I have already set
 > ipv4:port
 > you enter<br><br/>
 
-## 7.  برای دریافت کانفیگ ، وارپ آن وارپ برای v2ray و MahsaNG میتونید از گزینه ۷ استفاده کنید (از پنل bpb کمک گرفته شده ....)
+## 7. To get config, warp on warp for v2ray and MahsaNG, you can use option 7 (help was taken from the bpb panel....)
 
 You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br/>
 
