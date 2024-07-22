@@ -56,7 +56,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <br><br/>
 
-### 4. برای دریافت کانفیگ وایرگارد در یک لینک ساب با تعداد دلخواه گزینه 4 را وارد کنید سعی کنید از اعداد زوج برای تعداد کانفیگ استفاده کنید
+### 4. İstenilen numaraya sahip bir alt bağlantıda tel koruma konfigürasyonunu almak için 4. seçeneği girin. Konfigürasyon numarası için çift sayıları kullanmayı deneyin.
 
 Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 
