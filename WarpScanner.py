@@ -1,4 +1,4 @@
-V=21
+V=22
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -73,6 +73,7 @@ WoW_v2=''
 isIran=''
 max_workers_number=0
 do_you_save='2'
+which=''
 
 def info():
     console.clear()
@@ -256,6 +257,7 @@ def scan_ip_port(ip, port,results):
             
         
 def main_v6():
+    global which
     
     resultss=[]
     save_best=[]
@@ -264,6 +266,7 @@ def main_v6():
 
     def ping_ip(ip, port, resultss, save_best):
         global do_you_save
+        
         icmp=pinging(ip, count=4, interval=1, timeout=5,privileged=False)
         ping_ms=float(icmp.avg_rtt)
         jitter_ms=float(icmp.jitter)
@@ -276,16 +279,20 @@ def main_v6():
         
         if loss_rate_per ==1.0 :
         	loss_rate_per=1000
-        if do_you_save=='1':
-        	if ping_ms<300 and loss_rate_per==0.0:
-        		if which =='2':
-        			save_best.append('['+ip+']'+'\n')
-        		else:
-        			save_best.append('['+ip+']'+',')
-        	
-        	
-        	
         loss_rate_per=loss_rate_per*100
+        if do_you_save=='1' and which !='3':
+        	
+        		
+        	
+        	    if ping_ms<300 and loss_rate_per==0.0:
+        		    if which =='2':
+        			    save_best.append('['+ip+']'+'\n')
+        		    else:
+        			    save_best.append('['+ip+']'+',')
+        	
+        	
+        	
+        
         combined_score = 0.5 * ping_ms + 0.3 * loss_rate_per + 0.2 * jitter_ms
         resultss.append((ip, port, ping_ms, loss_rate_per, jitter_ms,combined_score ))
         
@@ -326,11 +333,13 @@ def main_v6():
     
 
     for ip, port,ping,loss_rate,jitter, combined_score  in sorted_results:
-        
+        if which =='3':
+            save_best.append('['+ip+']'+' | '+'ping: '+str(ping)+'packet_lose: '+str(loss_rate)+'jitter: '+str(jitter)+'\n')
         table.add_row(ip, str(port) if port else "878", f"{ping:.2f}" if ping else "None", f"{loss_rate:.2f}%",f"{jitter}", f"{combined_score:.2f}")
         if ping < best_ping:
             best_ping = ping
             best_ip = ip
+        
 
     console.print(table)
     port_random = ports_to_check[random.randint(0, len(ports_to_check) - 1)]
@@ -365,7 +374,7 @@ def main_v6():
     	
 
 def main():
-    
+    global which
     global max_workers_number
      
     results=[]
@@ -412,13 +421,13 @@ def main():
     
     for result in results:
         ip, port, ping ,loss_rate,jitter= result
-        
-        if loss_rate == 0.0 and ping !=0.0 and  ping < 250:
-            try:
-                save_result.index(str(ip))
-            except Exception:
-                save_result.append("\n")
-                save_result.append(str(ip))
+        if which !='3':
+            if loss_rate == 0.0 and ping !=0.0 and  ping < 250:
+                try:
+                    save_result.index(str(ip))
+                except Exception:
+                    save_result.append("\n")
+                    save_result.append(str(ip))
         if ping ==0.0:
         	ping=1000
         if float(jitter)==0.0:
@@ -434,6 +443,11 @@ def main():
        
 
     sorted_results = sorted(extended_results, key=lambda x: x[5])
+    
+    if which=='3':
+    	for ip, port, ping, loss_rate,jitter, combined_score in sorted_results:
+            
+            save_result.append(ip+' | '+'ping: '+str(ping)+'packet_lose: '+str(loss_rate)+'jitter: '+str(jitter)+'\n')
     
     
 
@@ -1688,7 +1702,26 @@ if __name__ == "__main__":
         if do_you_save=='1':
         	os.system('termux-setup-storage')
         	which = input_p('Do you want for bpb panel(with comma) or vahid panel(with enter) in a result csv\n ', {'1' : 'bpb panel(with comma)',
+        	 '2' : 'vahid panel(with enter)', '3':'with score', '4':'clean'})
+        	if which =='4':
+        		which = input_p('Do you want for bpb panel(with comma) or vahid panel(with enter) in a result csv\n ', {'1' : 'bpb panel(with comma)',
         	 '2' : 'vahid panel(with enter)'})
+        		with open('/storage/emulated/0/result.csv', 'r') as f:
+        		    b=f.readlines()
+        		    with open('/storage/emulated/0/clean_result.csv', 'w') as ff:
+        		        for j in b:
+        		             	if which =='1':
+        		             		ff.write(j[:j.index('|')-1])
+        		             		if j != b[len(b)-1]:
+        		             		     ff.write(',')
+        		             	else:
+        		             		ff.write(j[:j.index('|')-1])
+        		             		ff.write('\n')
+        		       	     	
+        		print(' saved in /storage/emulated/0/clean_result.csv !')
+        		exit()
+        					
+        	
        
             
         main()
