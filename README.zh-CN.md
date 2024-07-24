@@ -44,7 +44,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <br><br/>
 
-## 2.获取Wireguard配置
+## 2.接收wireguard配置
 
 ▫️如果在获取wireguard配置时遇到超时错误，请多测试几次<br><br/>
 
@@ -73,7 +73,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 -   2\. 将支架放在 IP 旁边[ipvsh]
 -   3\. 存储<br><br/>
 
-## 6. 获取 Vettori 和 Mehsa Anji 的wireguard 配置以及...无需 IP 扫描
+## 6. 获取 Vettori 和 Mehsa Anji 的 Wireguard 配置以及...无需 IP 扫描
 
 如果你按n，它会选择我已经设置的IP
  否则 
