@@ -24,13 +24,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
-> [!WARNING]İlk adımda Python'u kurmaya çalıştığı için bir VPN'e ihtiyacı olabilir!
+> [!UYARI]İlk adımda Python'u kurmaya çalıştığı için bir VPN'e ihtiyacı olabilir!
 
 ## 1. IP tarayıcı IPv4, IPv6'dır
 
 ##### ▫️ Dördüncü sürüm IP'leri depolama/emülasyon/0/ dizinine ve result.csv adlı bir dosyaya kaydetme yeteneği
 
-##### Bu nedenle, bir sayısını girerek, ardından y ve belki tekrar y olduğunu belirtmek gerekir.
+##### Bu nedenle şunu belirtmek gerekir ki, bir rakamını girerek ardından y ve belki tekrar y
 
 ##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekir.
 
@@ -65,19 +65,19 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 > Hata istekleri alanlar için bu 👈👈<https://t.me/arshia_mod_fun/298>
 
 Seçenek 1'i ve ardından 2'yi girerek 
- Mehsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
+ Mahsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
 
 Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye aktardıktan sonra, bir hatayla karşılaşmamak için bunu yapın.
 
 -   1\. Kalem düğmesi
--   2.گذاشتن براکت کنار ایپی [ipvsh]
+-   2\. Braketi IP'nin yanına koymak[ipvsh]
 -   3\. Depolama<br><br/>
 
-## 6. Vettori ve Mehsa Anji için Wireguard yapılandırmasını almak için ve... IP taraması olmadan
+## 6. Vettori ve Mehsa Anji için kablosuz koruma yapılandırmasını almak ve... IP taraması olmadan
 
- اگر n رو بزنید ایپی که از قبل گذاشتم رو انتخاب میکنه
- در غیر این صورت 
- ایپی با پورت مثال : 
+N tuşuna basarsanız önceden ayarladığım IP seçilecektir
+ aksi takdirde 
+ Bağlantı noktası örneğiyle birlikte IP:
 
 > ipv4:bağlantı noktası
 > giriş yaptın<br><br/>
@@ -86,7 +86,7 @@ Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye a
 
 Po sitelerinin (Kung Fu Panda) engellenip engellenmeyeceği size sorulacaktır.<br><br/>
 
-## 8. Bu warp'ı v2ray veya MahsaNg için alt çözgü yapabilirsiniz
+## 8. Bu çözgüyü v2ray veya MahsaNg için alt çözgü yapabilirsiniz.
 
 <br><br/>
 
@@ -109,7 +109,7 @@ Kullanım Şekli :
 
 ## Projeyi destekleyin
 
-<b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b>
+<b>Projemi beğendiyseniz yıldız vererek, takip ederek ve arkadaşlarınıza tanıtarak projeme destek olabilirsiniz.</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
