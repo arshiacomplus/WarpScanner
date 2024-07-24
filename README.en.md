@@ -46,8 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 2. Receive the wireguard configuration
 
-▫️اگه توی گرفتن کانفیگ وایرگارد به ارور تایم اوت خوردید چند بار دیگه تست کنید 
-<br><br/>
+▫️ If you get a timeout error while getting the wireguard configuration, test a few more times<br><br/>
 
 ## 3. Get Wireguard configuration without needing to scan IP
 
@@ -72,9 +71,10 @@ After copying the Wire Guard configuration with the IP version of Shish and then
 
 -   1\. Pencil button
 -   2\. Putting the bracket next to the IP[ipvsh]
--   3\. Storage<br><br/>
+-   3.ذخیره
+    <br><br/>
 
-## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
+## 6. برای دریافت کانفیگ وایرگارد برای ویتوری و مهسا انجی و ...  بدون اسکن آیپی
 
 If you press n, it will select the IP that I have already set
  otherwise 
@@ -102,7 +102,7 @@ Type of Use :
 
 <br><br/>
 
-## 10. Open this config file option`.conf`Wireguard is made for Windscribe and Wireguard
+## 10. Open this config file option`.conf` وایرگارد  ساخته میشود برای ویندسکرایب و وایرگارد
 
 ## donate
 
