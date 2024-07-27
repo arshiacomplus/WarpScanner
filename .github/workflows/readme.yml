@@ -27,3 +27,7 @@ jobs:
         uses: dephraiim/translate-readme@main
         with:
           LANG: zh-CN
+      - name: Adding README - Japanese
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: ja
