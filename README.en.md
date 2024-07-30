@@ -48,7 +48,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ▫️ If you get a timeout error while getting the wireguard configuration, test a few more times<br><br/>
 
-## 3. دریافت کانفیگ وایرگارد بدون نیاز به اسکن آیپی
+## 3. Get Wireguard configuration without needing to scan IP
 
 (It is for people who get the error best_result[0]Eat) 
  In this case, you can first scan the IP from other scanners 
@@ -64,8 +64,8 @@ If you get a timeout error, try a few more times<br><br/>
 
 > This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
 
- با وارد کردن گزینه ۱ و بعد از اون ۲ 
- میتونید آیپی ورژن شیش دریافت کنید که برای گزینه ۵ کانفیگ وایرگارد برای مهسا انجی و و ویتوری هم پیاده سازی شده 
+By entering option 1 and after that 2 
+ You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mahsa Anji and Vettori.
 
 After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
 
