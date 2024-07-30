@@ -77,7 +77,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 如果你按n，它会选择我之前输入的ip
  否则 
- IP 和端口示例：
+ IP 与端口示例：
 
 > IPv4：端口
 > 你输入<br><br/>
