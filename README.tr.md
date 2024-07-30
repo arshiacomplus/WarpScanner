@@ -38,13 +38,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP oluşturabilirsiniz.
 
-##### Sonuç dosyasına kaydet
+##### Sonuç dosyasına kaydedin
 
-##### Daha sonra bir numarayı girersiniz (IP dördüncü versiyonu)
+##### Daha sonra bir numarayı girersiniz (IP sürüm dört)
 
 <br><br/>
 
-## 2. Wireguard yapılandırmasını alın
+## 2. Wireguard yapılandırmasını edinin
 
 ▫️ Wireguard yapılandırmasını alırken zaman aşımı hatası alırsanız birkaç kez daha test edin<br><br/>
 
@@ -75,7 +75,7 @@ Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye a
 
 ## 6. Vettori ve Mehsa Anji için Wireguard yapılandırmasını almak için ve... IP taraması olmadan
 
-N tuşuna basarsanız önceden ayarladığım IP seçilecektir
+N tuşuna basarsanız daha önce koyduğum ipi seçecektir
  aksi takdirde 
  Bağlantı noktası örneğiyle birlikte IP:
 
