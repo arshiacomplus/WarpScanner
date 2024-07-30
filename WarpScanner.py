@@ -1,4 +1,4 @@
-V=22
+V=23
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -59,6 +59,7 @@ try:
     from icmplib import ping as pinging
 except Exception:
     os.system('pip install icmplib')
+    from icmplib import ping as pinging
 
 
 console = Console()
@@ -97,7 +98,7 @@ def info():
     elif whats2=='1':
     	os.system("termux-open-url 'https://t.me/arshia_mod_fun'")
     elif whats2=='2'   :
-    	os.system("termux-open-url 'https://github.com/arshiacomplus/Test/tree/main'")
+    	os.system("termux-open-url 'https://github.com/arshiacomplus/'")
     	
 def check_ipv6():
     
