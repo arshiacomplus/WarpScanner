@@ -44,15 +44,15 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <br><br/>
 
-## 2. Receive the wireguard configuration
+## 2. Get Wireguard config
 
 ▫️ If you get a timeout error while getting the wireguard configuration, test a few more times<br><br/>
 
-## 3. Get Wireguard configuration without needing to scan IP
+## 3. دریافت کانفیگ وایرگارد بدون نیاز به اسکن آیپی
 
 (It is for people who get the error best_result[0]Eat) 
  In this case, you can first scan the IP from other scanners 
- And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will choose the IP that I have already entered.
+ And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will select the IP that I have already entered.
 
 <br><br/>
 
@@ -64,19 +64,18 @@ If you get a timeout error, try a few more times<br><br/>
 
 > This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
 
-By entering option 1 and after that 2 
- You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mahsa Anji and Vettori.
+ با وارد کردن گزینه ۱ و بعد از اون ۲ 
+ میتونید آیپی ورژن شیش دریافت کنید که برای گزینه ۵ کانفیگ وایرگارد برای مهسا انجی و و ویتوری هم پیاده سازی شده 
 
 After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
 
 -   1\. Pencil button
 -   2\. Putting the bracket next to the IP[ipvsh]
--   3.ذخیره
-    <br><br/>
+-   3\. Storage<br><br/>
 
-## 6. برای دریافت کانفیگ وایرگارد برای ویتوری و مهسا انجی و ...  بدون اسکن آیپی
+## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
-If you press n, it will select the IP that I have already set
+If you press n, it will select the ip that I put before
  otherwise 
  IP with port example:
 
@@ -85,7 +84,7 @@ If you press n, it will select the IP that I have already set
 
 ## 7. To get config, warp on warp for v2ray and MahsaNG, you can use option 7 (help was taken from the bpb panel....)
 
-You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br/>
+You will be asked if Po sites (Kung Fu Panda) will be blocked or not<br><br/>
 
 ## 8. You can sub warp that warp for v2ray or MahsaNg
 
@@ -102,7 +101,7 @@ Type of Use :
 
 <br><br/>
 
-## 10. Open this config file option`.conf` وایرگارد  ساخته میشود برای ویندسکرایب و وایرگارد
+## 10. Open this config file option`.conf`Wireguard is made for Windscribe and Wireguard
 
 ## donate
 
