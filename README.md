@@ -1,6 +1,6 @@
 ## Warp Scanner
 
-language : 🇮🇷[Persian](README.md) | 🇹🇷[Turkish](README.tr.md) | 🇬🇧[English](README.en.md) | 🇨🇳[Chinese](README.zh-CN.md)
+language : 🇮🇷[Persian](README.md) | 🇹🇷[Turkish](README.tr.md) | 🇬🇧[English](README.en.md) | 🇨🇳[Chinese](README.zh-CN.md) | 🇯🇵[Japanese](README.ja.md)
 
 
 <p align="center">   
