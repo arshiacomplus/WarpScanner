@@ -1,4 +1,4 @@
-V=23
+V=24
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -60,7 +60,20 @@ try:
 except Exception:
     os.system('pip install icmplib')
     from icmplib import ping as pinging
-
+try:
+	from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
+except Exception:
+	
+	os.system('pip install cryptography')
+	from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
+from cryptography.hazmat.primitives import serialization
+import base64
+try:
+	import datetime
+except Exception:
+	os.system('pip install datetime')
+	import datetime
+api=''
 
 console = Console()
 wire_config_temp=''
@@ -132,8 +145,140 @@ def urlencode(string):
         return None
     return urllib.parse.quote(string, safe='a-zA-Z0-9.~_-')
 
-def fetch_config_from_api():
 
+def free_cloudflare_account2():
+    
+    @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
+    def file_o():
+    	    try:
+    	    	response = urllib.request.urlopen("https://fscarmen.cloudflare.now.cc/wg", timeout=30).read().decode('utf-8')
+    	    	return response
+    	    except Exception:
+    	    	response = requests.get("https://fscarmen.cloudflare.now.cc/wg", timeout=30)
+    	    	return response.text
+    	    
+    response = file_o()
+    PublicKey=response[response.index(':')+2:response.index('\n')]
+    PrivateKey=response[response.index('\n')+13:]
+    reserved=[222,6,184]
+    return ["2606:4700:110:8d48:52cb:c565:3a80:c416/128" , PrivateKey , reserved, PublicKey]
+
+
+
+def byte_to_base64(myb):
+    return base64.b64encode(myb).decode('utf-8')
+     
+
+def generate_public_key(key_bytes):
+    # Convert the private key bytes to an X25519PrivateKey object
+    private_key = X25519PrivateKey.from_private_bytes(key_bytes)
+    
+    # Perform the scalar multiplication to get the public key
+    public_key = private_key.public_key()
+    
+    # Serialize the public key to bytes
+    public_key_bytes = public_key.public_bytes(
+        encoding=serialization.Encoding.Raw,
+        format=serialization.PublicFormat.Raw
+    )    
+    return public_key_bytes
+
+
+
+def generate_private_key():
+    key = os.urandom(32)    
+    # Modify random bytes using algorithm described at:
+    # https://cr.yp.to/ecdh.html.
+    key = list(key) # Convert bytes to list for mutable operations
+    key[0] &= 248
+    key[31] &= 127
+    key[31] |= 64    
+    return bytes(key) # Convert list back to bytes
+
+
+
+
+def register_key_on_CF(pub_key):
+    url = 'https://api.cloudflareclient.com/v0a4005/reg'
+    # url = 'https://api.cloudflareclient.com/v0a2158/reg'
+    # url = 'https://api.cloudflareclient.com/v0a3596/reg'
+
+    body = {"key": pub_key,
+            "install_id": "",
+            "fcm_token": "",
+            "warp_enabled": True,
+            "tos": datetime.datetime.now().isoformat()[:-3] + "+07:00",
+            "type": "Android",
+            "model": "PC",
+            "locale": "en_US"}
+
+    bodyString = json.dumps(body)
+
+    headers = {'Content-Type': 'application/json; charset=UTF-8',
+               'Host': 'api.cloudflareclient.com',
+               'Connection': 'Keep-Alive',
+               'Accept-Encoding': 'gzip',
+               'User-Agent': 'okhttp/3.12.1',
+               "CF-Client-Version": "a-6.30-3596"
+               }
+
+    r = requests.post(url, data=bodyString, headers=headers)
+    return r
+
+
+
+
+def bind_keys():
+    priv_bytes = generate_private_key()
+    priv_string = byte_to_base64(priv_bytes)
+    
+    
+    
+    
+    pub_bytes = generate_public_key(priv_bytes)
+    pub_string = byte_to_base64(pub_bytes)
+    
+    
+
+
+
+    result = register_key_on_CF(pub_string)
+    
+    if result.status_code == 200:
+        try:
+            z = json.loads(result.content)
+            client_id = z['config']["client_id"]      
+            cid_byte = base64.b64decode(client_id)
+            reserved = [int(j) for j in cid_byte]
+            
+            
+            return '2606:4700:110:846c:e510:bfa1:ea9f:5247/128',priv_string,reserved, 'bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo='
+            
+        except Exception as e:
+            print('Something went wronge with api')
+            exit()
+def fetch_config_from_api():
+    global api
+    if api=='':
+    	which_api=input_p('Which Api \n', {'1':'First api/Not work', '2' :'Second api'})
+    	api=which_api
+    else:
+    	which_api=api
+    if which_api == '2':
+    	
+    	keys=bind_keys()
+    	
+    	keys=list(keys)
+    	
+    	return {
+        'PrivateKey': keys[1],
+        'PublicKey':  keys[3],
+        'Reserved':  keys[2],
+        'Address':  keys[0]
+    	}
+    	
+ 
+    	
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
     	    try:
@@ -152,25 +297,17 @@ def fetch_config_from_api():
         'Address': data.get('local_address')
     }
     
-def free_cloudflare_account2():
     
-    @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
-    def file_o():
-    	    try:
-    	    	response = urllib.request.urlopen("https://fscarmen.cloudflare.now.cc/wg", timeout=30).read().decode('utf-8')
-    	    	return response
-    	    except Exception:
-    	    	response = requests.get("https://fscarmen.cloudflare.now.cc/wg", timeout=30)
-    	    	return response.text
-    	    
-    response = file_o()
-    PublicKey=response[response.index(':')+2:response.index('\n')]
-    PrivateKey=response[response.index('\n')+13:]
-    reserved=[222,6,184]
-    return ["2606:4700:110:8d48:52cb:c565:3a80:c416/128" , PrivateKey , reserved, PublicKey]
-
 def free_cloudflare_account():
-
+    global api
+    if api=='':
+    	which_api=input_p('Which Api \n', {'1':'First api/Not work', '2' :'Second api'})
+    	api=which_api
+    else:
+    	which_api=api
+    if which_api == '2':
+    	keys=bind_keys()
+    	return keys
     	
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
@@ -222,9 +359,7 @@ def upload_to_bashupload(config_data):
             console.print("[red]Something happened with creating the link[/red]", style="bold red")
     except Exception as e:
         console.print(f"[red]An error occurred: {e}[/red]", style="bold red")
-
-
-    
+        
 def create_ip_range(start_ip, end_ip):
     start = list(map(int, start_ip.split('.')))
     end = list(map(int, end_ip.split('.')))
@@ -1621,26 +1756,46 @@ def main3():
     wire_c=wire_c+1
     wire_p=1
 def generate_wireguard_url(config, endpoint):
-    
+    global api
     
     required_keys = ['PrivateKey', 'PublicKey' ,'Address' ]
     if not all(key in config and config[key] is not None for key in required_keys):
         print("Incomplete configuration. Missing one of the required keys or value is None.")
         return None
 
-    encoded_addresses = [quote(address1) for address1 in (config['Address'])]
     
-    address= ','.join(encoded_addresses)
     
-    wireguard_urll = (
+    if api =='1':
+        encoded_addresses = [quote(address1) for address1 in (config['Address'])]
+        address= ','.join(encoded_addresses)
+        wireguard_urll = (
         f"wireguard://{urlencode(config['PrivateKey'])}@{endpoint}"
         f"?address={address}&"
         f"publickey={urlencode(config['PublicKey'])}"
     )
     
     
-    if config.get('Reserved'):
-        wireguard_urll += f"&reserved={urlencode(config['Reserved'])}"
+        if config.get('Reserved'):
+   
+        	    wireguard_urll += f"&reserved={urlencode(config['Reserved'])}"
+    else:
+        listt=config['Reserved']
+        lostt2=''
+        for num in range(len(listt)):
+        	lostt2+=str(listt[num])
+        	if num != len(listt)-1:
+        		lostt2+=','
+        config['Reserved']=urlencode(lostt2)
+        wireguard_urll = (
+        f"wireguard://{urlencode(config['PrivateKey'])}@{endpoint}"
+        f"?address=172.16.0.2/32,{urlencode(config['Address'])}&"
+        f"publickey={urlencode(config['PublicKey'])}"
+    )
+   
+        if config.get('Reserved'):
+   
+        	    wireguard_urll += f"&reserved={config['Reserved']}"	
+        	
     
     wireguard_urll += "#Tel= @arshiacomplus wire"
 
