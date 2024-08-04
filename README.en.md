@@ -28,7 +28,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 1. IP scanner is IPv4, IPv6
 
-##### ▫️ The ability to save version four IPs in storage/emulated/0/ and a file named result.csv
+##### ▫️ The ability to save version four IPs in storage/emulated/0/ and a file called result.csv
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
@@ -52,7 +52,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 (It is for people who get the error best_result[0]Eat) 
  In this case, you can first scan the IP from other scanners 
- And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will choose the IP that I have already entered.
+ And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will select the IP that I have already entered.
 
 <br><br/>
 
@@ -67,7 +67,7 @@ If you get a timeout error, try a few more times<br><br/>
 By entering option 1 and after that 2 
  You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
 
-After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
+After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
 
 -   1\. Pencil button
 -   2\. Putting the bracket next to the IP[ipvsh]
