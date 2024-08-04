@@ -28,7 +28,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 1. IPスキャナーはIPv4、IPv6です
 
-##### ▫️ バージョン 4 の IP を storage/emulated/0/ および result.csv という名前のファイルに保存する機能
+##### ▫️ バージョン 4 の IP を storage/emulated/0/ および result.csv というファイルに保存する機能
 
 ##### したがって、数字の 1 を入力し、次に y を入力し、場合によってはもう一度 y を入力することに注意してください。
 
@@ -51,7 +51,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 3. IP をスキャンせずに Wireguard 構成を取得します
 
 (エラー「best_result」が表示される人向けです)[０]食べる） 
- この場合、最初に他のスキャナーから IP をスキャンできます。 
+ この場合、最初に他のスキャナから IP をスキャンできます。 
  3 番目のオプションを選択すると、IP とポートを入力するように求められます。N を入力すると、すでに入力した IP が選択されます。
 
 <br><br/>
