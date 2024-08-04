@@ -10,7 +10,7 @@
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
-> Google Play から Thermox をダウンロード Google Play から Thermox をダウンロードしないでください
+> ترماکس رو از گوگل پلی دانلود نکنید▫️ترماکس رو از گوگل پلی دانلود نکنید
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### したがって、数字の 1 を入力し、次に y を入力し、場合によってはもう一度 y を入力することに注意してください。
 
-##### そして、求められたメモリアクセスをTermoxに与える必要があります。
+##### 次に、Termox にメモリ アクセスを許可する必要があります。これは要求されます。
 
 ##### その後
 
@@ -62,12 +62,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 5. v2ray および MahsaNG で使用する Wireguard 構成を取得するには
 
-> エラーリクエストが表示される方向けです 👈👈[ｈっｔｐｓ：／／ｔ。め／あｒしあ＿もｄ＿ふん／２９８](https://t.me/arshia_mod_fun/298)
+> اینم برای اونای که ارور requests می‌گیرند 👈👈
+> [ｈっｔｐｓ：／／ｔ。め／あｒしあ＿もｄ＿ふん／２９８](https://t.me/arshia_mod_fun/298)
 
 オプション 1 を入力し、その後 2 を入力すると 
- Shish の IP バージョンを入手できます。これは、Mehsa Anji および Vettori のオプション 5 ワイヤーガード構成にも実装されています。
+ Shish の IP バージョンを入手できます。これは、Mahsa Anji および Vettori のオプション 5 ワイヤーガード構成にも実装されています。
 
-Shish の IP バージョンを使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
+IP バージョンの Shish を使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
 
 -   1.鉛筆ボタン
 -   2\. ブラケットを IP の隣に置きます[ipvsh]
