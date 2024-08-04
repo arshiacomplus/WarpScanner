@@ -1,4 +1,4 @@
-V=24
+V=26
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -307,7 +307,9 @@ def free_cloudflare_account():
     	which_api=api
     if which_api == '2':
     	keys=bind_keys()
+    	keys=list(keys)
     	return keys
+    	
     	
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
@@ -1509,93 +1511,48 @@ def main2():
         
         else: os.system('clear'),print(f'''
 {{
-        "route": {{                                                         "geoip": {{
-                "path": "geo-assets\\\\sagernet-sing-geoip-geoip.db"
-                }},                                                         "geosite": {{
-                "path": "geo-assets\\\\sagernet-sing-geosite-geosite.db"
-                }},                                                         "rules": [
-                {{                                                                  "inbound": "dns-in",
-                        "outbound": "dns-out"                              }},
-                {{                                                                  "port": 53,
-                        "outbound": "dns-out"                              }},
-                {{                                                                  "clash_mode": "Direct",
-                        "outbound": "direct"                               }},
-                {{                                                                  "clash_mode": "Global",
-                        "outbound": "select"
-                }}
-                ],
-                "auto_detect_interface": true,
-                "override_android_vpn": true                       }},
-        "outbounds": [
-                {{
-                "type": "selector",
-                "tag": "select",                                           "outbounds": [
-                        "auto",
-                        "IP->Iran, Telegram: @arshiacomplus",
-                        "IP->Main, Telegram: @arshiacomplus"
-                ],
-                "default": "auto"
-                }},
-                {{
-                "type": "urltest",
-                "tag": "auto",
-                "outbounds": [
-                        "IP->Iran, Telegram: @arshiacomplus",
-                        "IP->Main, Telegram: @arshiacomplus"
-                ],
-                "url": "http://cp.cloudflare.com/",
-                "interval": "10m0s"
-                }},
-                {{
-                "type": "wireguard",
-                "tag": "IP->Iran, Telegram: @arshiacomplus",
-                "local_address": [
-                        "172.16.0.2/32",
-                        "{all_key[0]}"
-                ],
-                "private_key": "{all_key[1]}",
-                "server": "{best_result[0]}",
-                "server_port": {best_result[1]},
-                "peer_public_key": "{all_key[3]}",
-                "reserved": {all_key[2]},
-                "mtu": 1280,
-                "fake_packets": "5-10"
-                }},
-                {{
-                "type": "wireguard",
-                "tag": "IP->Main, Telegram: @arshiacomplus",
-                "detour": "IP->Iran, Telegram: @arshiacomplus",
-                "local_address": [
-                        "172.16.0.2/32",
-                        "{all_key2[0]}"
-                ],
-                "private_key": "{all_key2[1]}",
-                "server": "{best_result[0]}",
-                "server_port": {best_result[1]},
-                "peer_public_key": "{all_key[3]}",
-                "reserved": {all_key2[2]},
-                "mtu": 1280,
-                "fake_packets": "5-10"
-                }},
-                {{
-                "type": "dns",
-                "tag": "dns-out"
-                }},
-                {{
-                "type": "direct",
-                "tag": "direct"
-                }},
-                {{
-                "type": "direct",
-                "tag": "bypass"
-                }},
-                {{
-                "type": "block",
-                "tag": "block"
-                }}
-        ]
-        }}
-''')	
+  "outbounds": 
+  [
+
+    {{
+    "type": "wireguard",
+    "tag": "Tel=@arshiacomplus Warp-IR1",
+    "local_address": [
+        "172.16.0.2/32",
+        "{all_key[0]}"
+    ],
+    "private_key": "{all_key[1]}",
+    "peer_public_key": "{all_key[3]}",
+    "server": "{best_result[0]}",
+    "server_port": {best_result[1]},
+    "reserved": {all_key[2]},
+
+    "mtu": 1280,
+    "fake_packets":"1-3",
+    "fake_packets_size":"10-30",
+    "fake_packets_delay":"10-30",
+    "fake_packets_mode":"m4"
+    }},
+    {{
+    "type": "wireguard",
+    "tag": "Tel=@arshiacomplus Warp-Main1",
+    "detour": "Tel=@arshiacomplus Warp-IR1",
+    "local_address": [
+        "172.16.0.2/32",
+        "{all_key2[0]}"
+    ],
+    "private_key": "{all_key2[1]}",
+    "server": "{best_result[0]}",
+    "server_port": {best_result[1]},
+    "peer_public_key": "{all_key2[3]}",
+    "reserved": {all_key2[2]},
+    "mtu": 1330,
+    "fake_packets_mode":"m4"
+ 
+    }}
+  ]
+}}
+''')
         if what=="3":
             exit()
                 
@@ -1641,107 +1598,108 @@ def main3():
              print('Try again and choose wire guard without ip')
              print('\033[0m')
              exit()
-    print(f"please wait make wireguard : {wire_c}. ")
     
-    try:
-        all_key2=free_cloudflare_account()
-    except Exception as E:
-            print(' Try again Error =', E)
-            exit()
+    os.system('clear')
+         
+    time.sleep(8)
+    if wire_p==1:
+            print(f"please wait make wireguard : {wire_c-1}. ")
+    
     
     print('\033[0m')
 
-    os.system('clear')
-
     
-    try:
-        all_key=free_cloudflare_account()
-    except Exception as E:
-            print(' Try again Error =', E)
-            exit()
-            
+    
+
     if wire_p !=1:
+    	all_key=free_cloudflare_account()
+    	all_key2=free_cloudflare_account()
     	wire_config_or = f'''
 
     {{
     "type": "wireguard",
     "tag": "Tel=@arshiacomplus Warp-IR{wire_c}",
-    "server": "{best_result[0]}",
-    "server_port": {best_result[1]},
-
     "local_address": [
         "172.16.0.2/32",
         "{all_key[0]}"
     ],
     "private_key": "{all_key[1]}",
     "peer_public_key": "{all_key[3]}",
+    "server": "{best_result[0]}",
+    "server_port": {best_result[1]},
     "reserved": {all_key[2]},
 
     "mtu": 1280,
-    "fake_packets": "5-10"
+    "fake_packets":"1-3",
+    "fake_packets_size":"10-30",
+    "fake_packets_delay":"10-30",
+    "fake_packets_mode":"m4"
     }},
     {{
     "type": "wireguard",
     "tag": "Tel=@arshiacomplus Warp-Main{wire_c}",
     "detour": "Tel=@arshiacomplus Warp-IR{wire_c}",
-    "server": "{best_result[0]}",
-    "server_port": {best_result[1]},
-    
     "local_address": [
         "172.16.0.2/32",
         "{all_key2[0]}"
     ],
     "private_key": "{all_key2[1]}",
+    "server": "{best_result[0]}",
+    "server_port": {best_result[1]},
     "peer_public_key": "{all_key2[3]}",
     "reserved": {all_key2[2]},
-
-    "mtu": 1120
-
+    "mtu": 1330,
+    "fake_packets_mode":"m4"
+ 
     }}
 
 '''
     else:
+        all_key=free_cloudflare_account()
+        all_key2=free_cloudflare_account()
         wire_config_or = f'''
 
     ,{{
     "type": "wireguard",
     "tag": "Tel=@arshiacomplus Warp-IR{wire_c}",
-    "server": "{best_result[0]}",
-    "server_port": {best_result[1]},
-
     "local_address": [
         "172.16.0.2/32",
         "{all_key[0]}"
     ],
     "private_key": "{all_key[1]}",
     "peer_public_key": "{all_key[3]}",
+    "server": "{best_result[0]}",
+    "server_port": {best_result[1]},
     "reserved": {all_key[2]},
 
     "mtu": 1280,
-    "fake_packets": "5-10"
+    "fake_packets":"1-3",
+    "fake_packets_size":"10-30",
+    "fake_packets_delay":"10-30",
+    "fake_packets_mode":"m4"
     }},
     {{
     "type": "wireguard",
     "tag": "Tel=@arshiacomplus Warp-Main{wire_c}",
     "detour": "Tel=@arshiacomplus Warp-IR{wire_c}",
-    "server": "{best_result[0]}",
-    "server_port": {best_result[1]},
     
     "local_address": [
         "172.16.0.2/32",
         "{all_key2[0]}"
     ],
     "private_key": "{all_key2[1]}",
+    "server": "{best_result[0]}",
+    "server_port": {best_result[1]},
     "peer_public_key": "{all_key2[3]}",
     "reserved": {all_key2[2]},
-
-    "mtu": 1120
-
+    "mtu": 1330,
+    "fake_packets_mode":"m4"
     }}
 
 '''
 
     if i == int(how_many)-1:
+        os.system('clear')
         upload_to_bashupload(f'''{{
   "outbounds": 
   [{wire_config_temp}
@@ -1827,8 +1785,8 @@ def start_menu():
 def get_number_of_configs():
     while True:
         try:
-            how_many = int(Prompt.ask('\nHow many configs do you need (2 to 15): '))
-            if how_many >= 2 and how_many <= 15:
+            how_many = int(Prompt.ask('\nHow many configs do you need (2 to 4): '))
+            if how_many >= 2 and how_many <= 4:
                 break
         except ValueError:
             console.print("[bold red]Please enter a valid number![/bold red]", style="red")
