@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### And then you have to give the memory access to Termox that you are asked
+##### And then you have to give memory access to Termox, which is asked of you
 
 ##### and then
 
@@ -51,7 +51,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 3. Get Wireguard configuration without needing to scan IP
 
 (It is for people who get the error best_result[0]Eat) 
- In this case, you can first scan the IP from other scanners 
+ In this case, you can scan IP from other scanners first 
  And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will select the IP that I have already entered.
 
 <br><br/>
@@ -73,7 +73,7 @@ After copying the Wire Guard configuration with the IP version of Shish and then
 -   2\. Putting the bracket next to the IP[ipvsh]
 -   3\. Storage<br><br/>
 
-## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
+## 6. To get wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
 If you press n, it will select the IP that I have already set
  otherwise 
@@ -94,7 +94,7 @@ You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br
 
 Give it a name and close the Thermox window and open a new one.
 
- نوع استفاده :
+Type of Use :
 
 -   Enter the name you gave to run the script
 -   To delete it, press the same number again and press Y
