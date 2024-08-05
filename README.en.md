@@ -26,13 +26,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 > [!WARNING]Since it tries to install Python in the first step, it might need a VPN!
 
-## 1. ای پی اسکنر هستش IPv4 , IPv6
+## 1. IP scanner is IPv4, IPv6
 
 ##### ▫️ The ability to save version four IPs in storage/emulated/0/ and a file called result.csv
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### And then you have to give memory access to Termox, which is asked of you
+##### And then you have to give the memory access to Termox that you are asked
 
 ##### and then
 
@@ -51,7 +51,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 3. Get Wireguard configuration without needing to scan IP
 
 (It is for people who get the error best_result[0]Eat) 
- In this case, you can scan IP from other scanners first 
+ In this case, you can first scan the IP from other scanners 
  And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will select the IP that I have already entered.
 
 <br><br/>
@@ -73,7 +73,7 @@ After copying the Wire Guard configuration with the IP version of Shish and then
 -   2\. Putting the bracket next to the IP[ipvsh]
 -   3\. Storage<br><br/>
 
-## 6. To get wireguard configuration for Vettori and Mehsa Anji and... without IP scan
+## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
 If you press n, it will select the IP that I have already set
  otherwise 
@@ -94,7 +94,7 @@ You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br
 
 Give it a name and close the Thermox window and open a new one.
 
-Type of Use :
+ نوع استفاده :
 
 -   Enter the name you gave to run the script
 -   To delete it, press the same number again and press Y
