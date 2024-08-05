@@ -38,7 +38,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 注意：您可以为 Vahid 面板（带 in​​ter）和 bpb 面板（带逗号）创建一个干净的 IP。
 
-##### 保存到结果文件中
+##### در فایل ریزالت سیو کنید
 
 ##### 然后你输入数字一（IP版本四）
 
