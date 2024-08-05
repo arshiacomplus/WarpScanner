@@ -1,4 +1,4 @@
-V=26
+V=27
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -62,17 +62,28 @@ except Exception:
     from icmplib import ping as pinging
 try:
 	from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
+	from cryptography.hazmat.primitives import serialization
 except Exception:
 	
 	os.system('pip install cryptography')
-	from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
+	
+try:
+	from cryptography.hazmat.primitives import serialization
+	from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
+except Exception:
+    os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
+    os.system("tar -zxvf 43.0.0.tar.gz")
+    os.chdir("cryptography-43.0.0")
+    os.system("pip install .")
 from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
 import base64
 try:
 	import datetime
 except Exception:
 	os.system('pip install datetime')
 	import datetime
+
 api=''
 
 console = Console()
