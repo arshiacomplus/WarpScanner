@@ -103,7 +103,7 @@ Type of Use :
 
 ## 10. Open this config file option`.conf`Wireguard is made for Windscribe and Wireguard
 
-## donate
+## اهدا کردن
 
 <b>Trx:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
 
