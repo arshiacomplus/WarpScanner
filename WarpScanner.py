@@ -1,4 +1,4 @@
-V=28
+V=29
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -75,8 +75,7 @@ except Exception:
     os.system("tar -zxvf 43.0.0.tar.gz")
     os.chdir("cryptography-43.0.0")
     os.system("pip install .")
-from cryptography.hazmat.primitives import serialization
-from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
+ 
 import base64
 try:
 	import datetime
@@ -1761,10 +1760,16 @@ def generate_wireguard_url(config, endpoint):
         f"?address=172.16.0.2/32,{urlencode(config['Address'])}&"
         f"publickey={urlencode(config['PublicKey'])}"
     )
-   
+        if what =='11' or what =='12':
+        	        wireguard_urll = (
+        f"wireguard://{urlencode(config['PrivateKey'])}@{endpoint}"
+        f"?wnoise=quic&address=172.16.0.2/32,{urlencode(config['Address'])}&keepalive=5&wpayloadsize=1-8&"
+        f"publickey={urlencode(config['PublicKey'])}&wnoisedelay=1-3&wnoisecount=15&mtu=1330"
+    )
+   #wireguard://qO6m%2BpxSH677ETSmqykciE7MQ7rp0Jw8qJHSUh7Gj3k%3D@162.159.195.166:878?wnoise=quic&address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A846c%3Ae510%3Abfa1%3Aea9f%3A5247%2F128&reserved=111%2C162%2C171&keepalive=5&wpayloadsize=1-8&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&wnoisedelay=1-3&wnoisecount=15&mtu=1280#Tel%3D+%40arshiacomplus+wire
         if config.get('Reserved'):
    
-        	    wireguard_urll += f"&reserved={config['Reserved']}"	
+        	    wireguard_urll += f"&reserved={config['Reserved']}"
         	
     
     wireguard_urll += "#Tel= @arshiacomplus wire"
@@ -1785,6 +1790,8 @@ def start_menu():
         "8": "WoW for v2ray or mahsaNG in sub link",
         "9": "Add/Delete shortcut",
         "10":"get wireguard.conf",
+        "11":"wireguard for nikaNg ",
+        "12":"wireguard for nikaNg without ip scanning",
         "00" : "info",
         "0": "Exit"
     }
@@ -1866,11 +1873,11 @@ if __name__ == "__main__":
 
         for i in range(how_many):
             main3()
-    elif what =='5' or what =='6':
+    elif what =='5' or what =='6' or what=='11' or what=='12':
         
         	
         api_url = 'https://api.zeroteam.top/warp?format=sing-box'
-        if what=='5':
+        if what=='5' or what =='11':
         	endpoint_ip_best_result=main()
         	endpoint_ip = str(endpoint_ip_best_result[0])+":"+str(endpoint_ip_best_result[1])
         else:
