@@ -1,4 +1,4 @@
-V=30
+V=31
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -65,7 +65,11 @@ try:
 	from cryptography.hazmat.primitives import serialization
 except Exception:
 	try:
-		os.system('pip install cryptography')
+		print("cryptography module not installed. Installing now...")
+		os.system('pkg install python3 rust binutils-is-llvm -y')
+		os.system('export CXXFLAGS="-Wno-register"')
+		os.system('export CFLAGS="-Wno-register"')
+		os.system('python3 -m pip install cryptography ')
 	except Exception:
 	   os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
 	   os.system("tar -zxvf 43.0.0.tar.gz")
