@@ -1,4 +1,4 @@
-V=29
+V=30
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -64,17 +64,18 @@ try:
 	from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
 	from cryptography.hazmat.primitives import serialization
 except Exception:
-	
-	os.system('pip install cryptography')
-	
+	try:
+		os.system('pip install cryptography')
+	except Exception:
+	   os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
+	   os.system("tar -zxvf 43.0.0.tar.gz")
+	   os.chdir("cryptography-43.0.0")
+	   os.system("pip install .")
 try:
 	from cryptography.hazmat.primitives import serialization
 	from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
 except Exception:
-    os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
-    os.system("tar -zxvf 43.0.0.tar.gz")
-    os.chdir("cryptography-43.0.0")
-    os.system("pip install .")
+ print('somthing wemt wrong with cryptography')
  
 import base64
 try:
