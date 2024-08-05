@@ -1,6 +1,6 @@
-## Warp Scanner
+## ワープスキャナー
 
-言語 : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[Japanese](README.ja.md)
+言語 : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -48,7 +48,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ▫️ ワイヤーガード構成の取得中にタイムアウト エラーが発生した場合は、さらに数回テストしてください<br><br/>
 
-## 3. IP をスキャンせずに Wireguard 構成を取得します
+## 3. دریافت کانفیگ وایرگارد بدون نیاز به اسکن آیپی
 
 (エラー「best_result」が表示される人向けです)[０]食べる） 
  この場合、最初に他のスキャナから IP をスキャンできます。 
@@ -79,19 +79,18 @@ nを押すと、すでに設定したIPが選択されます
  さもないと 
  IP とポートの例:
 
-> ipv4:port
-> وارد می‌کنید
-> <br><br/>
+> ipv4:ポート
+> あなたが入力します<br><br/>
 
 ## 7. v2ray および MahsaNG の設定を取得するには、オプション 7 を使用できます (ヘルプは bpb パネルから取得しました....)。
 
 Po サイト (カンフー パンダ) をブロックするかどうかを尋ねられます<br><br/>
 
-## 8. میتونید ساب وارپ آن وارپ برای v2ray یا MahsaNg بگیرید
+## 8. v2ray または MahsaNg のワープをサブワープできます
 
 <br><br/>
 
-## 9. میتونید یه شورت کات درست کنید
+## 9. ショートカットができる
 
 名前を付けて Thermox ウィンドウを閉じ、新しいウィンドウを開きます。
 
@@ -102,7 +101,7 @@ Po サイト (カンフー パンダ) をブロックするかどうかを尋ね
 
 <br><br/>
 
-## 10. بازدن این گزینه فایل کانفیگ `.conf`Wireguard は Windscribe と Wireguard のために作られています
+## 10.この設定ファイルを開くオプション`.conf`Wireguard は Windscribe と Wireguard のために作られています
 
 ## 寄付する
 
