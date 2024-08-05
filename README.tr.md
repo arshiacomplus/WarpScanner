@@ -50,7 +50,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. IP taramasına gerek kalmadan Wireguard yapılandırmasını edinin
 
-(best_result hatasını alan kişiler içindir.[0]Yemek yemek) 
+(best_result hatasını alan kişiler içindir[0]Yemek yemek) 
  Bu durumda ilk önce IP'yi diğer tarayıcılardan tarayabilirsiniz. 
  Ve üçüncü seçeneği seçtikten sonra port ile IP'yi girmeniz istenecek veya N girerseniz daha önce girdiğim IP'yi seçecektir.
 
@@ -65,19 +65,19 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 > Hata istekleri alanlar için bu 👈👈<https://t.me/arshia_mod_fun/298>
 
 Seçenek 1'i ve ardından 2'yi girerek 
- Mehsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
+ Mahsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
 
-Wire Guard konfigürasyonunu Shish'in IP versiyonu ile kopyalayıp client'a aktardıktan sonra hata almamak için bunu yapın.
+Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye aktardıktan sonra, bir hatayla karşılaşmamak için bunu yapın.
 
 -   1\. Kalem düğmesi
--   2\. Braketi IP'nin yanına koymak[ipvsh]
+-   2\. Braketi IP'nin yanına koymak[ipv6]
 -   3\. Depolama<br><br/>
 
-## 6. Vettori ve Mehsa Anji için kablosuz koruma yapılandırmasını almak için ve... IP taraması olmadan
+## 6. Vettori ve Mehsa Anji için Wireguard yapılandırmasını almak için ve... IP taraması olmadan
 
-N tuşuna basarsanız önceden ayarladığım IP seçilecektir
- aksi takdirde 
- Bağlantı noktası örneğiyle birlikte IP:
+ اگر n رو بزنید ایپی که از قبل گذاشتم رو انتخاب میکنه
+ در غیر این صورت 
+ ایپی با پورت مثال : 
 
 > ipv4:bağlantı noktası
 > giriş yaptın<br><br/>
@@ -86,7 +86,7 @@ N tuşuna basarsanız önceden ayarladığım IP seçilecektir
 
 Po sitelerinin (Kung Fu Panda) engellenip engellenmeyeceği size sorulacaktır.<br><br/>
 
-## 8. Bu çözgüyü v2ray veya MahsaNg için alt çözgü yapabilirsiniz.
+## 8. Bu warp'ı v2ray veya MahsaNg için alt çözgü yapabilirsiniz
 
 <br><br/>
 
