@@ -51,7 +51,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 3. IP をスキャンせずに Wireguard 構成を取得します
 
 (エラー「best_result」が表示される人向けです)[０]食べる） 
- この場合、最初に他のスキャナから IP をスキャンできます。 
+ この場合、最初に他のスキャナーから IP をスキャンできます。 
  3 番目のオプションを選択すると、IP とポートを入力するように求められます。N を入力すると、すでに入力した IP が選択されます。
 
 <br><br/>
@@ -102,6 +102,10 @@ Po サイト (カンフー パンダ) をブロックするかどうかを尋ね
 <br><br/>
 
 ## 10.この設定ファイルを開くオプション`.conf`Wireguard は Windscribe と Wireguard のために作られています
+
+## 11. このオプションをクリックすると、Nika Anji のワイヤーガード構成を取得できます。
+
+## 12. このオプションをクリックすると、IP をスキャンせずに Nika Anji の Wireguard 構成を取得できます。
 
 ## 寄付する
 
