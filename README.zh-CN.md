@@ -14,7 +14,7 @@
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
-### 在AppTermax中运行以下代码
+### کد زیر رو در اپ ترماکس اجرا کنید
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
@@ -69,7 +69,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免遇到错误。
 
--   1.دکمه مداد
+-   1\. 铅笔按钮
 -   2\. 将支架放在 IP 旁边[ipvsh]
 -   3\. 存储<br><br/>
 
@@ -94,7 +94,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 为其命名并关闭 Thermox 窗口并打开一个新窗口。
 
-使用类型：
+ نوع استفاده :
 
 -   输入您为运行脚本指定的名称
 -   要删除它，请再次按相同的数字，然后按 Y
@@ -102,6 +102,10 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 <br><br/>
 
 ## 10.打开此配置文件选项`.conf`Wireguard 专为 Windscribe 和 Wireguard 打造
+
+## 11.通过单击此选项，您可以获得Nika Anji的wireguard配置
+
+## 12.点击此选项，无需扫描IP即可获取Nika Anji的Wireguard配置
 
 ## 捐
 
