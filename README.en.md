@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### And then you have to give the memory access to Termox that you are asked
+##### And then you have to give memory access to Termox, which is asked of you
 
 ##### and then
 
@@ -50,9 +50,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. Get Wireguard configuration without needing to scan IP
 
-(It is for people who get the error best_result[0] می‌خورند) 
- در این صورت می‌توانید اول از اسکنر های دیگه آیپی اسکن کنید 
- و بعد از زدن گزینه سه ازتون سوال میشه که آیپی رو با پورت  وارد کنید یا اگه N رو وارد کنید آیپی که از قبل گذاشتم رو انتخاب می‌کنه
+ (برای افرادی هست که به  ارور best_result[0]Eat) 
+ In this case, you can first scan the IP from other scanners 
+ And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will select the IP that I have already entered.
 
 <br><br/>
 
@@ -62,7 +62,8 @@ If you get a timeout error, try a few more times<br><br/>
 
 ## 5. To get Wireguard config for use in v2ray and MahsaNG
 
-> This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
+> اینم برای اونای که ارور requests می‌گیرند 👈👈
+> <https://t.me/arshia_mod_fun/298>
 
 By entering option 1 and after that 2 
  You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
@@ -102,6 +103,10 @@ Type of Use :
 <br><br/>
 
 ## 10. Open this config file option`.conf`Wireguard is made for Windscribe and Wireguard
+
+## 11. By clicking this option, you can get a wireguard configuration for Nika Anji
+
+## 12. By clicking this option, you can get Wireguard configuration for Nika Anji without the need to scan IP
 
 ## donate
 
