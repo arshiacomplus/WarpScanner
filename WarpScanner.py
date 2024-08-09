@@ -1,4 +1,4 @@
-V=31
+V=32
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -103,7 +103,7 @@ isIran=''
 max_workers_number=0
 do_you_save='2'
 which=''
-
+ping_range='n'
 def info():
     console.clear()
     
@@ -411,6 +411,7 @@ def scan_ip_port(ip, port,results):
         
 def main_v6():
     global which
+    global ping_range
     
     resultss=[]
     save_best=[]
@@ -439,10 +440,12 @@ def main_v6():
         	
         	    if ping_ms<300 and loss_rate_per==0.0:
         		    if which =='2':
-        			    save_best.append('['+ip+']'+'\n')
+        		        if ping==int(ping_range):
+        			        save_best.append('['+ip+']'+'\n')
         		    else:
-        			    save_best.append('['+ip+']'+',')
-        	
+        		        if ping==int(ping_range):
+        			        save_best.append('['+ip+']'+',')
+        		
         	
         	
         
@@ -529,11 +532,13 @@ def main_v6():
 def main():
     global which
     global max_workers_number
-     
+    global ping_range
+    ping_range=''
     results=[]
-   
-    
-
+    if do_you_save=='1':
+    	ping_range=input('ping range(zero to what)[defual= n]: ')
+    	if ping_range=='n' or ping_range=='N':
+    		ping_range='300'
     if what!='0':
         which_v=input_p('Choose an ip version\n ', {"1": 'ipv4' ,
          "2": 'ipv6'})
@@ -574,13 +579,15 @@ def main():
     
     for result in results:
         ip, port, ping ,loss_rate,jitter= result
-        if which !='3':
+        if which !='3' and do_you_save=='1':
             if loss_rate == 0.0 and ping !=0.0 and  ping < 250:
                 try:
-                    save_result.index(str(ip))
+                    if ping==int(ping_range):
+                        save_result.index(str(ip))
                 except Exception:
-                    save_result.append("\n")
-                    save_result.append(str(ip))
+                    if ping==int(ping_range):
+                        save_result.append("\n")
+                        save_result.append(str(ip))
         if ping ==0.0:
         	ping=1000
         if float(jitter)==0.0:
