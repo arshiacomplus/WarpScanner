@@ -103,7 +103,7 @@ Type of use:
 
 ## 10. Open this config file option`.conf`Wireguard is made for Windscribe and Wireguard
 
-## 11. با زدن این گزینه میتوانید کانفیگ وایرگارد برای نیکا انجی بگیرید
+## 11. By clicking this option, you can get a wireguard configuration for Nika Anji
 
 ## 12. By clicking this option, you can get Wireguard configuration for Nika Anji without the need to scan IP
 
