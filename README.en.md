@@ -10,7 +10,7 @@ language : 🇮🇷[Persian](README.md)| 🇹🇷[Turkish](README.tr.md)| 🇬�
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
-> ترماکس رو از گوگل پلی دانلود نکنید▫️ترماکس رو از گوگل پلی دانلود نکنید
+> Download Thermox from Google Play Do not download Thermox from Google Play
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
@@ -52,7 +52,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 (It is for people who get the error best_result[0]they eat) 
  In this case, you can first scan the IP from other scanners 
- And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will choose the IP that I have already entered.
+ And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will select the IP that I have already entered.
 
 <br><br/>
 
@@ -67,7 +67,7 @@ If you get a timeout error, try a few more times<br><br/>
 By entering option 1 and after that 2 
  You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mahsa Anji and Vettori.
 
-After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
+After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
 
 -   1\. Pencil button
 -   2\. Putting the bracket next to the IP[ipvsh]
@@ -84,8 +84,7 @@ If you press n, it will select the IP that I have already set
 
 ## 7. To get config, warp on warp for v2ray and MahsaNG, you can use option 7 (help was taken from the bpb panel....)
 
- ازتون سوال میشه که سایت های پ،و،(پاندا کنگ فو کار )  مسدود بشه یا نه 
-<br><br/>
+You will be asked if Po sites (Kung Fu Panda) will be blocked or not<br><br/>
 
 ## 8. You can subwarp that warp for v2ray or MahsaNg
 
