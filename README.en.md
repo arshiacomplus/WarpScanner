@@ -10,7 +10,7 @@ language : 🇮🇷[Persian](README.md)| 🇹🇷[Turkish](README.tr.md)| 🇬�
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
-> Download Thermox from Google Play Do not download Thermox from Google Play
+> ترماکس رو از گوگل پلی دانلود نکنید▫️ترماکس رو از گوگل پلی دانلود نکنید
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
@@ -32,9 +32,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### And then you have to give memory access to Termox, which is asked of you
+##### And then you have to give the memory access to Termox that you are asked
 
-##### and then
+##### And then
 
 ##### Note: You can create a clean IP for Vahid panel (with inter) and bpb panel (with comma).
 
@@ -50,9 +50,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. Get Wireguard configuration without needing to scan IP
 
- (برای افرادی هست که به  ارور best_result[0]Eat) 
+(It is for people who get the error best_result[0]they eat) 
  In this case, you can first scan the IP from other scanners 
- And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will select the IP that I have already entered.
+ And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will choose the IP that I have already entered.
 
 <br><br/>
 
@@ -62,11 +62,10 @@ If you get a timeout error, try a few more times<br><br/>
 
 ## 5. To get Wireguard config for use in v2ray and MahsaNG
 
-> اینم برای اونای که ارور requests می‌گیرند 👈👈
-> <https://t.me/arshia_mod_fun/298>
+> This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
 
 By entering option 1 and after that 2 
- You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
+ You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mahsa Anji and Vettori.
 
 After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
 
@@ -74,10 +73,10 @@ After copying the Wire Guard configuration with the IP version of Shish and then
 -   2\. Putting the bracket next to the IP[ipvsh]
 -   3\. Storage<br><br/>
 
-## 6. To get wireguard configuration for Vettori and Mehsa Anji and... without IP scan
+## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
 If you press n, it will select the IP that I have already set
- otherwise 
+ Otherwise 
  IP with port example:
 
 > ipv4:port
@@ -85,7 +84,8 @@ If you press n, it will select the IP that I have already set
 
 ## 7. To get config, warp on warp for v2ray and MahsaNG, you can use option 7 (help was taken from the bpb panel....)
 
-You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br/>
+ ازتون سوال میشه که سایت های پ،و،(پاندا کنگ فو کار )  مسدود بشه یا نه 
+<br><br/>
 
 ## 8. You can subwarp that warp for v2ray or MahsaNg
 
@@ -95,7 +95,7 @@ You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br
 
 Give it a name and close the Thermox window and open a new one.
 
-Type of Use :
+Type of use:
 
 -   Enter the name you gave to run the script
 -   To delete it, press the same number again and press Y
@@ -108,7 +108,7 @@ Type of Use :
 
 ## 12. By clicking this option, you can get Wireguard configuration for Nika Anji without the need to scan IP
 
-## donate
+## to donate
 
 <b>Trx:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
 
