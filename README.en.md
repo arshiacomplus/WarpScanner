@@ -75,9 +75,9 @@ After copying the Wire Guard configuration with the IP version of Shish and then
 
 ## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
- اگر n رو بزنید ایپی که از قبل گذاشتم رو انتخاب میکنه
- در غیر این صورت 
- ایپی با پورت مثال : 
+If you press n, it will select the IP that I have already set
+ Otherwise 
+ IP with port example:
 
 > ipv4:port
 > you enter<br><br/>
