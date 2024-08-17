@@ -1,6 +1,6 @@
 ## ワープスキャナー
 
-言語 : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[English](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[Japanese](README.ja.md)
+言語 : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -40,7 +40,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 結果ファイルに保存
 
-##### 次に、番号 1 (IP バージョン 4) を入力します。
+##### بعد عدد یک رو وارد میکنید(ایپی ورژن چهار )
 
 <br><br/>
 
@@ -48,7 +48,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ▫️ ワイヤーガード構成の取得中にタイムアウト エラーが発生した場合は、さらに数回テストしてください<br><br/>
 
-## 3. IP をスキャンせずに Wireguard 構成を取得します
+## 3. IP をスキャンせずに Wireguard 構成を取得する
 
 (エラー「best_result」が表示される人向けです)[０]彼らは食べる） 
  この場合、最初に他のスキャナから IP をスキャンできます。 
@@ -62,19 +62,18 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 5. v2ray および MahsaNG で使用する Wireguard 構成を取得するには
 
-> اینم برای اونای که ارور requests می‌گیرند 👈👈
-> [ｈっｔｐｓ：／／ｔ。め／あｒしあ＿もｄ＿ふん／２９８](https://t.me/arshia_mod_fun/298)
+> エラーリクエストが表示される方向けです 👈👈[ｈっｔｐｓ：／／ｔ。め／あｒしあ＿もｄ＿ふん／２９８](https://t.me/arshia_mod_fun/298)
 
- با وارد کردن گزینه ۱ و بعد از اون ۲ 
- میتونید آیپی ورژن شیش دریافت کنید که برای گزینه ۵ کانفیگ وایرگارد برای مهسا انجی و و ویتوری هم پیاده سازی شده 
+オプション 1 を入力し、その後 2 を入力すると 
+ Shish の IP バージョンを入手できます。これは、Mehsa Anji および Vettori のオプション 5 ワイヤーガード構成にも実装されています。
 
-Shish の IP バージョンを使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
+IP バージョンの Shish を使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
 
 -   1.鉛筆ボタン
 -   2\. ブラケットを IP の隣に置きます[ipvsh]
 -   3\. 保管<br><br/>
 
-## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji の Wireguard 設定を取得するには
+## 6. IP スキャンなしで Vettori と Mehsa Anji の Wireguard 設定を取得するには
 
 nを押すと、すでに設定したIPが選択されます
  さもないと 
@@ -83,10 +82,9 @@ nを押すと、すでに設定したIPが選択されます
 > ipv4:ポート
 > あなたが入力します<br><br/>
 
-## 7.  برای دریافت کانفیگ ، وارپ آن وارپ برای v2ray و MahsaNG میتونید از گزینه ۷ استفاده کنید (از پنل bpb کمک گرفته شده ....)
+## 7. v2ray および MahsaNG の設定を取得するには、オプション 7 を使用できます (ヘルプは bpb パネルから取得しました....)。
 
- ازتون سوال میشه که سایت های پ،و،(پاندا کنگ فو کار )  مسدود بشه یا نه 
-<br><br/>
+Po サイト (カンフー パンダ) をブロックするかどうかを尋ねられます<br><br/>
 
 ## 8. v2ray または MahsaNg のワープをサブワープできます
 
@@ -109,13 +107,13 @@ nを押すと、すでに設定したIPが選択されます
 
 ## 12. このオプションをクリックすると、IP をスキャンせずに Nika Anji の Wireguard 構成を取得できます。
 
-## اهدا کردن
+## 寄付する
 
 <b>送信:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
 
 ## プロジェクトをサポートする
 
-<b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b>
+<b>私のプロジェクトが気に入ったら、スターを付けたり、フォローしたり、友達に紹介したりして、私のプロジェクトをサポートしてください。</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
