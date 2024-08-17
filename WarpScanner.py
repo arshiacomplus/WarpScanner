@@ -1,4 +1,4 @@
-V=32
+V=33
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -438,7 +438,7 @@ def main_v6():
         	
         		
         	
-        	    if ping_ms<300 and loss_rate_per==0.0:
+        	    if loss_rate_per==0.0:
         		    if which =='2':
         		        if ping==int(ping_range):
         			        save_best.append('['+ip+']'+'\n')
