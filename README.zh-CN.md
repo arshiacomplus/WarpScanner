@@ -38,7 +38,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 注意：您可以为 Vahid 面板（带 in​​ter）和 bpb 面板（带逗号）创建一个干净的 IP。
 
-##### 保存到结果文件中
+##### 保存在结果文件中
 
 ##### 然后你输入数字一（IP版本四）
 
@@ -62,10 +62,10 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 5. 获取 Wireguard 配置以在 v2ray 和 MahsaNG 中使用
 
-> 这是给那些收到错误请求的人的👈👈[HTTPS://他.么/AR是A\_摸到\_妇女/298](https://t.me/arshia_mod_fun/298)
+> 这是给那些收到错误请求的人的👈👈<https://t.me/arshia_mod_fun/298>
 
 输入选项 1，然后输入选项 2 
- 您可以获得 Shish 的 IP 版本，该版本也适用于 Mahsa Anji 和 Vettori 的选项 5 Wireguard 配置。
+ 您可以获得 Shish 的 IP 版本，该版本也适用于 Mehsa Anji 和 Vettori 的选项 5 Wireguard 配置。
 
 使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免遇到错误。
 
@@ -84,7 +84,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 7. 要获取配置，对 v2ray 和 MahsaNG 进行扭曲，您可以使用选项 7（帮助来自 bpb 面板......）
 
-系统会询问您是否会屏蔽Po站（功夫熊猫）<br><br/>
+系统会询问您 Po 网站（功夫熊猫）是否会被屏蔽<br><br/>
 
 ## 8. 您可以对 v2ray 或 MahsaNg 的扭曲进行子扭曲
 
