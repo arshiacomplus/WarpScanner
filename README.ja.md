@@ -1,6 +1,6 @@
 ## ワープスキャナー
 
-言語 : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
+language : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -10,7 +10,7 @@
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
-> Google Play から Thermox をダウンロード Google Play から Thermox をダウンロードしないでください
+> ترماکس رو از گوگل پلی دانلود نکنید▫️ترماکس رو از گوگل پلی دانلود نکنید
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
@@ -92,7 +92,7 @@ Po サイト (カンフー パンダ) をブロックするかどうかを尋ね
 
 ## 9. ショートカットができる
 
-名前を付けて Thermox ウィンドウを閉じ、新しいウィンドウを開きます。
+ نام بهش بدید و پنجره ترموکس رو ببندید و جدید باز کنید.
 
 使用の種類:
 
