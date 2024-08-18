@@ -62,7 +62,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 5. 获取 Wireguard 配置以在 v2ray 和 MahsaNG 中使用
 
-> 这是给那些收到错误请求的人的👈👈<https://t.me/arshia_mod_fun/298>
+> 这是给那些收到错误请求的人的👈👈[HTTPS://他.么/AR是A\_摸到\_妇女/298](https://t.me/arshia_mod_fun/298)
 
 输入选项 1，然后输入选项 2 
  您可以获得 Shish 的 IP 版本，该版本也适用于 Mehsa Anji 和 Vettori 的选项 5 Wireguard 配置。
@@ -73,7 +73,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 -   2\. 将支架放在 IP 旁边[ipvsh]
 -   3\. 存储<br><br/>
 
-## 6. 获取 Vettori 和 Mehsa Anji 的wireguard 配置以及...无需 IP 扫描
+## 6. برای دریافت کانفیگ وایرگارد برای ویتوری و مهسا انجی و ...  بدون اسکن آیپی
 
 如果你按n，它会选择我之前输入的ip
  否则 
