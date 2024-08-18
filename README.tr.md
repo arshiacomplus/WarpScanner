@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Bu nedenle, bir sayısını girerek, ardından y ve belki tekrar y olduğunu belirtmek gerekir.
 
-##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekir.
+##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekiyor.
 
 ##### Ve daha sonra
 
@@ -65,7 +65,7 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 > Hata istekleri alanlar için bu 👈👈<https://t.me/arshia_mod_fun/298>
 
 Seçenek 1'i ve ardından 2'yi girerek 
- Mehsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
+ Mahsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
 
 Wire Guard konfigürasyonunu Shish'in IP versiyonu ile kopyalayıp client'a aktardıktan sonra hata almamak için bunu yapın.
 
