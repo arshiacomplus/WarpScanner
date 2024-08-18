@@ -1,4 +1,4 @@
-V=33
+V=38
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -96,7 +96,9 @@ wire_c=1
 wire_p=0
 send_msg_wait=0
 results=[]
+resultss=[]
 save_result=[]
+save_best=[]
 best_result=[]
 WoW_v2=''
 isIran=''
@@ -412,45 +414,22 @@ def scan_ip_port(ip, port,results):
 def main_v6():
     global which
     global ping_range
-    
+    global save_best
+    global resultss
+    global which
     resultss=[]
-    save_best=[]
+    
     def generate_ipv6():
         return f"2606:4700:d{random.randint(0, 1)}::{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}:{random.randint(0, 65535):x}"
 
-    def ping_ip(ip, port, resultss, save_best):
+    def ping_ip(ip, port):
         global do_you_save
+        global resultss
         
-        icmp=pinging(ip, count=4, interval=1, timeout=5,privileged=False)
-        ping_ms=float(icmp.avg_rtt)
-        jitter_ms=float(icmp.jitter)
-        loss_rate_per=icmp.packet_loss
-        if ping_ms == 0.0:
-        	ping_ms=1000
+        icmp=pinging(ip, count=4, interval=1, timeout=5,privileged=False, family='ipv6')
+
         
-        if jitter_ms ==0.0:
-        	jitter_ms=1000
-        
-        if loss_rate_per ==1.0 :
-        	loss_rate_per=1000
-        loss_rate_per=loss_rate_per*100
-        if do_you_save=='1' and which !='3':
-        	
-        		
-        	
-        	    if loss_rate_per==0.0:
-        		    if which =='2':
-        		        if ping==int(ping_range):
-        			        save_best.append('['+ip+']'+'\n')
-        		    else:
-        		        if ping==int(ping_range):
-        			        save_best.append('['+ip+']'+',')
-        		
-        	
-        	
-        
-        combined_score = 0.5 * ping_ms + 0.3 * loss_rate_per + 0.2 * jitter_ms
-        resultss.append((ip, port, ping_ms, loss_rate_per, jitter_ms,combined_score ))
+        resultss.append((ip, port, float(icmp.avg_rtt), icmp.packet_loss, icmp.jitter))
         
             
 
@@ -465,27 +444,51 @@ def main_v6():
 
 
     table = Table(show_header=True, title="IP Scan Results", header_style="bold blue")
-    table.add_column("IP", style="dim", no_wrap=False,width=15)  # Set no_wrap to False to allow text wrapping
-    table.add_column("Port", justify="right", no_wrap=False)
-    table.add_column("Ping (ms)", justify="right", no_wrap=False)
-    table.add_column("Packet Loss (%)", justify="right", no_wrap=False)
-    table.add_column("Jitter (ms)", justify="right", no_wrap=False)
-    table.add_column("Score", justify="right", no_wrap=False)
+    table.add_column("IP", style="dim",width=15)  # Set no_wrap to False to allow text wrapping
+    table.add_column("Port", justify="right")
+    table.add_column("Ping (ms)", justify="right")
+    table.add_column("Packet Loss (%)", justify="right")
+    table.add_column("Jitter (ms)", justify="right")
+    table.add_column("Score", justify="right")
     
     
-    resultss = []
-    executor= ThreadPoolExecutor(max_workers=1000)
+
+    executor= ThreadPoolExecutor(max_workers=800)
     try:
         for _ in range(101):
-        	executor.submit(ping_ip, generate_ipv6(), ports_to_check[random.randint(0,1)],resultss, save_best)
+        	executor.submit(ping_ip, generate_ipv6(), ports_to_check[random.randint(0,1)])
     except Exception as E:
         	rprint('[bold red]An Error: [/bold red]', E)
     finally:
         	executor.shutdown(wait=True)
+    extended_results=[]
+    for result in resultss:
+        ip, port, ping ,loss_rate,jitter= result
+        if ping ==0.0:
+        	ping=1000
+        if float(jitter)==0.0:
+        	jitter=1000
+        if loss_rate ==1.0 :
+        	loss_rate=1000
         	
+        loss_rate=loss_rate*100
+        if which !='3' and do_you_save=='1':
+            if loss_rate == 0.0 and ping !=0.0:
+                    if ping<=int(ping_range):
+                        if which=='2':
+                            save_best.append("\n")
+                            save_best.append('['+str(ip)+']')
+                        elif which=='1':
+                            
+                            save_best.append('['+str(ip)+'],')
+ 
+        	
+        combined_score = 0.5 * ping + 0.3 * loss_rate + 0.2 * jitter
+
+        extended_results.append((ip, port, ping, loss_rate,jitter, combined_score))
 
     # Sort the results based on ping time
-    sorted_results=sorted(resultss, key=lambda x: x[5])
+    sorted_results=sorted(extended_results, key=lambda x: x[5])
     
 
     for ip, port,ping,loss_rate,jitter, combined_score  in sorted_results:
@@ -500,6 +503,9 @@ def main_v6():
     console.print(table)
     port_random = ports_to_check[random.randint(0, len(ports_to_check) - 1)]
     if do_you_save=='1':
+    	
+    	if which!='2':
+    	    save_best[len(save_best)-1]=save_best[len(save_best)-1][:len(save_best[len(save_best)-1])-1]
     	with open('/storage/emulated/0/result.csv' , "w") as f:
     		for j in save_best:
     			f.write(j)
@@ -536,7 +542,7 @@ def main():
     ping_range=''
     results=[]
     if do_you_save=='1':
-    	ping_range=input('ping range(zero to what)[defual= n]: ')
+    	ping_range=input('\nping range(zero to what)[defual= n]: ')
     	if ping_range=='n' or ping_range=='N':
     		ping_range='300'
     if what!='0':
@@ -579,15 +585,6 @@ def main():
     
     for result in results:
         ip, port, ping ,loss_rate,jitter= result
-        if which !='3' and do_you_save=='1':
-            if loss_rate == 0.0 and ping !=0.0 and  ping < 250:
-                try:
-                    if ping==int(ping_range):
-                        save_result.index(str(ip))
-                except Exception:
-                    if ping==int(ping_range):
-                        save_result.append("\n")
-                        save_result.append(str(ip))
         if ping ==0.0:
         	ping=1000
         if float(jitter)==0.0:
@@ -596,6 +593,16 @@ def main():
         	loss_rate=1000
         	
         loss_rate=loss_rate*100
+        if which !='3' and do_you_save=='1':
+            if loss_rate == 0.0 and ping !=0.0:
+                try:
+                    if ping<=int(ping_range):
+                        save_result.index(str(ip))
+                except Exception:
+                    if ping<=int(ping_range):
+                        save_result.append("\n")
+                        save_result.append(str(ip))
+ 
         	
         combined_score = 0.5 * ping + 0.3 * loss_rate + 0.2 * jitter
 
@@ -779,8 +786,14 @@ def main2():
                         }}
                     ],
                     "reserved": {all_key3[2]},
-                    "secretKey": "{all_key3[1]}",
-                    "keepAlive": 10
+                    "secretKey": "{all_key3[1]}"'''
+    	if what== '14':WoW_v2+=''',
+                    "keepAlive": 10,
+                    "wnoise": "quic",
+                    "wnoisecount": "10-15",
+                    "wpayloadsize": "1-8",
+                    "wnoisedelay": "1-3"'''
+    	WoW_v2+=f'''
                 }},
                 "streamSettings": {{
                     "sockopt": {{
@@ -804,8 +817,14 @@ def main2():
                         }}
                     ],
                     "reserved": {all_key2[2]},
-                    "secretKey": "{all_key2[1]}",
-                    "keepAlive": 10
+                    "secretKey": "{all_key2[1]}"'''
+    	if what== '14':WoW_v2+=''',
+                    "keepAlive": 10,
+                    "wnoise": "quic",
+                    "wnoisecount": "10-15",
+                    "wpayloadsize": "1-8",
+                    "wnoisedelay": "1-3"'''
+    	WoW_v2+=f'''
                 }},
                 "tag": "warp-ir"
             }},
@@ -991,8 +1010,14 @@ def main2():
                         }}
                     ],
                     "reserved": {all_key3[2]},
-                    "secretKey": "{all_key3[1]}",
-                    "keepAlive": 10
+                    "secretKey": "{all_key3[1]}"'''
+    	if what== '14':WoW_v2+=''',
+                    "keepAlive": 10,
+                    "wnoise": "quic",
+                    "wnoisecount": "10-15",
+                    "wpayloadsize": "1-8",
+                    "wnoisedelay": "1-3"'''
+    	WoW_v2+=f'''
                 }},
                 "tag": "warp"
             }},
@@ -1112,7 +1137,7 @@ def main2():
         temp_ip=''
         temp_port=''
         temp_c=0
-        if what =='3':
+        if what =='3' and what=='16':
             print("\033[0m")
             enter_ip=input('Enter ip with port(Default =Enter( N )) : ')
             if enter_ip=='N' or  enter_ip=='n':
@@ -1133,7 +1158,7 @@ def main2():
                 best_result=[temp_ip, int(temp_port)]
 
         Wow=''
-        if what=='7':
+        if what=='7' or what =='13':
         	 print("\033[0m")
         	 os.system('clear')
         	 
@@ -1146,7 +1171,8 @@ def main2():
       "geosite:category-porn": "127.0.0.1"'''
         
         	
-        	 if isIran=='1' :Wow+=f'''
+        	 if isIran=='1' :
+        	 	Wow+=f'''
     }},
     "servers": [
       "https://94.140.14.14/dns-query",
@@ -1230,7 +1256,14 @@ def main2():
           }}
         ],
         "reserved": {all_key[2]},
-        "secretKey": "{all_key[1]}"
+        "secretKey": "{all_key[1]}"'''
+        	 	if what== '13':Wow+=''',
+        "keepAlive": 10,
+        "wnoise": "quic",
+        "wnoisecount": "10-15",
+        "wpayloadsize": "1-8",
+        "wnoisedelay": "1-3"'''
+        	 	Wow+=f'''
       }},
       "tag": "warp"
     }},
@@ -1324,7 +1357,8 @@ def main2():
   },
   "stats": {}
 }'''
-        	 if isIran == '2' : Wow+=f'''
+        	 if isIran == '2' :
+        	 	Wow+=f'''
     }},
     "servers": [
       "https://94.140.14.14/dns-query",
@@ -1430,7 +1464,14 @@ def main2():
           }}
         ],
         "reserved": {all_key2[2]},
-        "secretKey": "{all_key2[1]}"
+        "secretKey": "{all_key2[1]}'''
+        	 	if what== '13':Wow+=''',
+        "keepAlive": 10,
+        "wnoise": "quic",
+        "wnoisecount": "10-15",
+        "wpayloadsize": "1-8",
+        "wnoisedelay": "1-3"'''
+        	 	Wow+='''
       }},
       "tag": "warp-ir"
     }},
@@ -1532,7 +1573,9 @@ def main2():
 
         	 print(Wow), exit()
         
-        else: os.system('clear'),print(f'''
+        else:
+        	os.system('clear')
+        	hising=f'''
 {{
   "outbounds": 
   [
@@ -1550,11 +1593,13 @@ def main2():
     "server_port": {best_result[1]},
     "reserved": {all_key[2]},
 
-    "mtu": 1280,
+    "mtu": 1280'''
+        	if what !='15' and what !='16':hising+=f''',
     "fake_packets":"1-3",
     "fake_packets_size":"10-30",
     "fake_packets_delay":"10-30",
-    "fake_packets_mode":"m4"
+    "fake_packets_mode":"m4"'''
+        	hising+=f'''
     }},
     {{
     "type": "wireguard",
@@ -1569,13 +1614,16 @@ def main2():
     "server_port": {best_result[1]},
     "peer_public_key": "{all_key2[3]}",
     "reserved": {all_key2[2]},
-    "mtu": 1330,
-    "fake_packets_mode":"m4"
+    "mtu": 1330'''
+        	if what !='15' and  what !='16':hising+=f''',
+    "fake_packets_mode":"m4"'''
+        	hising+=f'''
  
     }}
   ]
 }}
-''')
+'''
+        	print(hising),exit()
         if what=="3":
             exit()
                 
@@ -1590,7 +1638,7 @@ def main2():
 
     best_result=main()
     
-    if what=='8':
+    if what=='8' or what=='14':
     	
     	rprint("[bold green]Please wait, generating WireGuard URL...[/bold green]")
     	for n in range(how_many):
@@ -1652,11 +1700,13 @@ def main3():
     "server_port": {best_result[1]},
     "reserved": {all_key[2]},
 
-    "mtu": 1280,
+    "mtu": 1280'''
+    	if what!='17': wire_config_or=''',
     "fake_packets":"1-3",
     "fake_packets_size":"10-30",
     "fake_packets_delay":"10-30",
-    "fake_packets_mode":"m4"
+    "fake_packets_mode":"m4"'''
+    	wire_config_or+=f'''
     }},
     {{
     "type": "wireguard",
@@ -1671,9 +1721,10 @@ def main3():
     "server_port": {best_result[1]},
     "peer_public_key": "{all_key2[3]}",
     "reserved": {all_key2[2]},
-    "mtu": 1330,
-    "fake_packets_mode":"m4"
- 
+    "mtu": 1330'''
+    	if what!='17': wire_config_or=''',
+    "fake_packets_mode":"m4"'''
+    	wire_config_or+=f'''
     }}
 
 '''
@@ -1695,11 +1746,14 @@ def main3():
     "server_port": {best_result[1]},
     "reserved": {all_key[2]},
 
-    "mtu": 1280,
+    "mtu": 1280'''
+        if what!='17': wire_config_or=''',
     "fake_packets":"1-3",
     "fake_packets_size":"10-30",
     "fake_packets_delay":"10-30",
-    "fake_packets_mode":"m4"
+    "fake_packets_mode":"m4"'''
+        wire_config_or+=f'''
+    
     }},
     {{
     "type": "wireguard",
@@ -1715,8 +1769,10 @@ def main3():
     "server_port": {best_result[1]},
     "peer_public_key": "{all_key2[3]}",
     "reserved": {all_key2[2]},
-    "mtu": 1330,
-    "fake_packets_mode":"m4"
+    "mtu": 1330'''
+        if what!='17': wire_config_or=''',
+    "fake_packets_mode":"m4"'''
+        wire_config_or+=f'''
     }}
 
 '''
@@ -1793,9 +1849,9 @@ def start_menu():
     
     options = {
         "1": "scan ip",
-        "2": "wireguard config",
-        "3": "wireguard config without ip scanning",
-        "4": "wireguard with a sub link",
+        "2": "wireguard for Hiddify",
+        "3": "wireguard for Hiddify without ip scanning",
+        "4": "wireguard for Hiddify with a sub link",
         "5": "wireguard for v2ray and mahsaNG",
         "6": "wireguard for v2ray and mahsaNG without ip scanning",
         "7": "WoW for v2ray or mahsaNG",
@@ -1804,6 +1860,11 @@ def start_menu():
         "10":"get wireguard.conf",
         "11":"wireguard for nikaNg ",
         "12":"wireguard for nikaNg without ip scanning",
+        "13":"WoW with noise for Nikang or MahsaNg ",
+        "14":"WoW with noise for Nikang or MahsaNg in sub link",
+        "15": "wireguard for Sing-box and Hhidify | old | ",
+        "16": "wireguard for Sing-box and Hiddify| old | without ip scanning",
+        "17": "wireguard for Sing-box and Hiddify | old | with a sub link",
         "00" : "info",
         "0": "Exit"
     }
@@ -1870,9 +1931,9 @@ if __name__ == "__main__":
        
             
         main()
-    elif what=='2' or what=="3" or what =='7':
+    elif what=='2' or what=="3" or what =='7' or what =='13'  or what=='15' or what=="16":
     
-        if what == '7':
+        if what == '7' or what=='13':
         	
         	polrn_block= input_p('Do you want to block p@rn sites\n' , {"1": "Yes", "2": "No"})
         	
@@ -1880,7 +1941,7 @@ if __name__ == "__main__":
         	
         	
         main2()
-    elif what=='4':
+    elif what=='4' or what=='17':
         how_many=get_number_of_configs()  
 
         for i in range(how_many):
@@ -1935,7 +1996,7 @@ if __name__ == "__main__":
 """)
         else:
             print("Failed to generate WireGuard URL.")
-    elif what == '8':
+    elif what == '8' or  what=='14':
     	how_many=get_number_of_configs()
     	polrn_block= input_p('Do you want to block p@rn sites\n' , {"1": "Yes", "2": "No"})
 
