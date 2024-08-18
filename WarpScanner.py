@@ -1,4 +1,4 @@
-V=38
+V=39
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -1471,7 +1471,7 @@ def main2():
         "wnoisecount": "10-15",
         "wpayloadsize": "1-8",
         "wnoisedelay": "1-3"'''
-        	 	Wow+='''
+        	 	Wow+=f'''
       }},
       "tag": "warp-ir"
     }},
