@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### And then you have to give memory access to Termox, which is asked of you
+##### و بعد باید به ترموکس دسترسی حافظه بدید که ازتون خواسته میشه
 
 ##### And then
 
@@ -42,7 +42,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Then you enter the number one (IP version four)
 
-<br><br/>
+ <br><br/>
 
 ## 2. Get Wireguard config
 
