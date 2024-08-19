@@ -1,4 +1,4 @@
-V=39
+V=40
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -1464,7 +1464,7 @@ def main2():
           }}
         ],
         "reserved": {all_key2[2]},
-        "secretKey": "{all_key2[1]}'''
+        "secretKey": "{all_key2[1]}"'''
         	 	if what== '13':Wow+=''',
         "keepAlive": 10,
         "wnoise": "quic",
