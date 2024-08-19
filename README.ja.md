@@ -70,7 +70,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 Shish の IP バージョンを使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
 
 -   1.鉛筆ボタン
--   2\. ブラケットを IP の隣に置きます[ipv6]
+-   2\. ブラケットを IP の隣に置きます[ipvsh]
 -   3\. 保管<br><br/>
 
 ## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji のワイヤーガード設定を取得するには...
