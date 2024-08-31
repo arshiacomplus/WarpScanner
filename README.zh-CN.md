@@ -32,9 +32,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 因此，应该注意的是，输入数字 1，然后输入 y，也许再输入 y
 
-##### 然后你必须向 Termox 授予内存访问权限，这是要求你的
+##### 然后你必须按照要求向 Termox 提供内存访问权限
 
-##### 进而
+##### و بعد
 
 ##### 注意：您可以为 Vahid 面板（带 in​​ter）和 bpb 面板（带逗号）创建一个干净的 IP。
 
@@ -56,7 +56,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <br><br/>
 
-### 4. برای دریافت کانفیگ وایرگارد در یک لینک ساب با تعداد دلخواه گزینه 4 را وارد کنید سعی کنید از اعداد زوج برای تعداد کانفیگ استفاده کنید
+### 4. 要在子链路中接收具有所需编号的wireguard 配置，请输入选项4。尝试使用偶数作为配置编号。
 
 如果出现超时错误，请多尝试几次<br><br/>
 
@@ -67,13 +67,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 输入选项 1，然后输入选项 2 
  您可以获得 Shish 的 IP 版本，该版本也适用于 Mahsa Anji 和 Vettori 的选项 5 Wireguard 配置。
 
-使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免遇到错误。
+使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免出现错误。
 
 -   1\. 铅笔按钮
 -   2\. 将支架放在 IP 旁边[ipvsh]
 -   3\. 存储<br><br/>
 
-## 6. 获取 Vettori 和 Mehsa Anji 的 Wireguard 配置以及...无需 IP 扫描
+## 6. 获取 Vettori 和 Mehsa Anji 的wireguard 配置以及...无需 IP 扫描
 
 如果你按n，它会选择我之前输入的ip
  否则 
@@ -101,11 +101,11 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <br><br/>
 
-## 10.打开此配置文件选项`.conf`Wireguard 专为 Windscribe 和 Wireguard 打造
+## 10.打开此配置文件选项`.conf` وایرگارد  ساخته میشود برای ویندسکرایب و وایرگارد
 
 ## 11.通过单击此选项，您可以获得Nika Anji的wireguard配置
 
-## 12.点击此选项，无需扫描IP即可获取Nika Anji的Wireguard配置
+## 12. با زدن این گزینه میتوانید کانفیگ وایرگارد برای نیکا انجی بدون نیاز به اسکن ایپی بگیرید
 
 ## 捐赠
 
