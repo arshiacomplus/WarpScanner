@@ -50,15 +50,16 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. IP taramasına gerek kalmadan Wireguard yapılandırmasını edinin
 
-(best_result hatasını alan kişiler içindir[0]onlar yerler) 
- Bu durumda ilk önce IP'yi diğer tarayıcılardan tarayabilirsiniz. 
- Ve üçüncü seçeneği seçtikten sonra port ile IP'yi girmeniz istenecek veya N girerseniz daha önce girdiğim IP'yi seçecektir.
+(best_result hatasını alan kişiler içindir[0] می‌خورند) 
+ در این صورت می‌توانید اول از اسکنر های دیگه آیپی اسکن کنید 
+ و بعد از زدن گزینه سه ازتون سوال میشه که آیپی رو با پورت  وارد کنید یا اگه N رو وارد کنید آیپی که از قبل گذاشتم رو انتخاب می‌کنه
 
 <br><br/>
 
 ### 4. İstenilen numaraya sahip bir alt bağlantıda tel koruma konfigürasyonunu almak için 4. seçeneği girin. Konfigürasyon numarası için çift sayıları kullanmayı deneyin.
 
-Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
+ اگه به ارور تایم اوت خوردید چند بار دیگه تست کنید
+<br><br/>
 
 ## 5. V2ray ve MahsaNG'de kullanılmak üzere Wireguard yapılandırmasını edinmek için
 
@@ -109,7 +110,7 @@ Kullanım türü:
 
 ## bağışlamak
 
-<b>TRX:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
+<b>Trx:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a>
 
 ## Projeyi destekleyin
 
