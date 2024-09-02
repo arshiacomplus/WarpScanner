@@ -1,4 +1,4 @@
-V=40
+V=41
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -133,13 +133,13 @@ def info():
 def check_ipv6():
     
     try:
-    	ipv6 = requests.get('http://v6.ipv6-test.com/api/myip.php')
+    	ipv6 = requests.get('http://v6.ipv6-test.com/api/myip.php', timeout=15)
     	if ipv6.status_code == 200:
     		ipv6 ="[green]Available[/green]"
     except Exception:
     	ipv6 = "Unavailable"
     try:
-    	ipv4 = requests.get('http://v4.ipv6-test.com/api/myip.php')
+    	ipv4 = requests.get('http://v4.ipv6-test.com/api/myip.php',timeout=15)
     	if ipv4.status_code == 200:
     		ipv4= "[green]Available[/green]"
     except Exception:
