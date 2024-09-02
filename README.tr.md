@@ -34,7 +34,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekiyor.
 
-##### Ve daha sonra
+##### ve daha sonra
 
 ##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP oluşturabilirsiniz.
 
