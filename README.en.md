@@ -32,9 +32,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### And then you have to give the memory access to Termox that you are asked
+##### And then you have to give memory access to Termox, which is asked of you
 
-##### And then
+##### and then
 
 ##### Note: You can create a clean IP for Vahid panel (with inter) and bpb panel (with comma).
 
