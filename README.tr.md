@@ -1,6 +1,6 @@
 ## Çözgü Tarayıcı
 
-dil : 🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[İngilizce](README.en.md) | 🇨🇳[Çince](README.zh-CN.md)| 🇯🇵[Japonca](README.ja.md)
+dil : 🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[İngilizce](README.en.md)| 🇨🇳[Çince](README.zh-CN.md)| 🇯🇵[Japonca](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -101,7 +101,7 @@ Kullanım türü:
 
 <br><br/>
 
-## 10. Bu yapılandırma dosyası seçeneğini aç`.conf`Wireguard Windscribe ve Wireguard için tasarlandı
+## 10. بازدن این گزینه فایل کانفیگ `.conf`Wireguard Windscribe ve Wireguard için tasarlandı
 
 ## 11. Bu seçeneğe tıklayarak Nika Anji için wireguard konfigürasyonu elde edebilirsiniz.
 
