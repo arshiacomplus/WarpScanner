@@ -1,4 +1,4 @@
-V=53
+V=54
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -621,7 +621,7 @@ def main():
         if which !='3' and do_you_save=='1':
             if loss_rate == 0.0 and ping !=0.0:
                 if which =="1" or which=="2" :
-                    if need_port=="1":
+                    if need_port=="2":
                     
                         try:
                             if ping<=int(ping_range):
