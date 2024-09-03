@@ -10,7 +10,7 @@ dil : 🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[�
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
-> Thermox'u Google Play'den indirin Thermox'u Google Play'den indirmeyin
+> ترماکس رو از گوگل پلی دانلود نکنید▫️ترماکس رو از گوگل پلی دانلود نکنید
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
@@ -50,7 +50,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. IP taramasına gerek kalmadan Wireguard yapılandırmasını edinin
 
- (برای افرادی هست که به  ارور best_result[0]onlar yerler) 
+(best_result hatasını alan kişiler içindir[0]onlar yerler) 
  Bu durumda ilk önce IP'yi diğer tarayıcılardan tarayabilirsiniz. 
  Ve üçüncü seçeneği seçtikten sonra port ile IP'yi girmeniz istenecek veya N girerseniz daha önce girdiğim IP'yi seçecektir.
 
