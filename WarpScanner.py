@@ -1,4 +1,4 @@
-V=54
+V=55
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -110,6 +110,9 @@ max_workers_number=0
 do_you_save='2'
 which=''
 ping_range='n'
+def gt_resolution():
+    return os.get_terminal_size().columns
+
 def info():
     console.clear()
     
@@ -462,7 +465,10 @@ def main_v6():
     try:
         print("\033[1;35m")
         futures = [executor.submit(ping_ip, generate_ipv6(), ports_to_check[random.randint(0,1)])  for _ in range(101)]
-        with alive_bar(total=len(futures), length=20) as bar:  # Length is in characters
+        none=gt_resolution()
+        
+        bar_size=min( none-10, 20)
+        with alive_bar(total=len(futures), length=bar_size) as bar:  # Length is in characters
                     for future in futures:
                         time.sleep(0.01)
                         result = future.result()
@@ -593,12 +599,15 @@ def main():
         try:
                 
                 futures = [executor.submit(scan_ip_port, ip, results) for ip in ip_range]
-                
-                with alive_bar(total=len(futures), length=20) as bar:  # Length is in characters
+                none=gt_resolution()
+               
+                bar_size=min( none-10, 20)
+                with alive_bar(total=len(futures), length=bar_size) as bar:  # Length is in characters
                     for future in futures:
                         time.sleep(0.01)
                         result = future.result()
                         bar()
+                        
                         
                     
                 
