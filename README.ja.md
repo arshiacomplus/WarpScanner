@@ -1,6 +1,6 @@
 ## ワープスキャナー
 
-language : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
+言語 : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -32,9 +32,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### したがって、数字の 1 を入力し、次に y を入力し、場合によってはもう一度 y を入力することに注意してください。
 
-##### そして、求められたメモリアクセスをTermoxに与える必要があります。
+##### 次に、Termox にメモリ アクセスを許可する必要があります。これは要求されます。
 
-##### و بعد
+##### その後
 
 ##### 注: Vahid パネル (inter 付き) および bpb パネル (カンマ付き) のクリーンな IP を作成できます。
 
@@ -46,13 +46,12 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 2. Wireguard 構成を取得する
 
-▫️اگه توی گرفتن کانفیگ وایرگارد به ارور تایم اوت خوردید چند بار دیگه تست کنید 
-<br><br/>
+▫️ ワイヤーガード構成の取得中にタイムアウト エラーが発生した場合は、さらに数回テストしてください<br><br/>
 
 ## 3. IP をスキャンせずに Wireguard 構成を取得します
 
 (エラー「best_result」が表示される人向けです)[0]彼らは食べる） 
- この場合、最初に他のスキャナーから IP をスキャンできます。 
+ この場合、最初に他のスキャナから IP をスキャンできます。 
  3 番目のオプションを選択すると、IP とポートを入力するように求められます。N を入力すると、すでに入力した IP が選択されます。
 
 <br><br/>
@@ -76,9 +75,9 @@ IP バージョンの Shish を使用して Wire Guard 設定をコピーし、�
 
 ## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji の Wireguard 設定を取得するには
 
- اگر n رو بزنید ایپی که از قبل گذاشتم رو انتخاب میکنه
- در غیر این صورت 
- ایپی با پورت مثال : 
+nを押すと、前に入力したIPが選択されます
+ さもないと 
+ IP とポートの例:
 
 > ipv4:ポート
 > あなたが入力します<br><br/>
@@ -102,7 +101,7 @@ Po サイト (カンフー パンダ) をブロックするかどうかを尋ね
 
 <br><br/>
 
-## 10. بازدن این گزینه فایل کانفیگ `.conf`Wireguard は Windscribe と Wireguard のために作られています
+## 10.この設定ファイルを開くオプション`.conf`Wireguard は Windscribe と Wireguard のために作られています
 
 ## 11. このオプションをクリックすると、Nika Anji のワイヤーガード構成を取得できます。
 
@@ -110,11 +109,11 @@ Po サイト (カンフー パンダ) をブロックするかどうかを尋ね
 
 ## 寄付する
 
-<b>送信:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xBcE10b8B572DdFAc53855879ebCE9942296553A3</a>
+<b>送信:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhssssssssssss 42296553aa</a>
 
 ## プロジェクトをサポートする
 
-<b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b>
+<b>私のプロジェクトが気に入ったら、スターを付けたり、フォローしたり、友達に紹介したりして、私のプロジェクトをサポートしてください。</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
