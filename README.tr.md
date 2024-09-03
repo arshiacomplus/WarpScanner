@@ -32,13 +32,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Bu nedenle, bir sayısını girerek, ardından y ve belki tekrar y olduğunu belirtmek gerekir.
 
-##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekiyor.
+##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekir.
 
 ##### ve daha sonra
 
 ##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP oluşturabilirsiniz.
 
-##### Sonuç dosyasına kaydet
+##### Sonuç dosyasına kaydedin
 
 ##### Daha sonra bir numarayı girersiniz (IP dördüncü versiyonu)
 
@@ -50,9 +50,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. IP taramasına gerek kalmadan Wireguard yapılandırmasını edinin
 
-(best_result hatasını alan kişiler içindir[0] می‌خورند) 
- در این صورت می‌توانید اول از اسکنر های دیگه آیپی اسکن کنید 
- و بعد از زدن گزینه سه ازتون سوال میشه که آیپی رو با پورت  وارد کنید یا اگه N رو وارد کنید آیپی که از قبل گذاشتم رو انتخاب می‌کنه
+(best_result hatasını alan kişiler içindir[0]onlar yerler) 
+ Bu durumda ilk önce IP'yi diğer tarayıcılardan tarayabilirsiniz. 
+ Ve üçüncü seçeneği seçtikten sonra port ile IP'yi girmeniz istenecek veya N girerseniz daha önce girdiğim IP'yi seçecektir.
 
 <br><br/>
 
@@ -65,7 +65,7 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 > Hata istekleri alanlar için bu 👈👈<https://t.me/arshia_mod_fun/298>
 
 Seçenek 1'i ve ardından 2'yi girerek 
- Mehsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
+ Mahsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
 
 Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye aktardıktan sonra, bir hatayla karşılaşmamak için bunu yapın.
 
@@ -86,7 +86,7 @@ N tuşuna basarsanız daha önce koyduğum ipi seçecektir
 
 Po sitelerinin (Kung Fu Panda) engellenip engellenmeyeceği size sorulacaktır.<br><br/>
 
-## 8. Bu warp'ı v2ray veya MahsaNg için alt çözgü yapabilirsiniz
+## 8. Bu çözgüyü v2ray veya MahsaNg için alt çözgü yapabilirsiniz
 
 <br><br/>
 
@@ -96,7 +96,7 @@ Bir isim verin ve Thermox penceresini kapatıp yeni bir tane açın.
 
 Kullanım türü:
 
--   نامی که دادید رو وارد کنید تا اسکریپت اجرا شود
+-   Komut dosyasını çalıştırmak için verdiğiniz adı girin
 -   Silmek için aynı numaraya tekrar basın ve Y tuşuna basın.
 
 <br><br/>
@@ -113,7 +113,7 @@ Kullanım türü:
 
 ## Projeyi destekleyin
 
-<b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b>
+<b>Projemi beğendiyseniz yıldız vererek, takip ederek ve arkadaşlarınıza tanıtarak projeme destek olabilirsiniz.</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
