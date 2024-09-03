@@ -1,4 +1,4 @@
-V=44
+V=45
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -1659,6 +1659,7 @@ def main3():
     global best_result
     global wire_config_temp
     global wire_c
+    global wire_config_or
     global wire_p
     if wire_p==0:
 
