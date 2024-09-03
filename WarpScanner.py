@@ -1,4 +1,4 @@
-V=52
+V=53
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -485,20 +485,21 @@ def main_v6():
         if which !='3' and do_you_save=='1':
             if loss_rate == 0.0 and ping !=0.0:
                     if ping<=int(ping_range):
-                        if which =="1" or which=="2" and need_port=="1":
-                            if which=='2':
-                                save_best.append("\n")
-                                save_best.append('['+str(ip)+']'+":"+str(port))
-                            elif which=='1':
-                                
-                                save_best.append('['+str(ip)+']'+":"+str(port)+",")
-                        else:
-                            if which=='2':
-                                save_best.append("\n")
-                                save_best.append('['+str(ip)+']')
-                            elif which=='1':
-                                
-                                save_best.append('['+str(ip)+'],')
+                        if which =="1" or which=="2" :
+                            if need_port=="1":
+                                if which=='2':
+                                    save_best.append("\n")
+                                    save_best.append('['+str(ip)+']'+":"+str(port))
+                                elif which=='1':
+                                    
+                                    save_best.append('['+str(ip)+']'+":"+str(port)+",")
+                            else:
+                                if which=='2':
+                                    save_best.append("\n")
+                                    save_best.append('['+str(ip)+']')
+                                elif which=='1':
+                                    
+                                    save_best.append('['+str(ip)+'],')
     
             
         combined_score = 0.5 * ping + 0.3 * loss_rate + 0.2 * jitter
@@ -619,24 +620,25 @@ def main():
         loss_rate=loss_rate*100
         if which !='3' and do_you_save=='1':
             if loss_rate == 0.0 and ping !=0.0:
-                if which =="1" or which=="2" and need_port=="1":
+                if which =="1" or which=="2" :
+                    if need_port=="1":
                     
-                    try:
-                        if ping<=int(ping_range):
-                            save_result.index(str(ip))
-                    except Exception:
-                        if ping<=int(ping_range):
-                            save_result.append("\n")
-                            save_result.append(str(ip))
-                else:
-                    try:
-                        if ping<=int(ping_range):
-                            save_result.index(str(ip)+":"+str(port))
-                    except Exception:
-                        if ping<=int(ping_range):
-                            save_result.append("\n")
-                            save_result.append(str(ip)+":"+str(port))
- 
+                        try:
+                            if ping<=int(ping_range):
+                                save_result.index(str(ip))
+                        except Exception:
+                            if ping<=int(ping_range):
+                                save_result.append("\n")
+                                save_result.append(str(ip))
+                    else:
+                        try:
+                            if ping<=int(ping_range):
+                                save_result.index(str(ip)+":"+str(port))
+                        except Exception:
+                            if ping<=int(ping_range):
+                                save_result.append("\n")
+                                save_result.append(str(ip)+":"+str(port))
+    
             
         combined_score = 0.5 * ping + 0.3 * loss_rate + 0.2 * jitter
 
