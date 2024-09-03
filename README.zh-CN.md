@@ -24,9 +24,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
-> [!WARNING]由于它在第一步中尝试安装 Python，因此可能需要 VPN！
+> [！警告!]由于它在第一步中尝试安装 Python，因此可能需要 VPN！
 
-## 1. ای پی اسکنر هستش IPv4 , IPv6
+## 1. IP扫描仪是IPv4、IPv6
 
 ##### ▫️ 能够将版本 4 IP 保存在 storage/emulated/0/ 和名为 result.csv 的文件中
 
@@ -94,7 +94,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 为其命名并关闭 Thermox 窗口并打开一个新窗口。
 
- نوع استفاده :
+使用类型：
 
 -   输入您为运行脚本指定的名称
 -   要删除它，请再次按相同的数字，然后按 Y
@@ -107,7 +107,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 12.点击此选项，无需扫描IP即可获取Nika Anji的Wireguard配置
 
-## 捐赠
+## اهدا کردن
 
 <b>交易：</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>泰达币：</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhssssssssss 42296553aa</a>
 
