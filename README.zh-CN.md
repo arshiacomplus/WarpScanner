@@ -28,11 +28,11 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 1. IP扫描仪是IPv4、IPv6
 
-##### ▫️قابلیت ذخیره شدن  آیپی ها ورژن چهار در storage/emulated/0/ و فایلی به اسم result.csv
+##### ▫️ 能够将版本 4 IP 保存在 storage/emulated/0/ 和名为 result.csv 的文件中
 
 ##### 因此，应该注意的是，输入数字 1，然后输入 y，也许再输入 y
 
-##### 然后你必须按照要求向 Termox 提供内存访问权限
+##### 然后你必须向 Termox 授予内存访问权限，这是要求你的
 
 ##### 进而
 
@@ -50,9 +50,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3.无需扫描IP即可获取Wireguard配置
 
-（这是针对那些收到错误 best_result 的人[0]他们吃） 
- 这种情况，可以先用其他扫描仪扫描IP 
- 选择第三个选项后，会要求你输入IP和端口，或者如果你输入N，它将选择我已经输入的IP。
+（这是针对那些收到错误 best_result 的人[0] می‌خورند) 
+ در این صورت می‌توانید اول از اسکنر های دیگه آیپی اسکن کنید 
+ و بعد از زدن گزینه سه ازتون سوال میشه که آیپی رو با پورت  وارد کنید یا اگه N رو وارد کنید آیپی که از قبل گذاشتم رو انتخاب می‌کنه
 
 <br><br/>
 
@@ -70,12 +70,12 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免遇到错误。
 
 -   1\. 铅笔按钮
--   2\. 将支架放在 IP 旁边[ipvsh]
+-   2\. 将支架放在 IP 旁边[ipv6]
 -   3\. 存储<br><br/>
 
 ## 6. 获取 Vettori 和 Mehsa Anji 的 Wireguard 配置以及...无需 IP 扫描
 
-如果你按n，它会选择我已经设置的IP
+如果你按n，它会选择我之前输入的ip
  否则 
  IP 与端口示例：
 
@@ -84,7 +84,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 7. 要获取配置，对 v2ray 和 MahsaNG 进行扭曲，您可以使用选项 7（帮助来自 bpb 面板......）
 
-系统会询问您 Po 网站（功夫熊猫）是否会被屏蔽<br><br/>
+系统会询问您是否会屏蔽Po站（功夫熊猫）<br><br/>
 
 ## 8. 您可以对 v2ray 或 MahsaNg 的扭曲进行子扭曲
 
@@ -92,7 +92,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 9.你可以走捷径
 
-为其命名并关闭 Thermox 窗口并打开一个新窗口。
+ نام بهش بدید و پنجره ترموکس رو ببندید و جدید باز کنید.
 
 使用类型：
 
