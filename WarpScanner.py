@@ -1,4 +1,4 @@
-V=45
+V=46
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -1659,7 +1659,7 @@ def main3():
     global best_result
     global wire_config_temp
     global wire_c
-    global wire_config_or
+
     global wire_p
     if wire_p==0:
 
@@ -1688,7 +1688,7 @@ def main3():
         time.sleep(5)
         all_key2=free_cloudflare_account()
         time.sleep(5)
-        wire_config_or += f'''
+        wire_config_or = f'''
 
     {{
     "type": "wireguard",
@@ -1738,7 +1738,7 @@ def main3():
         time.sleep(5)
         all_key2=free_cloudflare_account()
         time.sleep(5)
-        wire_config_or += f'''
+        wire_config_or = f'''
 
     ,{{
     "type": "wireguard",
