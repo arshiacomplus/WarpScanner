@@ -32,13 +32,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 因此，应该注意的是，输入数字 1，然后输入 y，也许再输入 y
 
-##### 然后你必须按照要求向 Termox 提供内存访问权限
+##### 然后你必须向 Termox 授予内存访问权限，这是要求你的
 
 ##### 进而
 
 ##### 注意：您可以为 Vahid 面板（带 in​​ter）和 bpb 面板（带逗号）创建一个干净的 IP。
 
-##### 保存到结果文件中
+##### 保存在结果文件中
 
 ##### 然后你输入数字一（IP版本四）
 
@@ -65,7 +65,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 > 这是给那些收到错误请求的人的👈👈<https://t.me/arshia_mod_fun/298>
 
 输入选项 1，然后输入选项 2 
- 您可以获得 Shish 的 IP 版本，该版本也适用于 Mahsa Anji 和 Vettori 的选项 5 Wireguard 配置。
+ 您可以获得 Shish 的 IP 版本，该版本也适用于 Mehsa Anji 和 Vettori 的选项 5 Wireguard 配置。
 
 使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免遇到错误。
 
@@ -79,13 +79,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
  否则 
  IP 与端口示例：
 
-> ipv4:port
-> وارد می‌کنید
-> <br><br/>
+> IPv4：端口
+> 你输入<br><br/>
 
 ## 7. 要获取配置，对 v2ray 和 MahsaNG 进行扭曲，您可以使用选项 7（帮助来自 bpb 面板......）
 
-系统会询问您 Po 网站（功夫熊猫）是否会被屏蔽<br><br/>
+ ازتون سوال میشه که سایت های پ،و،(پاندا کنگ فو کار )  مسدود بشه یا نه 
+<br><br/>
 
 ## 8. 您可以对 v2ray 或 MahsaNg 的扭曲进行子扭曲
 
