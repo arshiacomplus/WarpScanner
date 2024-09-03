@@ -1,6 +1,6 @@
 ## 扭曲扫描仪
 
-语言 : 🇮🇷[波斯语](README.md)| 🇹🇷[Turkish](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[Chinese](README.zh-CN.md)| 🇯🇵[日本人](README.ja.md)
+语言 : 🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)| 🇯🇵[日本人](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
