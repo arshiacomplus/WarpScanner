@@ -1,4 +1,4 @@
-V=42
+V=43
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -61,32 +61,32 @@ except Exception:
     os.system('pip install icmplib')
     from icmplib import ping as pinging
 try:
-	from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
-	from cryptography.hazmat.primitives import serialization
+    from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
+    from cryptography.hazmat.primitives import serialization
 except Exception:
-	try:
-		print("cryptography module not installed. Installing now...")
-		os.system('pkg install python3 rust binutils-is-llvm -y')
-		os.system('export CXXFLAGS="-Wno-register"')
-		os.system('export CFLAGS="-Wno-register"')
-		os.system('python3 -m pip install cryptography ')
-	except Exception:
-	   os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
-	   os.system("tar -zxvf 43.0.0.tar.gz")
-	   os.chdir("cryptography-43.0.0")
-	   os.system("pip install .")
+    try:
+        print("cryptography module not installed. Installing now...")
+        os.system('pkg install python3 rust binutils-is-llvm -y')
+        os.system('export CXXFLAGS="-Wno-register"')
+        os.system('export CFLAGS="-Wno-register"')
+        os.system('python3 -m pip install cryptography ')
+    except Exception:
+       os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
+       os.system("tar -zxvf 43.0.0.tar.gz")
+       os.chdir("cryptography-43.0.0")
+       os.system("pip install .")
 try:
-	from cryptography.hazmat.primitives import serialization
-	from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
+    from cryptography.hazmat.primitives import serialization
+    from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
 except Exception:
  print('somthing wemt wrong with cryptography')
  
 import base64
 try:
-	import datetime
+    import datetime
 except Exception:
-	os.system('pip install datetime')
-	import datetime
+    os.system('pip install datetime')
+    import datetime
 
 api=''
 
@@ -120,30 +120,30 @@ def info():
     print('\nEnter a Number\n')
     options2={"1" : "open Telegram Channel", "2" : "open github ", "0":"Exit"}
     for key, value in options2.items():
-    	rprint(f" [bold yellow]{key}[/bold yellow]: {value}")
+        rprint(f" [bold yellow]{key}[/bold yellow]: {value}")
     whats2 = Prompt.ask("Choose an option", choices=list(options2.keys()), default="1")
     
     if whats2=='0':
-    	os.execv(sys.executable, ['python'] + sys.argv)
+        os.execv(sys.executable, ['python'] + sys.argv)
     elif whats2=='1':
-    	os.system("termux-open-url 'https://t.me/arshia_mod_fun'")
+        os.system("termux-open-url 'https://t.me/arshia_mod_fun'")
     elif whats2=='2'   :
-    	os.system("termux-open-url 'https://github.com/arshiacomplus/'")
-    	
+        os.system("termux-open-url 'https://github.com/arshiacomplus/'")
+        
 def check_ipv6():
     
     try:
-    	ipv6 = requests.get('http://v6.ipv6-test.com/api/myip.php', timeout=15)
-    	if ipv6.status_code == 200:
-    		ipv6 ="[green]Available[/green]"
+        ipv6 = requests.get('http://v6.ipv6-test.com/api/myip.php', timeout=15)
+        if ipv6.status_code == 200:
+            ipv6 ="[green]Available[/green]"
     except Exception:
-    	ipv6 = "Unavailable"
+        ipv6 = "Unavailable"
     try:
-    	ipv4 = requests.get('http://v4.ipv6-test.com/api/myip.php',timeout=15)
-    	if ipv4.status_code == 200:
-    		ipv4= "[green]Available[/green]"
+        ipv4 = requests.get('http://v4.ipv6-test.com/api/myip.php',timeout=15)
+        if ipv4.status_code == 200:
+            ipv4= "[green]Available[/green]"
     except Exception:
-    	ipv4 = "Unavailable"
+        ipv4 = "Unavailable"
     return  [ipv4,ipv6]
 
 def input_p(pt ,options):
@@ -151,10 +151,10 @@ def input_p(pt ,options):
     options.update({"0" : "Exit"})
     print(pt)
     for key, value in options.items():
-    	rprint(f" [bold yellow]{key}[/bold yellow]: {value}")
+        rprint(f" [bold yellow]{key}[/bold yellow]: {value}")
     whats = Prompt.ask("Choose an option", choices=list(options.keys()), default="1")
     if whats=='0':
-    	os.execv(sys.executable, ['python'] + sys.argv)
+        os.execv(sys.executable, ['python'] + sys.argv)
     return whats
 def urlencode(string):
     
@@ -167,13 +167,13 @@ def free_cloudflare_account2():
     
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
-    	    try:
-    	    	response = urllib.request.urlopen("https://fscarmen.cloudflare.now.cc/wg", timeout=30).read().decode('utf-8')
-    	    	return response
-    	    except Exception:
-    	    	response = requests.get("https://fscarmen.cloudflare.now.cc/wg", timeout=30)
-    	    	return response.text
-    	    
+            try:
+                response = urllib.request.urlopen("https://fscarmen.cloudflare.now.cc/wg", timeout=30).read().decode('utf-8')
+                return response
+            except Exception:
+                response = requests.get("https://fscarmen.cloudflare.now.cc/wg", timeout=30)
+                return response.text
+            
     response = file_o()
     PublicKey=response[response.index(':')+2:response.index('\n')]
     PrivateKey=response[response.index('\n')+13:]
@@ -277,34 +277,34 @@ def bind_keys():
 def fetch_config_from_api():
     global api
     if api=='':
-    	which_api=input_p('Which Api \n', {'1':'First api/Not work', '2' :'Second api'})
-    	api=which_api
+        which_api=input_p('Which Api \n', {'1':'First api/Not work', '2' :'Second api'})
+        api=which_api
     else:
-    	which_api=api
+        which_api=api
     if which_api == '2':
-    	
-    	keys=bind_keys()
-    	
-    	keys=list(keys)
-    	
-    	return {
+        
+        keys=bind_keys()
+        
+        keys=list(keys)
+        
+        return {
         'PrivateKey': keys[1],
         'PublicKey':  keys[3],
         'Reserved':  keys[2],
         'Address':  keys[0]
-    	}
-    	
+        }
+        
  
-    	
+        
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
-    	    try:
-    	    	response = urllib.request.urlopen("https://api.zeroteam.top/warp?format=sing-box", timeout=30).read().decode('utf-8')
-    	    	return response
-    	    except Exception:
-    	    	response = requests.get("https://api.zeroteam.top/warp?format=sing-box", timeout=30)
-    	    	return response.text
-    	    
+            try:
+                response = urllib.request.urlopen("https://api.zeroteam.top/warp?format=sing-box", timeout=30).read().decode('utf-8')
+                return response
+            except Exception:
+                response = requests.get("https://api.zeroteam.top/warp?format=sing-box", timeout=30)
+                return response.text
+            
     response = file_o()
     data = json.loads(response)
     return {
@@ -318,24 +318,24 @@ def fetch_config_from_api():
 def free_cloudflare_account():
     global api
     if api=='':
-    	which_api=input_p('Which Api \n', {'1':'First api/Not work', '2' :'Second api'})
-    	api=which_api
+        which_api=input_p('Which Api \n', {'1':'First api/Not work', '2' :'Second api'})
+        api=which_api
     else:
-    	which_api=api
+        which_api=api
     if which_api == '2':
-    	keys=bind_keys()
-    	keys=list(keys)
-    	return keys
-    	
-    	
+        keys=bind_keys()
+        keys=list(keys)
+        return keys
+        
+        
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
-    	    try:
-    	    	response = urllib.request.urlopen("https://api.zeroteam.top/warp?format=sing-box", timeout=30).read().decode('utf-8')
-    	    	return response
-    	    except Exception:
-    	    	response = requests.get("https://api.zeroteam.top/warp?format=sing-box", timeout=30)
-    	    	return response.text
+            try:
+                response = urllib.request.urlopen("https://api.zeroteam.top/warp?format=sing-box", timeout=30).read().decode('utf-8')
+                return response
+            except Exception:
+                response = requests.get("https://api.zeroteam.top/warp?format=sing-box", timeout=30)
+                return response.text
     try:
             output = file_o()
     except ConnectionError:
@@ -360,12 +360,12 @@ def free_cloudflare_account():
 def upload_to_bashupload(config_data):
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
-    	files = {'file': ('output.json', config_data)}
-    	try:
-    		response = requests.post('https://bashupload.com/', files=files, timeout=30)
-    	except Exception:
-    		response = requests.post('https://bashupload.com/', files=files, timeout=50)
-    	return response
+        files = {'file': ('output.json', config_data)}
+        try:
+            response = requests.post('https://bashupload.com/', files=files, timeout=30)
+        except Exception:
+            response = requests.post('https://bashupload.com/', files=files, timeout=50)
+        return response
     try:
         
         response = file_o()
@@ -456,21 +456,21 @@ def main_v6():
     executor= ThreadPoolExecutor(max_workers=800)
     try:
         for _ in range(101):
-        	executor.submit(ping_ip, generate_ipv6(), ports_to_check[random.randint(0,1)])
+            executor.submit(ping_ip, generate_ipv6(), ports_to_check[random.randint(0,1)])
     except Exception as E:
-        	rprint('[bold red]An Error: [/bold red]', E)
+            rprint('[bold red]An Error: [/bold red]', E)
     finally:
-        	executor.shutdown(wait=True)
+            executor.shutdown(wait=True)
     extended_results=[]
     for result in resultss:
         ip, port, ping ,loss_rate,jitter= result
         if ping ==0.0:
-        	ping=1000
+            ping=1000
         if float(jitter)==0.0:
-        	jitter=1000
+            jitter=1000
         if loss_rate ==1.0 :
-        	loss_rate=1000
-        	
+            loss_rate=1000
+            
         loss_rate=loss_rate*100
         if which !='3' and do_you_save=='1':
             if loss_rate == 0.0 and ping !=0.0:
@@ -482,7 +482,7 @@ def main_v6():
                             
                             save_best.append('['+str(ip)+'],')
  
-        	
+            
         combined_score = 0.5 * ping + 0.3 * loss_rate + 0.2 * jitter
 
         extended_results.append((ip, port, ping, loss_rate,jitter, combined_score))
@@ -503,13 +503,13 @@ def main_v6():
     console.print(table)
     port_random = ports_to_check[random.randint(0, len(ports_to_check) - 1)]
     if do_you_save=='1':
-    	
-    	if which!='2':
-    	    save_best[len(save_best)-1]=save_best[len(save_best)-1][:len(save_best[len(save_best)-1])-1]
-    	with open('/storage/emulated/0/result.csv' , "w") as f:
-    		for j in save_best:
-    			f.write(j)
-    	print(' saved in /storage/emulated/0/result.csv !')
+        
+        if which!='2':
+            save_best[len(save_best)-1]=save_best[len(save_best)-1][:len(save_best[len(save_best)-1])-1]
+        with open('/storage/emulated/0/result.csv' , "w") as f:
+            for j in save_best:
+                f.write(j)
+        print(' saved in /storage/emulated/0/result.csv !')
     best_ip_mix = [1] * 2
     if best_ip:
         console.print(f"\n[bold green]Best IP : [{best_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
@@ -518,7 +518,7 @@ def main_v6():
         
             best_ip_mix[0] = "[" + best_ip + "]"
         else:
-        	best_ip_mix[0] =  best_ip 
+            best_ip_mix[0] =  best_ip 
         best_ip_mix[1] = port_random
         
     else:
@@ -527,13 +527,13 @@ def main_v6():
         
             best_ip_mix[0] = "[" + random_ip + "]"
         else:
-        	best_ip_mix[0] =  random_ip 
-        	     
+            best_ip_mix[0] =  random_ip 
+                 
         
         best_ip_mix[1] = port_random
     return best_ip_mix
 
-    	
+        
 
 def main():
     global which
@@ -542,9 +542,9 @@ def main():
     ping_range=''
     results=[]
     if do_you_save=='1':
-    	ping_range=input('\nping range(zero to what)[defual= n]: ')
-    	if ping_range=='n' or ping_range=='N':
-    		ping_range='300'
+        ping_range=input('\nping range(zero to what)[defual= n]: ')
+        if ping_range=='n' or ping_range=='N':
+            ping_range='300'
     if what!='0':
         which_v=input_p('Choose an ip version\n ', {"1": 'ipv4' ,
          "2": 'ipv6'})
@@ -570,15 +570,15 @@ def main():
         executor=ThreadPoolExecutor(max_workers=max_workers_number)
         try :
                 for ip in ip_range:
-                	randport=ports[random.randint(0,3)]
-                	executor.submit(scan_ip_port, ip, randport,results)
+                    randport=ports[random.randint(0,3)]
+                    executor.submit(scan_ip_port, ip, randport,results)
                 
-                	
+                    
                 
         except Exception as E:
-        	print("Error :","E")
+            print("Error :","E")
         finally:
-        	executor.shutdown(wait=True)
+            executor.shutdown(wait=True)
 
     
     extended_results = []
@@ -586,12 +586,12 @@ def main():
     for result in results:
         ip, port, ping ,loss_rate,jitter= result
         if ping ==0.0:
-        	ping=1000
+            ping=1000
         if float(jitter)==0.0:
-        	jitter=1000
+            jitter=1000
         if loss_rate ==1.0 :
-        	loss_rate=1000
-        	
+            loss_rate=1000
+            
         loss_rate=loss_rate*100
         if which !='3' and do_you_save=='1':
             if loss_rate == 0.0 and ping !=0.0:
@@ -603,7 +603,7 @@ def main():
                         save_result.append("\n")
                         save_result.append(str(ip))
  
-        	
+            
         combined_score = 0.5 * ping + 0.3 * loss_rate + 0.2 * jitter
 
         extended_results.append((ip, port, ping, loss_rate,jitter, combined_score))
@@ -612,7 +612,7 @@ def main():
     sorted_results = sorted(extended_results, key=lambda x: x[5])
     
     if which=='3':
-    	for ip, port, ping, loss_rate,jitter, combined_score in sorted_results:
+        for ip, port, ping, loss_rate,jitter, combined_score in sorted_results:
             
             save_result.append(ip+' | '+'ping: '+str(ping)+'packet_lose: '+str(loss_rate)+'jitter: '+str(jitter)+'\n')
     
@@ -655,10 +655,10 @@ def main():
                               t=False
                           else:
                          # 	if j != save_result[len(save_result)-1]:
-                          	    if t==False:
-                          	    	 f.write(",")
-                          	    t=True
-                          	   
+                                  if t==False:
+                                       f.write(",")
+                                  t=True
+                                 
             else:
                  with open('/storage/emulated/0/result.csv' , "w") as f:
                       for j in save_result:
@@ -675,22 +675,22 @@ def main2():
     
     
     def main2_2():
-    	global WoW_v2
-    	try:
-    	   all_key3=free_cloudflare_account()
-    	except Exception as E:
+        global WoW_v2
+        try:
+           all_key3=free_cloudflare_account()
+        except Exception as E:
             print(' Try again Error =', E)
             exit()
 
-    	try:
-            	all_key2=free_cloudflare_account()
-    	except Exception as E:
-            	print(' Try again Error =', E)
-            	exit()
-    	os.system('clear')
-    	print(f'Make Wireguard ')
-    	time.sleep(10)
-    	WoW_v2+=f'''
+        try:
+                all_key2=free_cloudflare_account()
+        except Exception as E:
+                print(' Try again Error =', E)
+                exit()
+        os.system('clear')
+        print(f'Make Wireguard ')
+        time.sleep(10)
+        WoW_v2+=f'''
     {{
         "remarks": "Tel= arshiacomplus - WoW",
         "log": {{
@@ -700,10 +700,10 @@ def main2():
             "hosts": {{
                 "geosite:category-ads-all": "127.0.0.1",
                 "geosite:category-ads-ir": "127.0.0.1"'''
-    	if polrn_block=='1' :WoW_v2+=f''',
+        if polrn_block=='1' :WoW_v2+=f''',
                 "geosite:category-porn": "127.0.0.1"'''
                 
-    	WoW_v2+=f'''
+        WoW_v2+=f'''
             }},
             "servers": [
                 "https://94.140.14.14/dns-query",
@@ -787,13 +787,13 @@ def main2():
                     ],
                     "reserved": {all_key3[2]},
                     "secretKey": "{all_key3[1]}"'''
-    	if what== '14':WoW_v2+=''',
+        if what== '14':WoW_v2+=''',
                     "keepAlive": 10,
                     "wnoise": "quic",
                     "wnoisecount": "10-15",
                     "wpayloadsize": "1-8",
                     "wnoisedelay": "1-3"'''
-    	WoW_v2+=f'''
+        WoW_v2+=f'''
                 }},
                 "streamSettings": {{
                     "sockopt": {{
@@ -818,13 +818,13 @@ def main2():
                     ],
                     "reserved": {all_key2[2]},
                     "secretKey": "{all_key2[1]}"'''
-    	if what== '14':WoW_v2+=''',
+        if what== '14':WoW_v2+=''',
                     "keepAlive": 10,
                     "wnoise": "quic",
                     "wnoisecount": "10-15",
                     "wpayloadsize": "1-8",
                     "wnoisedelay": "1-3"'''
-    	WoW_v2+=f'''
+        WoW_v2+=f'''
                 }},
                 "tag": "warp-ir"
             }},
@@ -899,9 +899,9 @@ def main2():
                     "domain": [
                         "geosite:category-ads-all",
                         "geosite:category-ads-ir"'''
-    	if polrn_block=='1' :WoW_v2+=f''',
+        if polrn_block=='1' :WoW_v2+=f''',
                         "geosite:category-porn"'''
-    	WoW_v2+=f'''
+        WoW_v2+=f'''
                     ],
                     "outboundTag": "block",
                     "type": "field"
@@ -924,10 +924,10 @@ def main2():
             "hosts": {{
                 "geosite:category-ads-all": "127.0.0.1",
                 "geosite:category-ads-ir": "127.0.0.1"'''
-    	if polrn_block=='1' :WoW_v2+=f''',
+        if polrn_block=='1' :WoW_v2+=f''',
                 "geosite:category-porn": "127.0.0.1"'''
                 
-    	WoW_v2+=f'''
+        WoW_v2+=f'''
             }},
             "servers": [
                 "https://94.140.14.14/dns-query",
@@ -1011,13 +1011,13 @@ def main2():
                     ],
                     "reserved": {all_key3[2]},
                     "secretKey": "{all_key3[1]}"'''
-    	if what== '14':WoW_v2+=''',
+        if what== '14':WoW_v2+=''',
                     "keepAlive": 10,
                     "wnoise": "quic",
                     "wnoisecount": "10-15",
                     "wpayloadsize": "1-8",
                     "wnoisedelay": "1-3"'''
-    	WoW_v2+=f'''
+        WoW_v2+=f'''
                 }},
                 "tag": "warp"
             }},
@@ -1091,9 +1091,9 @@ def main2():
                     "domain": [
                         "geosite:category-ads-all",
                         "geosite:category-ads-ir"'''
-    	if polrn_block=='1' :WoW_v2+=f''',
+        if polrn_block=='1' :WoW_v2+=f''',
                         "geosite:category-porn"'''
-    	WoW_v2+=f'''
+        WoW_v2+=f'''
                     ],
                     "outboundTag": "block",
                     "type": "field"
@@ -1107,9 +1107,9 @@ def main2():
         }},
         "stats": {{}}
     }}'''
-    	if n !=how_many-1:
-    		WoW_v2+=','
-    		return 
+        if n !=how_many-1:
+            WoW_v2+=','
+            return 
     def main2_1():
         global best_result
         
@@ -1121,17 +1121,17 @@ def main2():
             exit()
         if what == '7':
             if isIran=='2' :
-            	try:
-            		all_key2=free_cloudflare_account()
-            	except Exception as E:
-            		print(' Try again Error =', E)
-            		exit()
+                try:
+                    all_key2=free_cloudflare_account()
+                except Exception as E:
+                    print(' Try again Error =', E)
+                    exit()
         else:
-            	try:
-            		all_key2=free_cloudflare_account()
-            	except Exception as E:
-            		print(' Try again Error =', E)
-            		exit()
+                try:
+                    all_key2=free_cloudflare_account()
+                except Exception as E:
+                    print(' Try again Error =', E)
+                    exit()
 
         
         temp_ip=''
@@ -1159,20 +1159,20 @@ def main2():
 
         Wow=''
         if what=='7' or what =='13':
-        	 print("\033[0m")
-        	 os.system('clear')
-        	 
-        	 Wow=f'''{{
+             print("\033[0m")
+             os.system('clear')
+             
+             Wow=f'''{{
   "dns": {{
     "hosts": {{
       "geosite:category-ads-all": "127.0.0.1",
       "geosite:category-ads-ir": "127.0.0.1"'''
-        	 if polrn_block=='1' : Wow+=''',
+             if polrn_block=='1' : Wow+=''',
       "geosite:category-porn": "127.0.0.1"'''
         
-        	
-        	 if isIran=='1' :
-        	 	Wow+=f'''
+            
+             if isIran=='1' :
+                 Wow+=f'''
     }},
     "servers": [
       "https://94.140.14.14/dns-query",
@@ -1257,13 +1257,13 @@ def main2():
         ],
         "reserved": {all_key[2]},
         "secretKey": "{all_key[1]}"'''
-        	 	if what== '13':Wow+=''',
+                 if what== '13':Wow+=''',
         "keepAlive": 10,
         "wnoise": "quic",
         "wnoisecount": "10-15",
         "wpayloadsize": "1-8",
         "wnoisedelay": "1-3"'''
-        	 	Wow+=f'''
+                 Wow+=f'''
       }},
       "tag": "warp"
     }},
@@ -1339,11 +1339,11 @@ def main2():
         "domain": [
           "geosite:category-ads-all",
           "geosite:category-ads-ir"'''
-        	 
-        	 if isIran=='1':
-        	 	if polrn_block=='1':Wow+=''',
+             
+             if isIran=='1':
+                 if polrn_block=='1':Wow+=''',
           "geosite:category-porn"'''
-        	 	Wow+='''
+                 Wow+='''
         ],
         "outboundTag": "block",
         "type": "field"
@@ -1357,8 +1357,8 @@ def main2():
   },
   "stats": {}
 }'''
-        	 if isIran == '2' :
-        	 	Wow+=f'''
+             if isIran == '2' :
+                 Wow+=f'''
     }},
     "servers": [
       "https://94.140.14.14/dns-query",
@@ -1465,13 +1465,13 @@ def main2():
         ],
         "reserved": {all_key2[2]},
         "secretKey": "{all_key2[1]}"'''
-        	 	if what== '13':Wow+=''',
+                 if what== '13':Wow+=''',
         "keepAlive": 10,
         "wnoise": "quic",
         "wnoisecount": "10-15",
         "wpayloadsize": "1-8",
         "wnoisedelay": "1-3"'''
-        	 	Wow+=f'''
+                 Wow+=f'''
       }},
       "tag": "warp-ir"
     }},
@@ -1547,11 +1547,11 @@ def main2():
         "domain": [
           "geosite:category-ads-all",
           "geosite:category-ads-ir"'''
-        	 
-        	 if isIran == '2' :
-        	 	if polrn_block=='1' :Wow+=''',
+             
+             if isIran == '2' :
+                 if polrn_block=='1' :Wow+=''',
           "geosite:category-porn"'''
-        	 	Wow+='''
+                 Wow+='''
         ],
         "outboundTag": "block",
         "type": "field"
@@ -1571,11 +1571,11 @@ def main2():
   "stats": {}
 }'''
 
-        	 print(Wow), exit()
+             print(Wow), exit()
         
         else:
-        	os.system('clear')
-        	hising=f'''
+            os.system('clear')
+            hising=f'''
 {{
   "outbounds": 
   [
@@ -1594,12 +1594,12 @@ def main2():
     "reserved": {all_key[2]},
 
     "mtu": 1280'''
-        	if what !='15' and what !='16':hising+=f''',
+            if what !='15' and what !='16':hising+=f''',
     "fake_packets":"1-3",
     "fake_packets_size":"10-30",
     "fake_packets_delay":"10-30",
     "fake_packets_mode":"m4"'''
-        	hising+=f'''
+            hising+=f'''
     }},
     {{
     "type": "wireguard",
@@ -1615,15 +1615,15 @@ def main2():
     "peer_public_key": "{all_key2[3]}",
     "reserved": {all_key2[2]},
     "mtu": 1330'''
-        	if what !='15' and  what !='16':hising+=f''',
+            if what !='15' and  what !='16':hising+=f''',
     "fake_packets_mode":"m4"'''
-        	hising+=f'''
+            hising+=f'''
  
     }}
   ]
 }}
 '''
-        	print(hising),exit()
+            print(hising),exit()
         if what=="3":
             exit()
                 
@@ -1639,18 +1639,18 @@ def main2():
     best_result=main()
     
     if what=='8' or what=='14':
-    	
-    	rprint("[bold green]Please wait, generating WireGuard URL...[/bold green]")
-    	for n in range(how_many):
-    		main2_2()
-    	os.system('clear')
-    	
-    	#upload_to_bashupload
-    	upload_to_bashupload(f'''[
+        
+        rprint("[bold green]Please wait, generating WireGuard URL...[/bold green]")
+        for n in range(how_many):
+            main2_2()
+        os.system('clear')
+        
+        #upload_to_bashupload
+        upload_to_bashupload(f'''[
 {WoW_v2}
 ]''')
-    	exit()
-    	
+        exit()
+        
     
     main2_1()
 
@@ -1672,7 +1672,7 @@ def main3():
     
     os.system('clear')
          
-    time.sleep(10)
+
     if wire_p==1:
             print(f"please wait make wireguard : {wire_c-1}. ")
     
@@ -1683,9 +1683,11 @@ def main3():
     
 
     if wire_p !=1:
-    	all_key=free_cloudflare_account()
-    	all_key2=free_cloudflare_account()
-    	wire_config_or = f'''
+        all_key=free_cloudflare_account()
+        time.sleep(5)
+        all_key2=free_cloudflare_account()
+        time.sleep(5)
+        wire_config_or = f'''
 
     {{
     "type": "wireguard",
@@ -1701,12 +1703,13 @@ def main3():
     "reserved": {all_key[2]},
 
     "mtu": 1280'''
-    	if what!='17': wire_config_or=''',
+        if what!='17':
+            wire_config_or=''',
     "fake_packets":"1-3",
     "fake_packets_size":"10-30",
     "fake_packets_delay":"10-30",
     "fake_packets_mode":"m4"'''
-    	wire_config_or+=f'''
+        wire_config_or+=f'''
     }},
     {{
     "type": "wireguard",
@@ -1722,15 +1725,18 @@ def main3():
     "peer_public_key": "{all_key2[3]}",
     "reserved": {all_key2[2]},
     "mtu": 1330'''
-    	if what!='17': wire_config_or=''',
+        if what!='17':
+            wire_config_or=''',
     "fake_packets_mode":"m4"'''
-    	wire_config_or+=f'''
+        wire_config_or+=f'''
     }}
 
 '''
     else:
         all_key=free_cloudflare_account()
+        time.sleep(5)
         all_key2=free_cloudflare_account()
+        time.sleep(5)
         wire_config_or = f'''
 
     ,{{
@@ -1747,7 +1753,8 @@ def main3():
     "reserved": {all_key[2]},
 
     "mtu": 1280'''
-        if what!='17': wire_config_or=''',
+        if what!='17':
+            wire_config_or=''',
     "fake_packets":"1-3",
     "fake_packets_size":"10-30",
     "fake_packets_delay":"10-30",
@@ -1814,14 +1821,14 @@ def generate_wireguard_url(config, endpoint):
     
         if config.get('Reserved'):
    
-        	    wireguard_urll += f"&reserved={urlencode(config['Reserved'])}"
+                wireguard_urll += f"&reserved={urlencode(config['Reserved'])}"
     else:
         listt=config['Reserved']
         lostt2=''
         for num in range(len(listt)):
-        	lostt2+=str(listt[num])
-        	if num != len(listt)-1:
-        		lostt2+=','
+            lostt2+=str(listt[num])
+            if num != len(listt)-1:
+                lostt2+=','
         config['Reserved']=urlencode(lostt2)
         wireguard_urll = (
         f"wireguard://{urlencode(config['PrivateKey'])}@{endpoint}"
@@ -1829,7 +1836,7 @@ def generate_wireguard_url(config, endpoint):
         f"publickey={urlencode(config['PublicKey'])}"
     )
         if what =='11' or what =='12':
-        	        wireguard_urll = (
+                    wireguard_urll = (
         f"wireguard://{urlencode(config['PrivateKey'])}@{endpoint}"
         f"?wnoise=quic&address=172.16.0.2/32,{urlencode(config['Address'])}&keepalive=5&wpayloadsize=1-8&"
         f"publickey={urlencode(config['PublicKey'])}&wnoisedelay=1-3&wnoisecount=15&mtu=1330"
@@ -1837,8 +1844,8 @@ def generate_wireguard_url(config, endpoint):
    #wireguard://qO6m%2BpxSH677ETSmqykciE7MQ7rp0Jw8qJHSUh7Gj3k%3D@162.159.195.166:878?wnoise=quic&address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A846c%3Ae510%3Abfa1%3Aea9f%3A5247%2F128&reserved=111%2C162%2C171&keepalive=5&wpayloadsize=1-8&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&wnoisedelay=1-3&wnoisecount=15&mtu=1280#Tel%3D+%40arshiacomplus+wire
         if config.get('Reserved'):
    
-        	    wireguard_urll += f"&reserved={config['Reserved']}"
-        	
+                wireguard_urll += f"&reserved={config['Reserved']}"
+            
     
     wireguard_urll += "#Tel= @arshiacomplus wire"
 
@@ -1906,40 +1913,40 @@ if __name__ == "__main__":
         do_you_save=input_p('Do you want to save in a result csv\n', {"1" : 'Yes' , "2" : "No"})
         which = 'n'
         if do_you_save=='1':
-        	os.system('termux-setup-storage')
-        	which = input_p('Do you want for bpb panel(with comma) or vahid panel(with enter) in a result csv\n ', {'1' : 'bpb panel(with comma)',
-        	 '2' : 'vahid panel(with enter)', '3':'with score', '4':'clean'})
-        	if which =='4':
-        		which = input_p('Do you want for bpb panel(with comma) or vahid panel(with enter) in a result csv\n ', {'1' : 'bpb panel(with comma)',
-        	 '2' : 'vahid panel(with enter)'})
-        		with open('/storage/emulated/0/result.csv', 'r') as f:
-        		    b=f.readlines()
-        		    with open('/storage/emulated/0/clean_result.csv', 'w') as ff:
-        		        for j in b:
-        		             	if which =='1':
-        		             		ff.write(j[:j.index('|')-1])
-        		             		if j != b[len(b)-1]:
-        		             		     ff.write(',')
-        		             	else:
-        		             		ff.write(j[:j.index('|')-1])
-        		             		ff.write('\n')
-        		       	     	
-        		print(' saved in /storage/emulated/0/clean_result.csv !')
-        		exit()
-        					
-        	
+            os.system('termux-setup-storage')
+            which = input_p('Do you want for bpb panel(with comma) or vahid panel(with enter) in a result csv\n ', {'1' : 'bpb panel(with comma)',
+             '2' : 'vahid panel(with enter)', '3':'with score', '4':'clean'})
+            if which =='4':
+                which = input_p('Do you want for bpb panel(with comma) or vahid panel(with enter) in a result csv\n ', {'1' : 'bpb panel(with comma)',
+             '2' : 'vahid panel(with enter)'})
+                with open('/storage/emulated/0/result.csv', 'r') as f:
+                    b=f.readlines()
+                    with open('/storage/emulated/0/clean_result.csv', 'w') as ff:
+                        for j in b:
+                                 if which =='1':
+                                     ff.write(j[:j.index('|')-1])
+                                     if j != b[len(b)-1]:
+                                          ff.write(',')
+                                 else:
+                                     ff.write(j[:j.index('|')-1])
+                                     ff.write('\n')
+                                    
+                print(' saved in /storage/emulated/0/clean_result.csv !')
+                exit()
+                            
+            
        
             
         main()
     elif what=='2' or what=="3" or what =='7' or what =='13'  or what=='15' or what=="16":
     
         if what == '7' or what=='13':
-        	
-        	polrn_block= input_p('Do you want to block p@rn sites\n' , {"1": "Yes", "2": "No"})
-        	
-        	isIran =input_p('Iran or Germany\n' , {"1" : "Ip Iran[faster speed]", "2" : "Germany[slower speed]"})
-        	
-        	
+            
+            polrn_block= input_p('Do you want to block p@rn sites\n' , {"1": "Yes", "2": "No"})
+            
+            isIran =input_p('Iran or Germany\n' , {"1" : "Ip Iran[faster speed]", "2" : "Germany[slower speed]"})
+            
+            
         main2()
     elif what=='4' or what=='17':
         how_many=get_number_of_configs()  
@@ -1948,11 +1955,11 @@ if __name__ == "__main__":
             main3()
     elif what =='5' or what =='6' or what=='11' or what=='12':
         
-        	
+            
         api_url = 'https://api.zeroteam.top/warp?format=sing-box'
         if what=='5' or what =='11':
-        	endpoint_ip_best_result=main()
-        	endpoint_ip = str(endpoint_ip_best_result[0])+":"+str(endpoint_ip_best_result[1])
+            endpoint_ip_best_result=main()
+            endpoint_ip = str(endpoint_ip_best_result[0])+":"+str(endpoint_ip_best_result[1])
         else:
             endpoint_ip=input('Enter ip with port (defualt = n):')
             if endpoint_ip=='N' or  endpoint_ip=='n':
@@ -1997,46 +2004,46 @@ if __name__ == "__main__":
         else:
             print("Failed to generate WireGuard URL.")
     elif what == '8' or  what=='14':
-    	how_many=get_number_of_configs()
-    	polrn_block= input_p('Do you want to block p@rn sites\n' , {"1": "Yes", "2": "No"})
+        how_many=get_number_of_configs()
+        polrn_block= input_p('Do you want to block p@rn sites\n' , {"1": "Yes", "2": "No"})
 
-    	
-    	main2()
+        
+        main2()
     
     elif what == '9':
 
-    	if os.path.exists('/data/data/com.termux/files/usr/etc/bash.bashrc.bak'):
-    		
-    		Delete=input_p('Do you want to Delete short cut',{"1" : "Yes", "2" : "No"})
-    		if Delete=='1':
-    			os.system('rm /data/data/com.termux/files/usr/etc/bash.bashrc')
-    			os.rename('/data/data/com.termux/files/usr/etc/bash.bashrc.bak', '/data/data/com.termux/files/usr/etc/bash.bashrc')
-    			console.print("[bold red]Shortcut Deleted,  successful[/bold red]", style="red")
+        if os.path.exists('/data/data/com.termux/files/usr/etc/bash.bashrc.bak'):
+            
+            Delete=input_p('Do you want to Delete short cut',{"1" : "Yes", "2" : "No"})
+            if Delete=='1':
+                os.system('rm /data/data/com.termux/files/usr/etc/bash.bashrc')
+                os.rename('/data/data/com.termux/files/usr/etc/bash.bashrc.bak', '/data/data/com.termux/files/usr/etc/bash.bashrc')
+                console.print("[bold red]Shortcut Deleted,  successful[/bold red]", style="red")
     
     
-    		exit()
-    	while True:
-    		name = input("\nEnter a shortcut name : ")
-    		if not name.isdigit():
-    			break
-    			
-    		
-    		else:
-    			console.print("\n[bold red]Please enter a name![/bold red]", style="red")
-    			
-    	with open('/data/data/com.termux/files/usr/etc/bash.bashrc', 'r') as f2:
-    		txt= f2.read()
-    		with open('/data/data/com.termux/files/usr/etc/bash.bashrc.bak', 'w') as f:
-    			f.write(txt)
-    	text=f'''
+            exit()
+        while True:
+            name = input("\nEnter a shortcut name : ")
+            if not name.isdigit():
+                break
+                
+            
+            else:
+                console.print("\n[bold red]Please enter a name![/bold red]", style="red")
+                
+        with open('/data/data/com.termux/files/usr/etc/bash.bashrc', 'r') as f2:
+            txt= f2.read()
+            with open('/data/data/com.termux/files/usr/etc/bash.bashrc.bak', 'w') as f:
+                f.write(txt)
+        text=f'''
 {name}() {{
 bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/install.sh)
 }}\n'''
-    	with open('/data/data/com.termux/files/usr/etc/bash.bashrc', 'r+') as f:
-    	   	content = f.read()
-    	   	f.seek(0, 0)
-    	   	f.write(text.rstrip('\r\n') + '\n' + content)
-    	rprint(f"\n[bold green]Please Restart your  termux and Enter [bold red]{name}[/bold red] to run script[/bold green]")
+        with open('/data/data/com.termux/files/usr/etc/bash.bashrc', 'r+') as f:
+               content = f.read()
+               f.seek(0, 0)
+               f.write(text.rstrip('\r\n') + '\n' + content)
+        rprint(f"\n[bold green]Please Restart your  termux and Enter [bold red]{name}[/bold red] to run script[/bold green]")
 
     elif what =='10':
         endpoint_ip_best_result=main()
@@ -2050,14 +2057,14 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
         
         os.system('termux-setup-storage')
         
-        	
+            
         
         if name_conf=='' :
-        	
-        	name_conf='acpwire.conf'
+            
+            name_conf='acpwire.conf'
         path = '/storage/emulated/0/'+name_conf+".conf"
         with open(path, 'w') as f:
-        	f.write(f'''[Interface]
+            f.write(f'''[Interface]
 PrivateKey = {all_key[1]}
 Address = 172.16.0.2/32, {all_key[0]}
 DNS = 1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001
@@ -2070,8 +2077,8 @@ Endpoint = {endpoint_ip}''')
         rprint(f'\n[bold green]{name_conf} saved in {path}.conf[/bold green]')
     
     elif what == '00':
-    	info()
-    	
+        info()
+        
     elif what=='0':
         gojo_goodbye_animation()
         time.sleep(1)
