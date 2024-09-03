@@ -46,8 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 2. Wireguard 構成を取得する
 
-▫️اگه توی گرفتن کانفیگ وایرگارد به ارور تایم اوت خوردید چند بار دیگه تست کنید 
-<br><br/>
+▫️ ワイヤーガード構成の取得中にタイムアウト エラーが発生した場合は、さらに数回テストしてください<br><br/>
 
 ## 3. IP をスキャンせずに Wireguard 構成を取得します
 
