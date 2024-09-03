@@ -113,7 +113,7 @@ Kullanım türü:
 
 ## Projeyi destekleyin
 
-<b>Projemi beğendiyseniz yıldız vererek, takip ederek ve arkadaşlarınıza tanıtarak projeme destek olabilirsiniz.</b>
+<b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
