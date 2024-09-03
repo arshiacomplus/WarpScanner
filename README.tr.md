@@ -48,7 +48,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ▫️ Wireguard yapılandırmasını alırken zaman aşımı hatası alırsanız birkaç kez daha test edin<br><br/>
 
-## 3. دریافت کانفیگ وایرگارد بدون نیاز به اسکن آیپی
+## 3. IP taramasına gerek kalmadan Wireguard yapılandırmasını edinin
 
 (best_result hatasını alan kişiler içindir.[0]onlar yerler) 
  Bu durumda ilk önce IP'yi diğer tarayıcılardan tarayabilirsiniz. 
