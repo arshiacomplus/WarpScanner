@@ -32,9 +32,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### And then you have to give memory access to Termox, which is asked of you
+##### And then you have to give the memory access to Termox that you are asked
 
-##### and then
+##### And then
 
 ##### Note: You can create a clean IP for Vahid panel (with inter) and bpb panel (with comma).
 
@@ -75,7 +75,7 @@ After copying the Wire Guard configuration with the IP version of Shish and then
 
 ## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
-If you press n, it will select the ip that I put before
+If you press n, it will select the IP that I have already set
  Otherwise 
  IP with port example:
 
@@ -84,9 +84,9 @@ If you press n, it will select the ip that I put before
 
 ## 7. To get config, warp on warp for v2ray and MahsaNG, you can use option 7 (help was taken from the bpb panel....)
 
-You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br/>
+You will be asked if Po sites (Kung Fu Panda) will be blocked or not<br><br/>
 
-## 8. You can subwarp that warp for v2ray or MahsaNg
+## 8. You can sub warp that warp for v2ray or MahsaNg
 
 <br><br/>
 
