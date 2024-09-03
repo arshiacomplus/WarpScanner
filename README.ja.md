@@ -38,7 +38,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 注: Vahid パネル (inter 付き) および bpb パネル (カンマ付き) のクリーンな IP を作成できます。
 
-##### در فایل ریزالت سیو کنید
+##### 結果ファイルに保存
 
 ##### 次に、番号 1 (IP バージョン 4) を入力します。
 
@@ -75,9 +75,9 @@ IP バージョンの Shish を使用して Wire Guard 設定をコピーし、�
 
 ## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji の Wireguard 設定を取得するには
 
- اگر n رو بزنید ایپی که از قبل گذاشتم رو انتخاب میکنه
- در غیر این صورت 
- ایپی با پورت مثال : 
+nを押すと、前に入力したIPが選択されます
+ さもないと 
+ IP とポートの例:
 
 > ipv4:ポート
 > あなたが入力します<br><br/>
