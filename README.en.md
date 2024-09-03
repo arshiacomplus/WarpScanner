@@ -26,7 +26,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 > [!WARNING]Since it tries to install Python in the first step, it might need a VPN!
 
-## 1. ای پی اسکنر هستش IPv4 , IPv6
+## 1. IP scanner is IPv4, IPv6
 
 ##### ▫️ The ability to save version four IPs in storage/emulated/0/ and a file called result.csv
 
@@ -38,9 +38,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Note: You can create a clean IP for Vahid panel (with inter) and bpb panel (with comma).
 
-##### در فایل ریزالت سیو کنید
+##### Save in the result file
 
-##### بعد عدد یک رو وارد میکنید(ایپی ورژن چهار )
+##### Then you enter the number one (IP version four)
 
 <br><br/>
 
