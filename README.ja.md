@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### したがって、数字の 1 を入力し、次に y を入力し、場合によってはもう一度 y を入力することに注意してください。
 
-##### 次に、Termox にメモリ アクセスを許可する必要があります。これは要求されます。
+##### そして、求められたメモリアクセスをTermoxに与える必要があります。
 
 ##### その後
 
@@ -51,7 +51,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 3. IP をスキャンせずに Wireguard 構成を取得します
 
 (エラー「best_result」が表示される人向けです)[0]彼らは食べる） 
- この場合、最初に他のスキャナから IP をスキャンできます。 
+ この場合、最初に他のスキャナーから IP をスキャンできます。 
  3 番目のオプションを選択すると、IP とポートを入力するように求められます。N を入力すると、すでに入力した IP が選択されます。
 
 <br><br/>
@@ -75,9 +75,9 @@ IP バージョンの Shish を使用して Wire Guard 設定をコピーし、�
 
 ## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji の Wireguard 設定を取得するには
 
-nを押すと、前に入力したIPが選択されます
- さもないと 
- IP とポートの例:
+ اگر n رو بزنید ایپی که از قبل گذاشتم رو انتخاب میکنه
+ در غیر این صورت 
+ ایپی با پورت مثال : 
 
 > ipv4:ポート
 > あなたが入力します<br><br/>
@@ -94,7 +94,7 @@ Po サイト (カンフー パンダ) をブロックするかどうかを尋ね
 
 名前を付けて Thermox ウィンドウを閉じ、新しいウィンドウを開きます。
 
- نوع استفاده :
+使用の種類:
 
 -   スクリプトを実行するために指定した名前を入力します
 -   削除するには、もう一度同じ番号を押してYを押します。
@@ -109,7 +109,7 @@ Po サイト (カンフー パンダ) をブロックするかどうかを尋ね
 
 ## 寄付する
 
-<b>送信:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhssssssssssss 42296553aa</a>
+<b>Trx:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhssssssssssss 42296553aa</a>
 
 ## プロジェクトをサポートする
 
