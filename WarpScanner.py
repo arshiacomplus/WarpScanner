@@ -460,6 +460,7 @@ def main_v6():
 
     executor= ThreadPoolExecutor(max_workers=800)
     try:
+        print("\033[1;35m")
         futures = [executor.submit(ping_ip, generate_ipv6(), ports_to_check[random.randint(0,1)])  for _ in range(101)]
         with alive_bar(total=len(futures), length=20) as bar:  # Length is in characters
                     for future in futures:
@@ -471,6 +472,7 @@ def main_v6():
             rprint('[bold red]An Error: [/bold red]', E)
     finally:
             executor.shutdown(wait=True)
+    print("\033[0m")
     extended_results=[]
     for result in resultss:
         ip, port, ping ,loss_rate,jitter= result
