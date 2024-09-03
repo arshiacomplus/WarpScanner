@@ -1,4 +1,4 @@
-V=43
+V=44
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -1687,7 +1687,7 @@ def main3():
         time.sleep(5)
         all_key2=free_cloudflare_account()
         time.sleep(5)
-        wire_config_or = f'''
+        wire_config_or += f'''
 
     {{
     "type": "wireguard",
@@ -1704,7 +1704,7 @@ def main3():
 
     "mtu": 1280'''
         if what!='17':
-            wire_config_or=''',
+            wire_config_or+=''',
     "fake_packets":"1-3",
     "fake_packets_size":"10-30",
     "fake_packets_delay":"10-30",
@@ -1726,7 +1726,7 @@ def main3():
     "reserved": {all_key2[2]},
     "mtu": 1330'''
         if what!='17':
-            wire_config_or=''',
+            wire_config_or+=''',
     "fake_packets_mode":"m4"'''
         wire_config_or+=f'''
     }}
@@ -1737,7 +1737,7 @@ def main3():
         time.sleep(5)
         all_key2=free_cloudflare_account()
         time.sleep(5)
-        wire_config_or = f'''
+        wire_config_or += f'''
 
     ,{{
     "type": "wireguard",
@@ -1754,7 +1754,7 @@ def main3():
 
     "mtu": 1280'''
         if what!='17':
-            wire_config_or=''',
+            wire_config_or+=''',
     "fake_packets":"1-3",
     "fake_packets_size":"10-30",
     "fake_packets_delay":"10-30",
@@ -1777,8 +1777,10 @@ def main3():
     "peer_public_key": "{all_key2[3]}",
     "reserved": {all_key2[2]},
     "mtu": 1330'''
-        if what!='17': wire_config_or=''',
+        if what!='17':
+            wire_config_or=wire_config_or+''',
     "fake_packets_mode":"m4"'''
+        
         wire_config_or+=f'''
     }}
 
