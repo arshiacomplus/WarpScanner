@@ -1,4 +1,4 @@
-V=47
+V=48
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -87,9 +87,10 @@ try:
 except Exception:
     os.system('pip install datetime')
     import datetime
+from alive_progress import alive_bar
 
 api=''
-
+ports = [1074, 894, 908, 878]
 console = Console()
 wire_config_temp=''
 wire_c=1
@@ -394,7 +395,8 @@ def create_ip_range(start_ip, end_ip):
                 temp[i2-1] += 1
     ip_range.append(end_ip)
     return ip_range
-def scan_ip_port(ip, port,results):
+def scan_ip_port(ip, results):
+    port=ports[random.randint(0,3)]
     
     
     icmp=pinging(ip, count=4, interval=1, timeout=5,privileged=False)
@@ -455,8 +457,13 @@ def main_v6():
 
     executor= ThreadPoolExecutor(max_workers=800)
     try:
-        for _ in range(101):
-            executor.submit(ping_ip, generate_ipv6(), ports_to_check[random.randint(0,1)])
+        futures = [executor.submit(ping_ip, generate_ipv6(), ports_to_check[random.randint(0,1)])  for _ in range(101)]
+        with alive_bar(total=len(futures), length=50) as bar:  # Length is in characters
+                    for future in futures:
+                        time.sleep(0.01)
+                        result = future.result()
+                        bar()
+
     except Exception as E:
             rprint('[bold red]An Error: [/bold red]', E)
     finally:
@@ -506,7 +513,7 @@ def main_v6():
         if ping < best_ping:
             best_ping = ping
             best_ip = ip
-        
+    os.system("clear")
 
     console.print(table)
     port_random = ports_to_check[random.randint(0, len(ports_to_check) - 1)]
@@ -566,7 +573,7 @@ def main():
     elif Cpu_speed == "2": max_workers_number=500
     
     console.clear()
-    console.print("Please wait, scanning IP ...", style="blue")
+    console.print("Please wait, scanning IP ...\n\n", style="blue")
 
     start_ips = ["188.114.96.0", "162.159.192.0", "162.159.195.0"]
     end_ips = ["188.114.99.224", "162.159.193.224", "162.159.195.224"]
@@ -576,11 +583,17 @@ def main():
     for start_ip, end_ip in zip(start_ips, end_ips):
         ip_range = create_ip_range(start_ip, end_ip)
         executor=ThreadPoolExecutor(max_workers=max_workers_number)
-        try :
-                for ip in ip_range:
-                    randport=ports[random.randint(0,3)]
-                    executor.submit(scan_ip_port, ip, randport,results)
+        print("\033[1;35m")
+        try:
                 
+                futures = [executor.submit(scan_ip_port, ip, results) for ip in ip_range]
+                
+                with alive_bar(total=len(futures), length=50) as bar:  # Length is in characters
+                    for future in futures:
+                        time.sleep(0.01)
+                        result = future.result()
+                        bar()
+                        
                     
                 
         except Exception as E:
@@ -588,7 +601,7 @@ def main():
         finally:
             executor.shutdown(wait=True)
 
-    
+        print("\033[0m")
     extended_results = []
     
     for result in results:
