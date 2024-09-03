@@ -1,4 +1,4 @@
-V=49
+V=50
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -91,6 +91,7 @@ try:
     from alive_progress import alive_bar
 except Exception:
     os.system("pip install alive_progress")
+    from alive_progress import alive_bar
 api=''
 ports = [1074, 894, 908, 878]
 console = Console()
@@ -599,7 +600,7 @@ def main():
                     
                 
         except Exception as E:
-            print("Error :","E")
+            print("Error :",E)
         finally:
             executor.shutdown(wait=True)
 
