@@ -62,7 +62,8 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 
 ## 5. V2ray ve MahsaNG'de kullanılmak üzere Wireguard yapılandırmasını edinmek için
 
-> Hata istekleri alanlar için bu 👈👈<https://t.me/arshia_mod_fun/298>
+> اینم برای اونای که ارور requests می‌گیرند 👈👈
+> <https://t.me/arshia_mod_fun/298>
 
 Seçenek 1'i ve ardından 2'yi girerek 
  Mehsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
