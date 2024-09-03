@@ -1,4 +1,4 @@
-V=48
+V=49
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -87,8 +87,10 @@ try:
 except Exception:
     os.system('pip install datetime')
     import datetime
-from alive_progress import alive_bar
-
+try:
+    from alive_progress import alive_bar
+except Exception:
+    os.system("pip install alive_progress")
 api=''
 ports = [1074, 894, 908, 878]
 console = Console()
