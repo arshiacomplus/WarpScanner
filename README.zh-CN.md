@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 因此，应该注意的是，输入数字 1，然后输入 y，也许再输入 y
 
-##### 然后你必须按照要求向 Termox 提供内存访问权限
+##### 然后你必须向 Termox 授予内存访问权限，这是要求你的
 
 ##### 进而
 
@@ -75,7 +75,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 6. 获取 Vettori 和 Mehsa Anji 的 Wireguard 配置以及...无需 IP 扫描
 
-如果你按n，它会选择我已经设置的IP
+如果你按n，它会选择我之前输入的ip
  否则 
  IP 与端口示例：
 
@@ -84,7 +84,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 7. 要获取配置，对 v2ray 和 MahsaNG 进行扭曲，您可以使用选项 7（帮助来自 bpb 面板......）
 
-系统会询问您 Po 网站（功夫熊猫）是否会被屏蔽<br><br/>
+系统会询问您是否会屏蔽Po站（功夫熊猫）<br><br/>
 
 ## 8. 您可以对 v2ray 或 MahsaNg 的扭曲进行子扭曲
 
