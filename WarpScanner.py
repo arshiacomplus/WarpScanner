@@ -1,4 +1,4 @@
-V=57
+V=58
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -470,7 +470,7 @@ def main_v6():
         bar_size=min( none-40, 20)
         if bar_size<3:
             bar_size=3
-        elif bar>1000:
+        elif bar_size>1000:
             bar_size=1000
         with alive_bar(total=len(futures), length=bar_size) as bar:  # Length is in characters
                     for future in futures:
@@ -608,7 +608,7 @@ def main():
                 bar_size=min( none-40, 20)
                 if bar_size<3:
                     bar_size=3
-                elif bar>1000:
+                elif bar_size>1000:
                     bar_size=1000
                 with alive_bar(total=len(futures), length=bar_size) as bar:  # Length is in characters
                     for future in futures:
