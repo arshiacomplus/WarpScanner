@@ -1,6 +1,6 @@
 ## ワープスキャナー
 
-言語 : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[Chinese](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
+言語 : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -24,7 +24,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
-> [！警告!]最初のステップで Python をインストールしようとするため、VPN が必要になる可能性があります。
+> [！警告!]
+> از اونجا که در اولین مرحله سعی می‌کنه پایتون رو نصب کنه شاید به وی پی ان نیاز داشته باشه !
 
 ## 1. IPスキャナーはIPv4、IPv6です
 
@@ -36,7 +37,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### その後
 
-##### 注: Vahid パネル (inter 付き) および bpb パネル (カンマ付き) のクリーンな IP を作成できます。
+##### نکته : میتونید  آیپی تمیز برای پنل وحید(با اینتر ) و پنل bpb(با کاما )
 
 ##### 結果ファイルに保存
 
@@ -60,14 +61,14 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 タイムアウトエラーが発生した場合は、さらに数回試してください<br><br/>
 
-## 5. برای دریافت کانفیگ Wireguard  برای استفاده در v2ray و MahsaNG
+## 5. v2ray および MahsaNG で使用する Wireguard 構成を取得するには
 
 > エラーリクエストが表示される方向けです 👈👈<https://t.me/arshia_mod_fun/298>
 
 オプション 1 を入力し、その後 2 を入力すると 
  Shish の IP バージョンを入手できます。これは、Mehsa Anji および Vettori のオプション 5 ワイヤーガード構成にも実装されています。
 
-IP バージョンの Shish を使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
+ بعد کپی کردن کانفیگ وایر گارد با   آیپی ورژن شیش و بعد  وارد کردن داخل کلاینت،  این کار رو انجام بدید که به باگ نخورید
 
 -   1.鉛筆ボタン
 -   2\. ブラケットを IP の隣に置きます[ipvsh]
@@ -94,7 +95,7 @@ Po サイト (カンフー パンダ) をブロックするかどうかを尋ね
 
 名前を付けて Thermox ウィンドウを閉じ、新しいウィンドウを開きます。
 
- نوع استفاده :
+使用の種類:
 
 -   スクリプトを実行するために指定した名前を入力します
 -   削除するには、もう一度同じ番号を押してYを押します。
