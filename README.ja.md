@@ -24,7 +24,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
-> [！警告!]最初のステップで Python をインストールしようとするため、VPN が必要になる可能性があります。
+> [！警告!]
+> از اونجا که در اولین مرحله سعی می‌کنه پایتون رو نصب کنه شاید به وی پی ان نیاز داشته باشه !
 
 ## 1. IPスキャナーはIPv4、IPv6です
 
@@ -32,7 +33,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### したがって、数字の 1 を入力し、次に y を入力し、場合によってはもう一度 y を入力することに注意してください。
 
-##### そして、求められたメモリアクセスをTermoxに与える必要があります。
+##### 次に、Termox にメモリ アクセスを許可する必要があります。これは要求されます。
 
 ##### その後
 
@@ -51,7 +52,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 3. IP をスキャンせずに Wireguard 構成を取得します
 
 (エラー「best_result」が表示される人向けです)[0]彼らは食べる） 
- この場合、最初に他のスキャナーから IP をスキャンできます。 
+ この場合、最初に他のスキャナから IP をスキャンできます。 
  3 番目のオプションを選択すると、IP とポートを入力するように求められます。N を入力すると、すでに入力した IP が選択されます。
 
 <br><br/>
@@ -75,7 +76,7 @@ IP バージョンの Shish を使用して Wire Guard 設定をコピーし、�
 
 ## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji の Wireguard 設定を取得するには
 
-nを押すと、すでに設定したIPが選択されます
+nを押すと、前に入力したIPが選択されます
  さもないと 
  IP とポートの例:
 
@@ -107,7 +108,7 @@ Po サイト (カンフー パンダ) をブロックするかどうかを尋ね
 
 ## 12. このオプションをクリックすると、IP をスキャンせずに Nika Anji の Wireguard 構成を取得できます。
 
-## 寄付する
+## اهدا کردن
 
 <b>送信:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhssssssssssss 42296553aa</a>
 
