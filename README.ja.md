@@ -1,6 +1,6 @@
 ## ワープスキャナー
 
-language : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
+言語 : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[Chinese](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### したがって、数字の 1 を入力し、次に y を入力し、場合によってはもう一度 y を入力することに注意してください。
 
-##### そして、求められたメモリアクセスをTermoxに与える必要があります。
+##### 次に、Termox にメモリ アクセスを許可する必要があります。これは要求されます。
 
 ##### その後
 
@@ -60,20 +60,20 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 タイムアウトエラーが発生した場合は、さらに数回試してください<br><br/>
 
-## 5. v2ray および MahsaNG で使用する Wireguard 構成を取得するには
+## 5. برای دریافت کانفیگ Wireguard  برای استفاده در v2ray و MahsaNG
 
 > エラーリクエストが表示される方向けです 👈👈<https://t.me/arshia_mod_fun/298>
 
 オプション 1 を入力し、その後 2 を入力すると 
- Shish の IP バージョンを入手できます。これは、Mahsa Anji および Vettori のオプション 5 ワイヤーガード構成にも実装されています。
+ Shish の IP バージョンを入手できます。これは、Mehsa Anji および Vettori のオプション 5 ワイヤーガード構成にも実装されています。
 
-Shish の IP バージョンを使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
+IP バージョンの Shish を使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
 
 -   1.鉛筆ボタン
 -   2\. ブラケットを IP の隣に置きます[ipvsh]
 -   3\. 保管<br><br/>
 
-## 6. IP スキャンなしで Vettori と Mehsa Anji の Wireguard 設定を取得するには
+## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji の Wireguard 設定を取得するには
 
 nを押すと、前に入力したIPが選択されます
  さもないと 
@@ -82,7 +82,7 @@ nを押すと、前に入力したIPが選択されます
 > ipv4:ポート
 > あなたが入力します<br><br/>
 
-## 7.  برای دریافت کانفیگ ، وارپ آن وارپ برای v2ray و MahsaNG میتونید از گزینه ۷ استفاده کنید (از پنل bpb کمک گرفته شده ....)
+## 7. v2ray および MahsaNG の設定を取得するには、オプション 7 を使用できます (ヘルプは bpb パネルから取得しました....)。
 
 Po サイト (カンフー パンダ) をブロックするかどうかを尋ねられます<br><br/>
 
@@ -94,7 +94,7 @@ Po サイト (カンフー パンダ) をブロックするかどうかを尋ね
 
 名前を付けて Thermox ウィンドウを閉じ、新しいウィンドウを開きます。
 
-使用の種類:
+ نوع استفاده :
 
 -   スクリプトを実行するために指定した名前を入力します
 -   削除するには、もう一度同じ番号を押してYを押します。
