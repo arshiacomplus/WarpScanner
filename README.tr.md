@@ -48,15 +48,15 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ▫️ Wireguard yapılandırmasını alırken zaman aşımı hatası alırsanız birkaç kez daha test edin<br><br/>
 
-## 3. IP taramasına gerek kalmadan Wireguard yapılandırmasını edinin
+## 3. دریافت کانفیگ وایرگارد بدون نیاز به اسکن آیپی
 
-(best_result hatasını alan kişiler içindir.[0] می‌خورند) 
- در این صورت می‌توانید اول از اسکنر های دیگه آیپی اسکن کنید 
- و بعد از زدن گزینه سه ازتون سوال میشه که آیپی رو با پورت  وارد کنید یا اگه N رو وارد کنید آیپی که از قبل گذاشتم رو انتخاب می‌کنه
+(best_result hatasını alan kişiler içindir.[0]onlar yerler) 
+ Bu durumda ilk önce IP'yi diğer tarayıcılardan tarayabilirsiniz. 
+ Ve üçüncü seçeneği seçtikten sonra port ile IP'yi girmeniz istenecek veya N girerseniz daha önce girdiğim IP'yi seçecektir.
 
 <br><br/>
 
-### 4. برای دریافت کانفیگ وایرگارد در یک لینک ساب با تعداد دلخواه گزینه 4 را وارد کنید سعی کنید از اعداد زوج برای تعداد کانفیگ استفاده کنید
+### 4. İstenilen numaraya sahip bir alt bağlantıda tel koruma konfigürasyonunu almak için 4. seçeneği girin. Konfigürasyon numarası için çift sayıları kullanmayı deneyin.
 
 Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 
@@ -73,7 +73,7 @@ Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye a
 -   2\. Braketi IP'nin yanına koymak[ipvsh]
 -   3\. Depolama<br><br/>
 
-## 6. برای دریافت کانفیگ وایرگارد برای ویتوری و مهسا انجی و ...  بدون اسکن آیپی
+## 6. Vettori ve Mehsa Anji için Wireguard yapılandırmasını almak için ve... IP taraması olmadan
 
 N tuşuna basarsanız önceden ayarladığım IP seçilecektir
  Aksi takdirde 
@@ -82,15 +82,15 @@ N tuşuna basarsanız önceden ayarladığım IP seçilecektir
 > ipv4:bağlantı noktası
 > sen gir<br><br/>
 
-## 7.  برای دریافت کانفیگ ، وارپ آن وارپ برای v2ray و MahsaNG میتونید از گزینه ۷ استفاده کنید (از پنل bpb کمک گرفته شده ....)
+## 7. V2ray ve MahsaNG için yapılandırma, warp on warp almak için 7. seçeneği kullanabilirsiniz (yardım bpb panelinden alınmıştır....)
 
 Po sitelerinin (Kung Fu Panda) engellenip engellenmeyeceği size sorulacaktır.<br><br/>
 
-## 8. میتونید ساب وارپ آن وارپ برای v2ray یا MahsaNg بگیرید
+## 8. Bu çözgüyü v2ray veya MahsaNg için alt çözgü yapabilirsiniz.
 
 <br><br/>
 
-## 9. میتونید یه شورت کات درست کنید
+## 9. Kısayol yapabilirsiniz
 
 Bir isim verin ve Thermox penceresini kapatıp yeni bir tane açın.
 
