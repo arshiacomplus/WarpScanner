@@ -24,8 +24,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
-> [！警告!]
-> از اونجا که در اولین مرحله سعی می‌کنه پایتون رو نصب کنه شاید به وی پی ان نیاز داشته باشه !
+> [！警告!]最初のステップで Python をインストールしようとするため、VPN が必要になる可能性があります。
 
 ## 1. IPスキャナーはIPv4、IPv6です
 
@@ -33,11 +32,11 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### したがって、数字の 1 を入力し、次に y を入力し、場合によってはもう一度 y を入力することに注意してください。
 
-##### 次に、Termox にメモリ アクセスを許可する必要があります。これは要求されます。
+##### そして、求められたメモリアクセスをTermoxに与える必要があります。
 
 ##### その後
 
-##### نکته : میتونید  آیپی تمیز برای پنل وحید(با اینتر ) و پنل bpb(با کاما )
+##### 注: Vahid パネル (inter 付き) および bpb パネル (カンマ付き) のクリーンな IP を作成できます。
 
 ##### 結果ファイルに保存
 
@@ -52,7 +51,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 3. IP をスキャンせずに Wireguard 構成を取得します
 
 (エラー「best_result」が表示される人向けです)[0]彼らは食べる） 
- この場合、最初に他のスキャナから IP をスキャンできます。 
+ この場合、最初に他のスキャナーから IP をスキャンできます。 
  3 番目のオプションを選択すると、IP とポートを入力するように求められます。N を入力すると、すでに入力した IP が選択されます。
 
 <br><br/>
@@ -68,7 +67,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 オプション 1 を入力し、その後 2 を入力すると 
  Shish の IP バージョンを入手できます。これは、Mehsa Anji および Vettori のオプション 5 ワイヤーガード構成にも実装されています。
 
- بعد کپی کردن کانفیگ وایر گارد با   آیپی ورژن شیش و بعد  وارد کردن داخل کلاینت،  این کار رو انجام بدید که به باگ نخورید
+IP バージョンの Shish を使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
 
 -   1.鉛筆ボタン
 -   2\. ブラケットを IP の隣に置きます[ipvsh]
@@ -76,7 +75,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji の Wireguard 設定を取得するには
 
-nを押すと、前に入力したIPが選択されます
+nを押すと、すでに設定したIPが選択されます
  さもないと 
  IP とポートの例:
 
