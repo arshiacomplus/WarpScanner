@@ -1,6 +1,6 @@
 ## 扭曲扫描仪
 
-语言 : 🇮🇷[Persian](README.md)| 🇹🇷[Turkish](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)| 🇯🇵[日本人](README.ja.md)
+语言 : 🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)| 🇯🇵[日本人](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -14,7 +14,7 @@
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
-### کد زیر رو در اپ ترماکس اجرا کنید
+### 在AppTermax中运行以下代码
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 因此，应该注意的是，输入数字 1，然后输入 y，也许再输入 y
 
-##### 然后你必须向 Termox 授予内存访问权限，这是要求你的
+##### 然后你必须按照要求向 Termox 提供内存访问权限
 
 ##### 进而
 
@@ -75,7 +75,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 6. 获取 Vettori 和 Mehsa Anji 的 Wireguard 配置以及...无需 IP 扫描
 
-如果你按n，它会选择我之前输入的ip
+如果你按n，它会选择我已经设置的IP
  否则 
  IP 与端口示例：
 
@@ -84,7 +84,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 7. 要获取配置，对 v2ray 和 MahsaNG 进行扭曲，您可以使用选项 7（帮助来自 bpb 面板......）
 
-系统会询问您是否会屏蔽Po站（功夫熊猫）<br><br/>
+系统会询问您 Po 网站（功夫熊猫）是否会被屏蔽<br><br/>
 
 ## 8. 您可以对 v2ray 或 MahsaNg 的扭曲进行子扭曲
 
