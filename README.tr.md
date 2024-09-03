@@ -1,4 +1,4 @@
-## Çözgü Tarayıcı
+## Warp Scanner
 
 dil : 🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[İngilizce](README.en.md)| 🇨🇳[Çince](README.zh-CN.md)| 🇯🇵[Japonca](README.ja.md)
 
@@ -34,7 +34,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekir.
 
-##### ve daha sonra
+##### Ve daha sonra
 
 ##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP oluşturabilirsiniz.
 
@@ -50,7 +50,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. IP taramasına gerek kalmadan Wireguard yapılandırmasını edinin
 
-(best_result hatasını alan kişiler içindir[0]onlar yerler) 
+(best_result hatasını alan kişiler içindir.[0]onlar yerler) 
  Bu durumda ilk önce IP'yi diğer tarayıcılardan tarayabilirsiniz. 
  Ve üçüncü seçeneği seçtikten sonra port ile IP'yi girmeniz istenecek veya N girerseniz daha önce girdiğim IP'yi seçecektir.
 
@@ -65,7 +65,7 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 > Hata istekleri alanlar için bu 👈👈<https://t.me/arshia_mod_fun/298>
 
 Seçenek 1'i ve ardından 2'yi girerek 
- Mahsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
+ Mehsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
 
 Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye aktardıktan sonra, bir hatayla karşılaşmamak için bunu yapın.
 
@@ -75,7 +75,7 @@ Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye a
 
 ## 6. Vettori ve Mehsa Anji için Wireguard yapılandırmasını almak için ve... IP taraması olmadan
 
-N tuşuna basarsanız daha önce koyduğum ipi seçecektir
+N tuşuna basarsanız önceden ayarladığım IP seçilecektir
  Aksi takdirde 
  Bağlantı noktası örneğiyle birlikte IP:
 
@@ -86,11 +86,11 @@ N tuşuna basarsanız daha önce koyduğum ipi seçecektir
 
 Po sitelerinin (Kung Fu Panda) engellenip engellenmeyeceği size sorulacaktır.<br><br/>
 
-## 8. Bu çözgüyü v2ray veya MahsaNg için alt çözgü yapabilirsiniz
+## 8. Bu çözgüyü v2ray veya MahsaNg için alt çözgü yapabilirsiniz.
 
 <br><br/>
 
-## 9. Kısayol yapabilirsiniz
+## 9. میتونید یه شورت کات درست کنید
 
 Bir isim verin ve Thermox penceresini kapatıp yeni bir tane açın.
 
@@ -109,7 +109,7 @@ Kullanım türü:
 
 ## bağışlamak
 
-<b>Trx:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhsssssssssss 42296553aa</a>
+<b>TRX:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhsssssssssss 42296553aa</a>
 
 ## Projeyi destekleyin
 
