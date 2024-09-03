@@ -30,7 +30,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### ▫️ The ability to save version four IPs in storage/emulated/0/ and a file called result.csv
 
-##### Therefore, it should be noted that by entering the number one and then y and maybe again y
+##### لذا لازم به ذکر است که با وارد کردن عدد یک و بعد y  و شاید دوباره y
 
 ##### And then you have to give memory access to Termox, which is asked of you
 
@@ -50,9 +50,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. Get Wireguard configuration without needing to scan IP
 
-(It is for people who get the error best_result[0]they eat) 
- In this case, you can first scan the IP from other scanners 
- And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will select the IP that I have already entered.
+(It is for people who get the error best_result[0] می‌خورند) 
+ در این صورت می‌توانید اول از اسکنر های دیگه آیپی اسکن کنید 
+ و بعد از زدن گزینه سه ازتون سوال میشه که آیپی رو با پورت  وارد کنید یا اگه N رو وارد کنید آیپی که از قبل گذاشتم رو انتخاب می‌کنه
 
 <br><br/>
 
@@ -71,7 +71,8 @@ After copying the Wire Guard configuration with the IP version of Shish and then
 
 -   1\. Pencil button
 -   2\. Putting the bracket next to the IP[ipvsh]
--   3\. Storage<br><br/>
+-   3.ذخیره
+    <br><br/>
 
 ## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
@@ -96,7 +97,7 @@ Give it a name and close the Thermox window and open a new one.
 
 Type of use:
 
--   Enter the name you gave to run the script
+-   نامی که دادید رو وارد کنید تا اسکریپت اجرا شود
 -   To delete it, press the same number again and press Y
 
 <br><br/>
