@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### したがって、数字の 1 を入力し、次に y を入力し、場合によってはもう一度 y を入力することに注意してください。
 
-##### 次に、Termox にメモリ アクセスを許可する必要があります。これは要求されます。
+##### そして、求められたメモリアクセスをTermoxに与える必要があります。
 
 ##### その後
 
@@ -51,7 +51,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 3. IP をスキャンせずに Wireguard 構成を取得します
 
 (エラー「best_result」が表示される人向けです)[0]彼らは食べる） 
- この場合、最初に他のスキャナから IP をスキャンできます。 
+ この場合、最初に他のスキャナーから IP をスキャンできます。 
  3 番目のオプションを選択すると、IP とポートを入力するように求められます。N を入力すると、すでに入力した IP が選択されます。
 
 <br><br/>
@@ -75,7 +75,7 @@ IP バージョンの Shish を使用して Wire Guard 設定をコピーし、�
 
 ## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji の Wireguard 設定を取得するには
 
-nを押すと、前に入力したIPが選択されます
+nを押すと、すでに設定したIPが選択されます
  さもないと 
  IP とポートの例:
 
