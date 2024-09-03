@@ -1672,7 +1672,7 @@ def main3():
     
     os.system('clear')
          
-    time.sleep(8)
+    time.sleep(10)
     if wire_p==1:
             print(f"please wait make wireguard : {wire_c-1}. ")
     
