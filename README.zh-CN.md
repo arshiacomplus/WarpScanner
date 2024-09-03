@@ -40,7 +40,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 保存到结果文件中
 
-##### 然后你输入数字一（IP版本四）
+##### بعد عدد یک رو وارد میکنید(ایپی ورژن چهار )
 
 <br><br/>
 
