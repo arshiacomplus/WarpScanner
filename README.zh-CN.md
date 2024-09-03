@@ -26,7 +26,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 > [！警告!]由于它在第一步中尝试安装 Python，因此可能需要 VPN！
 
-## 1. ای پی اسکنر هستش IPv4 , IPv6
+## 1. IP扫描仪是IPv4、IPv6
 
 ##### ▫️ 能够将版本 4 IP 保存在 storage/emulated/0/ 和名为 result.csv 的文件中
 
@@ -51,7 +51,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 3.无需扫描IP即可获取Wireguard配置
 
 （这是针对那些收到错误 best_result 的人[0]他们吃） 
- 这种情况可以先用其他扫描仪扫描IP 
+ 这种情况，可以先用其他扫描仪扫描IP 
  选择第三个选项后，会要求你输入IP和端口，或者如果你输入N，它将选择我已经输入的IP。
 
 <br><br/>
