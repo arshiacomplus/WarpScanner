@@ -24,9 +24,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
-> [！警告!]由于它在第一步中尝试安装 Python，因此可能需要 VPN！
+> [!WARNING]由于它在第一步中尝试安装 Python，因此可能需要 VPN！
 
-## 1. IP扫描仪是IPv4、IPv6
+## 1. ای پی اسکنر هستش IPv4 , IPv6
 
 ##### ▫️ 能够将版本 4 IP 保存在 storage/emulated/0/ 和名为 result.csv 的文件中
 
@@ -94,7 +94,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 为其命名并关闭 Thermox 窗口并打开一个新窗口。
 
-使用类型：
+ نوع استفاده :
 
 -   输入您为运行脚本指定的名称
 -   要删除它，请再次按相同的数字，然后按 Y
