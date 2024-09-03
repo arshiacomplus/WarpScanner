@@ -1,4 +1,4 @@
-V=55
+V=56
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -467,7 +467,7 @@ def main_v6():
         futures = [executor.submit(ping_ip, generate_ipv6(), ports_to_check[random.randint(0,1)])  for _ in range(101)]
         none=gt_resolution()
         
-        bar_size=min( none-10, 20)
+        bar_size=min( none-40, 20)
         with alive_bar(total=len(futures), length=bar_size) as bar:  # Length is in characters
                     for future in futures:
                         time.sleep(0.01)
@@ -601,7 +601,7 @@ def main():
                 futures = [executor.submit(scan_ip_port, ip, results) for ip in ip_range]
                 none=gt_resolution()
                
-                bar_size=min( none-10, 20)
+                bar_size=min( none-40, 20)
                 with alive_bar(total=len(futures), length=bar_size) as bar:  # Length is in characters
                     for future in futures:
                         time.sleep(0.01)
