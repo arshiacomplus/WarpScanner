@@ -58,7 +58,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ### 4. 要在子链路中接收具有所需编号的wireguard 配置，请输入选项4。尝试使用偶数作为配置编号。
 
-如果出现超时错误，请多尝试几次<br><br/>
+ اگه به ارور تایم اوت خوردید چند بار دیگه تست کنید
+<br><br/>
 
 ## 5. 获取 Wireguard 配置以在 v2ray 和 MahsaNG 中使用
 
@@ -103,13 +104,14 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 10.打开此配置文件选项`.conf`Wireguard 专为 Windscribe 和 Wireguard 打造
 
-## 11.通过单击此选项，您可以获得Nika Anji的wireguard配置
+## 11. با زدن این گزینه میتوانید کانفیگ وایرگارد برای نیکا انجی بگیرید
 
 ## 12.点击此选项，无需扫描IP即可获取Nika Anji的Wireguard配置
 
 ## 捐赠
 
-<b>交易：</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>泰达币：</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhssssssssss 42296553aa</a>
+<b>交易：</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br>
+<b>泰达币：</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhssssssssss 42296553aa</a>
 
 ## 支持项目
 
