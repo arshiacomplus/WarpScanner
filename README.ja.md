@@ -38,7 +38,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 注: Vahid パネル (inter 付き) および bpb パネル (カンマ付き) のクリーンな IP を作成できます。
 
-##### 結果ファイルに保存
+##### در فایل ریزالت سیو کنید
 
 ##### 次に、番号 1 (IP バージョン 4) を入力します。
 
