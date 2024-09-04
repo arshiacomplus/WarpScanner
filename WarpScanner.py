@@ -1,4 +1,4 @@
-V=63
+V=64
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -408,10 +408,10 @@ def scan_ip_port(ip, results :list):
     icmp=pinging(ip, count=4, interval=1, timeout=5,privileged=False)
     
     
-    
+    if icmp.is_alive:
   
     
-    results.append((ip, port, float(icmp.avg_rtt), icmp.packet_loss, icmp.jitter))
+        results.append((ip, port, float(icmp.avg_rtt), icmp.packet_loss, icmp.jitter))
 
     
     
@@ -436,8 +436,8 @@ def main_v6():
         
         icmp=pinging(ip, count=4, interval=1, timeout=5,privileged=False, family='ipv6')
         
-        
-        resultss.append((ip, port, float(icmp.avg_rtt), icmp.packet_loss, icmp.jitter))
+        if icmp.is_alive:
+            resultss.append((ip, port, float(icmp.avg_rtt), icmp.packet_loss, icmp.jitter))
         
             
 
@@ -635,6 +635,19 @@ def main():
             loss_rate=1000
             
         loss_rate=loss_rate*100
+    
+            
+        combined_score = 0.5 * ping + 0.3 * loss_rate + 0.2 * jitter
+
+        extended_results.append((ip, port, ping, loss_rate,jitter, combined_score))
+       
+
+    sorted_results = sorted(extended_results, key=lambda x: x[5])
+
+    
+
+    for ip, port, ping, loss_rate,jitter, combined_score in sorted_results:
+            
         if which !='3' and do_you_save=='1':
             if loss_rate == 0.0 and ping !=0.0:
                 if which =="1" or which=="2" :
@@ -655,17 +668,7 @@ def main():
                             if ping<=int(ping_range):
                                 save_result.append("\n")
                                 save_result.append(str(ip)+":"+str(port))
-    
-            
-        combined_score = 0.5 * ping + 0.3 * loss_rate + 0.2 * jitter
-
-        extended_results.append((ip, port, ping, loss_rate,jitter, combined_score))
-       
-
-    sorted_results = sorted(extended_results, key=lambda x: x[5])
-    
-    if which=='3':
-        for ip, port, ping, loss_rate,jitter, combined_score in sorted_results:
+        if which =='3' and do_you_save=='1':
             
             save_result.append(ip+' | '+'ping: '+str(ping)+'packet_lose: '+str(loss_rate)+'jitter: '+str(jitter)+'\n')
     
