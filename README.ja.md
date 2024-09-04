@@ -1,6 +1,6 @@
 ## ワープスキャナー
 
-言語 : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
+言語 : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[Japanese](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -38,7 +38,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 注: Vahid パネル (inter 付き) および bpb パネル (カンマ付き) のクリーンな IP を作成できます。
 
-##### در فایل ریزالت سیو کنید
+##### 結果ファイルに保存
 
 ##### 次に、番号 1 (IP バージョン 4) を入力します。
 
@@ -82,7 +82,7 @@ nを押すと、すでに設定したIPが選択されます
 > ipv4:ポート
 > あなたが入力します<br><br/>
 
-## 7. v2ray および MahsaNG の設定を取得するには、オプション 7 を使用できます (ヘルプは bpb パネルから取得しました....)。
+## 7.  برای دریافت کانفیگ ، وارپ آن وارپ برای v2ray و MahsaNG میتونید از گزینه ۷ استفاده کنید (از پنل bpb کمک گرفته شده ....)
 
 Po サイト (カンフー パンダ) をブロックするかどうかを尋ねられます<br><br/>
 
