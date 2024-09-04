@@ -1,4 +1,4 @@
-V=64
+V=65
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -494,6 +494,19 @@ def main_v6():
             loss_rate=1000
             
         loss_rate=loss_rate*100
+        
+    
+            
+        combined_score = 0.5 * ping + 0.3 * loss_rate + 0.2 * jitter
+
+        extended_results.append((ip, port, ping, loss_rate,jitter, combined_score))
+
+    # Sort the results based on ping time
+    sorted_results=sorted(extended_results, key=lambda x: x[5])
+
+    
+
+    for ip, port,ping,loss_rate,jitter, combined_score  in sorted_results:
         if which !='3' and do_you_save=='1':
             if loss_rate == 0.0 and ping !=0.0:
                     if ping<=int(ping_range):
@@ -512,18 +525,7 @@ def main_v6():
                                 elif which=='1':
                                     
                                     save_best.append('['+str(ip)+'],')
-    
-            
-        combined_score = 0.5 * ping + 0.3 * loss_rate + 0.2 * jitter
-
-        extended_results.append((ip, port, ping, loss_rate,jitter, combined_score))
-
-    # Sort the results based on ping time
-    sorted_results=sorted(extended_results, key=lambda x: x[5])
-    
-
-    for ip, port,ping,loss_rate,jitter, combined_score  in sorted_results:
-        if which =='3':
+        if which =='3' and do_you_save=='1':
             save_best.append('['+ip+']'+' | '+'ping: '+str(ping)+'packet_lose: '+str(loss_rate)+'jitter: '+str(jitter)+'\n')
         table.add_row(ip, str(port) if port else "878", f"{ping:.2f}" if ping else "None", f"{loss_rate:.2f}%",f"{jitter}", f"{combined_score:.2f}")
         if ping < best_ping:
