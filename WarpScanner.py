@@ -1,4 +1,4 @@
-V=60
+V=61
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -1678,6 +1678,7 @@ def main2():
   ]
 }}
 '''
+            hising=hising.replace("\n" , "")
             hising=json.dumps(hising,indent=1)
             print(hising),exit()
         if what=="3":
