@@ -1,4 +1,4 @@
-V=58
+V=59
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -401,7 +401,7 @@ def create_ip_range(start_ip, end_ip):
                 temp[i2-1] += 1
     ip_range.append(end_ip)
     return ip_range
-def scan_ip_port(ip, results):
+def scan_ip_port(ip, results :list):
     port=ports[random.randint(0,3)]
     
     
@@ -409,10 +409,10 @@ def scan_ip_port(ip, results):
     
     
     
+    if icmp.is_alive:
     
-    
-    results.append((ip, port, float(icmp.avg_rtt), icmp.packet_loss, icmp.jitter))
-    
+        results.append((ip, port, float(icmp.avg_rtt), icmp.packet_loss, icmp.jitter))
+
     
     
     
@@ -435,9 +435,9 @@ def main_v6():
         global resultss
         
         icmp=pinging(ip, count=4, interval=1, timeout=5,privileged=False, family='ipv6')
-
+        if icmp.is_alive:
         
-        resultss.append((ip, port, float(icmp.avg_rtt), icmp.packet_loss, icmp.jitter))
+            resultss.append((ip, port, float(icmp.avg_rtt), icmp.packet_loss, icmp.jitter))
         
             
 
@@ -545,20 +545,18 @@ def main_v6():
     if best_ip:
         console.print(f"\n[bold green]Best IP : [{best_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
         
-        if what !='2' and what!='3'and what != '4':
         
-            best_ip_mix[0] = "[" + best_ip + "]"
-        else:
-            best_ip_mix[0] =  best_ip 
+        
+        best_ip_mix[0] = "[" + best_ip + "]"
+   
         best_ip_mix[1] = port_random
         
     else:
         console.print(f"\n[bold green]Best IP : [{random_ip}]:{port_random} with ping time: {best_ping} ms[/bold green]")
-        if what !='2' and what!='3'and what != '4':
         
-            best_ip_mix[0] = "[" + random_ip + "]"
-        else:
-            best_ip_mix[0] =  random_ip 
+        
+        best_ip_mix[0] = "[" + random_ip + "]"
+   
                  
         
         best_ip_mix[1] = port_random
@@ -1627,6 +1625,7 @@ def main2():
   "stats": {}
 }'''
 
+             wow=json.dumps(wow)
              print(Wow), exit()
         
         else:
@@ -1679,6 +1678,7 @@ def main2():
   ]
 }}
 '''
+            hising=json.dumps(hising)
             print(hising),exit()
         if what=="3":
             exit()
