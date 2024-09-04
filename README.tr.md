@@ -26,7 +26,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 > [!UYARI]İlk adımda Python'u kurmaya çalıştığı için bir VPN'e ihtiyacı olabilir!
 
-## 1. IP tarayıcı IPv4, IPv6'dır
+## 1. ای پی اسکنر هستش IPv4 , IPv6
 
 ##### ▫️ Dördüncü sürüm IP'leri depolama/emülasyon/0/ dizinine ve result.csv adlı bir dosyaya kaydetme yeteneği
 
@@ -40,7 +40,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Sonuç dosyasına kaydet
 
-##### بعد عدد یک رو وارد میکنید(ایپی ورژن چهار )
+##### Daha sonra bir numarayı girersiniz (IP dördüncü versiyonu)
 
 <br><br/>
 
