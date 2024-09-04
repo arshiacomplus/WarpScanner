@@ -34,7 +34,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### And then you have to give the memory access to Termox that you are asked
 
-##### And then
+##### and then
 
 ##### Note: You can create a clean IP for Vahid panel (with inter) and bpb panel (with comma).
 
@@ -84,15 +84,15 @@ If you press n, it will select the IP that I have already set
 
 ## 7. To get config, warp on warp for v2ray and MahsaNG, you can use option 7 (help was taken from the bpb panel....)
 
-You will be asked if Po sites (Kung Fu Panda) will be blocked or not<br><br/>
+You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br/>
 
-## 8. You can sub warp that warp for v2ray or MahsaNg
+## 8. You can subwarp that warp for v2ray or MahsaNg
 
 <br><br/>
 
 ## 9. You can make a short cut
 
- نام بهش بدید و پنجره ترموکس رو ببندید و جدید باز کنید.
+Give it a name and close the Thermox window and open a new one.
 
 Type of use:
 
