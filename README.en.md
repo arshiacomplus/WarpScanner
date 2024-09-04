@@ -24,8 +24,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
-> [!WARNING]
-> از اونجا که در اولین مرحله سعی می‌کنه پایتون رو نصب کنه شاید به وی پی ان نیاز داشته باشه !
+> [!WARNING]Since it tries to install Python in the first step, it might need a VPN!
 
 ## 1. IP scanner is IPv4, IPv6
 
@@ -51,19 +50,21 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. Get Wireguard configuration without needing to scan IP
 
-(It is for people who get the error best_result[0] می‌خورند) 
- در این صورت می‌توانید اول از اسکنر های دیگه آیپی اسکن کنید 
- و بعد از زدن گزینه سه ازتون سوال میشه که آیپی رو با پورت  وارد کنید یا اگه N رو وارد کنید آیپی که از قبل گذاشتم رو انتخاب می‌کنه
+(It is for people who get the error best_result[0]they eat) 
+ In this case, you can first scan the IP from other scanners 
+ And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will select the IP that I have already entered.
 
 <br><br/>
 
 ### 4. To receive wireguard configuration in a sub link with the desired number, enter option 4. Try to use even numbers for the configuration number.
 
-If you get a timeout error, try a few more times<br><br/>
+ اگه به ارور تایم اوت خوردید چند بار دیگه تست کنید
+<br><br/>
 
 ## 5. To get Wireguard config for use in v2ray and MahsaNG
 
-> This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
+> اینم برای اونای که ارور requests می‌گیرند 👈👈
+> <https://t.me/arshia_mod_fun/298>
 
 By entering option 1 and after that 2 
  You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
@@ -71,11 +72,10 @@ By entering option 1 and after that 2
 After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
 
 -   1\. Pencil button
--   2\. Putting the bracket next to the IP[ipvsh]
--   3.ذخیره
-    <br><br/>
+-   2.گذاشتن براکت کنار ایپی [ipvsh]
+-   3\. Storage<br><br/>
 
-## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
+## 6. برای دریافت کانفیگ وایرگارد برای ویتوری و مهسا انجی و ...  بدون اسکن آیپی
 
 If you press n, it will select the IP that I have already set
  Otherwise 
