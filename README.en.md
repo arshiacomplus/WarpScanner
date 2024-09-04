@@ -1,6 +1,6 @@
 ## Warp Scanner
 
-language : 🇮🇷[Persian](README.md)| 🇹🇷[Turkish](README.tr.md)| 🇬🇧[English](README.en.md)| 🇨🇳[Chinese](README.zh-CN.md)| 🇯🇵[Japanese](README.ja.md)
+language : 🇮🇷[Persian](README.md)| 🇹🇷[Turkish](README.tr.md)| 🇬🇧[English](README.en.md)| 🇨🇳[Chinese](README.zh-CN.md) | 🇯🇵[Japanese](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -34,9 +34,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### And then you have to give the memory access to Termox that you are asked
 
-##### And then
+##### and then
 
-##### Note: You can create a clean IP for Vahid panel (with inter) and bpb panel (with comma).
+##### نکته : میتونید  آیپی تمیز برای پنل وحید(با اینتر ) و پنل bpb(با کاما )
 
 ##### Save in the result file
 
@@ -46,8 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 2. Get Wireguard config
 
-▫️اگه توی گرفتن کانفیگ وایرگارد به ارور تایم اوت خوردید چند بار دیگه تست کنید 
-<br><br/>
+▫️ If you get a timeout error while getting the wireguard configuration, test a few more times<br><br/>
 
 ## 3. Get Wireguard configuration without needing to scan IP
 
@@ -66,7 +65,7 @@ If you get a timeout error, try a few more times<br><br/>
 > This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
 
 By entering option 1 and after that 2 
- You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
+ You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mahsa Anji and Vettori.
 
 After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
 
@@ -76,14 +75,14 @@ After copying the Wire Guard configuration with the IP version of Shish and then
 
 ## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
-If you press n, it will select the IP that I have already set
+If you press n, it will select the ip that I put before
  Otherwise 
  IP with port example:
 
 > ipv4:port
 > you enter<br><br/>
 
-## 7. To get config, warp on warp for v2ray and MahsaNG, you can use option 7 (help was taken from the bpb panel....)
+## 7.  برای دریافت کانفیگ ، وارپ آن وارپ برای v2ray و MahsaNG میتونید از گزینه ۷ استفاده کنید (از پنل bpb کمک گرفته شده ....)
 
 You will be asked if Po sites (Kung Fu Panda) will be blocked or not<br><br/>
 
