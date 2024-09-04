@@ -1,4 +1,4 @@
-V=62
+V=63
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -409,9 +409,9 @@ def scan_ip_port(ip, results :list):
     
     
     
-    if icmp.is_alive:
+  
     
-        results.append((ip, port, float(icmp.avg_rtt), icmp.packet_loss, icmp.jitter))
+    results.append((ip, port, float(icmp.avg_rtt), icmp.packet_loss, icmp.jitter))
 
     
     
@@ -435,9 +435,9 @@ def main_v6():
         global resultss
         
         icmp=pinging(ip, count=4, interval=1, timeout=5,privileged=False, family='ipv6')
-        if icmp.is_alive:
         
-            resultss.append((ip, port, float(icmp.avg_rtt), icmp.packet_loss, icmp.jitter))
+        
+        resultss.append((ip, port, float(icmp.avg_rtt), icmp.packet_loss, icmp.jitter))
         
             
 
