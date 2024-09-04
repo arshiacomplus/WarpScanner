@@ -1,4 +1,4 @@
-V=65
+V=66
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -526,7 +526,10 @@ def main_v6():
                                     
                                     save_best.append('['+str(ip)+'],')
         if which =='3' and do_you_save=='1':
-            save_best.append('['+ip+']'+' | '+'ping: '+str(ping)+'packet_lose: '+str(loss_rate)+'jitter: '+str(jitter)+'\n')
+            if need_port=="2":
+                save_best.append('['+ip+']'+' | '+'ping: '+str(ping)+'packet_lose: '+str(loss_rate)+'jitter: '+str(jitter)+'\n')
+            else:
+                save_best.append('['+ip+']'+port+' | '+'ping: '+str(ping)+'packet_lose: '+str(loss_rate)+'jitter: '+str(jitter)+'\n')
         table.add_row(ip, str(port) if port else "878", f"{ping:.2f}" if ping else "None", f"{loss_rate:.2f}%",f"{jitter}", f"{combined_score:.2f}")
         if ping < best_ping:
             best_ping = ping
@@ -671,9 +674,11 @@ def main():
                                 save_result.append("\n")
                                 save_result.append(str(ip)+":"+str(port))
         if which =='3' and do_you_save=='1':
-            
-            save_result.append(ip+' | '+'ping: '+str(ping)+'packet_lose: '+str(loss_rate)+'jitter: '+str(jitter)+'\n')
-    
+            if need_port=="2":
+                save_result.append(ip+' | '+'ping: '+str(ping)+'packet_lose: '+str(loss_rate)+'jitter: '+str(jitter)+'\n')
+            else:
+
+                save_result.append(ip+port+' | '+'ping: '+str(ping)+'packet_lose: '+str(loss_rate)+'jitter: '+str(jitter)+'\n')
     
 
     console.clear()
@@ -1980,7 +1985,7 @@ if __name__ == "__main__":
             os.system('termux-setup-storage')
             which = input_p('Do you want for bpb panel(with comma) or vahid panel(with enter) in a result csv\n ', {'1' : 'bpb panel(with comma)',
              '2' : 'vahid panel(with enter)', '3':'with score', '4':'clean'})
-            if which =="1" or which=="2":
+            if which !="4" :
                 need_port = input_p('Do you want to save port in result\n ', {'1' : 'Yes',
              '2' : 'No'})
             if which =='4':
