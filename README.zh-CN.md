@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 因此，应该注意的是，输入数字 1，然后输入 y，也许再输入 y
 
-##### 然后你必须按照要求向 Termox 提供内存访问权限
+##### 然后你必须向 Termox 授予内存访问权限，这是要求你的
 
 ##### 进而
 
@@ -44,7 +44,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <br><br/>
 
-## 2.获取Wireguard配置
+## 2. 获取Wireguard配置
 
 ▫️如果在获取wireguard配置时遇到超时错误，请多测试几次<br><br/>
 
@@ -65,7 +65,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 > 这是给那些收到错误请求的人的👈👈<https://t.me/arshia_mod_fun/298>
 
 输入选项 1，然后输入选项 2 
- 您可以获得 Shish 的 IP 版本，该版本也适用于 Mehsa Anji 和 Vettori 的选项 5 Wireguard 配置。
+ 您可以获得 Shish 的 IP 版本，该版本也适用于 Mahsa Anji 和 Vettori 的选项 5 Wireguard 配置。
 
 使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免遇到错误。
 
