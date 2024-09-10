@@ -1,4 +1,4 @@
-V=66
+V=67
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -1201,7 +1201,7 @@ def main2():
         temp_ip=''
         temp_port=''
         temp_c=0
-        if what =='3' and what=='16':
+        if what =='3' or what=='16':
             print("\033[0m")
             enter_ip=input('Enter ip with port(Default =Enter( N )) : ')
             if enter_ip=='N' or  enter_ip=='n':
