@@ -1,6 +1,6 @@
 ## Çözgü Tarayıcı
 
-dil : 🇮🇷[Farsça](README.md) | 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[İngilizce](README.en.md)| 🇨🇳[Çince](README.zh-CN.md)| 🇯🇵[Japonca](README.ja.md)
+dil : 🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[İngilizce](README.en.md)| 🇨🇳[Çince](README.zh-CN.md)| 🇯🇵[Japonca](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -34,9 +34,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekir.
 
-##### و بعد
+##### Ve daha sonra
 
-##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP oluşturabilirsiniz.
+##### نکته : میتونید  آیپی تمیز برای پنل وحید(با اینتر ) و پنل bpb(با کاما )
 
 ##### Sonuç dosyasına kaydedin
 
@@ -79,9 +79,8 @@ N tuşuna basarsanız önceden ayarladığım IP seçilecektir
  Aksi takdirde 
  Bağlantı noktası örneğiyle birlikte IP:
 
-> ipv4:port
-> وارد می‌کنید
-> <br><br/>
+> ipv4:bağlantı noktası
+> sen gir<br><br/>
 
 ## 7. V2ray ve MahsaNG için yapılandırma, warp on warp almak için 7. seçeneği kullanabilirsiniz (yardım bpb panelinden alınmıştır....)
 
