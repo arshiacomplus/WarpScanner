@@ -28,11 +28,11 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 1. IPスキャナーはIPv4、IPv6です
 
-##### ▫️ バージョン 4 の IP を storage/emulated/0/ および result.csv というファイルに保存する機能
+##### ▫️ バージョン 4 の IP を storage/emulated/0/ および result.csv という名前のファイルに保存する機能
 
 ##### したがって、数字の 1 を入力し、次に y を入力し、場合によってはもう一度 y を入力することに注意してください。
 
-##### 次に、Termox にメモリ アクセスを許可する必要があります。これは要求されます。
+##### そして、求められたメモリアクセスをTermoxに与える必要があります。
 
 ##### その後
 
@@ -48,7 +48,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ▫️ ワイヤーガード構成の取得中にタイムアウト エラーが発生した場合は、さらに数回テストしてください<br><br/>
 
-## 3. IP をスキャンせずに Wireguard 構成を取得する
+## 3. IP をスキャンせずに Wireguard 構成を取得します
 
 (エラー「best_result」が表示される人向けです)[0]彼らは食べる） 
  この場合、最初に他のスキャナーから IP をスキャンできます。 
@@ -67,7 +67,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 オプション 1 を入力し、その後 2 を入力すると 
  Shish の IP バージョンを入手できます。これは、Mahsa Anji および Vettori のオプション 5 ワイヤーガード構成にも実装されています。
 
-IP バージョンの Shish を使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
+Shish の IP バージョンを使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
 
 -   1.鉛筆ボタン
 -   2\. ブラケットを IP の隣に置きます[ipvsh]
@@ -75,9 +75,9 @@ IP バージョンの Shish を使用して Wire Guard 設定をコピーし、�
 
 ## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji の Wireguard 設定を取得するには
 
- اگر n رو بزنید ایپی که از قبل گذاشتم رو انتخاب میکنه
- در غیر این صورت 
- ایپی با پورت مثال : 
+nを押すと、前に入力したIPが選択されます
+ さもないと 
+ IP とポートの例:
 
 > ipv4:ポート
 > あなたが入力します<br><br/>
@@ -109,7 +109,7 @@ Po サイト (カンフー パンダ) をブロックするかどうかを尋ね
 
 ## 寄付する
 
-<b>送信:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhsssssssssss 42296553aa</a>
+<b>送信:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhssssssssssss 42296553aa</a>
 
 ## プロジェクトをサポートする
 
