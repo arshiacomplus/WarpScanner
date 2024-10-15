@@ -1,4 +1,4 @@
-V=67
+V=68
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -1928,14 +1928,14 @@ def start_menu():
         "2": "wireguard for Hiddify",
         "3": "wireguard for Hiddify without ip scanning",
         "4": "wireguard for Hiddify with a sub link",
-        "5": "wireguard for v2ray and mahsaNG",
-        "6": "wireguard for v2ray and mahsaNG without ip scanning",
-        "7": "WoW for v2ray or mahsaNG",
-        "8": "WoW for v2ray or mahsaNG in sub link",
+        "5": "wireguard for v2ray and mahsaNG without noise",
+        "6": "wireguard for v2ray and mahsaNG without ip scanning without noise",
+        "7": "WoW for v2ray or mahsaNG without noise",
+        "8": "WoW for v2ray or mahsaNG in sub link without noise",
         "9": "Add/Delete shortcut",
         "10":"get wireguard.conf",
-        "11":"wireguard for nikaNg ",
-        "12":"wireguard for nikaNg without ip scanning",
+        "11":"wireguard for nikaNg and MahsaNg  with noise",
+        "12":"wireguard for nikaNg and MahsaNg without ip scanning with noise",
         "13":"WoW with noise for Nikang or MahsaNg ",
         "14":"WoW with noise for Nikang or MahsaNg in sub link",
         "15": "wireguard for Sing-box and Hhidify | old | ",
