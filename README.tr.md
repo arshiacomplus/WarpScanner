@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Bu nedenle, bir sayısını girerek, ardından y ve belki tekrar y olduğunu belirtmek gerekir.
 
-##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekiyor.
+##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekir.
 
 ##### Ve daha sonra
 
@@ -50,7 +50,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. IP taramasına gerek kalmadan Wireguard yapılandırmasını edinin
 
-(best_result hatasını alan kişiler içindir[0]onlar yerler) 
+(best_result hatasını alan kişiler içindir.[0]onlar yerler) 
  Bu durumda ilk önce IP'yi diğer tarayıcılardan tarayabilirsiniz. 
  Ve üçüncü seçeneği seçtikten sonra port ile IP'yi girmeniz istenecek veya N girerseniz daha önce girdiğim IP'yi seçecektir.
 
@@ -67,15 +67,15 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 Seçenek 1'i ve ardından 2'yi girerek 
  Mahsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
 
-Wire Guard konfigürasyonunu Shish'in IP versiyonu ile kopyalayıp client'a aktardıktan sonra hata almamak için bunu yapın.
+Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye aktardıktan sonra, bir hatayla karşılaşmamak için bunu yapın.
 
 -   1\. Kalem düğmesi
 -   2\. Braketi IP'nin yanına koymak[ipvsh]
 -   3\. Depolama<br><br/>
 
-## 6. Vettori ve Mehsa Anji için Wireguard yapılandırmasını almak için ve... IP taraması olmadan
+## 6. برای دریافت کانفیگ وایرگارد برای ویتوری و مهسا انجی و ...  بدون اسکن آیپی
 
-N tuşuna basarsanız önceden ayarladığım IP seçilecektir
+N tuşuna basarsanız daha önce koyduğum ipi seçecektir
  Aksi takdirde 
  Bağlantı noktası örneğiyle birlikte IP:
 
@@ -96,7 +96,7 @@ Bir isim verin ve Thermox penceresini kapatıp yeni bir tane açın.
 
 Kullanım türü:
 
--   Komut dosyasını çalıştırmak için verdiğiniz adı girin
+-   نامی که دادید رو وارد کنید تا اسکریپت اجرا شود
 -   Silmek için aynı numaraya tekrar basın ve Y tuşuna basın.
 
 <br><br/>
