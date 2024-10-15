@@ -32,11 +32,11 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### و بعد باید به ترموکس دسترسی حافظه بدید که ازتون خواسته میشه
+##### And then you have to give memory access to Termox, which is asked of you
 
 ##### And then
 
-##### Note: You can create a clean IP for Vahid panel (with inter) and bpb panel (with comma).
+##### نکته : میتونید  آیپی تمیز برای پنل وحید(با اینتر ) و پنل bpb(با کاما )
 
 ##### Save in the result file
 
@@ -67,7 +67,7 @@ If you get a timeout error, try a few more times<br><br/>
 By entering option 1 and after that 2 
  You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mahsa Anji and Vettori.
 
-After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
+After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
 
 -   1\. Pencil button
 -   2\. Putting the bracket next to the IP[ipvsh]
