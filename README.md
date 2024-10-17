@@ -7,7 +7,7 @@ language : 🇮🇷[Persian](README.md) | 🇹🇷[Turkish](README.tr.md) | 🇬
 </p> 
 <p dir="rtl">
 نسخه اندرویدی با صفحه گرافیکی: </p>
-<a href ="https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/">WarpScanner Android</a>
+<p dir="ltr"><a href ="https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/">WarpScanner Android</a></p>
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
 </p> 
