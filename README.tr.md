@@ -5,6 +5,11 @@ dil : 🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[�
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
 </p> 
+نسخه اندرویدی با صفحه گرافیکی : 
+<a href ="https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/">WarpScanner Android</a>
+<p align="center">   
+   <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
+</p> 
 
 <p align="center">   
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
@@ -26,8 +31,6 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 > [!UYARI]
 
-Grafik ekranlı Android sürümü:<a href ="https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/">WarpScanner Android</a>
-
 > İlk adımda Python'u kurmaya çalıştığı için bir VPN'e ihtiyacı olabilir!
 
 ## 1. IP tarayıcı IPv4, IPv6'dır
@@ -36,9 +39,9 @@ Grafik ekranlı Android sürümü:<a href ="https://github.com/arshiacomplus/War
 
 ##### Bu nedenle, bir sayısını girerek, ardından y ve belki tekrar y olduğunu belirtmek gerekir.
 
-##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekiyor.
+##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekir.
 
-##### ve daha sonra
+##### Ve daha sonra
 
 ##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP oluşturabilirsiniz.
 
@@ -66,19 +69,18 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 
 ## 5. V2ray ve MahsaNG'de kullanılmak üzere Wireguard yapılandırmasını edinmek için
 
-> اینم برای اونای که ارور requests می‌گیرند 👈👈
-> <https://t.me/arshia_mod_fun/298>
+> Hata istekleri alanlar için bu 👈👈<https://t.me/arshia_mod_fun/298>
 
 Seçenek 1'i ve ardından 2'yi girerek 
  Mehsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
 
-Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye aktardıktan sonra, bir hatayla karşılaşmamak için bunu yapın.
+Wire Guard konfigürasyonunu Shish'in IP versiyonu ile kopyalayıp client'a aktardıktan sonra hata almamak için bunu yapın.
 
 -   1\. Kalem düğmesi
 -   2\. Braketi IP'nin yanına koymak[ipvsh]
 -   3\. Depolama<br><br/>
 
-## 6. Vettori ve Mahsa Anji için kablosuz koruma yapılandırmasını almak ve... IP taraması olmadan
+## 6. Vettori ve Mehsa Anji için kablosuz koruma yapılandırmasını almak ve... IP taraması olmadan
 
 N tuşuna basarsanız daha önce koyduğum ipi seçecektir
  Aksi takdirde 
