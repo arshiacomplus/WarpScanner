@@ -5,7 +5,7 @@ language : 🇮🇷[Persian](README.md)| 🇹🇷[Turkish](README.tr.md)| 🇬�
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
 </p> 
-نسخه اندرویدی با صفحه گرافیکی : 
+نسخه اندرویدی با صفحه گرافیکی: 
 <a href ="https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/">WarpScanner Android</a>
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -39,9 +39,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### And then you have to give the memory access to Termox that you are asked
+##### And then you have to give memory access to Termox, which is asked of you
 
-##### And then
+##### and then
 
 ##### Note: You can create a clean IP for Vahid panel (with inter) and bpb panel (with comma).
 
@@ -71,16 +71,16 @@ If you get a timeout error, try a few more times<br><br/>
 
 > This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
 
-By entering option 1 and after that 2 
- You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
+ با وارد کردن گزینه ۱ و بعد از اون ۲ 
+ میتونید آیپی ورژن شیش دریافت کنید که برای گزینه ۵ کانفیگ وایرگارد برای مهسا انجی و و ویتوری هم پیاده سازی شده 
 
-After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
+After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
 
 -   1\. Pencil button
 -   2\. Putting the bracket next to the IP[ipvsh]
 -   3\. Storage<br><br/>
 
-## 6. To get wireguard configuration for Vettori and Mehsa Anji and... without IP scan
+## 6. To get wireguard configuration for Vettori and Mahsa Anji and... without IP scan
 
 If you press n, it will select the ip that I put before
  Otherwise 
