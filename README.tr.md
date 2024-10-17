@@ -24,7 +24,11 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
-> [!UYARI]İlk adımda Python'u kurmaya çalıştığı için bir VPN'e ihtiyacı olabilir!
+> [!UYARI]
+
+Grafik ekranlı Android sürümü:<a href ="https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/">WarpScanner Android</a>
+
+> İlk adımda Python'u kurmaya çalıştığı için bir VPN'e ihtiyacı olabilir!
 
 ## 1. IP tarayıcı IPv4, IPv6'dır
 
@@ -32,9 +36,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Bu nedenle, bir sayısını girerek, ardından y ve belki tekrar y olduğunu belirtmek gerekir.
 
-##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekir.
+##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekiyor.
 
-##### Ve daha sonra
+##### ve daha sonra
 
 ##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP oluşturabilirsiniz.
 
@@ -62,10 +66,11 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 
 ## 5. V2ray ve MahsaNG'de kullanılmak üzere Wireguard yapılandırmasını edinmek için
 
-> Hata istekleri alanlar için bu 👈👈<https://t.me/arshia_mod_fun/298>
+> اینم برای اونای که ارور requests می‌گیرند 👈👈
+> <https://t.me/arshia_mod_fun/298>
 
 Seçenek 1'i ve ardından 2'yi girerek 
- Mahsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
+ Mehsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
 
 Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye aktardıktan sonra, bir hatayla karşılaşmamak için bunu yapın.
 
@@ -73,7 +78,7 @@ Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye a
 -   2\. Braketi IP'nin yanına koymak[ipvsh]
 -   3\. Depolama<br><br/>
 
-## 6. برای دریافت کانفیگ وایرگارد برای ویتوری و مهسا انجی و ...  بدون اسکن آیپی
+## 6. Vettori ve Mahsa Anji için kablosuz koruma yapılandırmasını almak ve... IP taraması olmadan
 
 N tuşuna basarsanız daha önce koyduğum ipi seçecektir
  Aksi takdirde 
@@ -96,7 +101,7 @@ Bir isim verin ve Thermox penceresini kapatıp yeni bir tane açın.
 
 Kullanım türü:
 
--   نامی که دادید رو وارد کنید تا اسکریپت اجرا شود
+-   Komut dosyasını çalıştırmak için verdiğiniz adı girin
 -   Silmek için aynı numaraya tekrar basın ve Y tuşuna basın.
 
 <br><br/>
