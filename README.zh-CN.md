@@ -5,6 +5,11 @@
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
 </p> 
+نسخه اندرویدی با صفحه گرافیکی: 
+<a href ="https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/">WarpScanner Android</a>
+<p align="center">   
+   <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
+</p> 
 
 <p align="center">   
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
@@ -25,8 +30,6 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
 > [！警告!]
-
-带图形屏幕的Android版本：<a href ="https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/">Android 变形扫描仪</a>
 
 > 由于它在第一步中尝试安装 Python，因此可能需要 VPN！
 
@@ -50,7 +53,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 2.获取Wireguard配置
 
-▫️如果在获取wireguard配置时遇到超时错误，请多测试几次<br><br/>
+▫️اگه توی گرفتن کانفیگ وایرگارد به ارور تایم اوت خوردید چند بار دیگه تست کنید 
+<br><br/>
 
 ## 3.无需扫描IP即可获取Wireguard配置
 
@@ -62,7 +66,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ### 4. 要在子链路中接收具有所需编号的wireguard 配置，请输入选项4。尝试使用偶数作为配置编号。
 
-如果出现超时错误，请多尝试几次<br><br/>
+ اگه به ارور تایم اوت خوردید چند بار دیگه تست کنید
+<br><br/>
 
 ## 5. 获取 Wireguard 配置以在 v2ray 和 MahsaNG 中使用
 
@@ -79,9 +84,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 6. 获取 Vettori 和 Mahsa Anji 的wireguard 配置以及...无需 IP 扫描
 
- اگر n رو بزنید ایپی که از قبل گذاشتم رو انتخاب میکنه
- در غیر این صورت 
- ایپی با پورت مثال : 
+如果你按n，它会选择我之前输入的ip
+ 否则 
+ IP 与端口示例：
 
 > IPv4：端口
 > 你输入<br><br/>
