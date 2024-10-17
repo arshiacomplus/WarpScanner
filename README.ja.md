@@ -24,15 +24,19 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
-> [！警告!]最初のステップで Python をインストールしようとするため、VPN が必要になる可能性があります。
+> [！警告!]
+
+グラフィック画面を備えた Android バージョン:<a href ="https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/">ワープスキャナー Android</a>
+
+> 最初のステップで Python をインストールしようとするため、VPN が必要になる可能性があります。
 
 ## 1. IPスキャナーはIPv4、IPv6です
 
-##### ▫️ バージョン 4 の IP を storage/emulated/0/ および result.csv という名前のファイルに保存する機能
+##### ▫️ バージョン 4 の IP を storage/emulated/0/ および result.csv というファイルに保存する機能
 
 ##### したがって、数字の 1 を入力し、次に y を入力し、場合によってはもう一度 y を入力することに注意してください。
 
-##### そして、求められたメモリアクセスをTermoxに与える必要があります。
+##### 次に、Termox にメモリ アクセスを許可する必要があります。これは要求されます。
 
 ##### その後
 
@@ -65,15 +69,15 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 > エラーリクエストが表示される方向けです 👈👈<https://t.me/arshia_mod_fun/298>
 
 オプション 1 を入力し、その後 2 を入力すると 
- Shish の IP バージョンを入手できます。これは、Mahsa Anji および Vettori のオプション 5 ワイヤーガード構成にも実装されています。
+ Shish の IP バージョンを入手できます。これは、Mehsa Anji および Vettori のオプション 5 ワイヤーガード構成にも実装されています。
 
-Shish の IP バージョンを使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
+IP バージョンの Shish を使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
 
 -   1.鉛筆ボタン
 -   2\. ブラケットを IP の隣に置きます[ipvsh]
 -   3\. 保管<br><br/>
 
-## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji の Wireguard 設定を取得するには
+## 6. IP スキャンを使用せずに、Vettori と Mahsa Anji のワイヤーガード設定を取得するには...
 
 nを押すと、前に入力したIPが選択されます
  さもないと 
