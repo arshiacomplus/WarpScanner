@@ -5,6 +5,11 @@ language : 🇮🇷[Persian](README.md)| 🇹🇷[Turkish](README.tr.md)| 🇬�
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
 </p> 
+نسخه اندرویدی با صفحه گرافیکی : 
+<a href ="https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/">WarpScanner Android</a>
+<p align="center">   
+   <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
+</p> 
 
 <p align="center">   
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
@@ -26,8 +31,6 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 > [!WARNING]
 
-Android version with graphic screen:<a href ="https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/">WarpScanner Android</a>
-
 > Since it tries to install Python in the first step, it might need a VPN!
 
 ## 1. IP scanner is IPv4, IPv6
@@ -36,9 +39,9 @@ Android version with graphic screen:<a href ="https://github.com/arshiacomplus/W
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### And then you have to give memory access to Termox, which is asked of you
+##### And then you have to give the memory access to Termox that you are asked
 
-##### and then
+##### And then
 
 ##### Note: You can create a clean IP for Vahid panel (with inter) and bpb panel (with comma).
 
@@ -77,7 +80,7 @@ After copying the Wire Guard configuration with the IP version of Shish and then
 -   2\. Putting the bracket next to the IP[ipvsh]
 -   3\. Storage<br><br/>
 
-## 6. To get wireguard configuration for Vettori and Mahsa Anji and... without IP scan
+## 6. To get wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
 If you press n, it will select the ip that I put before
  Otherwise 
