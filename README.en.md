@@ -75,13 +75,13 @@ If you get a timeout error, try a few more times<br><br/>
 By entering option 1 and after that 2 
  You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mahsa Anji and Vettori.
 
-After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
+After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
 
 -   1\. Pencil button
 -   2\. Putting the bracket next to the IP[ipvsh]
 -   3\. Storage<br><br/>
 
-## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
+## 6. To get wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
 If you press n, it will select the ip that I put before
  Otherwise 
