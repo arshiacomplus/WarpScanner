@@ -40,7 +40,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Bu nedenle, bir sayısını girerek, ardından y ve belki tekrar y olduğunu belirtmek gerekir.
 
-##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekir.
+##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekiyor.
 
 ##### Ve daha sonra
 
@@ -58,7 +58,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. IP taramasına gerek kalmadan Wireguard yapılandırmasını edinin
 
-(best_result hatasını alan kişiler içindir.[0]onlar yerler) 
+(best_result hatasını alan kişiler içindir[0]onlar yerler) 
  Bu durumda ilk önce IP'yi diğer tarayıcılardan tarayabilirsiniz. 
  Ve üçüncü seçeneği seçtikten sonra port ile IP'yi girmeniz istenecek veya N girerseniz daha önce girdiğim IP'yi seçecektir.
 
@@ -73,7 +73,7 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 > Hata istekleri alanlar için bu 👈👈<https://t.me/arshia_mod_fun/298>
 
 Seçenek 1'i ve ardından 2'yi girerek 
- Mahsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
+ Mehsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
 
 Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye aktardıktan sonra, bir hatayla karşılaşmamak için bunu yapın.
 
@@ -81,7 +81,7 @@ Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye a
 -   2\. Braketi IP'nin yanına koymak[ipvsh]
 -   3\. Depolama<br><br/>
 
-## 6. Vettori ve Mehsa Anji için kablosuz koruma yapılandırmasını almak için ve... IP taraması olmadan
+## 6. Vettori ve Mehsa Anji için Wireguard yapılandırmasını almak için ve... IP taraması olmadan
 
 N tuşuna basarsanız daha önce koyduğum ipi seçecektir
  Aksi takdirde 
@@ -114,6 +114,16 @@ Kullanım türü:
 ## 11. Bu seçeneğe tıklayarak Nika Anji için wireguard konfigürasyonu elde edebilirsiniz.
 
 ## 12. Bu seçeneğe tıklayarak Nika Anji için IP taramasına gerek kalmadan Wireguard konfigürasyonunu alabilirsiniz.
+
+## 13. Nika Anji ve Mehsa Anji için gürültü değerleriyle Wireguard Wow yapılandırmasını almak
+
+## 14. Alt bağlantıdaki Nika Anji ve Mahsa Anji için gürültü değerleri ile Wireguard Wow konfigürasyonunu almak
+
+## 15. Singbox ve Hidify'ın eski sürümü için wireguard yapılandırmasını almak için
+
+## 16. IP taraması olmadan Singbox ve Hidify'ın eski sürümü için Wireguard yapılandırmasını almak için
+
+## 17. Seçeneğin alt bağlantısında Singbox ve Hidify'ın eski sürümü için wireguard yapılandırmasını almak için
 
 ## bağışlamak
 
