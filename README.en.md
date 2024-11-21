@@ -42,7 +42,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### And then you have to give the memory access to Termox that you are asked
 
-##### and then
+##### And then
 
 ##### Note: You can create a clean IP for Vahid panel (with inter) and bpb panel (with comma).
 
@@ -81,7 +81,7 @@ After copying the Wire Guard configuration with the IP version of Shish and then
 -   2\. Putting the bracket next to the IP[ipvsh]
 -   3\. Storage<br><br/>
 
-## 6. To get wireguard configuration for Vettori and Mehsa Anji and... without IP scan
+## 6. To get wireguard configuration for Vettori and Mahsa Anji and... without IP scan
 
 If you press n, it will select the IP that I have already set
  Otherwise 
@@ -123,7 +123,7 @@ Type of use:
 
 ## 16. To get Wireguard configuration for Singbox and old version of Hidify without IP scan
 
-## 17. To get the wireguard configuration for Singbox and the old version of Hidify in the sub link option
+## 17. To get the wireguard configuration for Singbox and the old version of Hidify in the option sublink
 
 ## to donate
 
