@@ -2239,7 +2239,7 @@ def mainactivity():
         root_about.geometry("+200+50")
         root_about.geometry("600x600")
 
-        label_about=ctk.CTkLabel(root_about, text="This is an Warp Scanner For win")
+        label_about=ctk.CTkLabel(root_about, text="This is an Warp Scanner For Linux")
         label_about.pack(fill=tk.X)
 
         label_mew=ctk.CTkLabel(root_about,text="New version v0.4.1:\nGood news:\n\nbetter Graphic\n\nfix Bugs\n\nBad news:\n\nNotihng:))")
