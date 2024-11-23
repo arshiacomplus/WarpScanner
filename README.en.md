@@ -40,7 +40,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### And then you have to give the memory access to Termox that you are asked
+##### And then you have to give memory access to Termox, which is asked of you
 
 ##### and then
 
@@ -75,9 +75,9 @@ If you get a timeout error, try a few more times<br><br/>
 By entering option 1 and after that 2 
  You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
 
-After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
+After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
 
--   1\. Pencil button
+-   1.دکمه مداد
 -   2\. Putting the bracket next to the IP[ipvsh]
 -   3\. Storage<br><br/>
 
@@ -92,9 +92,9 @@ If you press n, it will select the IP that I have already set
 
 ## 7. To get config, warp on warp for v2ray and MahsaNG, you can use option 7 (help was taken from the bpb panel....)
 
-You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br/>
+You will be asked if Po sites (Kung Fu Panda) will be blocked or not<br><br/>
 
-## 8. You can sub warp that warp for v2ray or MahsaNg
+## 8. You can subwarp that warp for v2ray or MahsaNg
 
 <br><br/>
 
@@ -109,7 +109,7 @@ Type of use:
 
 <br><br/>
 
-## 10. Open this config file option`.conf`Wireguard is made for Windscribe and Wireguard
+## 10. بازدن این گزینه فایل کانفیگ `.conf`Wireguard is made for Windscribe and Wireguard
 
 ## 11. By clicking this option, you can get a wireguard configuration for Nika Anji
 
@@ -123,7 +123,7 @@ Type of use:
 
 ## 16. To get Wireguard configuration for Singbox and old version of Hidify without IP scan
 
-## 17. To get the wireguard configuration for Singbox and the old version of Hidify in the sublink of the option
+## 17. To get the wireguard configuration for Singbox and the old version of Hidify in the option sublink
 
 ## to donate
 
