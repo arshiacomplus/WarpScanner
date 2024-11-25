@@ -40,7 +40,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 因此，应该注意的是，输入数字 1，然后输入 y，也许再输入 y
 
-##### 然后你必须向 Termox 授予内存访问权限，这是要求你的
+##### 然后你必须按照要求向 Termox 提供内存访问权限
 
 ##### 进而
 
@@ -59,23 +59,23 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 3.无需扫描IP即可获取Wireguard配置
 
 （这是针对那些收到错误 best_result 的人[0]他们吃） 
- 这种情况，可以先用其他扫描仪扫描IP 
+ 这种情况可以先用其他扫描仪扫描IP 
  选择第三个选项后，会要求你输入IP和端口，或者如果你输入N，它将选择我已经输入的IP。
 
 <br><br/>
 
-### 4. برای دریافت کانفیگ وایرگارد در یک لینک ساب با تعداد دلخواه گزینه 4 را وارد کنید سعی کنید از اعداد زوج برای تعداد کانفیگ استفاده کنید
+### 4. 要在子链路中接收具有所需编号的wireguard 配置，请输入选项4。尝试使用偶数作为配置编号。
 
 如果出现超时错误，请多尝试几次<br><br/>
 
-## 5. 获取 Wireguard 配置以在 v2ray 和 MahsaNG 中使用
+## 5. 获取用于 v2ray 和 MahsaNG 的 Wireguard 配置
 
 > 这是给那些收到错误请求的人的👈👈<https://t.me/arshia_mod_fun/298>
 
 输入选项 1，然后输入选项 2 
- 您可以获得 Shish 的 IP 版本，该版本也适用于 Mehsa Anji 和 Vettori 的选项 5 Wireguard 配置。
+ 您可以获得 Shish 的 IP 版本，该版本也适用于 Mahsa Anji 和 Vettori 的选项 5 Wireguard 配置。
 
-使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免出现错误。
+使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免遇到错误。
 
 -   1\. 铅笔按钮
 -   2\. 将支架放在 IP 旁边[ipvsh]
@@ -92,7 +92,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 7. 要获取配置，对 v2ray 和 MahsaNG 进行扭曲，您可以使用选项 7（帮助来自 bpb 面板......）
 
-系统会询问您 Po 网站（功夫熊猫）是否会被屏蔽<br><br/>
+系统会询问您是否会屏蔽Po站（功夫熊猫）<br><br/>
 
 ## 8. 您可以对 v2ray 或 MahsaNg 的扭曲进行子扭曲
 
