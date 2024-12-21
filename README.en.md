@@ -73,9 +73,9 @@ If you get a timeout error, try a few more times<br><br/>
 > This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
 
 By entering option 1 and after that 2 
- You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
+ You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mahsa Anji and Vettori.
 
-After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
+After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
 
 -   1\. Pencil button
 -   2\. Putting the bracket next to the IP[ipvsh]
@@ -123,7 +123,7 @@ Type of use:
 
 ## 16. To get Wireguard configuration for Singbox and old version of Hidify without IP scan
 
-## 17. To get the wireguard configuration for Singbox and the old version of Hidify in the sublink of the option
+## 17. To get the wireguard configuration for Singbox and the old version of Hidify in the sub link option
 
 ## to donate
 
