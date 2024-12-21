@@ -73,15 +73,15 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 > エラーリクエストが表示される方向けです 👈👈<https://t.me/arshia_mod_fun/298>
 
 オプション 1 を入力し、その後 2 を入力すると 
- Shish の IP バージョンを入手できます。これは、Mahsa Anji および Vettori のオプション 5 ワイヤーガード構成にも実装されています。
+ Shish の IP バージョンを入手できます。これは、Mehsa Anji および Vettori のオプション 5 ワイヤーガード構成にも実装されています。
 
-IP バージョンの Shish を使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
+Shish の IP バージョンを使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
 
 -   1.鉛筆ボタン
 -   2\. ブラケットを IP の隣に置きます[ipvsh]
 -   3\. 保管<br><br/>
 
-## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji の Wireguard 設定を取得するには
+## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji のワイヤーガード設定を取得するには
 
 nを押すと、すでに設定したIPが選択されます
  さもないと 
@@ -123,7 +123,7 @@ Po サイト (カンフー パンダ) をブロックするかどうかを尋ね
 
 ## 16. IP スキャンなしで Singbox と古いバージョンの Hidify の Wireguard 設定を取得するには
 
-## 17. オプションのサブリンクで Singbox のワイヤーガード構成と古いバージョンの Hidify を取得するには
+## 17. オプションのサブリンクで Singbox のワイヤーガード設定と古いバージョンの Hidify を取得するには
 
 ## 寄付する
 
