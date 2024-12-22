@@ -113,7 +113,7 @@ Kullanım türü:
 
 ## 11. Bu seçeneğe tıklayarak Nika Anji için wireguard konfigürasyonu elde edebilirsiniz.
 
-## 12. Bu seçeneğe tıklayarak Nika Anji için IP taramasına gerek kalmadan Wireguard konfigürasyonunu alabilirsiniz.
+## 12. با زدن این گزینه میتوانید کانفیگ وایرگارد برای نیکا انجی بدون نیاز به اسکن ایپی بگیرید
 
 ## 13. Nika Anji ve Mehsa Anji için gürültü değerleriyle Wireguard Wow yapılandırmasını almak
 
