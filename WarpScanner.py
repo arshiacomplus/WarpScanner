@@ -1,23 +1,23 @@
-V=68
+V=67
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
 import os
 try:
     import requests
-except ImportError:
+except Exception:
     print("Requests module not installed. Installing now...")
     os.system('pip install requests')
 try:
     import requests
-except ModuleNotFoundError:
+except Exception:
     os.system('wget https://github.com/psf/requests/releases/download/v2.32.2/requests-2.32.2.tar.gz')
     os.system('tar -xzvf requests-2.32.2.tar.gz')
     os.chdir('requests-2.32.2')
     os.system('python setup.py install')
 try:
     import requests
-except ModuleNotFoundError:
+except Exception:
     os.system('curl -L -o requests-2.32.2.tar.gz https://github.com/psf/requests/releases/download/v2.32.2/requests-2.32.2.tar.gz')
     os.system('tar -xzvf requests-2.32.2.tar.gz')
     os.chdir('requests-2.32.2')
