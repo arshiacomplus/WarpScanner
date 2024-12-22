@@ -52,9 +52,10 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <br><br/>
 
-## 2. دریافت کانفیگ وایرگارد
+## 2. Get Wireguard config
 
-▫️ If you get a timeout error while getting the wireguard configuration, test a few more times<br><br/>
+▫️اگه توی گرفتن کانفیگ وایرگارد به ارور تایم اوت خوردید چند بار دیگه تست کنید 
+<br><br/>
 
 ## 3. Get Wireguard configuration without needing to scan IP
 
@@ -117,7 +118,7 @@ Type of use:
 
 ## 13. To get Wireguard Wow config with noise values ​​for Nika Anji and Mehsa Anji
 
-## 14. To get Wireguard Wow configuration with noise values ​​for Nika Anji and Mahsa Anji in the sublink
+## 14. برای گرفته کانفیگ وایرگارد  Wow با مقادیر نویز برای نیکا انجی و مهسا انجی در ساب لینک
 
 ## 15. To get the wireguard configuration for Singbox and the old version of Hidify
 
