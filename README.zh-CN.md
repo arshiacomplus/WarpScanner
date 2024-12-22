@@ -113,17 +113,17 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 11.通过单击此选项，您可以获得Nika Anji的wireguard配置
 
-## 12. با زدن این گزینه میتوانید کانفیگ وایرگارد برای نیکا انجی بدون نیاز به اسکن ایپی بگیرید
+## 12.点击此选项，无需扫描IP即可获取Nika Anji的Wireguard配置
 
 ## 13. 获取 Nika Anji 和 Mehsa Anji 的带有噪声值的 Wireguard Wow 配置
 
 ## 14. 在子链接中获取 Nika Anji 和 Mahsa Anji 的带有噪音值的 Wireguard Wow 配置
 
-## 15. برای گرفتن کانفیگ وایرگارد برای سینگ باکس و نسخه قدیمی هیدیفای
+## 15.获取Singbox和旧版本Hidify的wireguard配置
 
 ## 16.无需IP扫描即可获取Singbox和旧版本Hidify的Wireguard配置
 
-## 17. برای گرفتن کانفیگ وایرگارد برای سینگ باکس و نسخه قدیمی هیدیفای در ساب لینک   گزینه
+## 17. 在选项的子链接中获取Singbox和旧版本Hidify的wireguard配置
 
 ## 捐赠
 
@@ -131,7 +131,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 支持项目
 
-<b>如果您喜欢我的项目，您可以通过给星星、关注并介绍给您的朋友来支持我的项目</b>
+<b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
