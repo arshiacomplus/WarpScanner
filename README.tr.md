@@ -44,7 +44,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Ve daha sonra
 
-##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP verebilir misiniz?
+##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP oluşturabilirsiniz.
 
 ##### Sonuç dosyasına kaydet
 
@@ -109,7 +109,7 @@ Kullanım türü:
 
 <br><br/>
 
-## 10. بازدن این گزینه فایل کانفیگ `.conf`Wireguard Windscribe ve Wireguard için tasarlandı
+## 10. Bu yapılandırma dosyası seçeneğini aç`.conf`Wireguard Windscribe ve Wireguard için tasarlandı
 
 ## 11. Bu seçeneğe tıklayarak Nika Anji için wireguard konfigürasyonu elde edebilirsiniz.
 
