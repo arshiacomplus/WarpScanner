@@ -109,7 +109,7 @@ Kullanım türü:
 
 <br><br/>
 
-## 10. Bu yapılandırma dosyası seçeneğini aç`.conf`Wireguard Windscribe ve Wireguard için tasarlandı
+## 10. بازدن این گزینه فایل کانفیگ `.conf`Wireguard Windscribe ve Wireguard için tasarlandı
 
 ## 11. Bu seçeneğe tıklayarak Nika Anji için wireguard konfigürasyonu elde edebilirsiniz.
 
