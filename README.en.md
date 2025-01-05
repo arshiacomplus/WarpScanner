@@ -54,8 +54,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 2. Get Wireguard config
 
-▫️اگه توی گرفتن کانفیگ وایرگارد به ارور تایم اوت خوردید چند بار دیگه تست کنید 
-<br><br/>
+▫️ If you get a timeout error while getting the wireguard configuration, test a few more times<br><br/>
 
 ## 3. Get Wireguard configuration without needing to scan IP
 
@@ -76,13 +75,13 @@ If you get a timeout error, try a few more times<br><br/>
 By entering option 1 and after that 2 
  You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
 
-After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
+After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
 
 -   1\. Pencil button
 -   2\. Putting the bracket next to the IP[ipvsh]
 -   3\. Storage<br><br/>
 
-## 6. To get wireguard configuration for Vettori and Mehsa Anji and... without IP scan
+## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
 If you press n, it will select the IP that I have already set
  Otherwise 
@@ -95,7 +94,7 @@ If you press n, it will select the IP that I have already set
 
 You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br/>
 
-## 8. You can sub warp that warp for v2ray or MahsaNg
+## 8. You can subwarp that warp for v2ray or MahsaNg
 
 <br><br/>
 
@@ -118,7 +117,7 @@ Type of use:
 
 ## 13. To get Wireguard Wow config with noise values ​​for Nika Anji and Mehsa Anji
 
-## 14. برای گرفته کانفیگ وایرگارد  Wow با مقادیر نویز برای نیکا انجی و مهسا انجی در ساب لینک
+## 14. To get Wireguard Wow configuration with noise values ​​for Nika Anji and Mahsa Anji in the sublink
 
 ## 15. To get the wireguard configuration for Singbox and the old version of Hidify
 
