@@ -1,4 +1,4 @@
-V=67
+V=68
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -60,26 +60,7 @@ try:
 except Exception:
     os.system('pip install icmplib')
     from icmplib import ping as pinging
-try:
-    from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
-    from cryptography.hazmat.primitives import serialization
-except Exception:
-    try:
-        print("cryptography module not installed. Installing now...")
-        os.system('pkg install python3 rust binutils-is-llvm -y')
-        os.system('export CXXFLAGS="-Wno-register"')
-        os.system('export CFLAGS="-Wno-register"')
-        os.system('python3 -m pip install cryptography ')
-    except Exception:
-       os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
-       os.system("tar -zxvf 43.0.0.tar.gz")
-       os.chdir("cryptography-43.0.0")
-       os.system("pip install .")
-try:
-    from cryptography.hazmat.primitives import serialization
-    from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
-except Exception:
- print('somthing wemt wrong with cryptography')
+
  
 import base64
 try:
@@ -284,11 +265,32 @@ def bind_keys():
 def fetch_config_from_api():
     global api
     if api=='':
-        which_api=input_p('Which Api \n', {'1':'First api/Not work', '2' :'Second api'})
+        which_api=input_p('Which Api \n', {'1':'First api', '2' :'Second api(need vpn just for install lib)'})
         api=which_api
     else:
         which_api=api
     if which_api == '2':
+        try:
+            from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
+            from cryptography.hazmat.primitives import serialization
+        except Exception:
+            try:
+                print("cryptography module not installed. Installing now...")
+                os.system('pkg install python3 rust binutils-is-llvm -y')
+                os.system('export CXXFLAGS="-Wno-register"')
+                os.system('export CFLAGS="-Wno-register"')
+                os.system('python3 -m pip install cryptography ')
+            except Exception:
+               os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
+               os.system("tar -zxvf 43.0.0.tar.gz")
+               os.chdir("cryptography-43.0.0")
+               os.system("pip install .")
+        try:
+            from cryptography.hazmat.primitives import serialization
+            from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
+        except Exception:
+            print('somthing wemt wrong with cryptography')
+            exit()
         
         keys=bind_keys()
         
@@ -306,10 +308,10 @@ def fetch_config_from_api():
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
             try:
-                response = urllib.request.urlopen("https://api.zeroteam.top/warp?format=sing-box", timeout=30).read().decode('utf-8')
+                response = urllib.request.urlopen("http://s9.serv00.com:1074/arshiacomplus/api/wirekey", timeout=30).read().decode('utf-8')
                 return response
             except Exception:
-                response = requests.get("https://api.zeroteam.top/warp?format=sing-box", timeout=30)
+                response = requests.get("http://s9.serv00.com:1074/arshiacomplus/api/wirekey", timeout=30)
                 return response.text
             
     response = file_o()
