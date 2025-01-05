@@ -16,7 +16,7 @@
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
-> ترماکس رو از گوگل پلی دانلود نکنید▫️ترماکس رو از گوگل پلی دانلود نکنید
+> Google Play から Thermox をダウンロード Google Play から Thermox をダウンロードしないでください
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
@@ -46,7 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 注: Vahid パネル (inter 付き) および bpb パネル (カンマ付き) のクリーンな IP を作成できます。
 
-##### در فایل ریزالت سیو کنید
+##### 結果ファイルに保存
 
 ##### 次に、番号 1 (IP バージョン 4) を入力します。
 
@@ -54,7 +54,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 2. Wireguard 構成を取得する
 
-▫️ ワイヤーガード構成の取得中にタイムアウト エラーが発生した場合は、さらに数回テストしてください<br><br/>
+▫️اگه توی گرفتن کانفیگ وایرگارد به ارور تایم اوت خوردید چند بار دیگه تست کنید 
+<br><br/>
 
 ## 3. IP をスキャンせずに Wireguard 構成を取得します
 
