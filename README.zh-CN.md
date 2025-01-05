@@ -46,7 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 注意：您可以为 Vahid 面板（带 in​​ter）和 bpb 面板（带逗号）创建一个干净的 IP。
 
-##### 保存在结果文件中
+##### 保存到结果文件中
 
 ##### 然后你输入数字一（IP版本四）
 
@@ -72,16 +72,16 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 > 这是给那些收到错误请求的人的👈👈<https://t.me/arshia_mod_fun/298>
 
- با وارد کردن گزینه ۱ و بعد از اون ۲ 
- میتونید آیپی ورژن شیش دریافت کنید که برای گزینه ۵ کانفیگ وایرگارد برای مهسا انجی و و ویتوری هم پیاده سازی شده 
+输入选项 1，然后输入选项 2 
+ 您可以获得 Shish 的 IP 版本，该版本也适用于 Mehsa Anji 和 Vettori 的选项 5 Wireguard 配置。
 
-使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免遇到错误。
+使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免出现错误。
 
 -   1\. 铅笔按钮
 -   2\. 将支架放在 IP 旁边[ipvsh]
 -   3\. 存储<br><br/>
 
-## 6. 获取 Vettori 和 Mehsa Anji 的wireguard 配置以及...无需 IP 扫描
+## 6. 获取 Vettori 和 Mehsa Anji 的 Wireguard 配置以及...无需 IP 扫描
 
 如果你按n，它会选择我已经设置的IP
  否则 
@@ -117,7 +117,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 13. 获取 Nika Anji 和 Mehsa Anji 的带有噪声值的 Wireguard Wow 配置
 
-## 14. 在子链接中获取 Nika Anji 和 Mahsa Anji 的带有噪音值的 Wireguard Wow 配置
+## 14. 在子链接中获取 Nika Anji 和 Mahsa Anji 的带有噪声值的 Wireguard Wow 配置
 
 ## 15.获取Singbox和旧版本Hidify的wireguard配置
 
@@ -131,7 +131,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 支持项目
 
-<b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b>
+<b>如果您喜欢我的项目，您可以通过给星星、关注并介绍给您的朋友来支持我的项目</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
