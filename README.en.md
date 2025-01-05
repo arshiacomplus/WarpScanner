@@ -72,8 +72,8 @@ If you get a timeout error, try a few more times<br><br/>
 
 > This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
 
-By entering option 1 and after that 2 
- You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
+ با وارد کردن گزینه ۱ و بعد از اون ۲ 
+ میتونید آیپی ورژن شیش دریافت کنید که برای گزینه ۵ کانفیگ وایرگارد برای مهسا انجی و و ویتوری هم پیاده سازی شده 
 
 After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
 
@@ -115,7 +115,7 @@ Type of use:
 
 ## 12. By clicking this option, you can get Wireguard configuration for Nika Anji without the need to scan IP
 
-## 13. To get Wireguard Wow config with noise values ​​for Nika Anji and Mehsa Anji
+## 13. برای گرفته کانفیگ وایرگارد  Wow با مقادیر نویز برای نیکا انجی و مهسا انجی
 
 ## 14. To get Wireguard Wow configuration with noise values ​​for Nika Anji and Mahsa Anji in the sublink
 
