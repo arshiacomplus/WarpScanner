@@ -316,7 +316,7 @@ def fetch_config_from_api():
             
     b = file_o()
     b=b.split("\n")
-    Address_key=b[0][b[0].index(":")+2:]
+    Address_key=b[0][b[0].index(":")+2:].split(',')[1]
     private_key=b[1][b[1].index(":")+2:]
     reserved=b[2][b[2].index(":")+2:].split(" ")
 
@@ -380,7 +380,7 @@ def free_cloudflare_account():
 
        
     b=b.split("\n")
-    Address_key=b[0][b[0].index(":")+2:]
+    Address_key=b[0][b[0].index(":")+2:].split(',')[1]
     private_key=b[1][b[1].index(":")+2:]
     reserved=b[2][b[2].index(":")+2:].split(" ")
 
@@ -1903,27 +1903,7 @@ def generate_wireguard_url(config, endpoint):
 
     
     
-    if what =='5' or  what=='6':
-        listt=config['Reserved']
-        lostt2=''
-        for num in range(len(listt)):
-            lostt2+=str(listt[num])
-            if num != len(listt)-1:
-                lostt2+=','
-        config['Reserved']=urlencode(lostt2)
-        encoded_addresses = [quote(address1) for address1 in (config['Address'])]
-        address= ','.join(encoded_addresses)
-        wireguard_urll = (
-        f"wireguard://{urlencode(config['PrivateKey'])}@{endpoint}"
-        f"?address={address}&"
-        f"publickey={urlencode(config['PublicKey'])}"
-    )
-    
-    
-        if config.get('Reserved'):
-   
-                wireguard_urll += f"&reserved={config['Reserved']}"
-    elif what =='11' or  what=='12':
+    if what =='5' or  what=='6' or what =='11' or  what=='12':
         listt=config['Reserved']
         lostt2=''
         for num in range(len(listt)):
