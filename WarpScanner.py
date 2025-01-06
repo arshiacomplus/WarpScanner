@@ -1721,7 +1721,7 @@ def main2():
 
     
     
-    if what=="3":
+    if what=="3" or  what=="16":
         main2_1()
         exit()
     
