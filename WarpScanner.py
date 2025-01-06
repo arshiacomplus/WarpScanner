@@ -1,4 +1,4 @@
-V=68
+V=69
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -270,27 +270,7 @@ def fetch_config_from_api():
     else:
         which_api=api
     if which_api == '2':
-        try:
-            from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
-            from cryptography.hazmat.primitives import serialization
-        except Exception:
-            try:
-                print("cryptography module not installed. Installing now...")
-                os.system('pkg install python3 rust binutils-is-llvm -y')
-                os.system('export CXXFLAGS="-Wno-register"')
-                os.system('export CFLAGS="-Wno-register"')
-                os.system('python3 -m pip install cryptography ')
-            except Exception:
-               os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
-               os.system("tar -zxvf 43.0.0.tar.gz")
-               os.chdir("cryptography-43.0.0")
-               os.system("pip install .")
-        try:
-            from cryptography.hazmat.primitives import serialization
-            from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
-        except Exception:
-            print('somthing wemt wrong with cryptography')
-            exit()
+
         
         keys=bind_keys()
         
@@ -303,7 +283,27 @@ def fetch_config_from_api():
         'Address':  keys[0]
         }
         
- 
+    try:
+        from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
+        from cryptography.hazmat.primitives import serialization
+    except Exception:
+    try:
+        print("cryptography module not installed. Installing now...")
+        os.system('pkg install python3 rust binutils-is-llvm -y')
+        os.system('export CXXFLAGS="-Wno-register"')
+        os.system('export CFLAGS="-Wno-register"')
+        os.system('python3 -m pip install cryptography ')
+    except Exception:
+        os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
+        os.system("tar -zxvf 43.0.0.tar.gz")
+        os.chdir("cryptography-43.0.0")
+        os.system("pip install .")
+    try:
+        from cryptography.hazmat.primitives import serialization
+        from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
+    except Exception:
+        print('somthing wemt wrong with cryptography')
+        exit()
         
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
@@ -314,20 +314,29 @@ def fetch_config_from_api():
                 response = requests.get("http://s9.serv00.com:1074/arshiacomplus/api/wirekey", timeout=30)
                 return response.text
             
-    response = file_o()
-    data = json.loads(response)
+    b = file_o()
+    b=b.split("\n")
+    Address_key=b[0][b[0].index(":")+2:]
+    private_key=b[1][b[1].index(":")+2:]
+    reserved=b[2][b[2].index(":")+2:].split(" ")
+
+    reserved.pop(3)
+    reserved = [int(item) for item in reserved]
+    pub_key=b[3][b[3].index(":")+2:]
+    all_key=[Address_key , private_key , reserved, "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="]
+
     return {
-        'PrivateKey': data.get('private_key'),
-        'PublicKey': data.get('peer_public_key'),
-        'Reserved': ','.join([str(x) for x in data.get('reserved', [])]) if data.get('reserved') else None,
-        'Address': data.get('local_address')
+        'PrivateKey': private_key,
+        'PublicKey': pub_key,
+        'Reserved':reserved,
+        'Address': Address_key
     }
     
     
 def free_cloudflare_account():
     global api
     if api=='':
-        which_api=input_p('Which Api \n', {'1':'First api/Not work', '2' :'Second api'})
+        which_api=input_p('Which Api \n', {'1':'First api', '2' :'Second api(need vpn just for install lib)'})
         api=which_api
     else:
         which_api=api
@@ -335,35 +344,49 @@ def free_cloudflare_account():
         keys=bind_keys()
         keys=list(keys)
         return keys
-        
-        
+    try:
+        from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
+        from cryptography.hazmat.primitives import serialization
+    except Exception:
+    try:
+        print("cryptography module not installed. Installing now...")
+        os.system('pkg install python3 rust binutils-is-llvm -y')
+        os.system('export CXXFLAGS="-Wno-register"')
+        os.system('export CFLAGS="-Wno-register"')
+        os.system('python3 -m pip install cryptography ')
+    except Exception:
+        os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
+        os.system("tar -zxvf 43.0.0.tar.gz")
+        os.chdir("cryptography-43.0.0")
+        os.system("pip install .")
+    try:
+        from cryptography.hazmat.primitives import serialization
+        from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
+    except Exception:
+        print('somthing wemt wrong with cryptography')
+        exit()
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
             try:
-                response = urllib.request.urlopen("https://api.zeroteam.top/warp?format=sing-box", timeout=30).read().decode('utf-8')
+                response = urllib.request.urlopen("http://s9.serv00.com:1074/arshiacomplus/api/wirekey", timeout=30).read().decode('utf-8')
                 return response
             except Exception:
-                response = requests.get("https://api.zeroteam.top/warp?format=sing-box", timeout=30)
+                response = requests.get("http://s9.serv00.com:1074/arshiacomplus/api/wirekey", timeout=30)
                 return response.text
     try:
-            output = file_o()
+            b = file_o()
     except ConnectionError:
             console.print("[bold red]Failed to connect to API after 6 attempts.[/bold red]")
 
        
-    Address_pattern = r'"2606:4700:[0-9a-f:]+/128"'
-    private_key_pattern = r'"private_key":"[0-9a-zA-Z/+]+="'
-    reserved_pattern = r'"reserved":[[0-9]+(,[0-9]+){2}]'
+    b=b.split("\n")
+    Address_key=b[0][b[0].index(":")+2:]
+    private_key=b[1][b[1].index(":")+2:]
+    reserved=b[2][b[2].index(":")+2:].split(" ")
 
-    Address_search = re.search(Address_pattern, output)
-    private_key_search = re.search(private_key_pattern, output)
-    reserved_search = re.search(reserved_pattern, output)
-
-      
-    Address_key = Address_search.group(0).replace('"', '') if Address_search else None
-    private_key = private_key_search.group(0).split(':')[1].replace('"', '') if private_key_search else None
-    reserved = reserved_search.group(0).replace('"reserved":', '').replace('"', '') if reserved_search else None
-
+    reserved.pop(3)
+    reserved = [int(item) for item in reserved]
+    pub_key=b[3][b[3].index(":")+2:]
     all_key=[Address_key , private_key , reserved, "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="]
     return all_key
 def upload_to_bashupload(config_data):
