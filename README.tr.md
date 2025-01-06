@@ -40,13 +40,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Bu nedenle, bir sayısını girerek, ardından y ve belki tekrar y olduğunu belirtmek gerekir.
 
-##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekir.
+##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekiyor.
 
-##### Ve daha sonra
+##### ve daha sonra
 
 ##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP oluşturabilirsiniz.
 
-##### Sonuç dosyasına kaydet
+##### Sonuç dosyasına kaydedin
 
 ##### Daha sonra bir numarayı girersiniz (IP dördüncü versiyonu)
 
@@ -58,7 +58,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. IP taramasına gerek kalmadan Wireguard yapılandırmasını edinin
 
-(best_result hatasını alan kişiler içindir[0]onlar yerler) 
+(best_result hatasını alan kişiler içindir.[0]onlar yerler) 
  Bu durumda ilk önce IP'yi diğer tarayıcılardan tarayabilirsiniz. 
  Ve üçüncü seçeneği seçtikten sonra port ile IP'yi girmeniz istenecek veya N girerseniz daha önce girdiğim IP'yi seçecektir.
 
@@ -75,15 +75,15 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 Seçenek 1'i ve ardından 2'yi girerek 
  Mehsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
 
-Wire Guard konfigürasyonunu Shish'in IP versiyonu ile kopyalayıp client'a aktardıktan sonra hata almamak için bunu yapın.
+Wire Guard konfigürasyonunu Shish'in IP sürümü ile kopyalayıp istemciye aktardıktan sonra hata almamak için bunu yapın.
 
 -   1\. Kalem düğmesi
 -   2\. Braketi IP'nin yanına koymak[ipvsh]
 -   3\. Depolama<br><br/>
 
-## 6. Vettori ve Mehsa Anji için Wireguard yapılandırmasını almak için ve... IP taraması olmadan
+## 6. Vettori ve Mehsa Anji için kablosuz koruma yapılandırmasını almak için ve... IP taraması olmadan
 
-N tuşuna basarsanız önceden ayarladığım IP seçilecektir
+N tuşuna basarsanız daha önce koyduğum ipi seçecektir
  Aksi takdirde 
  Bağlantı noktası örneğiyle birlikte IP:
 
@@ -94,7 +94,7 @@ N tuşuna basarsanız önceden ayarladığım IP seçilecektir
 
 Po sitelerinin (Kung Fu Panda) engellenip engellenmeyeceği size sorulacaktır.<br><br/>
 
-## 8. Bu warp'ı v2ray veya MahsaNg için alt çözgü yapabilirsiniz
+## 8. Bu çözgüyü v2ray veya MahsaNg için alt çözgü yapabilirsiniz.
 
 <br><br/>
 
@@ -123,7 +123,7 @@ Kullanım türü:
 
 ## 16. IP taraması olmadan Singbox ve Hidify'ın eski sürümü için Wireguard yapılandırmasını almak için
 
-## 17. Seçeneğin alt bağlantısında Singbox ve Hidify'ın eski sürümü için wireguard yapılandırmasını almak için
+## 17. Singbox için wireguard yapılandırmasını ve Hidify'ın eski sürümünü seçenek alt bağlantısından edinmek için
 
 ## bağışlamak
 
