@@ -40,9 +40,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### And then you have to give memory access to Termox, which is asked of you
+##### And then you have to give the memory access to Termox that you are asked
 
-##### and then
+##### And then
 
 ##### Note: You can create a clean IP for Vahid panel (with inter) and bpb panel (with comma).
 
@@ -56,7 +56,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ▫️ If you get a timeout error while getting the wireguard configuration, test a few more times<br><br/>
 
-## 3. دریافت کانفیگ وایرگارد بدون نیاز به اسکن آیپی
+## 3. Get Wireguard configuration without needing to scan IP
 
 (It is for people who get the error best_result[0]they eat) 
  In this case, you can first scan the IP from other scanners 
@@ -77,13 +77,13 @@ By entering option 1 and after that 2
 
 After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
 
--   1.دکمه مداد
+-   1\. Pencil button
 -   2\. Putting the bracket next to the IP[ipvsh]
 -   3\. Storage<br><br/>
 
-## 6. To get wireguard configuration for Vettori and Mehsa Anji and... without IP scan
+## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
-If you press n, it will select the ip that I put before
+If you press n, it will select the IP that I have already set
  Otherwise 
  IP with port example:
 
@@ -94,7 +94,7 @@ If you press n, it will select the ip that I put before
 
 You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br/>
 
-## 8. You can sub warp that warp for v2ray or MahsaNg
+## 8. You can subwarp that warp for v2ray or MahsaNg
 
 <br><br/>
 
@@ -104,7 +104,7 @@ Give it a name and close the Thermox window and open a new one.
 
 Type of use:
 
--   نامی که دادید رو وارد کنید تا اسکریپت اجرا شود
+-   Enter the name you gave to run the script
 -   To delete it, press the same number again and press Y
 
 <br><br/>
@@ -123,7 +123,7 @@ Type of use:
 
 ## 16. To get Wireguard configuration for Singbox and old version of Hidify without IP scan
 
-## 17. To get the wireguard configuration for Singbox and the old version of Hidify in the option sublink
+## 17. To get the wireguard configuration for Singbox and the old version of Hidify in the sublink of the option
 
 ## to donate
 
