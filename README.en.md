@@ -42,7 +42,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### And then you have to give memory access to Termox, which is asked of you
 
-##### And then
+##### and then
 
 ##### Note: You can create a clean IP for Vahid panel (with inter) and bpb panel (with comma).
 
@@ -56,15 +56,15 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ▫️ If you get a timeout error while getting the wireguard configuration, test a few more times<br><br/>
 
-## 3. Get Wireguard configuration without needing to scan IP
+## 3. دریافت کانفیگ وایرگارد بدون نیاز به اسکن آیپی
 
 (It is for people who get the error best_result[0]they eat) 
  In this case, you can first scan the IP from other scanners 
- And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will choose the IP that I have already entered.
+ And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will select the IP that I have already entered.
 
 <br><br/>
 
-### 4. برای دریافت کانفیگ وایرگارد در یک لینک ساب با تعداد دلخواه گزینه 4 را وارد کنید سعی کنید از اعداد زوج برای تعداد کانفیگ استفاده کنید
+### 4. To receive wireguard configuration in a sub link with the desired number, enter option 4. Try to use even numbers for the configuration number.
 
 If you get a timeout error, try a few more times<br><br/>
 
@@ -75,15 +75,15 @@ If you get a timeout error, try a few more times<br><br/>
 By entering option 1 and after that 2 
  You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
 
-After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
+After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
 
--   1\. Pencil button
+-   1.دکمه مداد
 -   2\. Putting the bracket next to the IP[ipvsh]
 -   3\. Storage<br><br/>
 
-## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
+## 6. To get wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
-If you press n, it will select the IP that I have already set
+If you press n, it will select the ip that I put before
  Otherwise 
  IP with port example:
 
@@ -104,7 +104,7 @@ Give it a name and close the Thermox window and open a new one.
 
 Type of use:
 
--   Enter the name you gave to run the script
+-   نامی که دادید رو وارد کنید تا اسکریپت اجرا شود
 -   To delete it, press the same number again and press Y
 
 <br><br/>
