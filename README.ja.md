@@ -1,6 +1,6 @@
 ## ワープスキャナー
 
-言語 : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md) | 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
+言語 : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -16,7 +16,7 @@
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
-> ترماکس رو از گوگل پلی دانلود نکنید▫️ترماکس رو از گوگل پلی دانلود نکنید
+> Google Play から Thermox をダウンロード Google Play から Thermox をダウンロードしないでください
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
@@ -46,7 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 注: Vahid パネル (inter 付き) および bpb パネル (カンマ付き) のクリーンな IP を作成できます。
 
-##### در فایل ریزالت سیو کنید
+##### 結果ファイルに保存
 
 ##### 次に、番号 1 (IP バージョン 4) を入力します。
 
@@ -58,9 +58,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. IP をスキャンせずに Wireguard 構成を取得します
 
-(エラー「best_result」が表示される人向けです)[0] می‌خورند) 
- در این صورت می‌توانید اول از اسکنر های دیگه آیپی اسکن کنید 
- و بعد از زدن گزینه سه ازتون سوال میشه که آیپی رو با پورت  وارد کنید یا اگه N رو وارد کنید آیپی که از قبل گذاشتم رو انتخاب می‌کنه
+(エラー「best_result」が表示される人向けです)[0]彼らは食べる） 
+ この場合、最初に他のスキャナから IP をスキャンできます。 
+ 3 番目のオプションを選択すると、IP とポートを入力するように求められます。N を入力すると、すでに入力した IP が選択されます。
 
 <br><br/>
 
@@ -109,7 +109,7 @@ Po サイト (カンフー パンダ) をブロックするかどうかを尋ね
 
 <br><br/>
 
-## 10.この設定ファイルを開くオプション`.conf` وایرگارد  ساخته میشود برای ویندسکرایب و وایرگارد
+## 10.この設定ファイルを開くオプション`.conf`Wireguard は Windscribe と Wireguard のために作られています
 
 ## 11. このオプションをクリックすると、Nika Anji のワイヤーガード構成を取得できます。
 
