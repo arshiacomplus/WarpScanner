@@ -40,13 +40,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 因此，应该注意的是，输入数字 1，然后输入 y，也许再输入 y
 
-##### 然后你必须向 Termox 授予内存访问权限，这是要求你的
+##### 然后你必须按照要求向 Termox 提供内存访问权限
 
 ##### 进而
 
 ##### 注意：您可以为 Vahid 面板（带 in​​ter）和 bpb 面板（带逗号）创建一个干净的 IP。
 
-##### 保存在结果文件中
+##### در فایل ریزالت سیو کنید
 
 ##### 然后你输入数字一（IP版本四）
 
@@ -81,19 +81,18 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 -   2\. 将支架放在 IP 旁边[ipvsh]
 -   3\. 存储<br><br/>
 
-## 6. 获取 Vettori 和 Mehsa Anji 的wireguard 配置以及...无需 IP 扫描
+## 6. 获取 Vettori 和 Mehsa Anji 的 Wireguard 配置以及...无需 IP 扫描
 
-如果你按n，它会选择我之前输入的ip
- 否则 
- IP 与端口示例：
+ اگر n رو بزنید ایپی که از قبل گذاشتم رو انتخاب میکنه
+ در غیر این صورت 
+ ایپی با پورت مثال : 
 
 > IPv4：端口
 > 你输入<br><br/>
 
 ## 7. 要获取配置，对 v2ray 和 MahsaNG 进行扭曲，您可以使用选项 7（帮助来自 bpb 面板......）
 
- ازتون سوال میشه که سایت های پ،و،(پاندا کنگ فو کار )  مسدود بشه یا نه 
-<br><br/>
+系统会询问您是否会屏蔽Po站（功夫熊猫）<br><br/>
 
 ## 8. 您可以对 v2ray 或 MahsaNg 的扭曲进行子扭曲
 
@@ -124,7 +123,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 16.无需IP扫描即可获取Singbox和旧版本Hidify的Wireguard配置
 
-## 17. 在选项子链接中获取Singbox和旧版本Hidify的wireguard配置
+## 17. 在选项的子链接中获取Singbox和旧版本Hidify的wireguard配置
 
 ## 捐赠
 
@@ -132,7 +131,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 支持项目
 
-<b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b>
+<b>如果您喜欢我的项目，您可以通过给星星、关注并介绍给您的朋友来支持我的项目</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
