@@ -40,7 +40,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### And then you have to give the memory access to Termox that you are asked
+##### And then you have to give memory access to Termox, which is asked of you
 
 ##### And then
 
@@ -60,7 +60,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 (It is for people who get the error best_result[0]they eat) 
  In this case, you can first scan the IP from other scanners 
- And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will select the IP that I have already entered.
+ And after selecting the third option, you will be asked to enter the IP with the port, or if you enter N, it will choose the IP that I have already entered.
 
 <br><br/>
 
@@ -72,10 +72,10 @@ If you get a timeout error, try a few more times<br><br/>
 
 > This is for those who get error requests 👈👈<https://t.me/arshia_mod_fun/298>
 
- با وارد کردن گزینه ۱ و بعد از اون ۲ 
- میتونید آیپی ورژن شیش دریافت کنید که برای گزینه ۵ کانفیگ وایرگارد برای مهسا انجی و و ویتوری هم پیاده سازی شده 
+By entering option 1 and after that 2 
+ You can get the IP version of Shish, which is also implemented for Option 5 Wireguard configuration for Mehsa Anji and Vettori.
 
-After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so that you don't get a bug.
+After copying the Wire Guard configuration with the IP version of Shish and then importing it into the client, do this so as not to run into a bug.
 
 -   1\. Pencil button
 -   2\. Putting the bracket next to the IP[ipvsh]
@@ -83,9 +83,9 @@ After copying the Wire Guard configuration with the IP version of Shish and then
 
 ## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
-If you press n, it will select the IP that I have already set
- Otherwise 
- IP with port example:
+ اگر n رو بزنید ایپی که از قبل گذاشتم رو انتخاب میکنه
+ در غیر این صورت 
+ ایپی با پورت مثال : 
 
 > ipv4:port
 > you enter<br><br/>
@@ -94,7 +94,7 @@ If you press n, it will select the IP that I have already set
 
 You will be asked whether Po sites (Kung Fu Panda) will be blocked or not<br><br/>
 
-## 8. You can subwarp that warp for v2ray or MahsaNg
+## 8. You can sub warp that warp for v2ray or MahsaNg
 
 <br><br/>
 
@@ -115,15 +115,15 @@ Type of use:
 
 ## 12. By clicking this option, you can get Wireguard configuration for Nika Anji without the need to scan IP
 
-## 13. برای گرفته کانفیگ وایرگارد  Wow با مقادیر نویز برای نیکا انجی و مهسا انجی
+## 13. To get Wireguard Wow config with noise values ​​for Nika Anji and Mehsa Anji
 
 ## 14. To get Wireguard Wow configuration with noise values ​​for Nika Anji and Mahsa Anji in the sublink
 
-## 15. To get the wireguard configuration for Singbox and the old version of Hidify
+## 15. برای گرفتن کانفیگ وایرگارد برای سینگ باکس و نسخه قدیمی هیدیفای
 
 ## 16. To get Wireguard configuration for Singbox and old version of Hidify without IP scan
 
-## 17. To get the wireguard configuration for Singbox and the old version of Hidify in the sublink of the option
+## 17. برای گرفتن کانفیگ وایرگارد برای سینگ باکس و نسخه قدیمی هیدیفای در ساب لینک   گزینه
 
 ## to donate
 
