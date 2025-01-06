@@ -385,7 +385,7 @@ def free_cloudflare_account():
     reserved=b[2][b[2].index(":")+2:].split(" ")
 
     reserved.pop(3)
-    reserved = [int(item) for item in reserved]
+    reserved = [str(item) for item in reserved]
     pub_key=b[3][b[3].index(":")+2:]
     all_key=[Address_key , private_key , reserved, "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="]
     return all_key
