@@ -316,7 +316,7 @@ def fetch_config_from_api():
             
     b = file_o()
     b=b.split("\n")
-    Address_key=b[0][b[0].index(":")+2:].split(',')[1]
+    Address_key=b[0][b[0].index(":")+2:]
     private_key=b[1][b[1].index(":")+2:]
     reserved=b[2][b[2].index(":")+2:].split(" ")
 
@@ -380,7 +380,7 @@ def free_cloudflare_account():
 
        
     b=b.split("\n")
-    Address_key=b[0][b[0].index(":")+2:].split(',')[1]
+    Address_key=b[0][b[0].index(":")+2:]
     private_key=b[1][b[1].index(":")+2:]
     reserved=b[2][b[2].index(":")+2:].split(" ")
 
