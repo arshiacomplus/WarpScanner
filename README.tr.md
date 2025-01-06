@@ -119,7 +119,7 @@ Kullanım türü:
 
 ## 14. Alt bağlantıdaki Nika Anji ve Mahsa Anji için gürültü değerleri ile Wireguard Wow konfigürasyonunu almak
 
-## 15. برای گرفتن کانفیگ وایرگارد برای سینگ باکس و نسخه قدیمی هیدیفای
+## 15. Singbox ve Hidify'ın eski sürümü için wireguard yapılandırmasını almak için
 
 ## 16. IP taraması olmadan Singbox ve Hidify'ın eski sürümü için Wireguard yapılandırmasını almak için
 
