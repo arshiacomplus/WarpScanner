@@ -75,7 +75,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 输入选项 1，然后输入选项 2 
  您可以获得 Shish 的 IP 版本，该版本也适用于 Mehsa Anji 和 Vettori 的选项 5 Wireguard 配置。
 
- بعد کپی کردن کانفیگ وایر گارد با   آیپی ورژن شیش و بعد  وارد کردن داخل کلاینت،  این کار رو انجام بدید که به باگ نخورید
+使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免出现错误。
 
 -   1\. 铅笔按钮
 -   2\. 将支架放在 IP 旁边[ipvsh]
@@ -123,7 +123,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 16.无需IP扫描即可获取Singbox和旧版本Hidify的Wireguard配置
 
-## 17. برای گرفتن کانفیگ وایرگارد برای سینگ باکس و نسخه قدیمی هیدیفای در ساب لینک   گزینه
+## 17. 在选项子链接中获取Singbox和旧版本Hidify的wireguard配置
 
 ## 捐赠
 
@@ -131,7 +131,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 支持项目
 
-<b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b>
+<b>如果您喜欢我的项目，您可以通过给星星、关注并介绍给您的朋友来支持我的项目</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
