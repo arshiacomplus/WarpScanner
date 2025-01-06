@@ -64,7 +64,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <br><br/>
 
-### 4. To receive wireguard configuration in a sub link with the desired number, enter option 4. Try to use even numbers for the configuration number.
+### 4. برای دریافت کانفیگ وایرگارد در یک لینک ساب با تعداد دلخواه گزینه 4 را وارد کنید سعی کنید از اعداد زوج برای تعداد کانفیگ استفاده کنید
 
 If you get a timeout error, try a few more times<br><br/>
 
@@ -83,9 +83,9 @@ After copying the Wire Guard configuration with the IP version of Shish and then
 
 ## 6. To get Wireguard configuration for Vettori and Mehsa Anji and... without IP scan
 
- اگر n رو بزنید ایپی که از قبل گذاشتم رو انتخاب میکنه
- در غیر این صورت 
- ایپی با پورت مثال : 
+If you press n, it will select the IP that I have already set
+ Otherwise 
+ IP with port example:
 
 > ipv4:port
 > you enter<br><br/>
@@ -119,11 +119,11 @@ Type of use:
 
 ## 14. To get Wireguard Wow configuration with noise values ​​for Nika Anji and Mahsa Anji in the sublink
 
-## 15. برای گرفتن کانفیگ وایرگارد برای سینگ باکس و نسخه قدیمی هیدیفای
+## 15. To get the wireguard configuration for Singbox and the old version of Hidify
 
 ## 16. To get Wireguard configuration for Singbox and old version of Hidify without IP scan
 
-## 17. برای گرفتن کانفیگ وایرگارد برای سینگ باکس و نسخه قدیمی هیدیفای در ساب لینک   گزینه
+## 17. To get the wireguard configuration for Singbox and the old version of Hidify in the option sublink
 
 ## to donate
 
