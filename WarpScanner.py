@@ -270,7 +270,27 @@ def fetch_config_from_api():
     else:
         which_api=api
     if which_api == '2':
-
+        try:
+            from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
+            from cryptography.hazmat.primitives import serialization
+        except Exception:
+            try:
+                print("cryptography module not installed. Installing now...")
+                os.system('pkg install python3 rust binutils-is-llvm -y')
+                os.system('export CXXFLAGS="-Wno-register"')
+                os.system('export CFLAGS="-Wno-register"')
+                os.system('python3 -m pip install cryptography ')
+            except Exception:
+                os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
+                os.system("tar -zxvf 43.0.0.tar.gz")
+                os.chdir("cryptography-43.0.0")
+                os.system("pip install .")
+        try:
+            from cryptography.hazmat.primitives import serialization
+            from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
+        except Exception:
+            print('somthing wemt wrong with cryptography')
+            exit()
         
         keys=bind_keys()
         
@@ -283,27 +303,7 @@ def fetch_config_from_api():
         'Address':  keys[0]
         }
         
-    try:
-        from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
-        from cryptography.hazmat.primitives import serialization
-    except Exception:
-        try:
-            print("cryptography module not installed. Installing now...")
-            os.system('pkg install python3 rust binutils-is-llvm -y')
-            os.system('export CXXFLAGS="-Wno-register"')
-            os.system('export CFLAGS="-Wno-register"')
-            os.system('python3 -m pip install cryptography ')
-        except Exception:
-            os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
-            os.system("tar -zxvf 43.0.0.tar.gz")
-            os.chdir("cryptography-43.0.0")
-            os.system("pip install .")
-    try:
-        from cryptography.hazmat.primitives import serialization
-        from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
-    except Exception:
-        print('somthing wemt wrong with cryptography')
-        exit()
+
         
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
@@ -323,7 +323,6 @@ def fetch_config_from_api():
     reserved.pop(3)
     reserved = [int(item) for item in reserved]
     pub_key=b[3][b[3].index(":")+2:]
-    all_key=[Address_key , private_key , reserved, "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="]
 
     return {
         'PrivateKey': private_key,
@@ -341,30 +340,31 @@ def free_cloudflare_account():
     else:
         which_api=api
     if which_api == '2':
+        try:
+            from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
+            from cryptography.hazmat.primitives import serialization
+        except Exception:
+            try:
+                print("cryptography module not installed. Installing now...")
+                os.system('pkg install python3 rust binutils-is-llvm -y')
+                os.system('export CXXFLAGS="-Wno-register"')
+                os.system('export CFLAGS="-Wno-register"')
+                os.system('python3 -m pip install cryptography ')
+            except Exception:
+                os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
+                os.system("tar -zxvf 43.0.0.tar.gz")
+                os.chdir("cryptography-43.0.0")
+                os.system("pip install .")
+        try:
+            from cryptography.hazmat.primitives import serialization
+            from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
+        except Exception:
+            print('somthing wemt wrong with cryptography')
+            exit()
         keys=bind_keys()
         keys=list(keys)
         return keys
-    try:
-        from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey 
-        from cryptography.hazmat.primitives import serialization
-    except Exception:
-        try:
-            print("cryptography module not installed. Installing now...")
-            os.system('pkg install python3 rust binutils-is-llvm -y')
-            os.system('export CXXFLAGS="-Wno-register"')
-            os.system('export CFLAGS="-Wno-register"')
-            os.system('python3 -m pip install cryptography ')
-        except Exception:
-            os.system("wget https://github.com/pyca/cryptography/archive/refs/tags/43.0.0.tar.gz")
-            os.system("tar -zxvf 43.0.0.tar.gz")
-            os.chdir("cryptography-43.0.0")
-            os.system("pip install .")
-    try:
-        from cryptography.hazmat.primitives import serialization
-        from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
-    except Exception:
-        print('somthing wemt wrong with cryptography')
-        exit()
+
     @retry(stop_max_attempt_number=3, wait_fixed=2000, retry_on_exception=lambda x: isinstance(x, ConnectionError))
     def file_o():
             try:
@@ -1903,7 +1903,14 @@ def generate_wireguard_url(config, endpoint):
 
     
     
-    if api =='1':
+    if what =='5' or  what=='6':
+        listt=config['Reserved']
+        lostt2=''
+        for num in range(len(listt)):
+            lostt2+=str(listt[num])
+            if num != len(listt)-1:
+                lostt2+=','
+        config['Reserved']=urlencode(lostt2)
         encoded_addresses = [quote(address1) for address1 in (config['Address'])]
         address= ','.join(encoded_addresses)
         wireguard_urll = (
@@ -1915,8 +1922,8 @@ def generate_wireguard_url(config, endpoint):
     
         if config.get('Reserved'):
    
-                wireguard_urll += f"&reserved={urlencode(config['Reserved'])}"
-    else:
+                wireguard_urll += f"&reserved={config['Reserved']}"
+    elif what =='11' or  what=='12':
         listt=config['Reserved']
         lostt2=''
         for num in range(len(listt)):
@@ -2054,7 +2061,7 @@ if __name__ == "__main__":
     elif what =='5' or what =='6' or what=='11' or what=='12':
         
             
-        api_url = 'https://api.zeroteam.top/warp?format=sing-box'
+        api_url = 'http://s9.serv00.com:1074/arshiacomplus/api/wirekey'
         if what=='5' or what =='11':
             endpoint_ip_best_result=main()
             endpoint_ip = str(endpoint_ip_best_result[0])+":"+str(endpoint_ip_best_result[1])
