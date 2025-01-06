@@ -20,7 +20,7 @@
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
-### 在AppTermax中运行以下代码
+### کد زیر رو در اپ ترماکس اجرا کنید
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
@@ -36,7 +36,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 1. IP扫描仪是IPv4、IPv6
 
-##### ▫️ 能够将版本 4 IP 保存在 storage/emulated/0/ 和名为 result.csv 的文件中
+##### ▫️قابلیت ذخیره شدن  آیپی ها ورژن چهار در storage/emulated/0/ و فایلی به اسم result.csv
 
 ##### 因此，应该注意的是，输入数字 1，然后输入 y，也许再输入 y
 
@@ -46,7 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 注意：您可以为 Vahid 面板（带 in​​ter）和 bpb 面板（带逗号）创建一个干净的 IP。
 
-##### در فایل ریزالت سیو کنید
+##### 保存到结果文件中
 
 ##### 然后你输入数字一（IP版本四）
 
@@ -83,9 +83,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 6. 获取 Vettori 和 Mehsa Anji 的 Wireguard 配置以及...无需 IP 扫描
 
- اگر n رو بزنید ایپی که از قبل گذاشتم رو انتخاب میکنه
- در غیر این صورت 
- ایپی با پورت مثال : 
+如果你按n，它会选择我已经设置的IP
+ 否则 
+ IP 与端口示例：
 
 > IPv4：端口
 > 你输入<br><br/>
