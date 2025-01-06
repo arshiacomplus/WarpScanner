@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 > [！警告!]
 
-> از اونجا که در اولین مرحله سعی می‌کنه پایتون رو نصب کنه شاید به وی پی ان نیاز داشته باشه !
+> 由于它在第一步中尝试安装 Python，因此可能需要 VPN！
 
 ## 1. IP扫描仪是IPv4、IPv6
 
@@ -58,9 +58,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3.无需扫描IP即可获取Wireguard配置
 
-（这是针对那些收到错误 best_result 的人[0] می‌خورند) 
- در این صورت می‌توانید اول از اسکنر های دیگه آیپی اسکن کنید 
- و بعد از زدن گزینه سه ازتون سوال میشه که آیپی رو با پورت  وارد کنید یا اگه N رو وارد کنید آیپی که از قبل گذاشتم رو انتخاب می‌کنه
+（这是针对那些收到错误 best_result 的人[0]他们吃） 
+ 这种情况，可以先用其他扫描仪扫描IP 
+ 选择第三个选项后，会要求你输入IP和端口，或者如果你输入N，它将选择我已经输入的IP。
 
 <br><br/>
 
@@ -75,7 +75,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 输入选项 1，然后输入选项 2 
  您可以获得 Shish 的 IP 版本，该版本也适用于 Mehsa Anji 和 Vettori 的选项 5 Wireguard 配置。
 
-使用 IP 版本的 Shish 复制 Wire Guard 配置，然后将其导入客户端后，请执行此操作，以免出现错误。
+ بعد کپی کردن کانفیگ وایر گارد با   آیپی ورژن شیش و بعد  وارد کردن داخل کلاینت،  این کار رو انجام بدید که به باگ نخورید
 
 -   1\. 铅笔按钮
 -   2\. 将支架放在 IP 旁边[ipvsh]
@@ -115,7 +115,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 12.点击此选项，无需扫描IP即可获取Nika Anji的Wireguard配置
 
-## 13. برای گرفته کانفیگ وایرگارد  Wow با مقادیر نویز برای نیکا انجی و مهسا انجی
+## 13. 获取 Nika Anji 和 Mehsa Anji 的带有噪声值的 Wireguard Wow 配置
 
 ## 14. 在子链接中获取 Nika Anji 和 Mahsa Anji 的带有噪声值的 Wireguard Wow 配置
 
@@ -123,7 +123,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 16.无需IP扫描即可获取Singbox和旧版本Hidify的Wireguard配置
 
-## 17. 在选项子链接中获取Singbox和旧版本Hidify的wireguard配置
+## 17. برای گرفتن کانفیگ وایرگارد برای سینگ باکس و نسخه قدیمی هیدیفای در ساب لینک   گزینه
 
 ## 捐赠
 
@@ -131,7 +131,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 支持项目
 
-<b>如果您喜欢我的项目，您可以通过给星星、关注并介绍给您的朋友来支持我的项目</b>
+<b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
