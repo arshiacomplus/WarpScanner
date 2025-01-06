@@ -92,7 +92,8 @@ N tuşuna basarsanız önceden ayarladığım IP seçilecektir
 
 ## 7. V2ray ve MahsaNG için yapılandırma, warp on warp almak için 7. seçeneği kullanabilirsiniz (yardım bpb panelinden alınmıştır....)
 
-Po sitelerinin (Kung Fu Panda) engellenip engellenmeyeceği size sorulacaktır.<br><br/>
+ ازتون سوال میشه که سایت های پ،و،(پاندا کنگ فو کار )  مسدود بشه یا نه 
+<br><br/>
 
 ## 8. Bu çözgüyü v2ray veya MahsaNg için alt çözgü yapabilirsiniz.
 
