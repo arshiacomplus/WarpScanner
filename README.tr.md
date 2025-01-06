@@ -40,13 +40,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Bu nedenle, bir sayısını girerek, ardından y ve belki tekrar y olduğunu belirtmek gerekir.
 
-##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekir.
+##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekiyor.
 
 ##### Ve daha sonra
 
 ##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP oluşturabilirsiniz.
 
-##### Sonuç dosyasına kaydet
+##### Sonuç dosyasına kaydedin
 
 ##### Daha sonra bir numarayı girersiniz (IP dördüncü versiyonu)
 
@@ -75,7 +75,7 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 Seçenek 1'i ve ardından 2'yi girerek 
  Mehsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
 
-Wire Guard konfigürasyonunu Shish'in IP versiyonu ile kopyalayıp client'a aktardıktan sonra hata almamak için bunu yapın.
+Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye aktardıktan sonra, bir hatayla karşılaşmamak için bunu yapın.
 
 -   1\. Kalem düğmesi
 -   2\. Braketi IP'nin yanına koymak[ipvsh]
@@ -94,7 +94,7 @@ N tuşuna basarsanız önceden ayarladığım IP seçilecektir
 
 Po sitelerinin (Kung Fu Panda) engellenip engellenmeyeceği size sorulacaktır.<br><br/>
 
-## 8. Bu warp'ı v2ray veya MahsaNg için alt çözgü yapabilirsiniz
+## 8. Bu çözgüyü v2ray veya MahsaNg için alt çözgü yapabilirsiniz.
 
 <br><br/>
 
@@ -109,7 +109,7 @@ Kullanım türü:
 
 <br><br/>
 
-## 10. بازدن این گزینه فایل کانفیگ `.conf`Wireguard Windscribe ve Wireguard için tasarlandı
+## 10. Bu yapılandırma dosyası seçeneğini aç`.conf`Wireguard Windscribe ve Wireguard için tasarlandı
 
 ## 11. Bu seçeneğe tıklayarak Nika Anji için wireguard konfigürasyonu elde edebilirsiniz.
 
@@ -123,7 +123,7 @@ Kullanım türü:
 
 ## 16. IP taraması olmadan Singbox ve Hidify'ın eski sürümü için Wireguard yapılandırmasını almak için
 
-## 17. Seçeneğin alt bağlantısında Singbox ve Hidify'ın eski sürümü için wireguard yapılandırmasını almak için
+## 17. Singbox için wireguard yapılandırmasını ve Hidify'ın eski sürümünü seçenek alt bağlantısından edinmek için
 
 ## bağışlamak
 
