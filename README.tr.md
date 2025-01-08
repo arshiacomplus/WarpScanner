@@ -40,13 +40,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Bu nedenle, bir sayısını girerek, ardından y ve belki tekrar y olduğunu belirtmek gerekir.
 
-##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekiyor.
+##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekir.
 
 ##### ve daha sonra
 
 ##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP oluşturabilirsiniz.
 
-##### Sonuç dosyasına kaydedin
+##### Sonuç dosyasına kaydet
 
 ##### Daha sonra bir numarayı girersiniz (IP dördüncü versiyonu)
 
@@ -58,7 +58,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. IP taramasına gerek kalmadan Wireguard yapılandırmasını edinin
 
-(best_result hatasını alan kişiler içindir.[0]onlar yerler) 
+(best_result hatasını alan kişiler içindir[0]onlar yerler) 
  Bu durumda ilk önce IP'yi diğer tarayıcılardan tarayabilirsiniz. 
  Ve üçüncü seçeneği seçtikten sonra port ile IP'yi girmeniz istenecek veya N girerseniz daha önce girdiğim IP'yi seçecektir.
 
@@ -73,9 +73,9 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 > Hata istekleri alanlar için bu 👈👈<https://t.me/arshia_mod_fun/298>
 
 Seçenek 1'i ve ardından 2'yi girerek 
- Mehsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
+ Mahsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
 
-Wire Guard konfigürasyonunu Shish'in IP sürümü ile kopyalayıp istemciye aktardıktan sonra hata almamak için bunu yapın.
+Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye aktardıktan sonra, bir hatayla karşılaşmamak için bunu yapın.
 
 -   1\. Kalem düğmesi
 -   2\. Braketi IP'nin yanına koymak[ipvsh]
@@ -87,8 +87,9 @@ N tuşuna basarsanız daha önce koyduğum ipi seçecektir
  Aksi takdirde 
  Bağlantı noktası örneğiyle birlikte IP:
 
-> ipv4:bağlantı noktası
-> sen gir<br><br/>
+> ipv4:port
+> وارد می‌کنید
+> <br><br/>
 
 ## 7. V2ray ve MahsaNG için yapılandırma, warp on warp almak için 7. seçeneği kullanabilirsiniz (yardım bpb panelinden alınmıştır....)
 
@@ -123,7 +124,7 @@ Kullanım türü:
 
 ## 16. IP taraması olmadan Singbox ve Hidify'ın eski sürümü için Wireguard yapılandırmasını almak için
 
-## 17. Singbox için wireguard yapılandırmasını ve Hidify'ın eski sürümünü seçenek alt bağlantısından edinmek için
+## 17. Seçeneğin alt bağlantısında Singbox ve Hidify'ın eski sürümü için wireguard yapılandırmasını almak için
 
 ## bağışlamak
 
