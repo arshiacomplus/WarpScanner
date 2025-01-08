@@ -40,13 +40,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Bu nedenle, bir sayısını girerek, ardından y ve belki tekrar y olduğunu belirtmek gerekir.
 
-##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekir.
+##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekiyor.
 
 ##### ve daha sonra
 
 ##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP oluşturabilirsiniz.
 
-##### Sonuç dosyasına kaydet
+##### Sonuç dosyasına kaydedin
 
 ##### Daha sonra bir numarayı girersiniz (IP dördüncü versiyonu)
 
@@ -58,7 +58,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. IP taramasına gerek kalmadan Wireguard yapılandırmasını edinin
 
-(best_result hatasını alan kişiler içindir[0]onlar yerler) 
+(best_result hatasını alan kişiler içindir.[0]onlar yerler) 
  Bu durumda ilk önce IP'yi diğer tarayıcılardan tarayabilirsiniz. 
  Ve üçüncü seçeneği seçtikten sonra port ile IP'yi girmeniz istenecek veya N girerseniz daha önce girdiğim IP'yi seçecektir.
 
@@ -73,29 +73,28 @@ Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 > Hata istekleri alanlar için bu 👈👈<https://t.me/arshia_mod_fun/298>
 
 Seçenek 1'i ve ardından 2'yi girerek 
- Mahsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
+ Mehsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
 
-Wire Guard yapılandırmasını Shish'in IP sürümüyle kopyalayıp istemciye aktardıktan sonra, bir hatayla karşılaşmamak için bunu yapın.
+Wire Guard konfigürasyonunu Shish'in IP versiyonu ile kopyalayıp client'a aktardıktan sonra hata almamak için bunu yapın.
 
 -   1\. Kalem düğmesi
 -   2\. Braketi IP'nin yanına koymak[ipvsh]
 -   3\. Depolama<br><br/>
 
-## 6. Vettori ve Mehsa Anji için kablosuz koruma yapılandırmasını almak için ve... IP taraması olmadan
+## 6. Vettori ve Mehsa Anji için kablosuz koruma yapılandırmasını almak ve... IP taraması olmadan
 
 N tuşuna basarsanız daha önce koyduğum ipi seçecektir
  Aksi takdirde 
  Bağlantı noktası örneğiyle birlikte IP:
 
-> ipv4:port
-> وارد می‌کنید
-> <br><br/>
+> ipv4:bağlantı noktası
+> sen gir<br><br/>
 
 ## 7. V2ray ve MahsaNG için yapılandırma, warp on warp almak için 7. seçeneği kullanabilirsiniz (yardım bpb panelinden alınmıştır....)
 
 Po sitelerinin (Kung Fu Panda) engellenip engellenmeyeceği size sorulacaktır.<br><br/>
 
-## 8. Bu çözgüyü v2ray veya MahsaNg için alt çözgü yapabilirsiniz.
+## 8. Bu warp'ı v2ray veya MahsaNg için alt çözgü yapabilirsiniz
 
 <br><br/>
 
@@ -110,7 +109,7 @@ Kullanım türü:
 
 <br><br/>
 
-## 10. Bu yapılandırma dosyası seçeneğini aç`.conf`Wireguard Windscribe ve Wireguard için tasarlandı
+## 10. Bu yapılandırma dosyası seçeneğini aç`.conf` وایرگارد  ساخته میشود برای ویندسکرایب و وایرگارد
 
 ## 11. Bu seçeneğe tıklayarak Nika Anji için wireguard konfigürasyonu elde edebilirsiniz.
 
@@ -124,9 +123,9 @@ Kullanım türü:
 
 ## 16. IP taraması olmadan Singbox ve Hidify'ın eski sürümü için Wireguard yapılandırmasını almak için
 
-## 17. Seçeneğin alt bağlantısında Singbox ve Hidify'ın eski sürümü için wireguard yapılandırmasını almak için
+## 17. Singbox için wireguard yapılandırmasını ve Hidify'ın eski sürümünü seçenek alt bağlantısından edinmek için
 
-## bağışlamak
+## اهدا کردن
 
 <b>TRX:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhsssssssssss 42296553aa</a>
 
