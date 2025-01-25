@@ -1,6 +1,6 @@
 ## 经线扫描仪
 
-语言 : 🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)| 🇯🇵[日本人](README.ja.md)
+语言：🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)| 🇯🇵[日本人](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -20,7 +20,7 @@
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
-### 在AppTermax中运行以下代码
+### 在Tremax应用程序中运行以下代码
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
@@ -38,13 +38,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### ▫️能够保存iPS版本中的IPS第四版中的四个版本/仿真/0/和称为result.csv的文件
 
-##### 因此，应该注意的是，进入第一，然后是y，也许是y
+##### 因此，应该注意的是，输入数字 1，然后输入 y，也许再输入 y
 
 ##### 然后，您必须访问Thermox内存问您
 
 ##### 进而
 
-##### نکته : میتونید  آیپی تمیز برای پنل وحید(با اینتر ) و پنل bpb(با کاما )
+##### 注意：您可以清洁VAHID面板（带有INTER）和BPB面板（带有逗号）的IP
 
 ##### 在步枪档案中说
 
@@ -52,15 +52,15 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <br><br/>
 
-## 2.接收wireguard配置
+## 2. 获取Wireguard配置
 
-▫️如果您获得电线的配置到超时错误，则多次<br><br/>
+▫️如果在获取wireguard配置时遇到超时错误，请多测试几次<br><br/>
 
-## 3。接收WireGard配置，无需扫描IP
+## 3.无需扫描IP即可获取Wireguard配置
 
-（让人们成为erecard best_result[0] می‌خورند) 
- در این صورت می‌توانید اول از اسکنر های دیگه آیپی اسکن کنید 
- و بعد از زدن گزینه سه ازتون سوال میشه که آیپی رو با پورت  وارد کنید یا اگه N رو وارد کنید آیپی که از قبل گذاشتم رو انتخاب می‌کنه
+（让人们成为erecard best_result[0]他们吃） 
+ 这种情况，可以先用其他扫描仪扫描IP 
+ 选择第三个选项后，会要求你输入IP和端口，或者如果你输入N，它将选择我已经输入的IP。
 
 <br><br/>
 
@@ -68,20 +68,20 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 如果出现超时错误，请多尝试几次<br><br/>
 
-## 5. 获取 Wireguard 配置以在 v2ray 和 MahsaNG 中使用
+## 5。接收用于V2RAR和MAHSANG的钢线配置
 
 > 这是给那些收到错误请求的人的👈👈<https://t.me/arshia_mod_fun/298>
 
-输入选项 1，然后输入选项 2 
- 您可以获得 Shish 的 IP 版本，该版本也适用于 Mehsa Anji 和 Vettori 的选项 5 Wireguard 配置。
+通过输入选项1，之后 
+ 您可以获取玻璃的IP版本，该玻璃也适用于Mahsa和Vittori的MAHSA和Vittori的选项2
 
 用玻璃的IP版本复制配置线卫队然后进入客户端，请避免错误
 
 -   1\. 铅笔按钮
--   2。将支架放在IP旁边[IPVSH]
--   3\. 存储<br><br/>
+-   2\. 将支架放在 IP 旁边[ipvsh]
+-   3。兴趣<br><br/>
 
-## 6。要获得Vittori和Mahsa Angi的WireCard配置，...没有扫描IP
+## 6。要接收Vittori和Mahsa Angi的WireGard配置，...没有扫描IP
 
 如果你按n，它会选择我之前输入的ip
  否则 
@@ -94,13 +94,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 系统会询问您 Po 网站（功夫熊猫）是否会被屏蔽<br><br/>
 
-## 8。
+## 8. 您可以对 v2ray 或 MahsaNg 的扭曲进行子扭曲
 
 <br><br/>
 
 ## 9。你可以做剪短的短裤
 
-为其命名并关闭 Thermox 窗口并打开一个新窗口。
+名称和关闭热窗口，然后打开新的。
 
 使用类型：
 
@@ -111,27 +111,27 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 10.打开此配置文件选项`.conf`Wireguard 专为 Windscribe 和 Wireguard 打造
 
-## 11。通过点击此选项，您可以获取Nika Fig的配置Wayer。
+## 11.通过单击此选项，您可以获得Nika Anji的wireguard配置
 
 ## 12.点击此选项，无需扫描IP即可获取Nika Anji的Wireguard配置
 
 ## 13. 获取 Nika Anji 和 Mehsa Anji 的带有噪声值的 Wireguard Wow 配置
 
-## 14. 在子链接中获取 Nika Anji 和 Mahsa Anji 的带有噪声值的 Wireguard Wow 配置
+## 14。要获得尼卡·安吉（Nika Angi）和玛哈·安吉（Mahsa Angi）的噪声配置
 
-## 15。要获得Singbox的WireCard配置和Hydifa的旧版本
+## 15.获取Singbox和旧版本Hidify的wireguard配置
 
 ## 16。要获取singbox和旧hydifa版本的WireGard的配置，而无需扫描IP
 
-## 17。要获得Singbox的Wigeard和Sub -Link选项中的Hydifa的旧版本的配置
+## 17. 在选项子链接中获取Singbox和旧版本Hidify的wireguard配置
 
 ## 捐
 
-<b>交易：</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>USDT：</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0 Busbasi 10，带有雷电。</a>
+<b>TRX：</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">tkupvdg5dqldusg3x1hhidrpuhm1gmqz2g</a><br><b>USDT：</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhssssssssss 42296553aa</a>
 
 ## 支持该项目
 
-<b>如果您喜欢我的项目，您可以通过给星星、关注并介绍给您的朋友来支持我的项目</b>
+<b>如果您喜欢我的项目，则可以通过捐赠明星并放弃和介绍您的朋友来支持我的项目</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
