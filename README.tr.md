@@ -1,6 +1,6 @@
 ## Çözgü Tarayıcı
 
-dil : 🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[İngilizce](README.en.md)| 🇨🇳[Çince](README.zh-CN.md)| 🇯🇵[Japonca](README.ja.md)
+Dil: 🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[İngilizce](README.en.md)| 🇨🇳[Çince](README.zh-CN.md)| 🇯🇵[Japonca](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -20,7 +20,7 @@ dil : 🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[�
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
-### Tremax uygulamasında aşağıdaki kodu çalıştırın
+### Aşağıdaki kodu AppTermax'ta çalıştırın
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
@@ -40,33 +40,33 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Bu nedenle, bir sayısını girerek, ardından y ve belki tekrar y olduğunu belirtmek gerekir.
 
-##### Daha sonra sizden istenen Termox'a hafıza erişimi vermeniz gerekiyor.
+##### Ve sonra size isteyen termox belleğine erişmelisiniz
 
-##### ve daha sonra
+##### Ve daha sonra
 
 ##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP oluşturabilirsiniz.
 
-##### Tüfek dosyasında söyle
+##### Sonuç dosyasına kaydet
 
 ##### Daha sonra bir numarayı girersiniz (IP dördüncü versiyonu)
 
 <br><br/>
 
-## 2. Wireguard yapılandırmasını alın
+## 2. Wireguard yapılandırmasını edinin
 
-▫tern Birkaç kez daha fazla zaman aşımı için kabloların bir yapılandırmasını alırsanız<br><br/>
+▫️ Wireguard yapılandırmasını alırken zaman aşımı hatası alırsanız birkaç kez daha test edin<br><br/>
 
 ## 3. IP taramaya gerek kalmadan Wiregard yapılandırmasını alın
 
-(İnsanların Erecard Best_result olması için[0]Yemek yiyor) 
- Öyleyse, önce diğer IP tarayıcılarından tarayabilirsiniz 
- Ve üçüncü seçeneğe ulaştıktan sonra, IP'yi bağlantı noktasıyla girip girmediğiniz veya n girerseniz zaten IP'yi seçer.
+(İnsanların Erecard Best_result olması için[0]onlar yerler) 
+ Bu durumda ilk önce IP'yi diğer tarayıcılardan tarayabilirsiniz. 
+ Ve üçüncü seçeneği seçtikten sonra port ile IP'yi girmeniz istenecek veya N girerseniz daha önce girdiğim IP'yi seçecektir.
 
 <br><br/>
 
-### 4. İstenilen numaraya sahip bir alt bağlantıda tel koruma konfigürasyonunu almak için 4. seçeneği girin. Konfigürasyon numarası için çift sayıları kullanmayı deneyin.
+### 4. Wiregard'ın yapılandırmasını istenen numaralı bir alt bağlantıda almak için 4S'yi girin.
 
-Ağustos hatasını yiyorsanız, birkaç kez daha test edin<br><br/>
+Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
 
 ## 5. V2ray ve Mahsang'da kullanılmak üzere WireGuard yapılandırmasını almak için
 
@@ -79,55 +79,55 @@ Camın IP sürümü ile karışık tel koruyucuyu kopyaladıktan ve ardından is
 
 -   1\. Kalem düğmesi
 -   2\. Braketi IP'nin yanına koymak[ipvsh]
--   3\. Faiz<br><br/>
+-   3\. Depolama<br><br/>
 
 ## 6. Vettori ve Mehsa Anji için kablosuz koruma yapılandırmasını almak ve... IP taraması olmadan
 
-Eğer n vurursan, zaten bıraktığım ipy'yi seçecek
+N tuşuna basarsanız daha önce koyduğum ipi seçecektir
  Aksi takdirde 
- Bağlantı noktası örneği ile IP:
+ Bağlantı noktası örneğiyle birlikte IP:
 
 > IPv4: bağlantı noktası
 > Giriyorsun<br><br/>
 
-## 7. Şaşkınlık için V2ray ve Mahsang için Seçenek 2'yi kullanabilirsiniz (BPB paneline yardım edin ....)
+## 7. V2ray ve MahsaNG için yapılandırma, warp on warp almak için 7. seçeneği kullanabilirsiniz (yardım bpb panelinden alınmıştır....)
 
-Po sitelerinin (Kung Fu Panda) engellenip engellenmeyeceği size sorulacaktır.<br><br/>
+Sitelerin (Panda Kung Fu) engellenip engellenmediğini sorun<br><br/>
 
-## 8. V2ray veya Mahsang için bu v2ray'ın alt vecasını alabilirsiniz.
+## 8. Bu warp'ı v2ray veya MahsaNg için alt çözgü yapabilirsiniz
 
 <br><br/>
 
 ## 9. Kısayol yapabilirsiniz
 
-İsim ve Thermox penceresini kapatın ve yeni açın.
+Bir isim verin ve Thermox penceresini kapatıp yeni bir tane açın.
 
 Kullanım Türü:
 
--   Senaryoyu çalıştırmak için verdiğiniz adı girin
--   Tekrar silmek için aynı sayıyı al ve y
+-   Komut dosyasını çalıştırmak için verdiğiniz adı girin
+-   Silmek için aynı numaraya tekrar basın ve Y tuşuna basın.
 
 <br><br/>
 
-## 10. Bu seçenek yapılandırma dosyasını açın`.conf`Windscraib ve Weir için Wigeard yapılır
+## 10. Bu yapılandırma dosyası seçeneğini aç`.conf`Wireguard Windscribe ve Wireguard için tasarlandı
 
 ## 11. Bu seçeneğe basarak Nika için yapılandırma yolunu alabilirsiniz.
 
-## 12. Bu seçeneğe tıklayarak Nika Anji için IP taramasına gerek kalmadan Wireguard konfigürasyonunu alabilirsiniz.
+## 12. با زدن این گزینه میتوانید کانفیگ وایرگارد برای نیکا انجی بدون نیاز به اسکن ایپی بگیرید
 
 ## 13. Nika ve Mahsa Angi için gürültü değerleri olan fethet vay canına
 
-## 14. Subwoofer'da Nika Angi ve Mahsa Angi için gürültü değerleriyle WOW yapılandırması elde etmek için
+## 14. Alt bağlantıdaki Nika Anji ve Mahsa Anji için gürültü değerleri ile Wireguard Wow konfigürasyonunu almak
 
-## 15. Singbox ve Hyditifa'nın eski sürümünü kablos kartının karışık hale getirmesini sağlamak için
+## 15. Singbox ve Hidify'ın eski sürümü için wireguard yapılandırmasını almak için
 
 ## 16. SCANBAK ve Eski Hydifa sürümü için Wiregard'ın yapılandırmalarını tarama ip olmadan almak için
 
-## 17. Alt bağlantı seçeneğinde Singbox ve Hidify'ın eski sürümü için wireguard yapılandırmasını almak için
+## 17.
 
 ## bağışlamak
 
-<b>TRX:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUPVDG5DQLDUSG3X1HIDRPUHM1GMQZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0 Busbasi 10, bir yıldırım ile.</a>
+<b>TRX:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUPVDG5DQLDUSG3X1HIDRPUHM1GMQZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhsssssssssss 42296553aa</a>
 
 ## Projeyi destekleyin
 
