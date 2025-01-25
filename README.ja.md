@@ -1,6 +1,6 @@
 ## ワープスキャナー
 
-言語 : 🇮🇷[ペルシア語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
+言語：🇮🇷[ペルシャ語](README.md)| 🇹🇷[トルコ語](README.tr.md)| 🇬🇧[英語](README.en.md)| 🇨🇳[中国語](README.zh-CN.md)| 🇯🇵[日本語](README.ja.md)
 
 <p align="center">   
    <img  width=70% src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d" />
@@ -34,21 +34,21 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 > 最初のステップで Python をインストールしようとするため、VPN が必要になる可能性があります。
 
-## 1。APスキャナーはIPv4、IPv6です
+## 1. IPスキャナーはIPv4、IPv6です
 
 ##### ▫️ バージョン 4 の IP を storage/emulated/0/ および result.csv というファイルに保存する機能
 
 ##### したがって、ナンバーワンを入力してからyを入力し、多分再びyに注意する必要があります
 
-##### 次に、Termox にメモリ アクセスを許可する必要があります。これは要求されます。
+##### そして、求められたメモリアクセスをTermoxに与える必要があります。
 
 ##### その後
 
-##### 注: Vahid パネル (inter 付き) および bpb パネル (カンマ付き) のクリーンな IP を作成できます。
+##### 注：Vahidパネル（Interを使用）およびBPBパネル（コンマ付き）のIPをクリーニングできます
 
 ##### 結果ファイルに保存
 
-##### 次に、番号 1 (IP バージョン 4) を入力します。
+##### 次に、ナンバーワン（IPEPバージョン4）を入力します
 
 <br><br/>
 
@@ -58,34 +58,34 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 3. IP をスキャンせずに Wireguard 構成を取得する
 
-(エラー「best_result」が表示される人向けです)[0]彼らは食べる） 
- この場合、最初に他のスキャナから IP をスキャンできます。 
+（人々がbest_resultを停止するために[0]彼らは食べる） 
+ この場合、最初に他のスキャナーから IP をスキャンできます。 
  3 番目のオプションを選択すると、IP とポートを入力するように求められます。N を入力すると、すでに入力した IP が選択されます。
 
 <br><br/>
 
 ### 4.目的の数字でサブリンクでワイヤガードの構成を取得するには、4秒を入力してください
 
-タイムアウトエラーが発生した場合は、さらに数回試してください<br><br/>
+8月にエラーを食べた場合は、さらに数回テストしてください<br><br/>
 
 ## 5。V2RAYとMAHSANGで使用するワイヤガード構成を受信する
 
-> エラーリクエストが表示される方向けです 👈👈<https://t.me/arshia_mod_fun/298>
+> これは、リクエストを受ける人向けです<https://t.me/arshia_mod_fun/298>
 
-オプション 1 を入力し、その後 2 を入力すると 
- Shish の IP バージョンを入手できます。これは、Mehsa Anji および Vettori のオプション 5 ワイヤーガード構成にも実装されています。
+その後、オプション1を入力します 
+ ガラスのIPバージョンを入手できます。これは、MahsaとVittoriにも実装されており、MahsaとVittoriのオプション2に実装されています。
 
 Shish の IP バージョンを使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
 
--   1。鉛筆
--   2\. ブラケットを IP の隣に置きます[ipvsh]
+-   1.鉛筆ボタン
+-   2\. ブラケットを IP の隣に置きます[IPVSH]
 -   3\. 保管<br><br/>
 
 ## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji のワイヤーガード設定を取得するには...
 
-あなたがnをヒットした場合、それは私がすでに残したipyを選択します
+nを押すと、前に入力したIPが選択されます
  さもないと 
- ポート付きIP例：
+ IP とポートの例:
 
 > IPv4：ポート
 > 入力します<br><br/>
@@ -94,44 +94,44 @@ Shish の IP バージョンを使用して Wire Guard 設定をコピーし、�
 
 Po サイト (カンフー パンダ) をブロックするかどうかを尋ねられます<br><br/>
 
-## 8. v2ray または MahsaNg のワープをサブワープできます
+## 8。v2rayまたはmahsangのそのv2rayのサブベインを取ることができます
 
 <br><br/>
 
 ## 9. ショートカットができる
 
-名前を付けて Thermox ウィンドウを閉じ、新しいウィンドウを開きます。
+Thermoxウィンドウを閉じて閉じて、新しい開きます。
 
-使用の種類:
+使用の種類：
 
 -   スクリプトを実行するために指定した名前を入力します
--   同じ番号を取って再度消去してy
+-   削除するには、もう一度同じ番号を押してYを押します。
 
 <br><br/>
 
-## 10.このオプション構成ファイルを開きます`.conf`Wireguard は Windscribe と Wireguard のために作られています
+## 10.この設定ファイルを開くオプション`.conf`WigeardはWindscraibとWeirのために作られています
 
-## 11。このオプションを押すと、nikaのconfigleウェイヤーを取得できます。
+## 11. このオプションをクリックすると、Nika Anji のワイヤーガード構成を取得できます。
 
-## 12. このオプションをクリックすると、IP をスキャンせずに Nika Anji の Wireguard 構成を取得できます。
+## 12。このオプションを押すと、IPをスキャンする必要なく、Nika Annie用のWigger Configglingを取得できます
 
-## 13。ニカとマーサ・アンギの騒音値を備えた征服のために
+## 13. Nika Anji と Mehsa Anji のノイズ値を含む Wireguard Wow 設定を取得するには
 
-## 14。サブウーファーのニカ・アンジとマフサ・アンギのノイズ値でWOW構成を取得するには
+## 14. サブリンク内の Nika Anji と Mahsa Anji のノイズ値を含む Wireguard Wow 設定を取得するには
 
 ## 15。SingboxのWirecard ConfigglingとHydifaの古いバージョンを取得するには
 
-## 16.スキャンIPなしでSingboxおよび古いHydifaバージョン用のワイヤガードの構成を取得するには
+## 16. IP スキャンなしで Singbox と古いバージョンの Hidify の Wireguard 設定を取得するには
 
-## 17. サブリンクオプションで Singbox と古いバージョンの Hidify のワイヤーガード設定を取得するには
+## 17. オプションのサブリンクで Singbox のワイヤーガード構成と古いバージョンの Hidify を取得するには
 
 ## 寄付する
 
-<b>送信:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhsssssssss 42296553aa</a>
+<b>TRX：</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">tkupvdg5dqldusg3x1hhidrpuhm1gmqz2g</a><br><b>USDT：</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0 Busbasi 10、Thunderbolt。</a>
 
 ## プロジェクトをサポートする
 
-<b>私のプロジェクトが気に入ったら、スターを付けたり、フォローしたり、友達に紹介したりして、私のプロジェクトをサポートしてください。</b>
+<b>あなたが私のプロジェクトが好きなら、あなたは私のプロジェクトをサポートし、スターを与え、あなたの友達をあきらめて紹介することができます</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
