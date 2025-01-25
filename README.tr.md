@@ -16,11 +16,11 @@ dil : 🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[�
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
-> Thermox'u Google Play'den indirin Thermox'u Google Play'den indirmeyin
+> Thermox'u Google Play'den indirmeyin Thermox'u Google Play'den indirmeyin.
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
-### Aşağıdaki kodu AppTermax'ta çalıştırın
+### Tremax uygulamasında aşağıdaki kodu çalıştırın
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
@@ -36,7 +36,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 1. IP tarayıcı IPv4, IPv6'dır
 
-##### ▫️ Dördüncü sürüm IP'leri depolama/emülasyon/0/ dizinine ve result.csv adlı bir dosyaya kaydetme yeteneği
+##### ▫️ IPS sürümünü depolama/taklit/0/ve dosya olarak adlandırma yeteneği Sonuç.csv
 
 ##### Bu nedenle, bir sayısını girerek, ardından y ve belki tekrar y olduğunu belirtmek gerekir.
 
@@ -46,92 +46,92 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Not: Vahid panel (inter ile) ve bpb panel (virgül ile) için temiz IP oluşturabilirsiniz.
 
-##### Sonuç dosyasına kaydedin
+##### Tüfek dosyasında söyle
 
 ##### Daha sonra bir numarayı girersiniz (IP dördüncü versiyonu)
 
 <br><br/>
 
-## 2. Wireguard yapılandırmasını edinin
+## 2. Wireguard yapılandırmasını alın
 
-▫️ Wireguard yapılandırmasını alırken zaman aşımı hatası alırsanız birkaç kez daha test edin<br><br/>
+▫tern Birkaç kez daha fazla zaman aşımı için kabloların bir yapılandırmasını alırsanız<br><br/>
 
-## 3. IP taramasına gerek kalmadan Wireguard yapılandırmasını edinin
+## 3. IP taramaya gerek kalmadan Wiregard yapılandırmasını alın
 
-(best_result hatasını alan kişiler içindir.[0]onlar yerler) 
- Bu durumda ilk önce IP'yi diğer tarayıcılardan tarayabilirsiniz. 
- Ve üçüncü seçeneği seçtikten sonra port ile IP'yi girmeniz istenecek veya N girerseniz daha önce girdiğim IP'yi seçecektir.
+(İnsanların Erecard Best_result olması için[0]Yemek yiyor) 
+ Öyleyse, önce diğer IP tarayıcılarından tarayabilirsiniz 
+ Ve üçüncü seçeneğe ulaştıktan sonra, IP'yi bağlantı noktasıyla girip girmediğiniz veya n girerseniz zaten IP'yi seçer.
 
 <br><br/>
 
 ### 4. İstenilen numaraya sahip bir alt bağlantıda tel koruma konfigürasyonunu almak için 4. seçeneği girin. Konfigürasyon numarası için çift sayıları kullanmayı deneyin.
 
-Zaman aşımı hatası alırsanız birkaç kez daha deneyin<br><br/>
+Ağustos hatasını yiyorsanız, birkaç kez daha test edin<br><br/>
 
-## 5. V2ray ve MahsaNG'de kullanılmak üzere Wireguard yapılandırmasını edinmek için
+## 5. V2ray ve Mahsang'da kullanılmak üzere WireGuard yapılandırmasını almak için
 
-> Hata istekleri alanlar için bu 👈👈<https://t.me/arshia_mod_fun/298>
+> Bu istekleri alanlar için<https://t.me/arshia_mod_fun/298>
 
-Seçenek 1'i ve ardından 2'yi girerek 
- Mehsa Anji ve Vettori için Seçenek 5 Wireguard yapılandırması için de uygulanan Shish'in IP sürümünü alabilirsiniz.
+Seçenek 1'e girerek ve bundan sonra 
+ Mahsa ve Vittori için Mahsa ve Vittori için de uygulanan camın IP sürümünü alabilirsiniz.
 
-Wire Guard konfigürasyonunu Shish'in IP versiyonu ile kopyalayıp client'a aktardıktan sonra hata almamak için bunu yapın.
+Camın IP sürümü ile karışık tel koruyucuyu kopyaladıktan ve ardından istemciye girdikten sonra, hatayı önlemek için bunu yapın
 
 -   1\. Kalem düğmesi
 -   2\. Braketi IP'nin yanına koymak[ipvsh]
--   3\. Depolama<br><br/>
+-   3\. Faiz<br><br/>
 
 ## 6. Vettori ve Mehsa Anji için kablosuz koruma yapılandırmasını almak ve... IP taraması olmadan
 
-N tuşuna basarsanız daha önce koyduğum ipi seçecektir
+Eğer n vurursan, zaten bıraktığım ipy'yi seçecek
  Aksi takdirde 
- Bağlantı noktası örneğiyle birlikte IP:
+ Bağlantı noktası örneği ile IP:
 
-> ipv4:bağlantı noktası
-> sen gir<br><br/>
+> IPv4: bağlantı noktası
+> Giriyorsun<br><br/>
 
-## 7. V2ray ve MahsaNG için yapılandırma, warp on warp almak için 7. seçeneği kullanabilirsiniz (yardım bpb panelinden alınmıştır....)
+## 7. Şaşkınlık için V2ray ve Mahsang için Seçenek 2'yi kullanabilirsiniz (BPB paneline yardım edin ....)
 
 Po sitelerinin (Kung Fu Panda) engellenip engellenmeyeceği size sorulacaktır.<br><br/>
 
-## 8. Bu warp'ı v2ray veya MahsaNg için alt çözgü yapabilirsiniz
+## 8. V2ray veya Mahsang için bu v2ray'ın alt vecasını alabilirsiniz.
 
 <br><br/>
 
 ## 9. Kısayol yapabilirsiniz
 
-Bir isim verin ve Thermox penceresini kapatıp yeni bir tane açın.
+İsim ve Thermox penceresini kapatın ve yeni açın.
 
-Kullanım türü:
+Kullanım Türü:
 
--   Komut dosyasını çalıştırmak için verdiğiniz adı girin
--   Silmek için aynı numaraya tekrar basın ve Y tuşuna basın.
+-   Senaryoyu çalıştırmak için verdiğiniz adı girin
+-   Tekrar silmek için aynı sayıyı al ve y
 
 <br><br/>
 
-## 10. Bu yapılandırma dosyası seçeneğini aç`.conf` وایرگارد  ساخته میشود برای ویندسکرایب و وایرگارد
+## 10. Bu seçenek yapılandırma dosyasını açın`.conf`Windscraib ve Weir için Wigeard yapılır
 
-## 11. Bu seçeneğe tıklayarak Nika Anji için wireguard konfigürasyonu elde edebilirsiniz.
+## 11. Bu seçeneğe basarak Nika için yapılandırma yolunu alabilirsiniz.
 
 ## 12. Bu seçeneğe tıklayarak Nika Anji için IP taramasına gerek kalmadan Wireguard konfigürasyonunu alabilirsiniz.
 
-## 13. Nika Anji ve Mehsa Anji için gürültü değerleriyle Wireguard Wow yapılandırmasını almak
+## 13. Nika ve Mahsa Angi için gürültü değerleri olan fethet vay canına
 
-## 14. Alt bağlantıdaki Nika Anji ve Mahsa Anji için gürültü değerleri ile Wireguard Wow konfigürasyonunu almak
+## 14. Subwoofer'da Nika Angi ve Mahsa Angi için gürültü değerleriyle WOW yapılandırması elde etmek için
 
-## 15. Singbox ve Hidify'ın eski sürümü için wireguard yapılandırmasını almak için
+## 15. Singbox ve Hyditifa'nın eski sürümünü kablos kartının karışık hale getirmesini sağlamak için
 
-## 16. IP taraması olmadan Singbox ve Hidify'ın eski sürümü için Wireguard yapılandırmasını almak için
+## 16. SCANBAK ve Eski Hydifa sürümü için Wiregard'ın yapılandırmalarını tarama ip olmadan almak için
 
-## 17. Singbox için wireguard yapılandırmasını ve Hidify'ın eski sürümünü seçenek alt bağlantısından edinmek için
+## 17. Alt bağlantı seçeneğinde Singbox ve Hidify'ın eski sürümü için wireguard yapılandırmasını almak için
 
-## اهدا کردن
+## bağışlamak
 
-<b>TRX:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhsssssssssss 42296553aa</a>
+<b>TRX:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUPVDG5DQLDUSG3X1HIDRPUHM1GMQZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0 Busbasi 10, bir yıldırım ile.</a>
 
 ## Projeyi destekleyin
 
-<b>Projemi beğendiyseniz yıldız vererek, takip ederek ve arkadaşlarınıza tanıtarak projeme destek olabilirsiniz.</b>
+<b>اگر از پروژه من خوشتون اومد میتونید با دادن ستاره و فالو کردن و معرفی کردن به دوستاتون از پروژه من حمایت کنید</b>
 
 <p align="center">   
    <img  width=99% src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d" />
