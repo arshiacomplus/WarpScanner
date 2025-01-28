@@ -16,7 +16,7 @@
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
-> Google Play から Thermox をダウンロードしないでください。 Google Play から Thermox をダウンロードしないでください。
+> Google PlayからThermoxをダウンロードしないでください。
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
@@ -32,21 +32,21 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 > [！警告!]
 
-> 最初のステップで Python をインストールしようとするため、VPN が必要になる可能性があります。
+> 彼は最初のステップでPythonをインストールしようとするので、VPNが必要になるかもしれません！
 
-## 1. IPスキャナーはIPv4、IPv6です
+## 1。APスキャナーはIPv4、IPv6です
 
-##### ▫️ バージョン 4 の IP を storage/emulated/0/ および result.csv というファイルに保存する機能
+##### ips -result.csvと呼ばれるIPSバージョン4をストレージ/エミュレート/0/およびファイルを保存する機能
 
 ##### したがって、ナンバーワンを入力してからyを入力し、多分再びyに注意する必要があります
 
-##### そして、求められたメモリアクセスをTermoxに与える必要があります。
+##### そして、あなたはあなたに尋ねるサーマックスメモリにアクセスする必要があります
 
 ##### その後
 
 ##### 注：Vahidパネル（Interを使用）およびBPBパネル（コンマ付き）のIPをクリーニングできます
 
-##### 結果ファイルに保存
+##### ライフルファイルで言います
 
 ##### 次に、ナンバーワン（IPEPバージョン4）を入力します
 
@@ -56,11 +56,11 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ▫ワイヤーの構成をエラータイムアウトに入手した場合、さらに数回<br><br/>
 
-## 3. IP をスキャンせずに Wireguard 構成を取得する
+## 3. IPをスキャンする必要なく、ワイヤーガード構成を受信します
 
-（人々がbest_resultを停止するために[0]彼らは食べる） 
- この場合、最初に他のスキャナーから IP をスキャンできます。 
- 3 番目のオプションを選択すると、IP とポートを入力するように求められます。N を入力すると、すでに入力した IP が選択されます。
+（人々がbest_resultを停止するために[0]食べている） 
+ もしそうなら、最初に他のIPスキャナーからスキャンできます 
+ また、オプション3を押した後、ポートでIPを入力するか、nを入力するかどうかを尋ねられます。
 
 <br><br/>
 
@@ -75,61 +75,61 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 その後、オプション1を入力します 
  ガラスのIPバージョンを入手できます。これは、MahsaとVittoriにも実装されており、MahsaとVittoriのオプション2に実装されています。
 
-Shish の IP バージョンを使用して Wire Guard 設定をコピーし、それをクライアントにインポートした後、バグが発生しないようにこれを実行します。
+ガラスのIPバージョンでConfigggling Wire Guardをコピーしてからクライアントに入力した後、バグを避けるためにそうしてください
 
--   1.鉛筆ボタン
--   2\. ブラケットを IP の隣に置きます[IPVSH]
--   3\. 保管<br><br/>
+-   1。鉛筆
+-   2\. IPの横にブラケットを置きます[IPVSH]
+-   3。関心<br><br/>
 
-## 6. IP スキャンを使用せずに、Vettori と Mehsa Anji のワイヤーガード設定を取得するには...
+## 6。VittoriとMahsa Angi用のWirecard Configglingを取得し、...スキャンIPはありません
 
-nを押すと、前に入力したIPが選択されます
+あなたがnをヒットした場合、それは私がすでに残したipyを選択します
  さもないと 
- IP とポートの例:
+ ポート付きIP例：
 
 > IPv4：ポート
 > 入力します<br><br/>
 
-## 7. v2ray および MahsaNG の設定を取得するには、オプション 7 を使用できます (ヘルプは bpb パネルから取得しました....)。
+## 7. configglingを取得するには、v2rayとmahsangにオプション2を使用できます（BPBパネルをヘルプ....）
 
-Po サイト (カンフー パンダ) をブロックするかどうかを尋ねられます<br><br/>
+サイト（panda kung fu）がブロックされているかどうかを尋ねます<br><br/>
 
 ## 8。v2rayまたはmahsangのそのv2rayのサブベインを取ることができます
 
 <br><br/>
 
-## 9. ショートカットができる
+## 9。カットショーツを作ることができます
 
 Thermoxウィンドウを閉じて閉じて、新しい開きます。
 
 使用の種類：
 
--   スクリプトを実行するために指定した名前を入力します
--   削除するには、もう一度同じ番号を押してYを押します。
+-   スクリプトを実行するために与えた名前を入力します
+-   同じ番号を取って再度消去してy
 
 <br><br/>
 
-## 10.この設定ファイルを開くオプション`.conf`WigeardはWindscraibとWeirのために作られています
+## 10.このオプション構成ファイルを開きます`.conf`WigeardはWindscraibとWeirのために作られています
 
-## 11. このオプションをクリックすると、Nika Anji のワイヤーガード構成を取得できます。
+## 11。このオプションを押すことにより、nikaのconfigleウェイヤーを取得できます。
 
 ## 12。このオプションを押すと、IPをスキャンする必要なく、Nika Annie用のWigger Configglingを取得できます
 
-## 13. Nika Anji と Mehsa Anji のノイズ値を含む Wireguard Wow 設定を取得するには
+## 13。ニカとマーサ・アンギの騒音値を備えた征服のために
 
-## 14. サブリンク内の Nika Anji と Mahsa Anji のノイズ値を含む Wireguard Wow 設定を取得するには
+## 14。サブウーファーのニカ・アンジとマフサ・アンギのノイズ値でWOW構成を取得するには
 
 ## 15。SingboxのWirecard ConfigglingとHydifaの古いバージョンを取得するには
 
-## 16. IP スキャンなしで Singbox と古いバージョンの Hidify の Wireguard 設定を取得するには
+## 16.スキャンIPなしでSingboxおよび古いHydifaバージョン用のワイヤガードの構成を取得するには
 
-## 17. オプションのサブリンクで Singbox のワイヤーガード構成と古いバージョンの Hidify を取得するには
+## 17。SingBox用のWigeardの構成とサブリンクオプションでHydifaの古いバージョンを取得するには
 
 ## 寄付する
 
 <b>TRX：</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">tkupvdg5dqldusg3x1hhidrpuhm1gmqz2g</a><br><b>USDT：</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0 Busbasi 10、Thunderbolt。</a>
 
-## プロジェクトをサポートする
+## プロジェクトをサポートします
 
 <b>あなたが私のプロジェクトが好きなら、あなたは私のプロジェクトをサポートし、スターを与え、あなたの友達をあきらめて紹介することができます</b>
 
