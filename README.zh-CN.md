@@ -32,13 +32,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 > [！警告!]
 
-> 由于它在第一步中尝试安装 Python，因此可能需要 VPN！
+> 由于他试图在第一步安装Python，因此他可能需要VPN！
 
 ## 1。AP扫描仪是IPv4，IPv6
 
 ##### ▫️能够保存iPS版本中的IPS第四版中的四个版本/仿真/0/和称为result.csv的文件
 
-##### 因此，应该注意的是，输入数字 1，然后输入 y，也许再输入 y
+##### 因此，应该注意的是，进入第一，然后是y，也许是y
 
 ##### 然后，您必须访问Thermox内存问您
 
@@ -52,82 +52,82 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <br><br/>
 
-## 2. 获取Wireguard配置
+## 2。接收配置WireCard
 
-▫️如果在获取wireguard配置时遇到超时错误，请多测试几次<br><br/>
+▫️如果您获得电线的配置到超时错误，则多次<br><br/>
 
-## 3.无需扫描IP即可获取Wireguard配置
+## 3。接收WireGard配置，无需扫描IP
 
-（让人们成为erecard best_result[0]他们吃） 
- 这种情况，可以先用其他扫描仪扫描IP 
- 选择第三个选项后，会要求你输入IP和端口，或者如果你输入N，它将选择我已经输入的IP。
+（让人们成为erecard best_result[0]正在吃） 
+ 如果是这样，您可以首先从其他IP扫描仪进行扫描 
+ 在达到选项三之后，您将被问到是否使用端口输入IP，或者如果输入n，它将选择我的IP。
 
 <br><br/>
 
-### 4. 要在子链路中接收具有所需编号的wireguard 配置，请输入选项4。尝试使用偶数作为配置编号。
+### 4。要在带有所需数字的子链接中获取WireGard的配置，请尝试使用配置号码。
 
-如果出现超时错误，请多尝试几次<br><br/>
+如果您八月吃了错误，请再测试几次<br><br/>
 
 ## 5。接收用于V2RAR和MAHSANG的钢线配置
 
-> 这是给那些收到错误请求的人的👈👈<https://t.me/arshia_mod_fun/298>
+> 这是针对那些接受请求的人<https://t.me/arshia_mod_fun/298>
 
 通过输入选项1，之后 
  您可以获取玻璃的IP版本，该玻璃也适用于Mahsa和Vittori的MAHSA和Vittori的选项2
 
 用玻璃的IP版本复制配置线卫队然后进入客户端，请避免错误
 
--   1\. 铅笔按钮
--   2\. 将支架放在 IP 旁边[ipvsh]
+-   1。铅笔
+-   2。将支架放在IP旁边[IPVSH]
 -   3。兴趣<br><br/>
 
-## 6。要接收Vittori和Mahsa Angi的WireGard配置，...没有扫描IP
+## 6。要获得Vittori和Mahsa Angi的WireCard配置，...没有扫描IP
 
-如果你按n，它会选择我之前输入的ip
+如果您击中n，它将选择我已经离开的ipy
  否则 
- IP 与端口示例：
+ 带有端口示例的IP：
 
 > IPv4：端口
 > 您输入<br><br/>
 
 ## 7。要获得配置，您可以使用v2ray和mahsang的选项2（帮助BPB面板....）
 
-系统会询问您 Po 网站（功夫熊猫）是否会被屏蔽<br><br/>
+询问您是否阻塞了网站（熊猫功夫）<br><br/>
 
-## 8. 您可以对 v2ray 或 MahsaNg 的扭曲进行子扭曲
+## 8。
 
 <br><br/>
 
-## 9。你可以做剪短的短裤
+## 9. میتونید یه شورت کات درست کنید
 
 名称和关闭热窗口，然后打开新的。
 
 使用类型：
 
--   输入您为运行脚本指定的名称
+-   输入您给运行脚本的名称
 -   采取相同的数字再次删除并Y
 
 <br><br/>
 
-## 10.打开此配置文件选项`.conf`Wireguard 专为 Windscribe 和 Wireguard 打造
+## 10。打开此选项配置文件`.conf`Wigeard是为Windscraib和Weir制造的
 
-## 11.通过单击此选项，您可以获得Nika Anji的wireguard配置
+## 11。通过点击此选项，您可以获取Nika Fig的配置Wayer。
 
-## 12.点击此选项，无需扫描IP即可获取Nika Anji的Wireguard配置
+## 12。通过点击此选项，您可以在不需要扫描IP的情况下获得Nika Annie的Wigger配置
 
-## 13. 获取 Nika Anji 和 Mehsa Anji 的带有噪声值的 Wireguard Wow 配置
+## 13。征服了尼卡和玛莎·安吉的噪音价值
 
 ## 14。要获得尼卡·安吉（Nika Angi）和玛哈·安吉（Mahsa Angi）的噪声配置
 
-## 15.获取Singbox和旧版本Hidify的wireguard配置
+## 15。要获得Singbox的WireCard配置和Hydifa的旧版本
 
 ## 16。要获取singbox和旧hydifa版本的WireGard的配置，而无需扫描IP
 
-## 17. 在选项子链接中获取Singbox和旧版本Hidify的wireguard配置
+## 17。要获得Singbox的Wigeard和Sub -Link选项中的Hydifa的旧版本的配置
 
 ## 捐
 
-<b>TRX：</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">tkupvdg5dqldusg3x1hhidrpuhm1gmqz2g</a><br><b>USDT：</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0xpsi10bdbhhddfsfhbhbhhssssssssss 42296553aa</a>
+<b>TRX：</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">tkupvdg5dqldusg3x1hhidrpuhm1gmqz2g</a><br><b>USDT：</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0 Busbasi 10，带有雷电。</a>
 
 ## 支持该项目
 
