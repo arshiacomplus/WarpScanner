@@ -98,7 +98,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <br><br/>
 
-## 9. میتونید یه شورت کات درست کنید
+## 9。你可以做剪短的短裤
 
 名称和关闭热窗口，然后打开新的。
 
@@ -121,7 +121,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 15。要获得Singbox的WireCard配置和Hydifa的旧版本
 
-## 16。要获取singbox和旧hydifa版本的WireGard的配置，而无需扫描IP
+## 16。要获取Singbox和旧Hydifa版本的Configi Wigard，而无需扫描IP
 
 ## 17。要获得Singbox的Wigeard和Sub -Link选项中的Hydifa的旧版本的配置
 
