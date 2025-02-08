@@ -121,7 +121,7 @@ Thermoxウィンドウを閉じて閉じて、新しい開きます。
 
 ## 15。SingboxのWirecard ConfigglingとHydifaの古いバージョンを取得するには
 
-## 16.スキャンIPなしでSingboxおよび古いHydifaバージョン用のワイヤガードの構成を取得するには
+## 16.スキャンIPなしでSingboxおよび古いHydifaバージョン用のConfigiWigardを取得するには
 
 ## 17。SingBox用のWigeardの構成とサブリンクオプションでHydifaの古いバージョンを取得するには
 
