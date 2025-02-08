@@ -121,7 +121,7 @@ Type of use:
 
 ## 15. To get the wirecard configgling for Singbox and the old version of Hydifa
 
-## 16. To get the Configi WiGard for Singbox and Old Hydifa version without scan IP
+## 16. To get the Configmes of Wiregard for Singbox and Old Hydifa version without scan IP
 
 ## 17. To get the Configuration of WiGeard for Singbox and the older version of Hydifa in the sub -link option
 
