@@ -83,9 +83,9 @@ Camın IP sürümü ile karışık tel koruyucuyu kopyaladıktan ve ardından is
 
 ## 6. Vittori ve Mahsa angi için bir kablos kartı almak için ve ... tarama IP yok
 
- اگر n رو بزنید ایپی که از قبل گذاشتم رو انتخاب میکنه
- در غیر این صورت 
- ایپی با پورت مثال : 
+Eğer n vurursan, zaten bıraktığım ipy'yi seçecek
+ Aksi takdirde 
+ Bağlantı noktası örneği ile IP:
 
 > IPv4: bağlantı noktası
 > Giriyorsun<br><br/>
@@ -121,7 +121,7 @@ Kullanım Türü:
 
 ## 15. Singbox ve Hyditifa'nın eski sürümünü kablos kartının karışık hale getirmesini sağlamak için
 
-## 16. SCANBAK ve Eski Hydifa sürümü için Wiregard'ın yapılandırmalarını tarama ip olmadan almak için
+## 16. Scan IP olmadan Singbox ve eski hydifa sürümü için yapılandırma wigard'ı almak için
 
 ## 17.
 
