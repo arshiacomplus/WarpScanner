@@ -16,11 +16,11 @@
    <img  width="70%" src="https://github.com/arshiacomplus/WarpScanner/blob/main/Arshia.jpg" />
 </p>
 
-> Google PlayからThermoxをダウンロードしないでください。
+> ترماکس رو از گوگل پلی دانلود نکنید▫️ترماکس رو از گوگل پلی دانلود نکنید
 
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-cyan?style=plastic)](https://github.com/termux/termux-app/releases)
 
-### Tremaxアプリで次のコードを実行します
+### کد زیر رو در اپ ترماکس اجرا کنید
 
 ![212284100-561aa473-3905-4a80-b561-0d28506553ee](https://github.com/mansor427/IpScanner/assets/104245967/b09437c5-ffbc-49b9-ab64-fd138739dd66)
 
@@ -48,7 +48,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### ライフルファイルで言います
 
-##### 次に、ナンバーワン（IPEPバージョン4）を入力します
+##### 次に、ナンバーワン（IPバージョン4）を入力します
 
 <br><br/>
 
@@ -121,9 +121,9 @@ Thermoxウィンドウを閉じて閉じて、新しい開きます。
 
 ## 15。SingboxのWirecard ConfigglingとHydifaの古いバージョンを取得するには
 
-## 16.スキャンIPなしでSingboxおよび古いHydifaバージョン用のConfigiWigardを取得するには
+## 16.スキャンIPなしでSingboxおよび古いHydifaバージョン用のワイヤガードの構成を取得するには
 
-## 17。SingBox用のWigeardの構成とサブリンクオプションでHydifaの古いバージョンを取得するには
+## 17。SingBox用のワイヤガードの構成と、サブリンクオプションでHydifaの古いバージョンを取得するには
 
 ## 寄付する
 
