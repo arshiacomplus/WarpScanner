@@ -48,7 +48,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Tüfek dosyasında söyle
 
-##### Sonra bir numarayı girersiniz (IPEP sürüm dördüncü)
+##### Ardından bir numarayı girersiniz (IP sürümü dördüncü)
 
 <br><br/>
 
@@ -81,7 +81,7 @@ Camın IP sürümü ile karışık tel koruyucuyu kopyaladıktan ve ardından is
 -   2\. Braketi IP'nin yanına koymak[İpvsh]
 -   3\. Faiz<br><br/>
 
-## 6. Vittori ve Mahsa angi için bir kablos kartı almak için ve ... tarama IP yok
+## 6. برای دریافت کانفیگ وایرگارد برای ویتوری و مهسا انجی و ...  بدون اسکن آیپی
 
 Eğer n vurursan, zaten bıraktığım ipy'yi seçecek
  Aksi takdirde 
@@ -121,9 +121,9 @@ Kullanım Türü:
 
 ## 15. Singbox ve Hyditifa'nın eski sürümünü kablos kartının karışık hale getirmesini sağlamak için
 
-## 16. Scan IP olmadan Singbox ve eski hydifa sürümü için yapılandırma wigard'ı almak için
+## 16. SCANBAK ve Eski Hydifa sürümü için Wiregard'ın yapılandırmalarını tarama ip olmadan almak için
 
-## 17.
+## 17. Singbox için Wiregard'ın yapılandırmalarını ve Hydifa'nın eski sürümünü Alt -Link seçeneğinde elde etmek için
 
 ## Bağış yapmak
 
