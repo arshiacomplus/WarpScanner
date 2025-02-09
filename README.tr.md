@@ -32,7 +32,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 > [!UYARI]
 
-> İlk adımda Python'u kurmaya çalıştığı için VPN'ye ihtiyacı olabilir!
+> از اونجا که در اولین مرحله سعی می‌کنه پایتون رو نصب کنه شاید به وی پی ان نیاز داشته باشه !
 
 ## 1. AP tarayıcı IPv4, IPv6
 
@@ -40,7 +40,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Bu nedenle, bir numarayı ve sonra y ve belki tekrar y'yi girerek not edilmelidir.
 
-##### Ve sonra size isteyen termox belleğine erişmelisiniz
+##### و بعد باید به ترموکس دسترسی حافظه بدید که ازتون خواسته میشه
 
 ##### Ve daha sonra
 
@@ -48,7 +48,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Tüfek dosyasında söyle
 
-##### Ardından bir numarayı girersiniz (IP sürümü dördüncü)
+##### Sonra bir numarayı girersiniz (IPEP sürüm dördüncü)
 
 <br><br/>
 
@@ -66,7 +66,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ### 4. Wiregard'ın yapılandırmasını istenen numaralı bir alt bağlantıda almak için 4S'yi girin.
 
-Ağustos hatasını yiyorsanız, birkaç kez daha test edin<br><br/>
+ اگه به ارور تایم اوت خوردید چند بار دیگه تست کنید
+<br><br/>
 
 ## 5. V2ray ve Mahsang'da kullanılmak üzere WireGuard yapılandırmasını almak için
 
@@ -81,7 +82,7 @@ Camın IP sürümü ile karışık tel koruyucuyu kopyaladıktan ve ardından is
 -   2\. Braketi IP'nin yanına koymak[İpvsh]
 -   3\. Faiz<br><br/>
 
-## 6. برای دریافت کانفیگ وایرگارد برای ویتوری و مهسا انجی و ...  بدون اسکن آیپی
+## 6. Vittori ve Mahsa angi için bir kablos kartı almak için ve ... tarama IP yok
 
 Eğer n vurursan, zaten bıraktığım ipy'yi seçecek
  Aksi takdirde 
@@ -105,7 +106,7 @@ Sitelerin (Panda Kung Fu) engellenip engellenmediğini sorun<br><br/>
 Kullanım Türü:
 
 -   Senaryoyu çalıştırmak için verdiğiniz adı girin
--   Tekrar silmek için aynı sayıyı al ve y
+-   برای پاک کردنش دوباره همون عدد رو میزنید و Y
 
 <br><br/>
 
@@ -121,15 +122,16 @@ Kullanım Türü:
 
 ## 15. Singbox ve Hyditifa'nın eski sürümünü kablos kartının karışık hale getirmesini sağlamak için
 
-## 16. SCANBAK ve Eski Hydifa sürümü için Wiregard'ın yapılandırmalarını tarama ip olmadan almak için
+## 16. Scan IP olmadan Singbox ve eski hydifa sürümü için yapılandırma wigard'ı almak için
 
-## 17. Singbox için Wiregard'ın yapılandırmalarını ve Hydifa'nın eski sürümünü Alt -Link seçeneğinde elde etmek için
+## 17.
 
 ## Bağış yapmak
 
-<b>TRX:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUPVDG5DQLDUSG3X1HIDRPUHM1GMQZ2G</a><br><b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0 Busbasi 10, bir yıldırım ile.</a>
+<b>TRX:</b><br><a href="https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G">TKUPVDG5DQLDUSG3X1HIDRPUHM1GMQZ2G</a><br>
+<b>USDT:</b><br><a href="https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7">0 Busbasi 10, bir yıldırım ile.</a>
 
-## Projeyi destekleyin
+## حمایت کردن از پروژه
 
 <b>Projemi beğendiyseniz, yıldız vererek ve arkadaşlarınıza vazgeçip tanıtarak projemi destekleyebilirsiniz.</b>
 
