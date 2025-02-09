@@ -40,7 +40,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### Therefore, it should be noted that by entering the number one and then y and maybe again y
 
-##### And then you have to access thermox memory asking you
+##### و بعد باید به ترموکس دسترسی حافظه بدید که ازتون خواسته میشه
 
 ##### And then
 
@@ -87,8 +87,9 @@ If you hit n it will choose the ipy I already left
  Otherwise 
  IP with Port Example:
 
-> IPV4: Port
-> You enter<br><br/>
+> ipv4:port
+> وارد می‌کنید
+> <br><br/>
 
 ## 7. To get configgling, you can use option 2 for V2Ray and Mahsang (Help BPB panel ....)
 
@@ -119,9 +120,9 @@ Type of use:
 
 ## 14. To get wow Configuration with noise values ​​for Nika Angi and Mahsa Angi in the subwoofer
 
-## 15. To get the wirecard configgling for Singbox and the old version of Hydifa
+## 15. برای گرفتن کانفیگ وایرگارد برای سینگ باکس و نسخه قدیمی هیدیفای
 
-## 16. To get the Configmes of Wiregard for Singbox and Old Hydifa version without scan IP
+## 16. To get the Configi WiGard for Singbox and Old Hydifa version without scan IP
 
 ## 17. To get the Configuration of WiGeard for Singbox and the older version of Hydifa in the sub -link option
 
