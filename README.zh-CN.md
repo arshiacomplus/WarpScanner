@@ -48,7 +48,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ##### 在步枪档案中说
 
-##### 接下来，您输入第一名（IP版本四）
+##### 然后您输入第一名（IPEP版本四）
 
 <br><br/>
 
@@ -121,9 +121,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 15。要获得Singbox的WireCard配置和Hydifa的旧版本
 
-## 16。要获取singbox和旧hydifa版本的WireGard的配置，而无需扫描IP
+## 16。要获取Singbox和旧Hydifa版本的Configi Wigard，而无需扫描IP
 
-## 17。要获取singbox的WireGard的配置和sub -link选项中的hydifa的较旧版本
+## 17。要获得Singbox的Wigeard和Sub -Link选项中的Hydifa的旧版本的配置
 
 ## 捐
 
