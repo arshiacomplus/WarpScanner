@@ -11,7 +11,7 @@
 
 * * *
 
-## Androidバージョン（GUI）
+## 📱 نسخه اندرویدی (GUI)
 
 📥**[Warpscanner Androidをダウンロードしてください](https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/)**
 
@@ -48,14 +48,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ✔️**v2rayとMahsangをサポートします**  
 ✔️**Sing-BoxとHiddifyをサポートします**  
 ✔️**IPSをCSVファイルに保存します**  
-✔️**ワープで特別な構成ワープを受け取ります**  
-✔️**IPおよびポートのカスタマイズ**
+✔️**ワープでワープ構成を取得します**
 
 * * *
 
 ## 💰**プロジェクトサポート**
 
-### 🎁**経済的な助け**
+### 🎁**کمک مالی**
 
 🔹**TRX：**  
 [tkupvdg5dqldusg3x1hhidrpuhm1gmqz2g](https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G)
