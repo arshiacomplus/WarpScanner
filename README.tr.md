@@ -48,12 +48,11 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ✔️**Destek V2ray ve Mahsang**  
 ✔️**Sing-box'ı destekleyin ve Hiddify**  
 ✔️**IPS'yi CSV dosyasına kaydedin**  
-✔️**Çözgüde özel yapılandırma çözgü alın**  
-✔️**IP ve Port Özelleştirme**
+✔️**Çözgüde çözgü yapılandırması alın**
 
 * * *
 
-## 💰**Proje desteği**
+## 💰**حمایت از پروژه**
 
 ### 🎁**Finansal yardım**
 
