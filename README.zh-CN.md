@@ -48,8 +48,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ✔️**支持V2RAR和MAHSANG**  
 ✔️**支持Sing-Box和Hiddify**  
 ✔️**将IP保存在CSV文件中**  
-✔️**在经纱上接收特殊配置**  
-✔️**IP和端口自定义**
+✔️**在翘曲上获取经线配置**
 
 * * *
 
@@ -66,7 +65,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ### ⭐**免费支持**
 
 ✅**通过给星2和Falou来支持该项目！**  
-✅**به دوستان خود معرفی کنید!**
+✅**向您的朋友介绍！**
 
 <p align="center">
   <img width="80%" src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d">
