@@ -46,7 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ✔️**获取线条配置**  
 ✔️**创建一个亚概念链接**  
 ✔️**支持V2RAR和MAHSANG**  
-✔️**支持Sing-Box和Hiddify**  
+✔️**پشتیبانی از Sing-box و Hiddify**  
 ✔️**将IP保存在CSV文件中**  
 ✔️**在翘曲上获取经线配置**
 
@@ -56,7 +56,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ### 🎁**财务帮助**
 
-🔹**TRX：**  
+🔹**TRX:**  
 [tkupvdg5dqldusg3x1hhidrpuhm1gmqz2g](https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G)
 
 🔹**USDT：**  
