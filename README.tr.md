@@ -1,7 +1,7 @@
-# 🚀 Çözgü Tarayıcısı
+# 🚀 Warp Scanner
 
 🌎**Diller:**  
-🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[İngilizce](README.en.md)| 🇨🇳[Çince](README.zh-CN.md)| 🇯🇵[Japonca](README.ja.md)
+🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[İngilizce](README.en.md)| 🇨🇳[Çince](README.zh-CN.md)| 🇯🇵[Japanese](README.ja.md)
 
 * * *
 
@@ -32,7 +32,7 @@
 
 ## 💻**Kurulum ve çalıştırma**
 
-Aşağıda Kod**Tombox** اجرا کنید:  
+Aşağıda Kod**Tombox**Koşmak:
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/install.sh)
@@ -46,7 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ✔️**WireGuard Yapılandırması Alın**  
 ✔️**Alt Monale Bağlantı Oluşturma**  
 ✔️**Destek V2ray ve Mahsang**  
-✔️**Sing-box'ı destekleyin ve Hiddify**  
+✔️**پشتیبانی از Sing-box و Hiddify**  
 ✔️**IPS'yi CSV dosyasına kaydedin**  
 ✔️**Çözgüde çözgü yapılandırması alın**
 
@@ -65,7 +65,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ### ⭐**Ücretsiz Destek**
 
 ✅**Star 2 ve Falou'yu vererek projeyi destekleyin!**  
-✅**Arkadaşlarınızla tanışın!**
+✅ **به دوستان خود معرفی کنید!**
 
 <p align="center">
   <img width="80%" src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d">
