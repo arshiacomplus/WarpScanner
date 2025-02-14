@@ -32,7 +32,7 @@
 
 ## 💻**Kurulum ve çalıştırma**
 
-Aşağıda Kod**Tombox**Koşmak:
+Aşağıda Kod**Tombox** اجرا کنید:  
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/install.sh)
@@ -52,7 +52,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 * * *
 
-## 💰**حمایت از پروژه**
+## 💰**Proje desteği**
 
 ### 🎁**Finansal yardım**
 
