@@ -1,7 +1,7 @@
 # 🚀翘曲扫描仪
 
 🌎**语言：**  
-🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)| 🇯🇵[日本人](README.ja.md)
+🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)| 🇯🇵[Japanese](README.ja.md)
 
 * * *
 
@@ -30,7 +30,7 @@
 
 * * *
 
-## 💻**安装和运行**
+## 💻**نصب و اجرا**
 
 下面的代码**tombox**跑步：
 
@@ -46,7 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ✔️**获取线条配置**  
 ✔️**创建一个亚概念链接**  
 ✔️**支持V2RAR和MAHSANG**  
-✔️**پشتیبانی از Sing-box و Hiddify**  
+✔️**支持Sing-Box和Hiddify**  
 ✔️**将IP保存在CSV文件中**  
 ✔️**在翘曲上获取经线配置**
 
@@ -56,13 +56,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ### 🎁**财务帮助**
 
-🔹**TRX:**  
+🔹**TRX：**  
 [tkupvdg5dqldusg3x1hhidrpuhm1gmqz2g](https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G)
 
 🔹**USDT：**  
 [0 Busbasi 10，带有雷电。](https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7)
 
-### ⭐**免费支持**
+### ⭐**حمایت رایگان**
 
 ✅**通过给星2和Falou来支持该项目！**  
 ✅**向您的朋友介绍！**
