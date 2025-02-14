@@ -1,7 +1,7 @@
-# 🚀 Warp Scanner
+# 🚀 Çözgü Tarayıcısı
 
 🌎**Diller:**  
-🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[İngilizce](README.en.md)| 🇨🇳[Çince](README.zh-CN.md)| 🇯🇵[Japanese](README.ja.md)
+🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[İngilizce](README.en.md)| 🇨🇳[Çince](README.zh-CN.md)| 🇯🇵[Japonca](README.ja.md)
 
 * * *
 
@@ -46,7 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ✔️**WireGuard Yapılandırması Alın**  
 ✔️**Alt Monale Bağlantı Oluşturma**  
 ✔️**Destek V2ray ve Mahsang**  
-✔️**پشتیبانی از Sing-box و Hiddify**  
+✔️**Sing-box'ı destekleyin ve Hiddify**  
 ✔️**IPS'yi CSV dosyasına kaydedin**  
 ✔️**Çözgüde çözgü yapılandırması alın**
 
@@ -65,7 +65,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ### ⭐**Ücretsiz Destek**
 
 ✅**Star 2 ve Falou'yu vererek projeyi destekleyin!**  
-✅ **به دوستان خود معرفی کنید!**
+✅**Arkadaşlarınızla tanışın!**
 
 <p align="center">
   <img width="80%" src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d">
