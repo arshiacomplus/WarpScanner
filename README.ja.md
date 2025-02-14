@@ -11,7 +11,7 @@
 
 * * *
 
-## 📱 نسخه اندرویدی (GUI)
+## Androidバージョン（GUI）
 
 📥**[Warpscanner Androidをダウンロードしてください](https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/)**
 
@@ -54,7 +54,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 💰**プロジェクトサポート**
 
-### 🎁**کمک مالی**
+### 🎁**経済的な助け**
 
 🔹**TRX：**  
 [tkupvdg5dqldusg3x1hhidrpuhm1gmqz2g](https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G)
