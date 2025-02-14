@@ -42,7 +42,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 🌐**機能と機能**
 
-✔️**IPスキャン（IPv4＆IPv6）**  
+✔️**اسکن آی‌پی (IPv4 & IPv6)**  
 ✔️**WireGuard構成を取得します**  
 ✔️**サブカーニアルリンクの作成**  
 ✔️**v2rayとMahsangをサポートします**  
