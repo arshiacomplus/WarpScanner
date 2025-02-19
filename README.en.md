@@ -62,10 +62,10 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 🔹**USDT:**  
 [0 Busbasi 10, with a thunderbolt.](https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7)
 
-### ⭐**Free support**
+### ⭐**حمایت رایگان**
 
 ✅**Support the project by giving the star 2 and Falou!**  
-✅**به دوستان خود معرفی کنید!**
+✅**Introduce to your friends!**
 
 <p align="center">
   <img width="80%" src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d">
