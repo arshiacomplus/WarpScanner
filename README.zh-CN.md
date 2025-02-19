@@ -1,7 +1,7 @@
 # 🚀翘曲扫描仪
 
 🌎**语言：**  
-🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)| 🇯🇵[Japanese](README.ja.md)
+🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)| 🇯🇵[日本人](README.ja.md)
 
 * * *
 
@@ -62,7 +62,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 🔹**USDT：**  
 [0 Busbasi 10，带有雷电。](https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7)
 
-### ⭐**حمایت رایگان**
+### ⭐**免费支持**
 
 ✅**通过给星2和Falou来支持该项目！**  
 ✅**向您的朋友介绍！**
