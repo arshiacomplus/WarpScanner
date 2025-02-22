@@ -32,7 +32,7 @@
 
 ## 💻**Kurulum ve çalıştırma**
 
-Aşağıda Kod**Tombox** اجرا کنید:  
+Aşağıda Kod**Tombox**Koşmak:
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/install.sh)
@@ -44,7 +44,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ✔️**IP taraması (IPv4 ve IPv6)**  
 ✔️**WireGuard Yapılandırması Alın**  
-✔️**Alt Monale Bağlantı Oluşturma**  
+✔️**ایجاد لینک سابسکریپشن**  
 ✔️**Destek V2ray ve Mahsang**  
 ✔️**Sing-box'ı destekleyin ve Hiddify**  
 ✔️**IPS'yi CSV dosyasına kaydedin**  
