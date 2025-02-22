@@ -40,19 +40,19 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 * * *
 
-## 🌐**ویژگی‌ها و امکانات**
+## 🌐**機能と機能**
 
 ✔️**IPスキャン（IPv4＆IPv6）**  
 ✔️**WireGuard構成を取得します**  
 ✔️**サブカーニアルリンクの作成**  
 ✔️**v2rayとMahsangをサポートします**  
 ✔️**Sing-BoxとHiddifyをサポートします**  
-✔️**ذخیره آی‌پی‌ها در فایل CSV**  
+✔️**IPSをCSVファイルに保存します**  
 ✔️**ワープでワープ構成を取得します**
 
 * * *
 
-## 💰**プロジェクトサポート**
+## 💰**حمایت از پروژه**
 
 ### 🎁**経済的な助け**
 
@@ -62,7 +62,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 🔹**USDT：**  
 [0 Busbasi 10、Thunderbolt。](https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7)
 
-### ⭐**حمایت رایگان**
+### ⭐**無料サポート**
 
 ✅**Star 2とFalouを与えることでプロジェクトをサポートしてください！**  
 ✅**友達に紹介してください！**
@@ -73,4 +73,4 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 * * *
 
-📹**آموزش ویدیویی اپلود شده [クリック](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
+📹**アップロードされたビデオチュートリアル[クリック](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
