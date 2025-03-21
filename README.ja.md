@@ -11,7 +11,7 @@
 
 * * *
 
-## Androidバージョン（GUI）
+## 📱 نسخه اندرویدی (GUI)
 
 📥**[Warpscanner Androidをダウンロードしてください](https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/)**
 
