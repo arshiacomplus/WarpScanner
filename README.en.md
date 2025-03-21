@@ -23,7 +23,7 @@
 
 ## ⚠️ Important point
 
-⛔**Don't download the thromax from Google Play!**
+⛔**ترماکس را از گوگل پلی دانلود نکنید!**
 
 📥**Download Official Version:**  
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-blue?style=plastic)](https://github.com/termux/termux-app/releases)
