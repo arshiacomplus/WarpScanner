@@ -44,7 +44,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ✔️**IP taraması (IPv4 ve IPv6)**  
 ✔️**WireGuard Yapılandırması Alın**  
-✔️**ایجاد لینک سابسکریپشن**  
+✔️**Alt Monale Bağlantı Oluşturma**  
 ✔️**Destek V2ray ve Mahsang**  
 ✔️**Sing-box'ı destekleyin ve Hiddify**  
 ✔️**IPS'yi CSV dosyasına kaydedin**  
