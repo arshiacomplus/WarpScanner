@@ -11,9 +11,9 @@
 
 * * *
 
-## 📱 نسخه اندرویدی (GUI)
+## Androidバージョン（GUI）
 
-📥**[دانلود WarpScanner Android](https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/)**
+📥**[Warpscanner Androidをダウンロードしてください](https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/)**
 
 <p align="center">
   <img width="70%" src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d">
@@ -43,7 +43,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 🌐**機能と機能**
 
 ✔️**IPスキャン（IPv4＆IPv6）**  
-✔️**دریافت کانفیگ WireGuard**  
+✔️**WireGuard構成を取得します**  
 ✔️**サブカーニアルリンクの作成**  
 ✔️**v2rayとMahsangをサポートします**  
 ✔️**Sing-BoxとHiddifyをサポートします**  
