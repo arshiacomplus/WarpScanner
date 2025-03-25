@@ -30,9 +30,9 @@
 
 * * *
 
-## 💻**Kurulum ve çalıştırma**
+## 💻**نصب و اجرا**
 
-Aşağıda Kod**Tombox**Koşmak:
+Aşağıda Kod**Tombox** اجرا کنید:  
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/install.sh)
