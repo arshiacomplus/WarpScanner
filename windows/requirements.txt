@@ -1,0 +1,8 @@
+requests
+customtkinter
+icmplib
+retrying
+pyperclip
+PyYAML
+Pillow
+cryptography
