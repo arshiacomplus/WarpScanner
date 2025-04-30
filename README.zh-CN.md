@@ -13,7 +13,7 @@
 
 ## 📱Android版本（GUI）
 
-📥**[دانلود WarpScanner Android](https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/)**
+📥**[下载Warpscanner Android](https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/)**
 
 <p align="center">
   <img width="70%" src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d">
@@ -44,13 +44,19 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ✔️**IP扫描（IPv4和IPv6）**  
 ✔️**获取线条配置**  
-✔️**创建一个亚概念链接**  
+✔️**ایجاد لینک سابسکریپشن**  
 ✔️**支持V2RAR和MAHSANG**  
-✔️**پشتیبانی از Sing-box و Hiddify**  
+✔️**支持Sing-Box和Hiddify**  
 ✔️**将IP保存在CSV文件中**  
 ✔️**在翘曲上获取经线配置**
 
 * * *
+
+* * *
+
+### 文档：
+
+<https://github.com/arshiacomplus/docs>
 
 ## 💰**项目支持**
 
@@ -73,4 +79,4 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 * * *
 
-📹**上传视频教程[点击](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
+📹**آموزش ویدیویی اپلود شده [点击](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
