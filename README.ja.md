@@ -52,13 +52,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 * * *
 
-* * *
-
 ### 📑**ドキュメンタリー**
 
 <https://github.com/arshiacomplus/docs>
-
-* * *
 
 ## 💰**プロジェクトサポート**
 
