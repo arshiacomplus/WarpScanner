@@ -23,7 +23,7 @@
 
 ## ⚠️ Important point
 
-⛔**ترماکس را از گوگل پلی دانلود نکنید!**
+⛔**Don't download the thromax from Google Play!**
 
 📥**Download Official Version:**  
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-blue?style=plastic)](https://github.com/termux/termux-app/releases)
@@ -52,13 +52,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 * * *
 
-* * *
-
 ### 📑**Documentary**
 
 <https://github.com/arshiacomplus/docs>
-
-* * *
 
 ## 💰**Project support**
 
@@ -81,4 +77,4 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 * * *
 
-📹**آموزش ویدیویی اپلود شده [Click](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
+📹**Uploaded video tutorial[Click](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
