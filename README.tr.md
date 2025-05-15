@@ -68,8 +68,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ### ⭐**Ücretsiz Destek**
 
-✅**Star 2 ve Falou'yu vererek projeyi destekleyin!**  
-✅**Arkadaşlarınızla tanışın!**
+✅**با دادن ستاره ⭐ و فالو 💙 از پروژه حمایت کنید!**  
+✅**به دوستان خود معرفی کنید!**
 
 <p align="center">
   <img width="80%" src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d">
