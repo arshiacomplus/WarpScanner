@@ -32,7 +32,7 @@
 
 ## 💻**Installation and run**
 
-Code below**Tombox**Run:
+Code below**Tombox** اجرا کنید:  
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/install.sh)
@@ -69,7 +69,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ### ⭐**Free support**
 
 ✅**Support the project by giving the star 2 and Falou!**  
-✅**Introduce to your friends!**
+✅**به دوستان خود معرفی کنید!**
 
 <p align="center">
   <img width="80%" src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d">
