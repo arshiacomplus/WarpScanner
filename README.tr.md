@@ -23,7 +23,7 @@
 
 ## ⚠️ Önemli nokta
 
-⛔**Thromax'ı Google Play'den indirmeyin!**
+⛔**ترماکس را از گوگل پلی دانلود نکنید!**
 
 📥**Resmi Sürümü İndirin:**  
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-blue?style=plastic)](https://github.com/termux/termux-app/releases)
@@ -68,8 +68,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ### ⭐**Ücretsiz Destek**
 
-✅**با دادن ستاره ⭐ و فالو 💙 از پروژه حمایت کنید!**  
-✅**به دوستان خود معرفی کنید!**
+✅**Star 2 ve Falou'yu vererek projeyi destekleyin!**  
+✅**Arkadaşlarınızla tanışın!**
 
 <p align="center">
   <img width="80%" src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d">
