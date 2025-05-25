@@ -1837,14 +1837,12 @@ def goCheckWithConfig(sorted_results,config="wireguard://qJPoIYFnhd/zKuLFPf8/FUy
                         )
                     subprocess.call(
                         ["taskkill", "/F", "/PID", str(xa.pid)],
-                        creationflags=subprocess.CREATE_NO_WINDOW,
                     )
                     if ipchanged.startswith("hy2://") or ipchanged.startswith(
                         "hysteria2://"
                     ):
                         subprocess.call(
                             ["taskkill", "/F", "/PID", str(hy.pid)],
-                            creationflags=subprocess.CREATE_NO_WINDOW,
                         )
                     os.remove(f"xray/config{i}.json")
 
