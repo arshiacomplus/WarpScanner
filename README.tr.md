@@ -43,7 +43,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 🌐**Özellikler ve özellikler**
 
 ✔️**IP taraması (IPv4 ve IPv6)**  
-✔️**دریافت کانفیگ WireGuard**  
+✔️**WireGuard Yapılandırması Alın**  
 ✔️**Alt Monale Bağlantı Oluşturma**  
 ✔️**Destek V2ray ve Mahsang**  
 ✔️**Sing-box'ı destekleyin ve Hiddify**  
