@@ -23,7 +23,7 @@
 
 ## ⚠️ Important point
 
-⛔**ترماکس را از گوگل پلی دانلود نکنید!**
+⛔**Don't download the thromax from Google Play!**
 
 📥**Download Official Version:**  
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-blue?style=plastic)](https://github.com/termux/termux-app/releases)
@@ -32,7 +32,7 @@
 
 ## 💻**Installation and run**
 
-کد زیر را در **Tombox**Run:
+کد زیر را در **Tombox** اجرا کنید:  
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/install.sh)
@@ -42,13 +42,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 🌐**Features and features**
 
-✔️**IP scan (IPV4 & ipv6)**  
+✔️**اسکن آی‌پی (IPv4 & IPv6)**  
 ✔️**Get Wireguard Configuration**  
 ✔️**Creating a subconial link**  
 ✔️**Support v2ray and mahsang**  
 ✔️**Support Sing-Box and Hiddify**  
 ✔️**Save IPs in CSV file**  
-✔️**Get Warp Configuration on Warp**  
+✔️**Get Warp Configuration on Warp**
 
 * * *
 
@@ -61,7 +61,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ### 🎁**Financial help**
 
 🔹**TRX:**  
-[TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G](https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G)
+[TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G](https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G)  
 
 🔹**USDT:**  
 [0 Busbasi 10, with a thunderbolt.](https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7)
@@ -77,4 +77,4 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 * * *
 
-📹**Uploaded video tutorial[Click](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
+📹 **Uploaded video tutorial[Click](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
