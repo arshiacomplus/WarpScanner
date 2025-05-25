@@ -1877,18 +1877,28 @@ def get_cpu_arch():
 def ensure_folder_exists(folder):
     os.makedirs(folder, exist_ok=True)
 
-def download_file(url, folder):
+def download_file(url, folder, new_name):
     filename = url.split('/')[-1]
     path = os.path.join(folder, filename)
+    new_path = os.path.join(folder, new_name)
 
-    if os.path.exists(path):
-        print(f"[SKIP] File already exists: {path}")
+    if os.path.exists(new_path):
+        print(f"[SKIP] File already renamed: {new_path}")
         return
 
     ensure_folder_exists(folder)
-    print(f"[INFO] Downloading: {url} → {path}")
-    cmd = ['wget', '-O', path, url]
-    subprocess.run(cmd)
+
+    if not os.path.exists(path):
+        print(f"[INFO] Downloading: {url} → {path}")
+        cmd = ['wget', '-O', path, url]
+        subprocess.run(cmd)
+    else:
+        print(f"[INFO] File already exists: {path}")
+
+    # Rename file
+    if os.path.exists(path):
+        os.rename(path, new_path)
+        print(f"[RENAMED] {path} → {new_path}")
 
 ARCH_MAP = {
     'aarch64': {
@@ -1905,7 +1915,6 @@ ARCH_MAP = {
     }
 }
 
-
 def download_cores():
     arch = get_cpu_arch()
     if not arch:
@@ -1916,16 +1925,17 @@ def download_cores():
     if arch in ARCH_MAP:
         config = ARCH_MAP[arch]
 
+        # دانلود و تغییر نام Xray
+        download_file(config['xray_url'], config['xray_folder'], 'xray')
 
-        download_file(config['xray_url'], config['xray_folder'])
+        # دانلود و تغییر نام Hysteria
+        download_file(config['hys_url'], config['hys_folder'], 'hysteria')
+        os.system("chmod +x xray/xray")
+        os.system("chmod +x hy2/hysteria")
 
-
-        download_file(config['hys_url'], config['hys_folder'])
-
-        print("[SUCCESS] All files checked/completed.")
+        print("[SUCCESS] All files downloaded and renamed successfully.")
     else:
         print(f"[ERROR] Architecture '{arch}' is not supported.")
-
 def main_v6():
     global which
     global ping_range
