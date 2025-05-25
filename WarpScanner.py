@@ -1819,7 +1819,7 @@ def goCheckWithConfig(sorted_results,config="wireguard://qJPoIYFnhd/zKuLFPf8/FUy
                         json.dump(
                             json.loads(parse_configs(ipchanged, cv=i)), f, indent=4
                         )
-
+                    xa,hy=(None,None)
                     if ipchanged.startswith("hy2://") or ipchanged.startswith(
                         "hysteria2://"
                     ):
@@ -1829,13 +1829,14 @@ def goCheckWithConfig(sorted_results,config="wireguard://qJPoIYFnhd/zKuLFPf8/FUy
                             stdout=subprocess.DEVNULL,
                             stderr=subprocess.DEVNULL
                         )
-                    with open("xray/xrayErr.log", "w") as errFile:
-                        xa = subprocess.Popen(
-                            ["xray/xray", "run", "-c", f"xray/config{i}.json"],
-                            stdin=subprocess.DEVNULL,
-                            stdout=errFile,
-                            stderr=errFile
-                        )
+                    else:
+                        with open("xray/xrayErr.log", "w") as errFile:
+                            xa = subprocess.Popen(
+                                ["xray/xray", "run", "-c", f"xray/config{i}.json"],
+                                stdin=subprocess.DEVNULL,
+                                stdout=errFile,
+                                stderr=errFile
+                            )
                     if test_th(http5, i):
                         print("is ok")
                         oklist.append(
