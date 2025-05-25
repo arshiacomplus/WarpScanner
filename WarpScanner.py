@@ -1761,7 +1761,7 @@ def goCheckWithConfig(sorted_results,config="wireguard://qJPoIYFnhd/zKuLFPf8/FUy
             try:
                 proxies = {
                     "http": f"http://127.0.0.{num}:{port}",
-                    "https": f"http://127.0.0.{num}:{port}",
+                    "https": f"https://127.0.0.{num}:{port}",
                 }
                 url = test_link_
                 headers = {"Connection": "close"}
