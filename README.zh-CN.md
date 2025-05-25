@@ -23,7 +23,7 @@
 
 ## ⚠️重要的一点
 
-⛔**ترماکس را از گوگل پلی دانلود نکنید!**
+⛔**不要从Google Play下载血栓！**
 
 📥**下载官方版本：**  
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-blue?style=plastic)](https://github.com/termux/termux-app/releases)
