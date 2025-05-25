@@ -11,7 +11,7 @@
 
 * * *
 
-## 📱 نسخه اندرویدی (GUI)
+## 📱 Android version (GUI)
 
 📥**[Download WarpScanner Android](https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/)**
 
@@ -23,7 +23,7 @@
 
 ## ⚠️ Important point
 
-⛔**Don't download the thromax from Google Play!**
+⛔**ترماکس را از گوگل پلی دانلود نکنید!**
 
 📥**Download Official Version:**  
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-blue?style=plastic)](https://github.com/termux/termux-app/releases)
@@ -43,10 +43,10 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 🌐**Features and features**
 
 ✔️**IP scan (IPV4 & ipv6)**  
-✔️**Get Wireguard Configuration**  
-✔️**Creating a subconial link**  
+✔️ **Get Wireguard Configuration**  
+✔️ **Creating a subconial link**  
 ✔️**Support v2ray and mahsang**  
-✔️**Support Sing-Box and Hiddify**  
+✔️**پشتیبانی از Sing-box و Hiddify**  
 ✔️**Save IPs in CSV file**  
 ✔️**Get Warp Configuration on Warp**
 
