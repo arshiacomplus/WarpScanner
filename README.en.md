@@ -23,14 +23,14 @@
 
 ## ⚠️ Important point
 
-⛔**ترماکس را از گوگل پلی دانلود نکنید!**
+⛔**Don't download the thromax from Google Play!**
 
 📥**Download Official Version:**  
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-blue?style=plastic)](https://github.com/termux/termux-app/releases)
 
 * * *
 
-## 💻**Installation and run**
+## 💻**نصب و اجرا**
 
 Code below**Tombox**Run:
 
@@ -58,7 +58,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 💰**Project support**
 
-### 🎁**Financial help**
+### 🎁 **Financial help**
 
 🔹**TRX:**  
 [TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G](https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G)
