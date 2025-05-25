@@ -80,8 +80,14 @@ try:
     import yaml
 except Exception:
     os.system("pip install pyyaml")
-import psutil
-import signal
+try:
+    import psutil
+except Exception:
+    os.system("pip install psutil")
+try:
+    import signal
+except Exception:
+    os.system("pip install signal")
 CONF_PATH="config.json"
 DEFAULT_CONFIG={
     "core": {
