@@ -23,7 +23,7 @@
 
 ## ⚠️ Important point
 
-⛔**Don't download the thromax from Google Play!**
+⛔**ترماکس را از گوگل پلی دانلود نکنید!**
 
 📥**Download Official Version:**  
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-blue?style=plastic)](https://github.com/termux/termux-app/releases)
@@ -48,7 +48,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ✔️**Support v2ray and mahsang**  
 ✔️**Support Sing-Box and Hiddify**  
 ✔️**Save IPs in CSV file**  
-✔️ **Get Warp Configuration on Warp**
+✔️**Get Warp Configuration on Warp**
 
 * * *
 
@@ -69,7 +69,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ### ⭐**Free support**
 
 ✅**Support the project by giving the star 2 and Falou!**  
-✅ **Introduce to your friends!**
+✅**Introduce to your friends!**
 
 <p align="center">
   <img width="80%" src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d">
