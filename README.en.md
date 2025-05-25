@@ -11,7 +11,7 @@
 
 * * *
 
-## 📱 Android version (GUI)
+## 📱 نسخه اندرویدی (GUI)
 
 📥**[Download WarpScanner Android](https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/)**
 
@@ -32,7 +32,7 @@
 
 ## 💻**Installation and run**
 
-Code below**Tombox** اجرا کنید:  
+Code below**Tombox**Run:
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/install.sh)
@@ -69,7 +69,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ### ⭐**Free support**
 
 ✅**Support the project by giving the star 2 and Falou!**  
-✅**به دوستان خود معرفی کنید!**
+✅**Introduce to your friends!**
 
 <p align="center">
   <img width="80%" src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d">
