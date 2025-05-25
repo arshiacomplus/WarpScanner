@@ -1877,28 +1877,24 @@ def get_cpu_arch():
 def ensure_folder_exists(folder):
     os.makedirs(folder, exist_ok=True)
 
-def download_file(url, folder, new_name):
+def download_file(url, folder):
     filename = url.split('/')[-1]
     path = os.path.join(folder, filename)
-    new_path = os.path.join(folder, new_name)
 
-    if os.path.exists(new_path):
-        print(f"[SKIP] File already renamed: {new_path}")
-        return
+    if os.path.exists(path):
+        print(f"[SKIP] File already exists: {path}")
+        return path
 
     ensure_folder_exists(folder)
+    print(f"[INFO] Downloading: {url} → {path}")
+    cmd = ['wget', '-O', path, url]
+    subprocess.run(cmd)
+    return path
 
-    if not os.path.exists(path):
-        print(f"[INFO] Downloading: {url} → {path}")
-        cmd = ['wget', '-O', path, url]
-        subprocess.run(cmd)
-    else:
-        print(f"[INFO] File already exists: {path}")
-
-    # Rename file
-    if os.path.exists(path):
-        os.rename(path, new_path)
-        print(f"[RENAMED] {path} → {new_path}")
+def extract_zip(zip_path, folder):
+    print(f"[INFO] Extracting {zip_path} to {folder}...")
+    cmd = ['unzip', '-o', zip_path, '-d', folder]
+    subprocess.run(cmd)
 
 ARCH_MAP = {
     'aarch64': {
@@ -1925,15 +1921,23 @@ def download_cores():
     if arch in ARCH_MAP:
         config = ARCH_MAP[arch]
 
-        # دانلود و تغییر نام Xray
-        download_file(config['xray_url'], config['xray_folder'], 'xray')
+        # --- Xray ---
+        xray_zip = download_file(config['xray_url'], config['xray_folder'])
+        extract_zip(xray_zip, config['xray_folder'])
 
-        # دانلود و تغییر نام Hysteria
-        download_file(config['hys_url'], config['hys_folder'], 'hysteria')
-        os.system("chmod +x xray/xray")
-        os.system("chmod +x hy2/hysteria")
+        # تعیین دسترسی اجرای تمام فایل‌های داخل xray
+        for file in os.listdir(config['xray_folder']):
+            file_path = os.path.join(config['xray_folder'], file)
+            if os.path.isfile(file_path):
+                os.chmod(file_path, 0o755)
+                print(f"[CHMOD] +x {file_path}")
 
-        print("[SUCCESS] All files downloaded and renamed successfully.")
+        # --- Hysteria ---
+        hys_binary = download_file(config['hys_url'], config['hys_folder'])
+        os.chmod(hys_binary, 0o755)
+        print(f"[CHMOD] +x {hys_binary}")
+
+        print("[SUCCESS] All files downloaded, extracted and permissions set.")
     else:
         print(f"[ERROR] Architecture '{arch}' is not supported.")
 def main_v6():
