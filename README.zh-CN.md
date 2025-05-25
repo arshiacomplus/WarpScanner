@@ -42,7 +42,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 🌐**功能和功能**
 
-✔️**اسکن آی‌پی (IPv4 & IPv6)**  
+✔️**IP扫描（IPv4和IPv6）**  
 ✔️**获取线条配置**  
 ✔️**创建一个亚概念链接**  
 ✔️**支持V2RAR和MAHSANG**  
