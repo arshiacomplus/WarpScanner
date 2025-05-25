@@ -1,4 +1,4 @@
-V=72
+V=73
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -80,7 +80,8 @@ try:
     import yaml
 except Exception:
     os.system("pip install pyyaml")
-
+import psutil
+import signal
 CONF_PATH="config.json"
 DEFAULT_CONFIG={
     "core": {
@@ -132,6 +133,73 @@ if not  os.path.exists(CONF_PATH):
 with open(CONF_PATH,"r") as file_client_set:
         app_conf=json.load(file_client_set)
         test_link_=app_conf["core"]["test_url"]
+class ProcessManager:
+    """
+    Manages background processes (like Xray, Hysteria) started by the script.
+    Ensures proper termination on Linux systems using SIGTERM and SIGKILL.
+    """
+    def __init__(self):
+        self.active_processes = {}
+        self.lock = threading.Lock()
+        print("ProcessManager initialized.")
+    def add_process(self, name: str, pid: int):
+        """یک پردازش جدید را به لیست مدیریت‌شده اضافه می‌کند."""
+        with self.lock:
+            if name in self.active_processes:
+                print(f"Warning: Process name '{name}' already exists with PID {self.active_processes[name]}. Overwriting with new PID {pid}.")
+            print(f"Tracking process '{name}' with PID {pid}.")
+            self.active_processes[name] = pid
+    def stop_process(self, name: str):
+        """یک پردازش مشخص را با نام آن متوقف می‌کند."""
+        pid_to_stop = None
+        with self.lock:
+            if name in self.active_processes:
+                pid_to_stop = self.active_processes.pop(name)
+                print(f"Attempting to stop process '{name}' with PID {pid_to_stop}. Removed from tracking list.")
+            else:
+                print(f"Process '{name}' not found in active processes list for stopping.")
+                return
+        if pid_to_stop is None:
+             print(f"Error: Could not retrieve PID for '{name}' despite being found initially.")
+             return
+        try:
+            if psutil.pid_exists(pid_to_stop):
+                print(f"  Sending SIGTERM (polite request) to PID {pid_to_stop}...")
+                os.kill(pid_to_stop, signal.SIGTERM)
+                time.sleep(1)
+                if psutil.pid_exists(pid_to_stop):
+                    print(f"  PID {pid_to_stop} still exists after SIGTERM. Sending SIGKILL (force kill)...")
+                    os.kill(pid_to_stop, signal.SIGKILL)
+                    time.sleep(0.1)
+                    if psutil.pid_exists(pid_to_stop):
+                        print(f"  WARNING: PID {pid_to_stop} could not be terminated even with SIGKILL!")
+                    else:
+                        print(f"  PID {pid_to_stop} terminated successfully by SIGKILL.")
+                else:
+                    print(f"  PID {pid_to_stop} terminated gracefully by SIGTERM.")
+            else:
+                print(f"  Process with PID {pid_to_stop} was already gone before stop attempt.")
+        except (ProcessLookupError, psutil.NoSuchProcess):
+            print(f"  Process with PID {pid_to_stop} disappeared during termination attempt.")
+        except PermissionError:
+            print(f"  ERROR: Permission denied to send signal to PID {pid_to_stop}.")
+        except Exception as e:
+            print(f"  ERROR: An unexpected error occurred while stopping PID {pid_to_stop}: {e}")
+    def stop_all(self):
+        """تمام پردازش‌های مدیریت‌شده را متوقف می‌کند."""
+        print("Stopping all tracked processes...")
+        names_to_stop = []
+        with self.lock:
+             names_to_stop = list(self.active_processes.keys())
+        if not names_to_stop:
+            print("No active processes were being tracked.")
+            return
+        print(f"Found {len(names_to_stop)} processes to stop: {names_to_stop}")
+        for name in names_to_stop:
+             self.stop_process(name)
+        print("Finished stopping all tracked processes.")
+process_manager = ProcessManager()
+xray_abs="xray/xray"
 api=''
 ports = [1074, 894, 908, 878]
 console = Console()
@@ -1745,25 +1813,22 @@ def goCheckWithConfig(sorted_results,config="wireguard://qJPoIYFnhd/zKuLFPf8/FUy
                         json.dump(
                             json.loads(parse_configs(ipchanged, cv=i)), f, indent=4
                         )
-                    startupinfo = subprocess.STARTUPINFO()
-                    startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+
                     if ipchanged.startswith("hy2://") or ipchanged.startswith(
                         "hysteria2://"
                     ):
                         hy = subprocess.Popen(
-                            ["hy2/hysteria.exe", "client", "-c", "hy2/config.yaml"],
+                            ["hy2/hysteria", "client", "-c", "hy2/config.yaml"],
                             stdin=subprocess.DEVNULL,
                             stdout=subprocess.DEVNULL,
-                            stderr=subprocess.DEVNULL,
-                            startupinfo=startupinfo,
+                            stderr=subprocess.DEVNULL
                         )
                     with open("xray/xrayErr.log", "w") as errFile:
                         xa = subprocess.Popen(
-                            ["xray/xray.exe", "run", "-c", f"xray/config{i}.json"],
+                            ["xray/xray", "run", "-c", f"xray/config{i}.json"],
                             stdin=subprocess.DEVNULL,
                             stdout=errFile,
-                            stderr=errFile,
-                            startupinfo=startupinfo,
+                            stderr=errFile
                         )
                     if test_th(http5, i):
                         print("is ok")
