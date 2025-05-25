@@ -1,7 +1,7 @@
 # 🚀翘曲扫描仪
 
 🌎**语言：**  
-🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)| 🇯🇵[日本人](README.ja.md)
+🇮🇷[波斯语](README.md)| 🇹🇷[Turkish](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)| 🇯🇵[日本人](README.ja.md)
 
 * * *
 
@@ -48,7 +48,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ✔️**支持V2RAR和MAHSANG**  
 ✔️**支持Sing-Box和Hiddify**  
 ✔️**将IP保存在CSV文件中**  
-✔️**在翘曲上获取经线配置**  
+✔️**在翘曲上获取经线配置**
 
 * * *
 
@@ -68,7 +68,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ### ⭐**免费支持**
 
-✅ **通过给星2和Falou来支持该项目！**  
+✅**通过给星2和Falou来支持该项目！**  
 ✅**向您的朋友介绍！**
 
 <p align="center">
@@ -77,4 +77,4 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 * * *
 
-📹**上传视频教程[点击](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
+📹**آموزش ویدیویی اپلود شده [点击](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
