@@ -1841,15 +1841,12 @@ def goCheckWithConfig(sorted_results,config="wireguard://qJPoIYFnhd/zKuLFPf8/FUy
                         oklist.append(
                             (ip, port, ping, loss_rate, jitter, combined_score)
                         )
-                    subprocess.call(
-                        ["taskkill", "/F", "/PID", str(xa.pid)],
-                    )
-                    if ipchanged.startswith("hy2://") or ipchanged.startswith(
-                        "hysteria2://"
-                    ):
-                        subprocess.call(
-                            ["taskkill", "/F", "/PID", str(hy.pid)],
-                        )
+                    if xa:
+                        xa.terminate()
+                        xa.wait()
+                    if hy:
+                        hy.terminate()
+                        hy.wait()
                     os.remove(f"xray/config{i}.json")
 
         def goOnEachThreadOfTuple(split_r):
