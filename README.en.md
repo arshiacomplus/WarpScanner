@@ -30,7 +30,7 @@
 
 * * *
 
-## 💻**Installation and run**
+## 💻**نصب و اجرا**
 
 Code below**Tombox**Run:
 
@@ -46,7 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ✔️**Get Wireguard Configuration**  
 ✔️**Creating a subconial link**  
 ✔️**Support v2ray and mahsang**  
-✔️ **Support Sing-Box and Hiddify**  
+✔️**Support Sing-Box and Hiddify**  
 ✔️**Save IPs in CSV file**  
 ✔️**Get Warp Configuration on Warp**
 
@@ -77,4 +77,4 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 * * *
 
-📹**Uploaded video tutorial[Click](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
+📹**Uploaded video tutorial[کلیک کنید](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
