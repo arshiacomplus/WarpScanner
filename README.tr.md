@@ -23,7 +23,7 @@
 
 ## ⚠️ Önemli nokta
 
-⛔**ترماکس را از گوگل پلی دانلود نکنید!**
+⛔**Thromax'ı Google Play'den indirmeyin!**
 
 📥**Resmi Sürümü İndirin:**  
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-blue?style=plastic)](https://github.com/termux/termux-app/releases)
@@ -40,7 +40,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 * * *
 
-## 🌐**ویژگی‌ها و امکانات**
+## 🌐**Özellikler ve özellikler**
 
 ✔️**IP taraması (IPv4 ve IPv6)**  
 ✔️**WireGuard Yapılandırması Alın**  
@@ -77,4 +77,4 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 * * *
 
-📹 **Yüklenen video öğreticisi[Tıklamak](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
+📹**Yüklenen video öğreticisi[Tıklamak](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
