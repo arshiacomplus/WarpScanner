@@ -47,7 +47,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ✔️**Creating a subconial link**  
 ✔️**Support v2ray and mahsang**  
 ✔️**Support Sing-Box and Hiddify**  
-✔️**Save IPs in CSV file**  
+✔️**ذخیره آی‌پی‌ها در فایل CSV**  
 ✔️**Get Warp Configuration on Warp**
 
 * * *
