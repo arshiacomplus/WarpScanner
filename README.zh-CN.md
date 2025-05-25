@@ -23,7 +23,7 @@
 
 ## ⚠️重要的一点
 
-⛔**不要从Google Play下载血栓！**
+⛔**ترماکس را از گوگل پلی دانلود نکنید!**
 
 📥**下载官方版本：**  
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-blue?style=plastic)](https://github.com/termux/termux-app/releases)
@@ -43,7 +43,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 🌐**功能和功能**
 
 ✔️**IP扫描（IPv4和IPv6）**  
-✔️**获取线条配置**  
+✔️**دریافت کانفیگ WireGuard**  
 ✔️**创建一个亚概念链接**  
 ✔️**支持V2RAR和MAHSANG**  
 ✔️**支持Sing-Box和Hiddify**  
