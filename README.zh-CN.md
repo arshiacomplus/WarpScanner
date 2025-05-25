@@ -1,7 +1,7 @@
 # 🚀翘曲扫描仪
 
 🌎**语言：**  
-🇮🇷[波斯语](README.md)| 🇹🇷[土耳其](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)| 🇯🇵[日本人](README.ja.md)
+🇮🇷[波斯语](README.md)| 🇹🇷[Turkish](README.tr.md)| 🇬🇧[英语](README.en.md)| 🇨🇳[中国人](README.zh-CN.md)| 🇯🇵[日本人](README.ja.md)
 
 * * *
 
@@ -43,7 +43,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 🌐**功能和功能**
 
 ✔️**IP扫描（IPv4和IPv6）**  
-✔️**获取线条配置**  
+✔️**دریافت کانفیگ WireGuard**  
 ✔️**创建一个亚概念链接**  
 ✔️**支持V2RAR和MAHSANG**  
 ✔️**支持Sing-Box和Hiddify**  
@@ -58,9 +58,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 💰**项目支持**
 
-### 🎁**财务帮助**
+### 🎁**کمک مالی**
 
-🔹**TRX：**  
+🔹 **TRX：**  
 [tkupvdg5dqldusg3x1hhidrpuhm1gmqz2g](https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G)
 
 🔹**USDT：**  
