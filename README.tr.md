@@ -1,7 +1,7 @@
 # 🚀 Çözgü Tarayıcısı
 
 🌎**Diller:**  
-🇮🇷[Farsça](README.md)| 🇹🇷[Türkçe](README.tr.md)| 🇬🇧[İngilizce](README.en.md)| 🇨🇳[Çince](README.zh-CN.md)| 🇯🇵[Japonca](README.ja.md)
+🇮🇷[Farsça](README.md)| 🇹🇷[Turkish](README.tr.md)| 🇬🇧[İngilizce](README.en.md)| 🇨🇳[Çince](README.zh-CN.md)| 🇯🇵[Japanese](README.ja.md)
 
 * * *
 
@@ -64,9 +64,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 [TKUPVDG5DQLDUSG3X1HIDRPUHM1GMQZ2G](https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G)
 
 🔹**USDT:**  
-[0 Busbasi 10, bir yıldırım ile.](https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7)
+[0 Busbasi 10, bir yıldırım ile.](https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7)  
 
-### ⭐**Ücretsiz Destek**
+### ⭐**حمایت رایگان**
 
 ✅**Star 2 ve Falou'yu vererek projeyi destekleyin!**  
 ✅**Arkadaşlarınızla tanışın!**
