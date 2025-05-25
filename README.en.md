@@ -23,7 +23,7 @@
 
 ## ⚠️ Important point
 
-⛔**ترماکس را از گوگل پلی دانلود نکنید!**
+⛔**Don't download the thromax from Google Play!**
 
 📥**Download Official Version:**  
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-blue?style=plastic)](https://github.com/termux/termux-app/releases)
@@ -43,10 +43,10 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ## 🌐**Features and features**
 
 ✔️**IP scan (IPV4 & ipv6)**  
-✔️ **Get Wireguard Configuration**  
-✔️ **Creating a subconial link**  
+✔️**Get Wireguard Configuration**  
+✔️**Creating a subconial link**  
 ✔️**Support v2ray and mahsang**  
-✔️**پشتیبانی از Sing-box و Hiddify**  
+✔️**Support Sing-Box and Hiddify**  
 ✔️**Save IPs in CSV file**  
 ✔️**Get Warp Configuration on Warp**
 
