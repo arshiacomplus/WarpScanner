@@ -11,7 +11,7 @@
 
 * * *
 
-## 📱 نسخه اندرویدی (GUI)
+## 📱Android版本（GUI）
 
 📥**[下载Warpscanner Android](https://github.com/arshiacomplus/WarpScanner-android-GUI/releases/)**
 
@@ -46,7 +46,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ✔️**获取线条配置**  
 ✔️**创建一个亚概念链接**  
 ✔️**支持V2RAR和MAHSANG**  
-✔️**پشتیبانی از Sing-box و Hiddify**  
+✔️**支持Sing-Box和Hiddify**  
 ✔️**将IP保存在CSV文件中**  
 ✔️**在翘曲上获取经线配置**
 
