@@ -56,7 +56,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <https://github.com/arshiacomplus/docs>
 
-## 💰**Proje desteği**
+## 💰**حمایت از پروژه**
 
 ### 🎁**Finansal yardım**
 
