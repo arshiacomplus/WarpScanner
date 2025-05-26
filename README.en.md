@@ -56,9 +56,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <https://github.com/arshiacomplus/docs>
 
-## 💰 **Project support**
+## 💰**Project support**
 
-### 🎁**کمک مالی**
+### 🎁**Financial help**
 
 🔹**TRX:**  
 [TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G](https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G)
