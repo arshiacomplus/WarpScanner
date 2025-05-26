@@ -1738,18 +1738,17 @@ def parse_configs(conifg,num=0,cv=1,hy2_path="hy2/config.yaml",is_hy2=False): # 
     data_conf=replace_accept_encoding(data_conf)
     data_conf=json.dumps(data_conf, indent=4, cls=MyEncoder)
     return data_conf
-def goCheckWithConfig(sorted_results,config="wireguard://qJPoIYFnhd/zKuLFPf8/FUyLCbwIzUSNMKvelMlFUnM=@188.114.97.150:891?address=172.16.0.2/32,2606:4700:110:846c:e510:bfa1:ea9f:5247/128&publickey=bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=&reserved=79,60,41&mtu=1330&keepalive=10&wnoise=quic&wnoisecount=15&wnoisedelay=1-3&wpayloadsize=1-8#Tel= @arshiacomplus wire"):
+def goCheckWithConfig(sorted_results, config="wireguard://qJPoIYFnhd/zKuLFPf8/FUyLCbwIzUSNMKvelMlFUnM=@188.114.97.150:891?address=172.16.0.2/32,2606:4700:110:846c:e510:bfa1:ea9f:5247/128&publickey=bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=&reserved=79,60,41&mtu=1330&keepalive=10&wnoise=quic&wnoisecount=15&wnoisedelay=1-3&wpayloadsize=1-8#Tel= @arshiacomplus wire"):
     print("igo")
     oklist = []
 
     def go():
-
         http5 = int(app_conf["core"]["inbound_ports"]["http"])
 
         def split_list(lst, n):
             k, m = divmod(len(lst), n)
             return [
-                lst[i * k + min(i, m) : (i + 1) * k + min(i + 1, m)]
+                lst[i * k + min(i, m):(i + 1) * k + min(i + 1, m)]
                 for i in range(n)
             ]
 
@@ -1765,25 +1764,18 @@ def goCheckWithConfig(sorted_results,config="wireguard://qJPoIYFnhd/zKuLFPf8/FUy
                 }
                 url = test_link_
                 headers = {"Connection": "close"}
-                try:
-                    start = time.time()
-                    response = requests.get(
-                        url, proxies=proxies, timeout=5, headers=headers
-                    )
-                except Exception:
-                    start = time.time()
-                    response = requests.get(
-                        url, proxies=proxies, timeout=5, headers=headers
-                    )
-                elapsed = (time.time() - start) * 1000  # تبدیل به میلی‌ثانیه
+
+                start = time.time()
+                response = requests.get(
+                    url, proxies=proxies, timeout=5, headers=headers
+                )
+                elapsed = (time.time() - start) * 1000  # ms
                 if response.status_code == 204 or (
                     response.status_code == 200 and len(response.content) == 0
                 ):
                     result = elapsed
                 else:
-                    raise IOError(
-                        f"Connection test error, status code: {response.status_code}"
-                    )
+                    raise IOError(f"Connection test error, status code: {response.status_code}")
             except RequestException as e:
                 print(f"testConnection RequestException: {e}")
                 result = "Connection test error, time out !"
@@ -1815,14 +1807,14 @@ def goCheckWithConfig(sorted_results,config="wireguard://qJPoIYFnhd/zKuLFPf8/FUy
                         ipchanged += f"?{config.split('?')[1]}"
                     else:
                         ipchanged += f"#none"
+
                     with open(f"xray/config{i}.json", "w") as f:
                         json.dump(
                             json.loads(parse_configs(ipchanged, cv=i)), f, indent=4
                         )
-                    xa,hy=(None,None)
-                    if ipchanged.startswith("hy2://") or ipchanged.startswith(
-                        "hysteria2://"
-                    ):
+
+                    xa = hy = None
+                    if ipchanged.startswith("hy2://") or ipchanged.startswith("hysteria2://"):
                         hy = subprocess.Popen(
                             ["hy2/hysteria", "client", "-c", "hy2/config.yaml"],
                             stdin=subprocess.DEVNULL,
@@ -1837,17 +1829,19 @@ def goCheckWithConfig(sorted_results,config="wireguard://qJPoIYFnhd/zKuLFPf8/FUy
                                 stdout=errFile,
                                 stderr=errFile
                             )
+                    time.sleep(2.5)
+
                     if test_th(http5, i):
                         print("is ok")
-                        oklist.append(
-                            (ip, port, ping, loss_rate, jitter, combined_score)
-                        )
+                        oklist.append((ip, port, ping, loss_rate, jitter, combined_score))
+
                     if xa:
                         xa.terminate()
                         xa.wait()
                     if hy:
                         hy.terminate()
                         hy.wait()
+
                     os.remove(f"xray/config{i}.json")
 
         def goOnEachThreadOfTuple(split_r):
