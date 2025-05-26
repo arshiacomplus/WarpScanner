@@ -44,7 +44,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ✔️**IP scan (IPV4 & ipv6)**  
 ✔️**Get Wireguard Configuration**  
-✔️**ایجاد لینک سابسکریپشن**  
+✔️**Creating a subconial link**  
 ✔️**Support v2ray and mahsang**  
 ✔️**Support Sing-Box and Hiddify**  
 ✔️**Save IPs in CSV file**  
@@ -56,9 +56,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 <https://github.com/arshiacomplus/docs>
 
-## 💰**Project support**
+## 💰 **Project support**
 
-### 🎁**Financial help**
+### 🎁**کمک مالی**
 
 🔹**TRX:**  
 [TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G](https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G)
