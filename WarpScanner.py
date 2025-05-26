@@ -1738,7 +1738,7 @@ def parse_configs(conifg,num=0,cv=1,hy2_path="hy2/config.yaml",is_hy2=False): # 
     data_conf=replace_accept_encoding(data_conf)
     data_conf=json.dumps(data_conf, indent=4, cls=MyEncoder)
     return data_conf
-def goCheckWithConfig(sorted_results, config="wireguard://qJPoIYFnhd/zKuLFPf8/FUyLCbwIzUSNMKvelMlFUnM=@188.114.97.150:891?address=172.16.0.2/32,2606:4700:110:846c:e510:bfa1:ea9f:5247/128&publickey=bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=&reserved=79,60,41&mtu=1330&keepalive=10&wnoise=quic&wnoisecount=15&wnoisedelay=1-3&wpayloadsize=1-8#Tel= @arshiacomplus wire"):
+def goCheckWithConfig(sorted_results, config="wireguard://kHHb2AkFjro8jdZR46KhzqeOcWsv15Idhw3dPOW35mg%3D@162.159.195.204:908?wnoise=quic&presharedkey=&address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A846c%3Ae510%3Abfa1%3Aea9f%3A5247%2F128&reserved=176%2C33%2C210&keepalive=5&wpayloadsize=1-8&publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&wnoisedelay=1-3&wnoisecount=15&mtu=1330#Tel%3D+%40arshiacomplus+wire"):
     print("igo")
     oklist = []
 
