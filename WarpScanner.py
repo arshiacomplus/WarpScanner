@@ -1,4 +1,4 @@
-V=73
+V=74
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -1836,7 +1836,7 @@ def goCheckWithConfig(sorted_results, config="wireguard://kHHb2AkFjro8jdZR46Khzq
                                 stdout=errFile,
                                 stderr=errFile
                             )
-                    time.sleep(2.5)
+                    time.sleep(3)
 
                     if test_th(http5, i):
                         print("is ok")
