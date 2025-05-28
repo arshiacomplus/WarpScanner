@@ -40,14 +40,14 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 * * *
 
-## 🌐**Özellikler ve özellikler**
+## 🌐**ویژگی‌ها و امکانات**
 
 ✔️**IP taraması (IPv4 ve IPv6)**  
 ✔️**WireGuard Yapılandırması Alın**  
 ✔️**Alt Monale Bağlantı Oluşturma**  
 ✔️**Destek V2ray ve Mahsang**  
 ✔️**Sing-box'ı destekleyin ve Hiddify**  
-✔️**IPS'yi CSV dosyasına kaydedin**  
+✔️**ذخیره آی‌پی‌ها در فایل CSV**  
 ✔️**Çözgüde çözgü yapılandırması alın**
 
 * * *
@@ -69,7 +69,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ### ⭐**Ücretsiz Destek**
 
 ✅**Star 2 ve Falou'yu vererek projeyi destekleyin!**  
-✅**Arkadaşlarınızla tanışın!**
+✅**به دوستان خود معرفی کنید!**
 
 <p align="center">
   <img width="80%" src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d">
