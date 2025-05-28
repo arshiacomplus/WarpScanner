@@ -76,6 +76,7 @@ from requests import RequestException
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass,field
 from json import JSONEncoder
+import logging as logger
 try:
     import yaml
 except Exception:
@@ -1755,46 +1756,52 @@ def goCheckWithConfig(sorted_results, config="wireguard://kHHb2AkFjro8jdZR46Khzq
         split_r = split_list(sorted_results, 20)
 
         def test_th(port, num=1):
-            response = ""
-            result = ""
+            response = None
+            result_status = ""
+            elapsed_time = -1.0
             try:
                 proxies = {
                     "http": f"http://127.0.0.{num}:{port}",
                     "https": f"http://127.0.0.{num}:{port}",
                 }
                 url = test_link_
-                headers = {"Connection": "close"}
+                logger.info(f"THREAD {num}: Testing proxy http://127.0.0.{num}:{port} with URL: {url}")
 
-                start = time.time()
-                response = requests.get(
-                    url, proxies=proxies, timeout=5, headers=headers
-                )
-                elapsed = (time.time() - start) * 1000  # ms
-                if response.status_code == 204 or (
-                    response.status_code == 200 and len(response.content) == 0
-                ):
-                    result = elapsed
+                start_time = time.time()
+                response = requests.get(url, proxies=proxies, timeout=7, headers={"Connection": "close"}, stream=False)
+                elapsed_time = (time.time() - start_time) * 1000
+
+                logger.info(f"THREAD {num}: Response status code: {response.status_code}")
+
+                if response.status_code == 204 or (response.status_code == 200 and len(response.content) == 0):
+                    result_status = "success"
+                    logger.info(f"THREAD {num}: SUCCESS - Elapsed: {elapsed_time:.2f} ms")
+                    return True
                 else:
-                    raise IOError(f"Connection test error, status code: {response.status_code}")
-            except RequestException as e:
-                print(f"testConnection RequestException: {e}")
-                result = "Connection test error, time out !"
-                try:
-                    if response.status_code == 503:
-                        result = "Connection test error, check your connection or ping again ..."
-                except Exception:
-                    pass
+                    result_status = f"unexpected_status_{response.status_code}"
+                    logger.warning(f"THREAD {num}: FAILED - Unexpected status code: {response.status_code}, Elapsed: {elapsed_time:.2f} ms, Content: {response.text[:100] if response.text else 'No Content'}")
+                    return False
+
+            except requests.exceptions.Timeout:
+                result_status = "timeout"
+                logger.warning(f"THREAD {num}: FAILED - Connection Timeout. Elapsed: {elapsed_time:.2f} ms (if started)")
+                return False
+            except requests.exceptions.ConnectionError as e:
+                result_status = "connection_error"
+                logger.warning(f"THREAD {num}: FAILED - Connection Error: {e}. Elapsed: {elapsed_time:.2f} ms (if started)")
+                return False
+            except requests.exceptions.RequestException as e:
+                result_status = "request_exception"
+                logger.warning(f"THREAD {num}: FAILED - Request Exception: {e}. Elapsed: {elapsed_time:.2f} ms (if started)")
+                return False
             except Exception as e:
-                print(f"testConnection Exception: {e}")
-                result = "Connection test error, time out !"
-                try:
-                    if response.status_code == 503:
-                        result = "Connection test error, check your connection or ping again ..."
-                except Exception:
-                    pass
-            if isinstance(result, Number):
-                return True
-            return False
+                result_status = "general_exception"
+                logger.exception(f"THREAD {num}: FAILED - General Exception in test_th:")
+                return False
+            finally:
+                if response:
+                    response.close()
+                logger.info(f"THREAD {num}: Test result: {result_status}, Time: {elapsed_time:.2f} ms")
 
         def goOnTheTh(whichTuple, i):
             nonlocal oklist
