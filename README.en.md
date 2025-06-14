@@ -1,7 +1,7 @@
 # 🚀 Warp Scanner
 
 🌎**Languages:**  
-🇮🇷[Persian](README.md)| 🇹🇷[Turkish](README.tr.md)| 🇬🇧[English](README.en.md)| 🇨🇳[Chinese](README.zh-CN.md)| 🇯🇵[Japanese](README.ja.md)
+🇮🇷[Persian](README.md) | 🇹🇷 [Turkish](README.tr.md)| 🇬🇧[English](README.en.md)| 🇨🇳[Chinese](README.zh-CN.md)| 🇯🇵[Japanese](README.ja.md)
 
 * * *
 
@@ -32,7 +32,7 @@
 
 ## 💻**Installation and run**
 
-Code below**Tombox**Run:
+Code below**ترماکس**Run:
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/install.sh)
@@ -58,7 +58,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ## 💰**Project support**
 
-### 🎁**Financial help**
+### 🎁 **Financial help**
 
 🔹**TRX:**  
 [TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G](https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G)
