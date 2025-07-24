@@ -1,4 +1,4 @@
-V=76
+V=77
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -1808,7 +1808,7 @@ def goCheckWithConfig(sorted_results, config="wireguard://kHHb2AkFjro8jdZR46Khzq
             global which_v
             for ip, port, ping, loss_rate, jitter, combined_score in whichTuple:
                 ip = f"[{ip}]" if which_v == "2" else ip
-                if loss_rate == 0.00 and ping != 0.0 and ping < 500.00:
+                if True:
                     ipchanged = config.split("@")[0] + f"@{ip}:{port}"
                     if "?" in config:
                         ipchanged += f"?{config.split('?')[1]}"
