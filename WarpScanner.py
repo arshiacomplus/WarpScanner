@@ -1,4 +1,4 @@
-V=77
+V=78
 import urllib.request
 import urllib.parse
 from urllib.parse import quote
@@ -2078,8 +2078,22 @@ def main():
     elif Cpu_speed == "2": max_workers_number=500
     console.clear()
     console.print("Please wait, scanning IP ...\n\n", style="blue")
-    start_ips = ["188.114.96.0", "162.159.192.0", "162.159.195.0"]
-    end_ips = ["188.114.99.224", "162.159.193.224", "162.159.195.224"]
+    start_ips = ["188.114.96.0", "162.159.192.0", "162.159.195.0", "8.6.112.0",
+    "8.34.70.0",
+    "8.34.146.0",
+    "8.35.211.0",
+    "8.39.125.0",
+    "8.39.204.0",
+    "8.39.214.0",
+    "8.47.69.0"]
+    end_ips = ["188.114.99.224", "162.159.193.224", "162.159.195.224", "8.6.112.244",
+    "8.34.70.244",
+    "8.34.146.244",
+    "8.35.211.244",
+    "8.39.125.244",
+    "8.39.204.244",
+    "8.39.214.244",
+    "8.47.69.244"]
     ports = [1074, 894, 908, 878]
     for start_ip, end_ip in zip(start_ips, end_ips):
         ip_range = create_ip_range(start_ip, end_ip)
