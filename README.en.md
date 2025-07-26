@@ -68,7 +68,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ### ⭐**Free support**
 
-✅**Support the project by giving the star 2 and Falou!**  
+✅**با دادن ستاره ⭐ و فالو 💙 از پروژه حمایت کنید!**  
 ✅**Introduce to your friends!**
 
 <p align="center">
