@@ -47,7 +47,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 ✔️**Alt Monale Bağlantı Oluşturma**  
 ✔️**Destek V2ray ve Mahsang**  
 ✔️**Sing-box'ı destekleyin ve Hiddify**  
-✔️**ذخیره آی‌پی‌ها در فایل CSV**  
+✔️**IPS'yi CSV dosyasına kaydedin**  
 ✔️**Çözgüde çözgü yapılandırması alın**
 
 * * *
