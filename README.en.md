@@ -63,12 +63,12 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 🔹**TRX:**  
 [TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G](https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G)
 
-🔹**USDT:**  
+🔹**USDT on eth:**  
 [0 Busbasi 10, with a thunderbolt.](https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7)
 
 ### ⭐**Free support**
 
-✅**با دادن ستاره ⭐ و فالو 💙 از پروژه حمایت کنید!**  
+✅**Support the project by giving the star 2 and Falou!**  
 ✅**Introduce to your friends!**
 
 <p align="center">
