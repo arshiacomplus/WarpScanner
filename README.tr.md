@@ -60,11 +60,11 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 
 ### 🎁**Finansal yardım**
 
-🔹**TRX:**  
-[TKUPVDG5DQLDUSG3X1HIDRPUHM1GMQZ2G](https://link.trustwallet.com/send?coin=195&address=TKUpVDG5DqLDUSg3X1hhidRPuhm1GmqZ2G)
+🔹**TRX & USDT TRC20:**  
+TKUPVDG5DQLDUSG3X1HIDRPUHM1GMQZ2G
 
 🔹**ETH üzerinde USDT:**  
-[0 Busbasi 10, bir yıldırım ile.](https://link.trustwallet.com/send?coin=60&address=0xBcE10b8B572DdFAc53855879ebCE9942296553A3&token_id=0xdAC17F958D2ee523a2206206994597C13D831ec7)
+0 Busbasi 10, bir yıldırım ile.
 
 ### ⭐**Ücretsiz Destek**
 
