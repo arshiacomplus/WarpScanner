@@ -25,7 +25,7 @@
 
 ⛔**不要从Google Play下载血栓！**
 
-📥**下载官方版本：**  
+📥**دانلود نسخه رسمی:**  
 [![Termux 📲](https://img.shields.io/badge/Github-Termux📲-blue?style=plastic)](https://github.com/termux/termux-app/releases)
 
 * * *
