@@ -68,7 +68,7 @@ TKUPVDG5DQLDUSG3X1HIDRPUHM1GMQZ2G
 
 ### ⭐**Ücretsiz Destek**
 
-✅**با دادن ستاره ⭐ و فالو 💙 از پروژه حمایت کنید!**  
+✅**Star 2 ve Falou'yu vererek projeyi destekleyin!**  
 ✅**Arkadaşlarınızla tanışın!**
 
 <p align="center">
@@ -77,4 +77,4 @@ TKUPVDG5DQLDUSG3X1HIDRPUHM1GMQZ2G
 
 * * *
 
-📹**Yüklenen video öğreticisi[Tıklamak](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
+📹**آموزش ویدیویی اپلود شده [Tıklamak](https://youtu.be/J6Syf7cQVRM?si=BICVTqbztAHO3Zjw)! ❤️**
